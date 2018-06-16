@@ -1,0 +1,70 @@
+site_name: Tabletop Simulator Knowledge Base
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  logo: 'img/TSIcon.png'
+  favicon: 'img/Icon-Dice.png'
+  custom_dir: 'theme'
+  
+extra_css:
+  - css/theme.css
+  - css/table.css
+  - css/type_icons.css
+  - css/i_icons.css
+  - css/player_color_table.css
+  
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: "\u0020"
+      
+repo_name: 'GitHub Source'
+repo_url: 'https://github.com/MisterStump/Tabletop-Simulator-Documentation'
+    
+pages:
+  - Getting Started:
+    - Tabletop Simulator: index.md
+    - Technical Info: getting-started/technical-info.md
+    - Launch Options: getting-started/launch-options.md
+    - Configuration Menu: getting-started/configuration-menu.md
+    - Help Menu: getting-started/help-menu.md
+    - In-Game Communication: getting-started/in-game-communication.md
+    - Player Roles: getting-started/player-roles.md
+    - Video Tutorials: getting-started/video-tutorials.md
+    - Games - Classic: getting-started/games-classic.md
+    - Games - DLC: getting-started/games-dlc.md
+    - Games - Workshop: getting-started/games-workshop.md
+    - Games - FAQ: getting-started/faq.md
+  - Game Tools:
+    - Drawing Tools: game-tools/drawing-tools.md
+  - Player Guides:
+    - Controls & Movement: player-guides/controls-&-movement.md
+  - Host Guides:
+    - Creating States: host-guides/creating-states.md
+  - Custom Content:
+    - Cloud Manager: custom-content/cloud-manager.md
+
+
+
+
+
+    
