@@ -3,6 +3,8 @@ There are a lot of tools in Tabletop Simulator to help make your gameplay sessio
 ##Host
 The host is the admin of his/her server and is in full control. Hosts can mute, kick and ban disruptive players, change players’ seats, teams and many other things. He/she can promote trusted players to help run the room. A gold crown is placed next to the host’s name.
 
+If you start a game, even if it single player, you are still considered to be the Host.
+
 ###Options
 
 When you’re the host, all buttons on the top menu will be available. Click on **OPTIONS**. You will get a drop down showing **Options**, **Grid**, **Hands** and **Turns**. Options is the one where you set the different permissions for the rest of your users.
