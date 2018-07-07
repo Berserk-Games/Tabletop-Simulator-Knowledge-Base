@@ -16,11 +16,10 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
     <video controls
         autoPlay
         muted
-        src="/img/basic-controls/mouse.webm">
+        src="/Tabletop-Simulator-Documentation/img/basic-controls/mouse.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
-
 
 ###Keyboard
 * Press the spacebar to reset your camera position.
@@ -32,7 +31,7 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
     <video controls
         autoPlay
         muted
-        src="/img/basic-controls/keyboard.webm">
+        src="/Tabletop-Simulator-Documentation/img/basic-controls/keyboard.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
