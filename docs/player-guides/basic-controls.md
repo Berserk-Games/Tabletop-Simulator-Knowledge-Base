@@ -12,7 +12,15 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
 * Scroll the MMB to zoom in and out.
 * To do a quick zoom where your mouse is pointing, press the MMB once. Press it again to zoom back out.
 
-<center>![Camera Control with Mouse](/img/basic-controls/mouse.gif)</center>
+<center>
+    <video controls
+        autoPlay
+        muted
+        src="/img/basic-controls/mouse.webm">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+</center>
+
 
 ###Keyboard
 * Press the spacebar to reset your camera position.
@@ -20,7 +28,14 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
 * To do a quick zoom where your mouse is pointing, press Z key once. Press it again to zoom back out.
 * Switch to 1st person mode by pressing the P key.
 
-<center>![Camera Control with Keyboard](/img/basic-controls/keyboard.gif)</center>
+<center>
+    <video controls
+        autoPlay
+        muted
+        src="/img/basic-controls/keyboard.webm">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+</center>
 
 ###Keyboard (First Person)
 * The WASD keys in combo with the RMB moves in 1st person mode.

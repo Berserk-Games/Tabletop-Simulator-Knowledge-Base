@@ -7,14 +7,14 @@ theme:
   logo: 'img/TSIcon.png'
   favicon: 'img/Icon-Dice.png'
   custom_dir: 'theme'
-  
+
 extra_css:
   - css/theme.css
   - css/table.css
   - css/type_icons.css
   - css/i_icons.css
   - css/player_color_table.css
-  
+
 markdown_extensions:
   - admonition
   - codehilite
@@ -36,10 +36,10 @@ markdown_extensions:
   - pymdownx.tilde
   - toc:
       permalink: "\u0020"
-      
+
 repo_name: 'GitHub Source'
 repo_url: 'https://github.com/MisterStump/Tabletop-Simulator-Documentation'
-    
+
 pages:
   - Getting Started:
     - Tabletop Simulator: index.md
@@ -81,9 +81,3 @@ pages:
     - Creating States: host-guides/creating-states.md
   - Custom Content:
     - Cloud Manager: custom-content/cloud-manager.md
-
-
-
-
-
-    
