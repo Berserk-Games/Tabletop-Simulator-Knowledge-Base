@@ -20,6 +20,10 @@ Launch Option | What It Does
 -force-opengl | Forces OpenGL to be used. For Linux.
 -screen-width | Forces a specific game resolution (width) on launch.
 -screen-height | Forces a specific game resolution (height) on launch.
+-log | Enables full logging. Useful if you are experiencing problems.
+-novoicechat | Disables voicechat.
+-vr | Forces VR mode.
+-nosubscription | Does not attempt to download Workshop subscriptions on launch.
 
 
 ##Launch Options Example

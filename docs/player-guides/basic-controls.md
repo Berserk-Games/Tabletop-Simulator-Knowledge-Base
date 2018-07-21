@@ -14,6 +14,7 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
 
 <center>
     <video controls
+        loop
         autoPlay
         muted
         src="/Tabletop-Simulator-Documentation/img/basic-controls/mouse.webm">
@@ -29,6 +30,7 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
 
 <center>
     <video controls
+        loop
         autoPlay
         muted
         src="/Tabletop-Simulator-Documentation/img/basic-controls/keyboard.webm">
@@ -41,7 +43,15 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
 * Pressing spacebar will fly your camera up.
 * Pressing Ctrl will fly your camera down.
 
-<center>![Camera Control with Keyboard, First Person](/img/basic-controls/keyboard-fp.gif)</center>
+<center>
+    <video controls
+        loop
+        autoPlay
+        muted
+        src="/Tabletop-Simulator-Documentation/img/basic-controls/keyboard-fp.webm">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+</center>
 
 ---
 
@@ -60,4 +70,12 @@ The majority of gameplay within Tabletop Simulator requires your to manipulate O
 8. An easier option is to ‘box highlight’ around the objects you want to pick up. Hold left click anywhere on the table and around multiple objects. When you let go, all those objects will be highlighted. Pick up one of the objects and all of those that were highlighted will be picked up. Find more details on the [Object Selection](object-selection) page.
 9. Right clicking on any object will bring up the [Context Menu](context-menu).
 
-<center>![Object Manipulation](/img/basic-controls/object-controls.gif)</center>
+<center>
+    <video controls
+        loop
+        autoPlay
+        muted
+        src="/Tabletop-Simulator-Documentation/img/basic-controls/object-controls.webm">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+</center>
