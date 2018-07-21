@@ -103,6 +103,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#color" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1356,12 +1360,53 @@
 
     <!-- Render table of contents, if not empty -->
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        BB Codes
+      </label>
+    
     <a href="./" title="BB Codes"
         class="md-nav__link md-nav__link--active">
       BB Codes
     </a>
 
     <!-- Show table of contents -->
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#color" title="Color" class="md-nav__link">
+    Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emphasis" title="Emphasis" class="md-nav__link">
+    Emphasis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1933,6 +1978,49 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#color" title="Color" class="md-nav__link">
+    Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emphasis" title="Emphasis" class="md-nav__link">
+    Emphasis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1943,7 +2031,32 @@
                 
                   <h1>BB Codes</h1>
                 
-                
+                <p>In Tabletop Simulator you can use basic BB Codes to spice up the Notebook, Rules, Notecards, onscreen Notes and even the Tooltips that you’re showing to other players. This is great when you want to properly format your notes and rules to make them look nice and neat.</p>
+<p><center><img alt="Notebook Example" src="../../img/bb-codes/notebook.png" /></center></p>
+<hr />
+<h3 id="color">Color<a class="headerlink" href="#color" title="Permanent link"> </a></h3>
+<p><strong><code class="codehilite">[FFFFFF]</code></strong> - Sets the color of the text using <a href="https://www.w3schools.com/Colors/colors_hexadecimal.asp">hex</a>.</p>
+<p><strong><code class="codehilite">[-]</code></strong> - Ends most recently set color.</p>
+<hr />
+<h3 id="emphasis">Emphasis<a class="headerlink" href="#emphasis" title="Permanent link"> </a></h3>
+<p><strong><code class="codehilite">[b] [/b]</code></strong> - Bolds the text between the tags.</p>
+<p><strong><code class="codehilite">[i] [/i]</code></strong> - Italics the text between the tags.</p>
+<p><strong><code class="codehilite">[u] [/u]</code></strong> - Underlines the text between the tags.</p>
+<p><strong><code class="codehilite">[s] [/s]</code></strong> - Strikes through the text between the tags.</p>
+<p><strong><code class="codehilite">[sub] [/sub]</code></strong> - Turns the text between the tags into subscript.</p>
+<p><strong><code class="codehilite">[sup] [/sup]</code></strong> - Turns the text between the tags into superscript.</p>
+<hr />
+<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link"> </a></h3>
+<blockquote>
+<p>[FF0000][b]Welcome to the game![/b]<br>
+What is your favorite color?: [-] Mine is [00ff00][i]green[/i][-]!</p>
+</blockquote>
+<p><span style="color:red"><strong>Welcome to the game!</strong><br>
+What is your favorite color?: </span> Mine is <span style="color:green"><em>green</em></span>!</p>
+<hr />
+<p><left><img alt="Notecard Example" src="../../img/bb-codes/notecard.png" /></left>
+<right><img alt="Notes Example" src="../../img/bb-codes/notes.png" /></right></p>
+<hr />
                 
                   
                 
