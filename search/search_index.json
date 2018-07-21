@@ -122,7 +122,7 @@
         }, 
         {
             "location": "/getting-started/launch-options/", 
-            "text": "Launch options allow for you to make special modifications to Tabletop Simulator that are not otherwise available.\n\n\nSetting Launch Options\n \n\n\n\n\nIn Steam, navigate to your games library and locate Tabletop Simulator.\n\n\nRight-click on Tabletop Simulator and select \"properties\".\n\n\nIn the General tab, click \"Set launch options\".\n\n\nEnter the launch options, followed by \"Ok\" then \"Close\".\n\n\n\n\nIf using multiple launch options they are \nseparated by a space\n.\n\n\nLaunch Options\n \n\n\n\n\n\n\n\n\nLaunch Option\n\n\nWhat It Does\n\n\n\n\n\n\n\n\n\n\n-novid\n\n\nDisables in the intro video. You do not need to use both.\n\n\n\n\n\n\n-nointro\n\n\nDisables the intro video. You do not need to use both.\n\n\n\n\n\n\n-nothreading\n\n\nDisables the loading system in the background.\n\n\n\n\n\n\n-nosteam\n\n\nDisables all the Steamworks-releated elements.\n\n\n\n\n\n\n-notablet\n\n\nDisables the in-game tablet browser.\n\n\n\n\n\n\n-force-opengl\n\n\nForces OpenGL to be used. For Linux.\n\n\n\n\n\n\n-screen-width\n\n\nForces a specific game resolution (width) on launch.\n\n\n\n\n\n\n-screen-height\n\n\nForces a specific game resolution (height) on launch.\n\n\n\n\n\n\n\n\nLaunch Options Example\n \n\n\n-novid -nosteam -notablet", 
+            "text": "Launch options allow for you to make special modifications to Tabletop Simulator that are not otherwise available.\n\n\nSetting Launch Options\n \n\n\n\n\nIn Steam, navigate to your games library and locate Tabletop Simulator.\n\n\nRight-click on Tabletop Simulator and select \"properties\".\n\n\nIn the General tab, click \"Set launch options\".\n\n\nEnter the launch options, followed by \"Ok\" then \"Close\".\n\n\n\n\nIf using multiple launch options they are \nseparated by a space\n.\n\n\nLaunch Options\n \n\n\n\n\n\n\n\n\nLaunch Option\n\n\nWhat It Does\n\n\n\n\n\n\n\n\n\n\n-novid\n\n\nDisables in the intro video. You do not need to use both.\n\n\n\n\n\n\n-nointro\n\n\nDisables the intro video. You do not need to use both.\n\n\n\n\n\n\n-nothreading\n\n\nDisables the loading system in the background.\n\n\n\n\n\n\n-nosteam\n\n\nDisables all the Steamworks-releated elements.\n\n\n\n\n\n\n-notablet\n\n\nDisables the in-game tablet browser.\n\n\n\n\n\n\n-force-opengl\n\n\nForces OpenGL to be used. For Linux.\n\n\n\n\n\n\n-screen-width\n\n\nForces a specific game resolution (width) on launch.\n\n\n\n\n\n\n-screen-height\n\n\nForces a specific game resolution (height) on launch.\n\n\n\n\n\n\n-log\n\n\nEnables full logging. Useful if you are experiencing problems.\n\n\n\n\n\n\n-novoicechat\n\n\nDisables voicechat.\n\n\n\n\n\n\n-vr\n\n\nForces VR mode.\n\n\n\n\n\n\n-nosubscription\n\n\nDoes not attempt to download Workshop subscriptions on launch.\n\n\n\n\n\n\n\n\nLaunch Options Example\n \n\n\n-novid -nosteam -notablet", 
             "title": "Launch Options"
         }, 
         {
@@ -132,7 +132,7 @@
         }, 
         {
             "location": "/getting-started/launch-options/#launch-options", 
-            "text": "Launch Option  What It Does      -novid  Disables in the intro video. You do not need to use both.    -nointro  Disables the intro video. You do not need to use both.    -nothreading  Disables the loading system in the background.    -nosteam  Disables all the Steamworks-releated elements.    -notablet  Disables the in-game tablet browser.    -force-opengl  Forces OpenGL to be used. For Linux.    -screen-width  Forces a specific game resolution (width) on launch.    -screen-height  Forces a specific game resolution (height) on launch.", 
+            "text": "Launch Option  What It Does      -novid  Disables in the intro video. You do not need to use both.    -nointro  Disables the intro video. You do not need to use both.    -nothreading  Disables the loading system in the background.    -nosteam  Disables all the Steamworks-releated elements.    -notablet  Disables the in-game tablet browser.    -force-opengl  Forces OpenGL to be used. For Linux.    -screen-width  Forces a specific game resolution (width) on launch.    -screen-height  Forces a specific game resolution (height) on launch.    -log  Enables full logging. Useful if you are experiencing problems.    -novoicechat  Disables voicechat.    -vr  Forces VR mode.    -nosubscription  Does not attempt to download Workshop subscriptions on launch.", 
             "title": "Launch Options"
         }, 
         {
@@ -962,7 +962,7 @@
         }, 
         {
             "location": "/player-guides/basic-controls/", 
-            "text": "Getting Started in Tabletop Simulator\n\n\nAs you first start playing with Tabletop Simulator, it is recommended you try out the in-game \ntutorial\n. A link can be found on the Main Menu. You can also check out the \nvideo tutorial\n.\n\n\n\n\nThere are a lot of controls in Tabletop Simulator because there is so much you can do. This page is a guide to all of the basic controls. Many of the controls can also be accessed from the \nContext Menu\n, but you will find even more options here.\n\n\nMovement and Camera Controls\n \n\n\nMove with the Keyboard, Mouse or both. All keys given are defaults, most of which can be changed in the in-game Settings menu, under Controls.\n\n\nMouse\n \n\n\n\n\nIf you hold the RMB anywhere on the table not on an object and move around right away, you can control the camera rotation.\n\n\nTo pan your camera around, press and hold the MMB.\n\n\nScroll the MMB to zoom in and out.\n\n\nTo do a quick zoom where your mouse is pointing, press the MMB once. Press it again to zoom back out.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nhttps://misterstump.github.io/img/basic-controls/mouse.webm\n\n\nhttps://misterstump.github.io/Tabletop-Simulator-Documentation/img/basic-controls/keyboard-fp.gif\n\n\nKeyboard\n \n\n\n\n\nPress the spacebar to reset your camera position.\n\n\nThe WASD keys can be used to pan your camera around.\n\n\nTo do a quick zoom where your mouse is pointing, press Z key once. Press it again to zoom back out.\n\n\nSwitch to 1\nst\n person mode by pressing the P key.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nKeyboard (First Person)\n \n\n\n\n\nThe WASD keys in combo with the RMB moves in 1\nst\n person mode.\n\n\nPressing spacebar will fly your camera up.\n\n\nPressing Ctrl will fly your camera down.\n\n\n\n\n\n\n\n\nObject Controls\n \n\n\nThe majority of gameplay within Tabletop Simulator requires your to manipulate Objects. Moving them, placing them, rotating them, etc.\n\n\nManipulating Objects\n \n\n\n\n\nPick up an object by pressing the LMB. Let go to drop it.\n\n\nWhile holding an object you and press the RMB to tap it down.\n\n\nFlip an object by pressing the F key, MMB or right clicking on it to bring up the contextual menu and press the \u2018Flip\u2019 option.\n\n\nZoom in on a specific object by hovering over it and pressing the ALT key \u2013 this works best for cards.\n\n\nWhile in ALT Zoom mode, use the middle mouse button to zoom in and out further and the Q \n E keys to rotate.\n\n\nLMB picks up a single object.\n\n\nTo pick up two objects, you can hold one object and hover over a second and \u2018right click\u2019 to pick up the second. Keep holding and right click over other objects to keep picking them up.\n\n\nAn easier option is to \u2018box highlight\u2019 around the objects you want to pick up. Hold left click anywhere on the table and around multiple objects. When you let go, all those objects will be highlighted. Pick up one of the objects and all of those that were highlighted will be picked up. Find more details on the \nObject Selection\n page.\n\n\nRight clicking on any object will bring up the \nContext Menu\n.", 
+            "text": "Getting Started in Tabletop Simulator\n\n\nAs you first start playing with Tabletop Simulator, it is recommended you try out the in-game \ntutorial\n. A link can be found on the Main Menu. You can also check out the \nvideo tutorial\n.\n\n\n\n\nThere are a lot of controls in Tabletop Simulator because there is so much you can do. This page is a guide to all of the basic controls. Many of the controls can also be accessed from the \nContext Menu\n, but you will find even more options here.\n\n\nMovement and Camera Controls\n \n\n\nMove with the Keyboard, Mouse or both. All keys given are defaults, most of which can be changed in the in-game Settings menu, under Controls.\n\n\nMouse\n \n\n\n\n\nIf you hold the RMB anywhere on the table not on an object and move around right away, you can control the camera rotation.\n\n\nTo pan your camera around, press and hold the MMB.\n\n\nScroll the MMB to zoom in and out.\n\n\nTo do a quick zoom where your mouse is pointing, press the MMB once. Press it again to zoom back out.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nKeyboard\n \n\n\n\n\nPress the spacebar to reset your camera position.\n\n\nThe WASD keys can be used to pan your camera around.\n\n\nTo do a quick zoom where your mouse is pointing, press Z key once. Press it again to zoom back out.\n\n\nSwitch to 1\nst\n person mode by pressing the P key.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nKeyboard (First Person)\n \n\n\n\n\nThe WASD keys in combo with the RMB moves in 1\nst\n person mode.\n\n\nPressing spacebar will fly your camera up.\n\n\nPressing Ctrl will fly your camera down.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\n\n\nObject Controls\n \n\n\nThe majority of gameplay within Tabletop Simulator requires your to manipulate Objects. Moving them, placing them, rotating them, etc.\n\n\nManipulating Objects\n \n\n\n\n\nPick up an object by pressing the LMB. Let go to drop it.\n\n\nWhile holding an object you and press the RMB to tap it down.\n\n\nFlip an object by pressing the F key, MMB or right clicking on it to bring up the contextual menu and press the \u2018Flip\u2019 option.\n\n\nZoom in on a specific object by hovering over it and pressing the ALT key \u2013 this works best for cards.\n\n\nWhile in ALT Zoom mode, use the middle mouse button to zoom in and out further and the Q \n E keys to rotate.\n\n\nLMB picks up a single object.\n\n\nTo pick up two objects, you can hold one object and hover over a second and \u2018right click\u2019 to pick up the second. Keep holding and right click over other objects to keep picking them up.\n\n\nAn easier option is to \u2018box highlight\u2019 around the objects you want to pick up. Hold left click anywhere on the table and around multiple objects. When you let go, all those objects will be highlighted. Pick up one of the objects and all of those that were highlighted will be picked up. Find more details on the \nObject Selection\n page.\n\n\nRight clicking on any object will bring up the \nContext Menu\n.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.", 
             "title": "Controls & Movement"
         }, 
         {
@@ -972,7 +972,7 @@
         }, 
         {
             "location": "/player-guides/basic-controls/#mouse", 
-            "text": "If you hold the RMB anywhere on the table not on an object and move around right away, you can control the camera rotation.  To pan your camera around, press and hold the MMB.  Scroll the MMB to zoom in and out.  To do a quick zoom where your mouse is pointing, press the MMB once. Press it again to zoom back out.   \n     \n        Sorry, your browser doesn't support embedded videos.\n       https://misterstump.github.io/img/basic-controls/mouse.webm  https://misterstump.github.io/Tabletop-Simulator-Documentation/img/basic-controls/keyboard-fp.gif", 
+            "text": "If you hold the RMB anywhere on the table not on an object and move around right away, you can control the camera rotation.  To pan your camera around, press and hold the MMB.  Scroll the MMB to zoom in and out.  To do a quick zoom where your mouse is pointing, press the MMB once. Press it again to zoom back out.   \n     \n        Sorry, your browser doesn't support embedded videos.", 
             "title": "Mouse"
         }, 
         {
@@ -982,7 +982,7 @@
         }, 
         {
             "location": "/player-guides/basic-controls/#keyboard-first-person", 
-            "text": "The WASD keys in combo with the RMB moves in 1 st  person mode.  Pressing spacebar will fly your camera up.  Pressing Ctrl will fly your camera down.", 
+            "text": "The WASD keys in combo with the RMB moves in 1 st  person mode.  Pressing spacebar will fly your camera up.  Pressing Ctrl will fly your camera down.   \n     \n        Sorry, your browser doesn't support embedded videos.", 
             "title": "Keyboard (First Person)"
         }, 
         {
@@ -992,13 +992,98 @@
         }, 
         {
             "location": "/player-guides/basic-controls/#manipulating-objects", 
-            "text": "Pick up an object by pressing the LMB. Let go to drop it.  While holding an object you and press the RMB to tap it down.  Flip an object by pressing the F key, MMB or right clicking on it to bring up the contextual menu and press the \u2018Flip\u2019 option.  Zoom in on a specific object by hovering over it and pressing the ALT key \u2013 this works best for cards.  While in ALT Zoom mode, use the middle mouse button to zoom in and out further and the Q   E keys to rotate.  LMB picks up a single object.  To pick up two objects, you can hold one object and hover over a second and \u2018right click\u2019 to pick up the second. Keep holding and right click over other objects to keep picking them up.  An easier option is to \u2018box highlight\u2019 around the objects you want to pick up. Hold left click anywhere on the table and around multiple objects. When you let go, all those objects will be highlighted. Pick up one of the objects and all of those that were highlighted will be picked up. Find more details on the  Object Selection  page.  Right clicking on any object will bring up the  Context Menu .", 
+            "text": "Pick up an object by pressing the LMB. Let go to drop it.  While holding an object you and press the RMB to tap it down.  Flip an object by pressing the F key, MMB or right clicking on it to bring up the contextual menu and press the \u2018Flip\u2019 option.  Zoom in on a specific object by hovering over it and pressing the ALT key \u2013 this works best for cards.  While in ALT Zoom mode, use the middle mouse button to zoom in and out further and the Q   E keys to rotate.  LMB picks up a single object.  To pick up two objects, you can hold one object and hover over a second and \u2018right click\u2019 to pick up the second. Keep holding and right click over other objects to keep picking them up.  An easier option is to \u2018box highlight\u2019 around the objects you want to pick up. Hold left click anywhere on the table and around multiple objects. When you let go, all those objects will be highlighted. Pick up one of the objects and all of those that were highlighted will be picked up. Find more details on the  Object Selection  page.  Right clicking on any object will bring up the  Context Menu .   \n     \n        Sorry, your browser doesn't support embedded videos.", 
             "title": "Manipulating Objects"
         }, 
         {
             "location": "/player-guides/advanced-controls/", 
-            "text": "", 
+            "text": "There are a lot of controls in Tabletop Simulator and this article will mostly go over the lesser known controls that you may not be aware of. Remember to open up the \nHelp Menu\n to see the list of controls.\n\n\nYou can read about the basic controls and movement \nhere\n.\n\n\n\n\nMany of these controls can be changed in the Settings menu.\n\n\n\n\nKeys\n \n\n\nScale (\n)\n \n\n\nScales Objects.\n\n\n\n\nHover over the Object (or selected Objects) and hold the + or - key on your keyboard.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\n\n\nBlindfold (B)\n \n\n\nApplies or removes a Blindfold.\n\n\n\n\nBlindfolded players cannot see others putting on/removing blindfolds.\n\n\n\n\n\n\n\n\nGroup (G)\n \n\n\nGroups Objects together.\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\n\n\nMagnify (M)\n \n\n\nMagnify areas.\n\n\n\n\nALT Zoom allows you to view an element up close. M allows you to get a closeup of an entire area.\n\n\n\n\n\n\nWhile zooming, use the mouse's scroll wheel to increase/decrease the zoom level.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\n\n\nNudge (N)\n \n\n\nNudge Objects.\n\n\n\n\nHolding N while moving the pointer around will nudge Objects away from the pointer.\n\n\n\n\n\n\nCamera Mode (P)\n \n\n\nChange Camera View.\n\n\n\n\nToggles between 3\nrd\n Person / 1\nst\n Person / Top-down.\n\n\n\n\n\n\nCheck out the \nControls \n Movement\n for details on using these camera views.\n\n\n\n\n\n\nPlace Under (U)\n \n\n\nPlace an Object under another. (Not meant for decks)\n\n\n\n\nPeek (ALT+SHIFT)\n \n\n\nPeek at the underside of an Object.\n\n\n\n\nHolding ALT and clicking SHIFT while hovering over an Object shows the underside.\n\n\n\n\n\n\nOther players are alerted when you peek under Objects to avoid cheating.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\n\n\nNumber Keys\n \n\n\nThere are two sets of number keys on the standard keyboard.\n\n\nNumber Row\n \n\n\nDraw a number of items.\n\n\n\n\nWith the pointer over a stack/bag/deck, typing in a number will draw that many cards after 1 second.\n\n\n\n\n\n\nThe 1 second delay allows you to type multiple numbers. So pressing 1 then 2 quickly will draw 12 cards.\n\n\n\n\nNumber Pad\n \n\n\nActivate scripting via hotkeys.\n\n\n\n\nBy default, these keys can trigger scripting. If there is no scripting, they perform no action.\n\n\n\n\n\n\nALT Modifier\n \n\n\nBy default, ALT shows a zoomed preview of the Object the mouse is hovering over. But it is also used as a modifier for other keys.\n\n\nALT Rotate (Q/E/Scroll wheel)\n \n\n\nRotate on a different axis.\n\n\nALT Flip (MMB)\n \n\n\nFlips on a different axis.\n\n\nALT DROP (RMB)\n \n\n\nDrops the last grabbed Object or the bottom card of a held deck.\n\n\nALT SCALE (Shift+Q/E)\n \n\n\nAlternative scaling method.", 
             "title": "Advanced Controls"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#keys", 
+            "text": "", 
+            "title": "Keys"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#scale-", 
+            "text": "Scales Objects.   Hover over the Object (or selected Objects) and hold the + or - key on your keyboard.   \n     \n        Sorry, your browser doesn't support embedded videos.", 
+            "title": "Scale (+/-)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#blindfold-b", 
+            "text": "Applies or removes a Blindfold.   Blindfolded players cannot see others putting on/removing blindfolds.", 
+            "title": "Blindfold (B)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#group-g", 
+            "text": "Groups Objects together.  \n     \n        Sorry, your browser doesn't support embedded videos.", 
+            "title": "Group (G)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#magnify-m", 
+            "text": "Magnify areas.   ALT Zoom allows you to view an element up close. M allows you to get a closeup of an entire area.    While zooming, use the mouse's scroll wheel to increase/decrease the zoom level.   \n     \n        Sorry, your browser doesn't support embedded videos.", 
+            "title": "Magnify (M)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#nudge-n", 
+            "text": "Nudge Objects.   Holding N while moving the pointer around will nudge Objects away from the pointer.", 
+            "title": "Nudge (N)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#camera-mode-p", 
+            "text": "Change Camera View.   Toggles between 3 rd  Person / 1 st  Person / Top-down.    Check out the  Controls   Movement  for details on using these camera views.", 
+            "title": "Camera Mode (P)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#place-under-u", 
+            "text": "Place an Object under another. (Not meant for decks)", 
+            "title": "Place Under (U)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#peek-altshift", 
+            "text": "Peek at the underside of an Object.   Holding ALT and clicking SHIFT while hovering over an Object shows the underside.    Other players are alerted when you peek under Objects to avoid cheating.   \n     \n        Sorry, your browser doesn't support embedded videos.", 
+            "title": "Peek (ALT+SHIFT)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#number-keys", 
+            "text": "There are two sets of number keys on the standard keyboard.", 
+            "title": "Number Keys"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#number-row", 
+            "text": "Draw a number of items.   With the pointer over a stack/bag/deck, typing in a number will draw that many cards after 1 second.    The 1 second delay allows you to type multiple numbers. So pressing 1 then 2 quickly will draw 12 cards.", 
+            "title": "Number Row"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#number-pad", 
+            "text": "Activate scripting via hotkeys.   By default, these keys can trigger scripting. If there is no scripting, they perform no action.", 
+            "title": "Number Pad"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#alt-modifier", 
+            "text": "By default, ALT shows a zoomed preview of the Object the mouse is hovering over. But it is also used as a modifier for other keys.", 
+            "title": "ALT Modifier"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#alt-rotate-qescroll-wheel", 
+            "text": "Rotate on a different axis.", 
+            "title": "ALT Rotate (Q/E/Scroll wheel)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#alt-flip-mmb", 
+            "text": "Flips on a different axis.", 
+            "title": "ALT Flip (MMB)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#alt-drop-rmb", 
+            "text": "Drops the last grabbed Object or the bottom card of a held deck.", 
+            "title": "ALT DROP (RMB)"
+        }, 
+        {
+            "location": "/player-guides/advanced-controls/#alt-scale-shiftqe", 
+            "text": "Alternative scaling method.", 
+            "title": "ALT SCALE (Shift+Q/E)"
         }, 
         {
             "location": "/player-guides/bb-codes/", 
