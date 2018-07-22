@@ -103,6 +103,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#blocking-players" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -202,15 +206,43 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="drawer">
+                    <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+  <!-- Site title -->
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
     <span class="md-nav__button md-logo">
       
-        <img src="../../img/TSIcon.png" width="24" height="24">
+        <img src="../../img/TSIcon.png"
+            width="48" height="48" />
       
     </span>
     Tabletop Simulator Knowledge Base
   </label>
+
+  <!-- Repository containing source -->
   
     <div class="md-nav__source">
       
@@ -234,6 +266,8 @@
 
     </div>
   
+
+  <!-- Render item list -->
   <ul class="md-nav__list" data-md-scrollfix>
     
       
@@ -1434,12 +1468,119 @@
 
     <!-- Render table of contents, if not empty -->
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Block List
+      </label>
+    
     <a href="./" title="Block List"
         class="md-nav__link md-nav__link--active">
       Block List
     </a>
 
     <!-- Show table of contents -->
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blocking-players" title="Blocking Players" class="md-nav__link">
+    Blocking Players
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#as-game-host" title="As Game Host" class="md-nav__link">
+    As Game Host
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-ui" title="Via UI" class="md-nav__link">
+    Via UI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-chat" title="Via Chat" class="md-nav__link">
+    Via Chat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as-member" title="As Member" class="md-nav__link">
+    As Member
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-server-browser" title="Via Server Browser" class="md-nav__link">
+    Via Server Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as-either" title="As Either" class="md-nav__link">
+    As Either
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-configuration-menu" title="Via Configuration Menu" class="md-nav__link">
+    Via Configuration Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-json-edit" title="Via JSON Edit" class="md-nav__link">
+    Via JSON Edit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1478,7 +1619,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../camera-control/" title="Camera Control"
+    <a href="../camera-states/" title="Camera Control"
         class="md-nav__link">
       Camera Control
     </a>
@@ -1927,11 +2068,123 @@
 
     
   </ul>
+
+  <!-- Link to TTS API -->
+  <div text-align="right"><a style="color:grey;float:right" href="https://api.tabletopsimulator.com/">Go To API</a></div>
 </nav>
                   </div>
                 </div>
               </div>
             
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blocking-players" title="Blocking Players" class="md-nav__link">
+    Blocking Players
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#as-game-host" title="As Game Host" class="md-nav__link">
+    As Game Host
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-ui" title="Via UI" class="md-nav__link">
+    Via UI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-chat" title="Via Chat" class="md-nav__link">
+    Via Chat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as-member" title="As Member" class="md-nav__link">
+    As Member
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-server-browser" title="Via Server Browser" class="md-nav__link">
+    Via Server Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as-either" title="As Either" class="md-nav__link">
+    As Either
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-configuration-menu" title="Via Configuration Menu" class="md-nav__link">
+    Via Configuration Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-json-edit" title="Via JSON Edit" class="md-nav__link">
+    Via JSON Edit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
             
           
           <div class="md-content">
@@ -1943,7 +2196,43 @@
                 
                   <h1>Block List</h1>
                 
-                
+                <p>Your Block List is located in your <a href="../../getting-started/configuration-menu">Configuration</a> menu under the Blocked tab.</p>
+<p><center><img alt="Blindfold Example" src="../../img/block-list/block-list.png" /></center></p>
+<h2 id="blocking-players">Blocking Players<a class="headerlink" href="#blocking-players" title="Permanent link"> </a></h2>
+<p>You can add people to your list using different methods.</p>
+<h3 id="as-game-host">As Game Host<a class="headerlink" href="#as-game-host" title="Permanent link"> </a></h3>
+<p>During a game that you are host of, there are two methods to remove/avoid individuals you do not want to play with.</p>
+<h4 id="via-ui">Via UI<a class="headerlink" href="#via-ui" title="Permanent link"> </a></h4>
+<p>If you are the host and a disruptive player joins your server, you can click their name on the top right and click the Ban option. They will now be added to your Block List and will no longer be able to join your server, nor will you see any games they are hosting on the Server Browser.</p>
+<h4 id="via-chat">Via Chat<a class="headerlink" href="#via-chat" title="Permanent link"> </a></h4>
+<p>To ban a player via the chat, just type <code class="codehilite">/ban NAME</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">You can also type <code class="codehilite">/help</code> in the Game chat tab to see commands you can use via the chat.</p>
+</div>
+<hr />
+<h3 id="as-member">As Member<a class="headerlink" href="#as-member" title="Permanent link"> </a></h3>
+<p>If you are joining multiplayer games but want to avoid individuals and their servers, you have a few options available.</p>
+<div class="admonition info">
+<p class="admonition-title">If someone from your block list joins a game you’re in or you join a server and someone you have blocked is in it, a warning message will pop up.</p>
+</div>
+<h4 id="via-server-browser">Via Server Browser<a class="headerlink" href="#via-server-browser" title="Permanent link"> </a></h4>
+<p>If you right click on a server in the Server Browser, you have the option to block the host. This is good if you find offensive server names or a host you didn’t like playing with.</p>
+<hr />
+<h3 id="as-either">As Either<a class="headerlink" href="#as-either" title="Permanent link"> </a></h3>
+<p>Using Steam Name and SteamID, you can manually block any individual.</p>
+<div class="admonition tip">
+<p class="admonition-title">Locating SteamID</p>
+<p>To find players’ info, go to your Steam app and click on View -&gt; Players and view either the Current Game or Recent Games. If you remember their name, you can sort by name or by the last time you played with them. If their profile shows a username in place of numbers, you can go to any Steam ID converter to locate their Steam 64 ID.</p>
+</div>
+<h4 id="via-configuration-menu">Via Configuration Menu<a class="headerlink" href="#via-configuration-menu" title="Permanent link"> </a></h4>
+<p>Add their name and Steam ID and  click BLOCK to your Blocked menu.</p>
+<h4 id="via-json-edit">Via JSON Edit<a class="headerlink" href="#via-json-edit" title="Permanent link"> </a></h4>
+<p>You can also manually add people to your Block list by editing the Blocklist.json. If you do not have a BlockList.json in your <code class="codehilite">Documents/My Games/Tabletop Simulator</code> folder, just create one and save it. Once you have their name and ID, open up the Blocklist.json file and input the following:</p>
+<blockquote>
+<p>“Name”: “Steam Name”,
+“SteamID”: “123456200220000”</p>
+</blockquote>
+<hr />
                 
                   
                 
@@ -1980,8 +2269,44 @@
 
 
 
-<!--This is empty because it is killing the default footer-->
-<!--Do not remove.-->
+<!-- Application footer -->
+<footer class="md-footer">
+    
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+        <!-- Copyright and theme information -->
+        <div class="md-footer-copyright">
+          
+          powered by
+          <a href="https://www.mkdocs.org">MkDocs</a>
+          and
+          <a href="https://squidfunk.github.io/mkdocs-material/">
+            Material for MkDocs</a>
+        </div>
+
+      <!-- Social links -->
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.reddit.com/r/tabletopsimulator/" class="md-footer-social__link fa fa-reddit"></a>
+    
+      <a href="https://twitter.com/squidfunk" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.facebook.com/tabletopsimulator" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/user/berserkgames" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
       
     </div>
     

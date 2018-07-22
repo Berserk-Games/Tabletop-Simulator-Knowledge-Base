@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "About Tabletop Simulator\n \n\n\nTabletop Simulator is not your everyday simulator. It can be used for a wide variety of things. The general purpose use of it is to play any board, card, and any tabletop game you can think of with up to 10 players.\n\n\nTo get a bit more in-depth, Tabletop Simulator is the ultimate digital platform for not only playing games, but for game designers to use as a prototyping and game creation tool.\n\n\nYou can do things like create Unity AssetBundles with particle effects, lighting, sounds, animations and more, script game behavior and tools with Lua, import 3D models, create games from scratch, manipulate physics, create hinges and joints, and much more! Not only that, but the host can set physics and permissions for players, so you can decide how serious or silly you want your games to be.\n\n\nTabletop Simulator is continually growing. We are still adding new features and content, fixing any issues that come up and working with companies to bring official games into TTS.\n\n\nThis Knowledge Base\n \n\n\nThere is a LOT you can do in Tabletop Simulator, both as a creator and a player. It is recommended you watch video tutorials and read through this Knowledge Base to explore all the possibilities. If you have questions or want to connect with others, visit the \nforums\n or join the \nofficial Discord channel\n.", 
+            "text": "TO DO:\n\n\nAdd a page for the new migration feature\n\n\nMake sure a page outlines what it means to be promoted\n\n\n\n\n\n\n\n\n\n\nAbout Tabletop Simulator\n \n\n\nTabletop Simulator is not your everyday simulator. It can be used for a wide variety of things. The general purpose use of it is to play any board, card, and any tabletop game you can think of with up to 10 players.\n\n\nTo get a bit more in-depth, Tabletop Simulator is the ultimate digital platform for not only playing games, but for game designers to use as a prototyping and game creation tool.\n\n\nYou can do things like create Unity AssetBundles with particle effects, lighting, sounds, animations and more, script game behavior and tools with Lua, import 3D models, create games from scratch, manipulate physics, create hinges and joints, and much more! Not only that, but the host can set physics and permissions for players, so you can decide how serious or silly you want your games to be.\n\n\nTabletop Simulator is continually growing. We are still adding new features and content, fixing any issues that come up and working with companies to bring official games into TTS.\n\n\nThis Knowledge Base\n \n\n\nThere is a LOT you can do in Tabletop Simulator, both as a creator and a player. It is recommended you watch video tutorials and read through this Knowledge Base to explore all the possibilities. If you have questions or want to connect with others, visit the \nforums\n or join the \nofficial Discord channel\n.", 
             "title": "Tabletop Simulator"
         }, 
         {
@@ -1107,28 +1107,128 @@
         }, 
         {
             "location": "/player-guides/blindfold/", 
-            "text": "", 
+            "text": "Blindfolds can be used to prevent a player from viewing the board. This is great for games where people need to \u201cclose their eyes\u201d. To easily use the blindfold, just press the \nB\n key or right click on a non-object to bring up the Global Contextual Menu and choose Blindfold.\n\n\n\n\nFeatures\n \n\n\n\n\nA player wearing a blindfold can\u2019t see anything but a button to remove the blindfold, the chat and other UI elements.\n\n\nWhen a player puts a blindfold on, they get a message informing them that they can no longer see blindfold messages for other players.\n\n\nIt\u2019s clearly marked who\u2019s wearing a blindfold with an icon next to their name in the top right.\n\n\nThe names list are hidden when you are blindfolded so that you cannot tell who else is blindfolded or not.\n\n\nA curtain will drop down blocking the player\u2019s view from the rest of the game.\n\n\nYou can click the button to take off the Blindfold or press B again.\n\n\nThe blindfold can be activated via scripting.\n\n\nIt also works in VR.", 
             "title": "Blindfold"
         }, 
         {
+            "location": "/player-guides/blindfold/#features", 
+            "text": "A player wearing a blindfold can\u2019t see anything but a button to remove the blindfold, the chat and other UI elements.  When a player puts a blindfold on, they get a message informing them that they can no longer see blindfold messages for other players.  It\u2019s clearly marked who\u2019s wearing a blindfold with an icon next to their name in the top right.  The names list are hidden when you are blindfolded so that you cannot tell who else is blindfolded or not.  A curtain will drop down blocking the player\u2019s view from the rest of the game.  You can click the button to take off the Blindfold or press B again.  The blindfold can be activated via scripting.  It also works in VR.", 
+            "title": "Features"
+        }, 
+        {
             "location": "/player-guides/block-list/", 
-            "text": "", 
+            "text": "Your Block List is located in your \nConfiguration\n menu under the Blocked tab.\n\n\n\n\nBlocking Players\n \n\n\nYou can add people to your list using different methods.\n\n\nAs Game Host\n \n\n\nDuring a game that you are host of, there are two methods to remove/avoid individuals you do not want to play with.\n\n\nVia UI\n \n\n\nIf you are the host and a disruptive player joins your server, you can click their name on the top right and click the Ban option. They will now be added to your Block List and will no longer be able to join your server, nor will you see any games they are hosting on the Server Browser.\n\n\nVia Chat\n \n\n\nTo ban a player via the chat, just type \n/ban NAME\n.\n\n\n\n\nYou can also type \n/help\n in the Game chat tab to see commands you can use via the chat.\n\n\n\n\n\n\nAs Member\n \n\n\nIf you are joining multiplayer games but want to avoid individuals and their servers, you have a few options available.\n\n\n\n\nIf someone from your block list joins a game you\u2019re in or you join a server and someone you have blocked is in it, a warning message will pop up.\n\n\n\n\nVia Server Browser\n \n\n\nIf you right click on a server in the Server Browser, you have the option to block the host. This is good if you find offensive server names or a host you didn\u2019t like playing with.\n\n\n\n\nAs Either\n \n\n\nUsing Steam Name and SteamID, you can manually block any individual.\n\n\n\n\nLocating SteamID\n\n\nTo find players\u2019 info, go to your Steam app and click on View -\n Players and view either the Current Game or Recent Games. If you remember their name, you can sort by name or by the last time you played with them. If their profile shows a username in place of numbers, you can go to any Steam ID converter to locate their Steam 64 ID.\n\n\n\n\nVia Configuration Menu\n \n\n\nAdd their name and Steam ID and  click BLOCK to your Blocked menu.\n\n\nVia JSON Edit\n \n\n\nYou can also manually add people to your Block list by editing the Blocklist.json. If you do not have a BlockList.json in your \nDocuments/My Games/Tabletop Simulator\n folder, just create one and save it. Once you have their name and ID, open up the Blocklist.json file and input the following:\n\n\n\n\n\u201cName\u201d: \u201cSteam Name\u201d,\n\u201cSteamID\u201d: \u201c123456200220000\u201d", 
             "title": "Block List"
         }, 
         {
-            "location": "/player-guides/camera-control/", 
-            "text": "", 
+            "location": "/player-guides/block-list/#blocking-players", 
+            "text": "You can add people to your list using different methods.", 
+            "title": "Blocking Players"
+        }, 
+        {
+            "location": "/player-guides/block-list/#as-game-host", 
+            "text": "During a game that you are host of, there are two methods to remove/avoid individuals you do not want to play with.", 
+            "title": "As Game Host"
+        }, 
+        {
+            "location": "/player-guides/block-list/#via-ui", 
+            "text": "If you are the host and a disruptive player joins your server, you can click their name on the top right and click the Ban option. They will now be added to your Block List and will no longer be able to join your server, nor will you see any games they are hosting on the Server Browser.", 
+            "title": "Via UI"
+        }, 
+        {
+            "location": "/player-guides/block-list/#via-chat", 
+            "text": "To ban a player via the chat, just type  /ban NAME .   You can also type  /help  in the Game chat tab to see commands you can use via the chat.", 
+            "title": "Via Chat"
+        }, 
+        {
+            "location": "/player-guides/block-list/#as-member", 
+            "text": "If you are joining multiplayer games but want to avoid individuals and their servers, you have a few options available.   If someone from your block list joins a game you\u2019re in or you join a server and someone you have blocked is in it, a warning message will pop up.", 
+            "title": "As Member"
+        }, 
+        {
+            "location": "/player-guides/block-list/#via-server-browser", 
+            "text": "If you right click on a server in the Server Browser, you have the option to block the host. This is good if you find offensive server names or a host you didn\u2019t like playing with.", 
+            "title": "Via Server Browser"
+        }, 
+        {
+            "location": "/player-guides/block-list/#as-either", 
+            "text": "Using Steam Name and SteamID, you can manually block any individual.   Locating SteamID  To find players\u2019 info, go to your Steam app and click on View -  Players and view either the Current Game or Recent Games. If you remember their name, you can sort by name or by the last time you played with them. If their profile shows a username in place of numbers, you can go to any Steam ID converter to locate their Steam 64 ID.", 
+            "title": "As Either"
+        }, 
+        {
+            "location": "/player-guides/block-list/#via-configuration-menu", 
+            "text": "Add their name and Steam ID and  click BLOCK to your Blocked menu.", 
+            "title": "Via Configuration Menu"
+        }, 
+        {
+            "location": "/player-guides/block-list/#via-json-edit", 
+            "text": "You can also manually add people to your Block list by editing the Blocklist.json. If you do not have a BlockList.json in your  Documents/My Games/Tabletop Simulator  folder, just create one and save it. Once you have their name and ID, open up the Blocklist.json file and input the following:   \u201cName\u201d: \u201cSteam Name\u201d,\n\u201cSteamID\u201d: \u201c123456200220000\u201d", 
+            "title": "Via JSON Edit"
+        }, 
+        {
+            "location": "/player-guides/camera-states/", 
+            "text": "Camera states enable you to save different camera views into save files (individual mods/games) and share them with everyone else in the room.\n\n\n\n\nCreating Camera States\n \n\n\nTo save a camera state, move your camera where you want to save, then right click on a table or non-object and this will bring up the Global Contextual Menu. Click on Save Camera and choose the number you wish to save it into. Alternatively, you can use the hotkey \nCtrl + #\n.\n\n\nLoading Camera States\n \n\n\nTo load up a camera save, open the Global Contextual Menu, click on Load Camera and choose the number. The hotkey for this is \nShift + #\n.\n\n\nDetails\n \n\n\nCamera states are saved per game, so they are not saved globally. This allows you to have different type of camera views depending on the game.\n\n\nYou can also change your default seat position (spacebar) so everyone is sharing the same view, by positioning where you want the camera to be and using the hotkey \nCtrl + 0\n. Now whenever anyone in the room presses the spacebar, they will all default to the same position. Users can change their own individual settings if they do not like the saved camera views.\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.", 
             "title": "Camera Control"
         }, 
         {
+            "location": "/player-guides/camera-states/#creating-camera-states", 
+            "text": "To save a camera state, move your camera where you want to save, then right click on a table or non-object and this will bring up the Global Contextual Menu. Click on Save Camera and choose the number you wish to save it into. Alternatively, you can use the hotkey  Ctrl + # .", 
+            "title": "Creating Camera States"
+        }, 
+        {
+            "location": "/player-guides/camera-states/#loading-camera-states", 
+            "text": "To load up a camera save, open the Global Contextual Menu, click on Load Camera and choose the number. The hotkey for this is  Shift + # .", 
+            "title": "Loading Camera States"
+        }, 
+        {
+            "location": "/player-guides/camera-states/#details", 
+            "text": "Camera states are saved per game, so they are not saved globally. This allows you to have different type of camera views depending on the game.  You can also change your default seat position (spacebar) so everyone is sharing the same view, by positioning where you want the camera to be and using the hotkey  Ctrl + 0 . Now whenever anyone in the room presses the spacebar, they will all default to the same position. Users can change their own individual settings if they do not like the saved camera views.  \n     \n        Sorry, your browser doesn't support embedded videos.", 
+            "title": "Details"
+        }, 
+        {
             "location": "/player-guides/changing-color/", 
-            "text": "", 
+            "text": "In order to interact with a game you create or join, you need to select a \"color\" to represent you.\n\n\n\n\nSelect Color\n \n\n\nClick on your name on the top right and then choose \u201cChange Color\u201d and change to a different color (both left and right click works). This also changes your seat location, but you can see exactly where you will be moving to if that affects your color choice. You can also join/change your team.\n\n\n\n\nHost Options\n \n\n\nWhen you are the host of a game or promoted by the host, you are able change the team/color of other players.\n\n\nDisabled Selection\n \n\n\nPlease note that the host can turn off the change color option, in which case you won\u2019t be able to choose a color if you join a server nor will you be able to change your color if you already had one. The only one you\u2019d be able to choose is spectator as shown in the image below.", 
             "title": "Changing Color"
         }, 
         {
+            "location": "/player-guides/changing-color/#select-color", 
+            "text": "Click on your name on the top right and then choose \u201cChange Color\u201d and change to a different color (both left and right click works). This also changes your seat location, but you can see exactly where you will be moving to if that affects your color choice. You can also join/change your team.", 
+            "title": "Select Color"
+        }, 
+        {
+            "location": "/player-guides/changing-color/#host-options", 
+            "text": "When you are the host of a game or promoted by the host, you are able change the team/color of other players.", 
+            "title": "Host Options"
+        }, 
+        {
+            "location": "/player-guides/changing-color/#disabled-selection", 
+            "text": "Please note that the host can turn off the change color option, in which case you won\u2019t be able to choose a color if you join a server nor will you be able to change your color if you already had one. The only one you\u2019d be able to choose is spectator as shown in the image below.", 
+            "title": "Disabled Selection"
+        }, 
+        {
             "location": "/player-guides/context-menu/", 
-            "text": "", 
+            "text": "The Context Menu is the menu that appears when you \nright-click\n while in-game, generally on an Object. You can do pretty much anything in the Contextual Menu, with deck and dice options, tinting, saving to chest, scripting and much more.\n\n\n\n\nContext Menu Layout\n \n\n\nThere are many different options to choose from and depending on the object, there may be unique options.\n\n\n\n\nTop Section: Options that are specific to this object\n\n\nLower Sections: Options that are available on all objects.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nOptions\n \n\n\nDepending on the object you right click on, the Contextual Menu may show different options. You can always save the object to your Chest, tint the color of it, modify the physics, flip it over or rotate it, copy and delete it. You can also give the object a name and description. The \u201cName\u201d field will show over the object as a tool tip with the description appearing if the mouse continues to hover there for over a second.\n\n\nToggles\n \n\n\nThe Toggles sub-menu allows you to change how this object interacts with the rest of the game.\n\n\n\n\n\n\nLock\n: If the object stays locked in place. Locked objects can also be stamped/decaled/snap pointed.\n\n\nGrid\n: If the object will snap to grid when dropped. The grid feature for the table must also be enabled.\n\n\nSnap\n: If the object moves towards snap points when dropped.\n\n\nAuto Raise\n: If the object is lifted over others while being carried.\n\n\nTooltip\n: If the object's name/description are displayed.\n\n\nSticky\n: If objects placed on top of this object stay there when this object is picked up.\n\n\nHands\n: If this object can be held in a player's hand zone.\n\n\nPersistent\n: If this object persists through changing tables/games.\n\n\nGrid Projection\n: If this object can have a grid projected on it if grid displays are enabled.\n\n\n\n\nGlobal Context Menu\n \n\n\nThe Global Contextual Menu has extra functions that can be used without clicking on a particular object.\n\n\n\n\n\n\nCamera Mode\n: Switch between 3'rd, 1'st and top-down viewing modes. \nShortcut: P\n\n\nLoad Camera\n: Load pre-set camera viewing angles. \nShortcut: 1-9\n\n\nSave Camera\n: Create a pre-set camera viewing angle. \nShortcut: Shift + 1-9\n\n\nBlindfold\n: Apply/remove blindfold from yourself. \nShortcut: B\n\n\nPaste\n: Paste any copied object/objects.\nShortcut: Ctrl + V", 
             "title": "Context Menu"
+        }, 
+        {
+            "location": "/player-guides/context-menu/#context-menu-layout", 
+            "text": "There are many different options to choose from and depending on the object, there may be unique options.   Top Section: Options that are specific to this object  Lower Sections: Options that are available on all objects.   \n     \n        Sorry, your browser doesn't support embedded videos.", 
+            "title": "Context Menu Layout"
+        }, 
+        {
+            "location": "/player-guides/context-menu/#options", 
+            "text": "Depending on the object you right click on, the Contextual Menu may show different options. You can always save the object to your Chest, tint the color of it, modify the physics, flip it over or rotate it, copy and delete it. You can also give the object a name and description. The \u201cName\u201d field will show over the object as a tool tip with the description appearing if the mouse continues to hover there for over a second.", 
+            "title": "Options"
+        }, 
+        {
+            "location": "/player-guides/context-menu/#toggles", 
+            "text": "The Toggles sub-menu allows you to change how this object interacts with the rest of the game.    Lock : If the object stays locked in place. Locked objects can also be stamped/decaled/snap pointed.  Grid : If the object will snap to grid when dropped. The grid feature for the table must also be enabled.  Snap : If the object moves towards snap points when dropped.  Auto Raise : If the object is lifted over others while being carried.  Tooltip : If the object's name/description are displayed.  Sticky : If objects placed on top of this object stay there when this object is picked up.  Hands : If this object can be held in a player's hand zone.  Persistent : If this object persists through changing tables/games.  Grid Projection : If this object can have a grid projected on it if grid displays are enabled.", 
+            "title": "Toggles"
+        }, 
+        {
+            "location": "/player-guides/context-menu/#global-context-menu", 
+            "text": "The Global Contextual Menu has extra functions that can be used without clicking on a particular object.    Camera Mode : Switch between 3'rd, 1'st and top-down viewing modes.  Shortcut: P  Load Camera : Load pre-set camera viewing angles.  Shortcut: 1-9  Save Camera : Create a pre-set camera viewing angle.  Shortcut: Shift + 1-9  Blindfold : Apply/remove blindfold from yourself.  Shortcut: B  Paste : Paste any copied object/objects. Shortcut: Ctrl + V", 
+            "title": "Global Context Menu"
         }, 
         {
             "location": "/player-guides/notebook/", 
