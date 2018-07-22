@@ -40,6 +40,18 @@ markdown_extensions:
 repo_name: 'GitHub Source'
 repo_url: 'https://github.com/MisterStump/Tabletop-Simulator-Documentation'
 
+extra:
+  social:
+    - type: 'reddit'
+      link: 'https://www.reddit.com/r/tabletopsimulator/'
+    - type: 'twitter'
+      link: 'https://twitter.com/squidfunk'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/tabletopsimulator'
+    - type: 'youtube'
+      link: 'https://www.youtube.com/user/berserkgames'
+
+
 pages:
   - Getting Started:
     - Tabletop Simulator: index.md
@@ -70,7 +82,7 @@ pages:
     - BB Codes: player-guides/bb-codes.md
     - Blindfold: player-guides/blindfold.md
     - Block List: player-guides/block-list.md
-    - Camera Control: player-guides/camera-control.md
+    - Camera Control: player-guides/camera-states.md
     - Changing Color: player-guides/changing-color.md
     - Context Menu: player-guides/context-menu.md
     - Notebook: player-guides/notebook.md

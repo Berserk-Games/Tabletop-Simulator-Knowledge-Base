@@ -1,3 +1,7 @@
+* TO DO:
+    * Add a page for the new migration feature
+    * Make sure a page outlines what it means to be promoted
+
 <center>![Tabletop Simulator](img/index/logo.png)</center>
 
 ##About Tabletop Simulator
