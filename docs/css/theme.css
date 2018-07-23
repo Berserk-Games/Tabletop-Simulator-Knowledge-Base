@@ -30,7 +30,7 @@
 
 /*Coloring of top bar*/
 [data-md-color-primary=indigo] .md-header, [data-md-color-primary=indigo] .md-hero {
-  background-color: #bb0c0d;
+  background-color: #f4641d;
 }
 
 /*Header coloring and formatting*/
@@ -84,7 +84,7 @@
 
 /*Make edit button red, !important required*/
 .md-content__icon {
-    color: #bb0c0d !important;
+    color: #f4641d !important;
 }
 
 /*anchor offset*/
@@ -108,5 +108,22 @@ disabled due to lack of need currently, but works*/
 
 /*Adds padding to bottom of nav bar so you can see Go To link*/
 .md-sidebar__scrollwrap {
-    padding-bottom:10px;
+    padding-bottom:20px;
+}
+
+
+
+.custom-line {
+    border:0;
+    height:0;
+    border-top:1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.custom-link {
+    color:#bb0c0d;
+    position:relative;
+    left:1.3rem;
+    top:-0.5rem;
 }
