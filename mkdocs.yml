@@ -1,4 +1,4 @@
-site_name: Tabletop Simulator Knowledge Base
+site_name: Tabletop Simulator Knowledge&nbsp;Base
 theme:
   name: 'material'
   palette:
@@ -45,7 +45,7 @@ extra:
     - type: 'reddit'
       link: 'https://www.reddit.com/r/tabletopsimulator/'
     - type: 'twitter'
-      link: 'https://twitter.com/squidfunk'
+      link: 'https://twitter.com/tabletopsim'
     - type: 'facebook'
       link: 'https://www.facebook.com/tabletopsimulator'
     - type: 'youtube'
