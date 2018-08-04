@@ -1232,28 +1232,203 @@
         }, 
         {
             "location": "/player-guides/notebook/", 
-            "text": "", 
+            "text": "The Notebook is a multi-use booklet which includes the rules of the game, private notes and the ability to delete and create other pages.\n\n\nDefault Notebook\n \n\n\nThe Notebook starts off as an empty booklet that you can fill up as you\u2019d like. When a game is loaded, the Rules is the default page that is shown first. There are also \"tabs\" down the left side for each color.\n\n\n\n\nPrivate Pages\n \n\n\nThe content of notebook pages can be visible to all (Grey), to only one color, or to only the game master (Black). Hosts and promoted players are able to change what color a tab belongs to but they cannot look into all tabs.\n\n\n\n\nBlack Seat\n\n\nThe GM/DM seat can view the contents of all hidden zones.\n\n\nThis seat is meant to give complete oversight over players.\n\n\n\n\nRemoving Pages\n \n\n\nWhen you mouse over a page's tab (on the left) a trash can icon appears. Clicking it will open a prompt to delete the notebook page. This is only available to hosts and promoted players.\n\n\n\n\nAdding Pages\n \n\n\nClicking \nAdd New\n in the upper left allows you to create a new notebook page. You can give it a name or edit it at the top of the window with that page selected. You can also change who it can be used by clicking the color button in the upper left.", 
             "title": "Notebook"
         }, 
         {
+            "location": "/player-guides/notebook/#default-notebook", 
+            "text": "The Notebook starts off as an empty booklet that you can fill up as you\u2019d like. When a game is loaded, the Rules is the default page that is shown first. There are also \"tabs\" down the left side for each color.", 
+            "title": "Default Notebook"
+        }, 
+        {
+            "location": "/player-guides/notebook/#private-pages", 
+            "text": "The content of notebook pages can be visible to all (Grey), to only one color, or to only the game master (Black). Hosts and promoted players are able to change what color a tab belongs to but they cannot look into all tabs.   Black Seat  The GM/DM seat can view the contents of all hidden zones.  This seat is meant to give complete oversight over players.", 
+            "title": "Private Pages"
+        }, 
+        {
+            "location": "/player-guides/notebook/#removing-pages", 
+            "text": "When you mouse over a page's tab (on the left) a trash can icon appears. Clicking it will open a prompt to delete the notebook page. This is only available to hosts and promoted players.", 
+            "title": "Removing Pages"
+        }, 
+        {
+            "location": "/player-guides/notebook/#adding-pages", 
+            "text": "Clicking  Add New  in the upper left allows you to create a new notebook page. You can give it a name or edit it at the top of the window with that page selected. You can also change who it can be used by clicking the color button in the upper left.", 
+            "title": "Adding Pages"
+        }, 
+        {
             "location": "/player-guides/notes/", 
-            "text": "", 
+            "text": "On screen notes are notes that everyone can see and use in \u201creal time\u201d. Meaning whatever you type on there, everyone can see it.\n\n\nEditing Notes\n \n\n\nOn the bottom right of your screen, there will be a button icon with a red circle in it. Click it to activate it and begin typing in the new window that pops up.\n\n\nRich Text\n \n\n\nBB code can be used to improve the look of text. See the \nBB codes\n page for valid tags.\n\n\n \n\n\nDisabling Notes\n \n\n\nThere is no way to know who is doing the editing in Notes, so if you\u2019re the host and you don\u2019t want players to use it, then this can be disabled in the host options menu.", 
             "title": "Notes (on-screen)"
         }, 
         {
-            "location": "/player-guides/object-selection/", 
-            "text": "", 
-            "title": "Object Selection"
+            "location": "/player-guides/notes/#editing-notes", 
+            "text": "On the bottom right of your screen, there will be a button icon with a red circle in it. Click it to activate it and begin typing in the new window that pops up.", 
+            "title": "Editing Notes"
+        }, 
+        {
+            "location": "/player-guides/notes/#rich-text", 
+            "text": "BB code can be used to improve the look of text. See the  BB codes  page for valid tags.", 
+            "title": "Rich Text"
+        }, 
+        {
+            "location": "/player-guides/notes/#disabling-notes", 
+            "text": "There is no way to know who is doing the editing in Notes, so if you\u2019re the host and you don\u2019t want players to use it, then this can be disabled in the host options menu.", 
+            "title": "Disabling Notes"
         }, 
         {
             "location": "/player-guides/teams/", 
-            "text": "", 
+            "text": "Teams are a way to group Players in a game together so they can better work together. There are 5 teams, Hearts/Clubs/Spades/Diamonds/Jokers.\n\n\n\n\nTeammate Features\n \n\n\nBeing on the same team grants many advantages that allow players to work together in secret.\n\n\n\n\nSee each other's private info\n\n\nHand Zones\n\n\nHidden Zones\n\n\nNotebook Pages\n\n\n\n\n\n\nPrivate voice chat\n\n\nPrivate in-game chat channel\n\n\nOnly available when on a team\n\n\n\n\n\n\n\n\n\n\nJoining a Team\n \n\n\nClick on your own name in the upper right and, from the dropdown, select \nChange Team\n. This opens the selection menu where a team is selected.\n\n\n\n\n\n\nHost Option\n\n\nHosts can not only set their own team, but the team of any player. Promoted players share this ability.\n\n\n\n\nLeaving a Team\n \n\n\nFollow the same steps taken when joining a team but select \nNone\n for which team to join.", 
             "title": "Teams"
         }, 
         {
+            "location": "/player-guides/teams/#teammate-features", 
+            "text": "Being on the same team grants many advantages that allow players to work together in secret.   See each other's private info  Hand Zones  Hidden Zones  Notebook Pages    Private voice chat  Private in-game chat channel  Only available when on a team", 
+            "title": "Teammate Features"
+        }, 
+        {
+            "location": "/player-guides/teams/#joining-a-team", 
+            "text": "Click on your own name in the upper right and, from the dropdown, select  Change Team . This opens the selection menu where a team is selected.    Host Option  Hosts can not only set their own team, but the team of any player. Promoted players share this ability.", 
+            "title": "Joining a Team"
+        }, 
+        {
+            "location": "/player-guides/teams/#leaving-a-team", 
+            "text": "Follow the same steps taken when joining a team but select  None  for which team to join.", 
+            "title": "Leaving a Team"
+        }, 
+        {
             "location": "/host-guides/creating-states/", 
-            "text": "", 
+            "text": "States is a feature which allows hosts and promoted players to take multiple Objects and merge them into one. Once merged, any player can select which Object is displayed, switching between them freely.\n\n\nThis is ideal for creating books, scrolls, creature evolutions and much more.\n\n\nCreating a Stated Object\n \n\n\nLine Up Objects\n \n\n\nLine up the desired Objects into a row.\n\n\n\n\n\n\nOptional Step\n\n\nGive each Object a name/description now, it will be visible when selecting a state.\n\n\n\n\nSelecting Objects\n \n\n\nDrag a selection box over the Objects. Their stated order will be based off of the order in which they are highlighted.\n\n\n\n\nCombine Objects\n \n\n\nRight click on the selected object you want for the primary state. Select \nCreate States\n from the context menu.\n\n\n\n\nResult\n \n\n\nNow you will have a single Object which \"contains\" the others. Hovering your pointer over it will show the \"States\" icon and a state count.\n\n\n\n\n\n\nExamples\n \n\n\nVideo Example\n \n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nRulebook Example\n \n\n\nThe rulebook used in our Scythe DLC starts off closed. When you hover over it, you can see it has the States symbol and how many \u201cstates\u201d are included. In this case, there are 16 states.\n\n\n\n\nAfter pressing one of the number keys, in this case the 2 key, the book \u201copens\u201d up into pages 2-3 of the rulebook. Using States is a fantastic way to really theme up your mods and let your creative juices flow!", 
             "title": "Creating States"
+        }, 
+        {
+            "location": "/host-guides/creating-states/#creating-a-stated-object", 
+            "text": "", 
+            "title": "Creating a Stated Object"
+        }, 
+        {
+            "location": "/host-guides/creating-states/#line-up-objects", 
+            "text": "Line up the desired Objects into a row.    Optional Step  Give each Object a name/description now, it will be visible when selecting a state.", 
+            "title": "Line Up Objects"
+        }, 
+        {
+            "location": "/host-guides/creating-states/#selecting-objects", 
+            "text": "Drag a selection box over the Objects. Their stated order will be based off of the order in which they are highlighted.", 
+            "title": "Selecting Objects"
+        }, 
+        {
+            "location": "/host-guides/creating-states/#combine-objects", 
+            "text": "Right click on the selected object you want for the primary state. Select  Create States  from the context menu.", 
+            "title": "Combine Objects"
+        }, 
+        {
+            "location": "/host-guides/creating-states/#result", 
+            "text": "Now you will have a single Object which \"contains\" the others. Hovering your pointer over it will show the \"States\" icon and a state count.", 
+            "title": "Result"
+        }, 
+        {
+            "location": "/host-guides/creating-states/#examples", 
+            "text": "", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/host-guides/creating-states/#video-example", 
+            "text": "Sorry, your browser doesn't support embedded videos.", 
+            "title": "Video Example"
+        }, 
+        {
+            "location": "/host-guides/creating-states/#rulebook-example", 
+            "text": "The rulebook used in our Scythe DLC starts off closed. When you hover over it, you can see it has the States symbol and how many \u201cstates\u201d are included. In this case, there are 16 states.   After pressing one of the number keys, in this case the 2 key, the book \u201copens\u201d up into pages 2-3 of the rulebook. Using States is a fantastic way to really theme up your mods and let your creative juices flow!", 
+            "title": "Rulebook Example"
+        }, 
+        {
+            "location": "/host-guides/custom-background/", 
+            "text": "Custom backgrounds are a way to change the theme of the room or game setup you\u2019re having.\n\n\n\n\nCustom Lighting\n\n\nCustom backgrounds do not change the lighting of the scene, only the backdrop.\n\n\nYou can adjust the lighting using the \nlighting menu\n.\n\n\n\n\nSelecting an Image\n \n\n\nBackgrounds are placed on a sphere, so it\u2019s important to get HDRI Panorama images for the best effect. You can do a search on your browser of choice for \u201cHDRI 3D\u201d and filter your results to only include hi-resolution images. Best size images are around 4k.\n\n\n\n\nWarning\n\n\nIf you use an image 8k or more, you will most likely crash the game and any others who may not have a strong enough computer, so use best practices when choosing your images.\n\n\n\n\nBe sure to only use images shared under \"creative commons\" or after seeking the artist's permission.\n\n\n\n\nApplying Background\n \n\n\nAt the top of the screen, select \nObjects \n Backgrounds \n Custom\n to access the Custom Background prompt.\n\n\n\n\nYou can paste in a URL or select a file from your computer. If you select a file from your computer and want others to be able to play your game, be sure you use the \"Cloud\" option to upload it automatically to your steam cloud.\n\n\nResult\n \n\n\nAfter submitting your change, you will be left with your custom background in use.\n\n\n\n\nTips\n \n\n\n\n\nDefault Lighting\n\n\nBy default, a Custom Background will use the same lighting that the background previously selected was using. If you want to avoid fiddling with lighting settings, be sure to pick a default background with lighting complementary to your custom background.\n\n\nIf you are unsure, \"Museum\" is always a good basic, even lighting scheme to use.\n\n\n\n\n\n\nImage Selection\n\n\nIf you choose an HDRI 3D image, it will look like your table is in the middle of it all. If you use a regular image, you may see a seam in the middle of it as you spin around and it doesn\u2019t look as nice or clear. Remember to press \nP\n to change your perspective if you want to see what the sky and ground looks like. Then press \nP\n twice to go back to the default perspective.", 
+            "title": "Custom Background"
+        }, 
+        {
+            "location": "/host-guides/custom-background/#selecting-an-image", 
+            "text": "Backgrounds are placed on a sphere, so it\u2019s important to get HDRI Panorama images for the best effect. You can do a search on your browser of choice for \u201cHDRI 3D\u201d and filter your results to only include hi-resolution images. Best size images are around 4k.   Warning  If you use an image 8k or more, you will most likely crash the game and any others who may not have a strong enough computer, so use best practices when choosing your images.   Be sure to only use images shared under \"creative commons\" or after seeking the artist's permission.", 
+            "title": "Selecting an Image"
+        }, 
+        {
+            "location": "/host-guides/custom-background/#applying-background", 
+            "text": "At the top of the screen, select  Objects   Backgrounds   Custom  to access the Custom Background prompt.   You can paste in a URL or select a file from your computer. If you select a file from your computer and want others to be able to play your game, be sure you use the \"Cloud\" option to upload it automatically to your steam cloud.", 
+            "title": "Applying Background"
+        }, 
+        {
+            "location": "/host-guides/custom-background/#result", 
+            "text": "After submitting your change, you will be left with your custom background in use.", 
+            "title": "Result"
+        }, 
+        {
+            "location": "/host-guides/custom-background/#tips", 
+            "text": "Default Lighting  By default, a Custom Background will use the same lighting that the background previously selected was using. If you want to avoid fiddling with lighting settings, be sure to pick a default background with lighting complementary to your custom background.  If you are unsure, \"Museum\" is always a good basic, even lighting scheme to use.    Image Selection  If you choose an HDRI 3D image, it will look like your table is in the middle of it all. If you use a regular image, you may see a seam in the middle of it as you spin around and it doesn\u2019t look as nice or clear. Remember to press  P  to change your perspective if you want to see what the sky and ground looks like. Then press  P  twice to go back to the default perspective.", 
+            "title": "Tips"
+        }, 
+        {
+            "location": "/host-guides/lighting/", 
+            "text": "The background selected determines the lighting used for a scene. Using the Lighting menu, you can modify or overwrite those lighting settings.\n\n\n\n\n\n\nUse with AssetBundles\n\n\nAssetBundles can also have built-in lighting effects for local light sources or movable spotlights. Together with scene lighting, very atmospheric setups are possible.\n\n\n\n\nAccess Lighting\n \n\n\nAccess the Lighting menu in-game at the top of the screen: \nOptions \n Lighting\n.\n\n\nModifications made to the Lighting are part of the table and will be saved along with it.\n\n\nLighting Settings\n \n\n\nBelow is a list of accessible attributes and what they do.\n\n\n\n\n\n\n\n\nSetting Name\n\n\nWhat It Does\n\n\n\n\n\n\n\n\n\n\nLight\nIntensity\n\n\nUse the slider to change the intensity of the light shining from above. This also affects the strength of the shadows.\n\n\n\n\n\n\nLight\nColor\n\n\nThe color you choose with the color picker will affect what your light looks like shining from above.\n\n\n\n\n\n\nAmbient\nIntensity\n\n\nFor the Ambient Intensity, you can choose how strong or light you\u2019d like the ambient or \u201cmood lighting\u201d to be.\n\n\n\n\n\n\nAmbient\n\n\nYou can choose between one of the default backgrounds for lighting or customize it further by choosing the Gradient option.\n\n\n\n\n\n\nGradient\nColors\n\n\nIf \nGradient\n was chosen, this allows you to choose 3 colors to give more ambient lighting choices.\n\n\n\n\n\n\nReflection\nIntensity\n\n\nThis slider will effect how strong the reflections are on shiny objects.\n\n\n\n\n\n\nLUT\n\n\nChoose from 115 different options to make even bigger changes to your lighting and atmosphere. You can view details about LUT on \nthe Unity page\n.\n\n\n\n\n\n\nLUT\nContribution\n\n\nThis slider changes the intensity of your LUT. By default, it is at max setting so you can see it at its strongest.\n\n\n\n\n\n\nCustom\nLUT\n\n\nIf you know how to make your own LUTs, you can upload a custom one to use. Just make sure the dimensions are 256\u00d716.", 
+            "title": "Lighting"
+        }, 
+        {
+            "location": "/host-guides/lighting/#access-lighting", 
+            "text": "Access the Lighting menu in-game at the top of the screen:  Options   Lighting .  Modifications made to the Lighting are part of the table and will be saved along with it.", 
+            "title": "Access Lighting"
+        }, 
+        {
+            "location": "/host-guides/lighting/#lighting-settings", 
+            "text": "Below is a list of accessible attributes and what they do.     Setting Name  What It Does      Light Intensity  Use the slider to change the intensity of the light shining from above. This also affects the strength of the shadows.    Light Color  The color you choose with the color picker will affect what your light looks like shining from above.    Ambient Intensity  For the Ambient Intensity, you can choose how strong or light you\u2019d like the ambient or \u201cmood lighting\u201d to be.    Ambient  You can choose between one of the default backgrounds for lighting or customize it further by choosing the Gradient option.    Gradient Colors  If  Gradient  was chosen, this allows you to choose 3 colors to give more ambient lighting choices.    Reflection Intensity  This slider will effect how strong the reflections are on shiny objects.    LUT  Choose from 115 different options to make even bigger changes to your lighting and atmosphere. You can view details about LUT on  the Unity page .    LUT Contribution  This slider changes the intensity of your LUT. By default, it is at max setting so you can see it at its strongest.    Custom LUT  If you know how to make your own LUTs, you can upload a custom one to use. Just make sure the dimensions are 256\u00d716.", 
+            "title": "Lighting Settings"
+        }, 
+        {
+            "location": "/host-guides/permissions/", 
+            "text": "Hosts can control a multitude of options to prevent players from doing certain actions.\n\n\nClick on \nOptions \n Permissions\n at the top of the screen to bring up the window.\n\n\n\n\nHow Permission Works\n \n\n\nA host always has access to all systems within Tabletop Simulator, but they also have the ability to block access to many of them to individuals who join their game.\n\n\nPromoted players are \nnot\n restricted.\n\n\nPermission Options\n \n\n\nAll options are enabled (checked) by default.\n\n\n\n\n\n\n\n\nPermission Type\n\n\nWhat It Allows\n\n\n\n\n\n\n\n\n\n\nTable\nFlip\n\n\nFlipping the table.\n\n\n\n\n\n\nContextual\n\n\nAccessing an object's context menu.\n\n\n\n\n\n\nScaling\n\n\nChanging object size.\n\n\n\n\n\n\nLocking\n\n\nLocking/unlocking objects.\n\n\n\n\n\n\nFlicking\n\n\nUsing flick tool.\n\n\n\n\n\n\nPeeking\n\n\nPeeking under objects.\n\n\n\n\n\n\nNudging\n\n\nUsing nudge on objects.\n\n\n\n\n\n\nPainting\n\n\nUsing vector paint tool.\n\n\n\n\n\n\nChange\nColor\n\n\nChanging their own color.\nIf disabled, players can't sit on their own.\n\n\n\n\n\n\nChange\nTeam\n\n\nChanging their own team.\n\n\n\n\n\n\nJoints\n\n\nCreating/destroying joints.\n\n\n\n\n\n\nZones\n\n\nCreating/destroying zones.\n\n\n\n\n\n\nNotes\n\n\nUsing on-screen notes.\n\n\n\n\n\n\nDigital\n\n\nUsing Digital Objects (MP3, Counters, etc)\n\n\n\n\n\n\nTablet\n\n\nUsing a tablet.\n\n\n\n\n\n\nSaving\n\n\nSaving copies of Objects.", 
+            "title": "Permissions"
+        }, 
+        {
+            "location": "/host-guides/permissions/#how-permission-works", 
+            "text": "A host always has access to all systems within Tabletop Simulator, but they also have the ability to block access to many of them to individuals who join their game.  Promoted players are  not  restricted.", 
+            "title": "How Permission Works"
+        }, 
+        {
+            "location": "/host-guides/permissions/#permission-options", 
+            "text": "All options are enabled (checked) by default.     Permission Type  What It Allows      Table Flip  Flipping the table.    Contextual  Accessing an object's context menu.    Scaling  Changing object size.    Locking  Locking/unlocking objects.    Flicking  Using flick tool.    Peeking  Peeking under objects.    Nudging  Using nudge on objects.    Painting  Using vector paint tool.    Change Color  Changing their own color. If disabled, players can't sit on their own.    Change Team  Changing their own team.    Joints  Creating/destroying joints.    Zones  Creating/destroying zones.    Notes  Using on-screen notes.    Digital  Using Digital Objects (MP3, Counters, etc)    Tablet  Using a tablet.    Saving  Saving copies of Objects.", 
+            "title": "Permission Options"
+        }, 
+        {
+            "location": "/host-guides/player-hands/", 
+            "text": "Hand zones are a critical part of Tabletop Simulator and have many uses.\n\n\n\n\nActing as the player's \"seat\"\n\n\nBeing where player names are displayed\n\n\nHolding any cards or objects\n\n\nReceiving dealt cards/objects\n\n\nHiding cards from select players\n\n\nInvisible \n*unless a held object is moved into it\n\n\nDisplaying its contents on the player screen\n\n\n\n\nIf needed, you can read about creating hand zones on the \nZone Tool\n page.\n\n\n\n\nHands Menu\n \n\n\nIn-game, go to \nOptions \n Hands\n to bring up the Hands menu. Here, you can modify the functionality for all hand zones.\n\n\n\n\n\n\n\n\n\n\nSetting Name\n\n\nWhat It Does\n\n\n\n\n\n\n\n\n\n\nEnable\n\n\nIf disabled, all functionality of hand zones will not function EXCEPT they will still act as player seats.\n\n\n\n\n\n\nDisable\nUnused\n\n\nDisables the hand zones of empty seats.\n\n\n\n\n\n\nHiding\n\n\nChange if the hiding of cards are \ndefault\n (visible to owner, hidden to rest), \nreversed\n or if hiding is \ndisabled\n entirely.", 
+            "title": "Player Hands"
+        }, 
+        {
+            "location": "/host-guides/player-hands/#hands-menu", 
+            "text": "In-game, go to  Options   Hands  to bring up the Hands menu. Here, you can modify the functionality for all hand zones.      Setting Name  What It Does      Enable  If disabled, all functionality of hand zones will not function EXCEPT they will still act as player seats.    Disable Unused  Disables the hand zones of empty seats.    Hiding  Change if the hiding of cards are  default  (visible to owner, hidden to rest),  reversed  or if hiding is  disabled  entirely.", 
+            "title": "Hands Menu"
+        }, 
+        {
+            "location": "/host-guides/physics/", 
+            "text": "", 
+            "title": "Physics"
+        }, 
+        {
+            "location": "/host-guides/grids/", 
+            "text": "", 
+            "title": "Grids"
+        }, 
+        {
+            "location": "/host-guides/turns-menu/", 
+            "text": "", 
+            "title": "Turns Menu"
+        }, 
+        {
+            "location": "/host-guides/spawning-objects/", 
+            "text": "", 
+            "title": "Spawning Objects"
+        }, 
+        {
+            "location": "/host-guides/tables/", 
+            "text": "", 
+            "title": "Tables"
         }, 
         {
             "location": "/custom-content/cloud-manager/", 
