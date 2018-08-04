@@ -87,9 +87,17 @@ pages:
     - Context Menu: player-guides/context-menu.md
     - Notebook: player-guides/notebook.md
     - Notes (on-screen): player-guides/notes.md
-    - Object Selection: player-guides/object-selection.md
     - Teams: player-guides/teams.md
   - Host Guides:
     - Creating States: host-guides/creating-states.md
+    - Custom Background: host-guides/custom-background.md
+    - Lighting: host-guides/lighting.md
+    - Permissions: host-guides/permissions.md
+    - Player Hands: host-guides/player-hands.md
+    - Physics: host-guides/physics.md
+    - Grids: host-guides/grids.md
+    - Turns Menu: host-guides/turns-menu.md
+    - Spawning Objects: host-guides/spawning-objects.md
+    - Tables: host-guides/tables.md
   - Custom Content:
     - Cloud Manager: custom-content/cloud-manager.md
