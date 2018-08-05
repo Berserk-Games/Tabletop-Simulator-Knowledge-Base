@@ -96,7 +96,7 @@ pages:
     - Player Hands: host-guides/player-hands.md
     - Physics: host-guides/physics.md
     - Grids: host-guides/grids.md
-    - Turns Menu: host-guides/turns-menu.md
+    - Turns: host-guides/turns.md
     - Spawning Objects: host-guides/spawning-objects.md
     - Tables: host-guides/tables.md
   - Custom Content:
