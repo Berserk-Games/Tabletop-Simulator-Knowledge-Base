@@ -1407,28 +1407,113 @@
         }, 
         {
             "location": "/host-guides/physics/", 
-            "text": "", 
+            "text": "The Physics Menu is an advanced feature, which gives you control on the physics and materials of individual objects. To access it, right click on an object and choose the \nPhysics\n option.\n\n\n\n\nRigidbody\n \n\n\nDetermines how the Object behaves when moving through space.\n\n\n\n\n\n\n\n\nSetting Name\n\n\nWhat It Does\n\n\n\n\n\n\n\n\n\n\nUse\nGravity\n\n\nEnable being affected by gravity.\n\n\n\n\n\n\nMass\n\n\nMass of the object. \nUses arbitrary mass units\n\n\n\n\n\n\nDrag\n\n\nHow much air resistance affects the object when moving from forces. 0 means no air resistance, and infinity makes the object stop moving immediately. A low Drag value makes an object seem heavy. A high one makes it seem light. Typical values for Drag are between .001 (solid block of metal) and 10 (feather).\n\n\n\n\n\n\nAngular\nDrag\n\n\nHow much air resistance affects the object when rotating from torque. 0 means no air resistance. \nou cannot make the object stop rotating just by setting its Angular Drag to infinity\n\n\n\n\n\n\n\n\n\n\nSetting Gravity\n\n\nGravity is for the whole table and can be changed at the top of the screen under \nOptions \n Game\n.\n\n\n\n\nMaterial\n \n\n\nDetermines how the Object behaves when impacting/touching other Objects.\n\n\n\n\nDynamic Friction vs Static Friction\n\n\nFriction comes in two forms, dynamic and static. Static friction is used when the object is lying still. It will prevent the object from starting to move. If a large enough force is applied to the object it will start moving. At this point Dynamic Friction will come into play. Dynamic Friction will now attempt to slow down the object while in contact with another.\n\n\n\n\n\n\n\n\n\n\nSetting Name\n\n\nWhat It Does\n\n\n\n\n\n\n\n\n\n\nStatic\nFriction\n\n\nThe friction used when an object is laying still on a surface. Usually a value from 0 to 1. A value of zero feels like ice, a value of 1 will make it very hard to get the object moving.\n\n\n\n\n\n\nDynamic\nFriction\n\n\nThe friction used when already moving. Usually a value from 0 to 1. A value of zero feels like ice, a value of 1 will make it come to rest very quickly unless a lot of force or gravity pushes the object.\n\n\n\n\n\n\nBounciness\n\n\nHow bouncy is the surface? A value of 0 will not bounce. A value of 1 will bounce without any loss of energy.", 
             "title": "Physics"
         }, 
         {
+            "location": "/host-guides/physics/#rigidbody", 
+            "text": "Determines how the Object behaves when moving through space.     Setting Name  What It Does      Use Gravity  Enable being affected by gravity.    Mass  Mass of the object.  Uses arbitrary mass units    Drag  How much air resistance affects the object when moving from forces. 0 means no air resistance, and infinity makes the object stop moving immediately. A low Drag value makes an object seem heavy. A high one makes it seem light. Typical values for Drag are between .001 (solid block of metal) and 10 (feather).    Angular Drag  How much air resistance affects the object when rotating from torque. 0 means no air resistance.  ou cannot make the object stop rotating just by setting its Angular Drag to infinity      Setting Gravity  Gravity is for the whole table and can be changed at the top of the screen under  Options   Game .", 
+            "title": "Rigidbody"
+        }, 
+        {
+            "location": "/host-guides/physics/#material", 
+            "text": "Determines how the Object behaves when impacting/touching other Objects.   Dynamic Friction vs Static Friction  Friction comes in two forms, dynamic and static. Static friction is used when the object is lying still. It will prevent the object from starting to move. If a large enough force is applied to the object it will start moving. At this point Dynamic Friction will come into play. Dynamic Friction will now attempt to slow down the object while in contact with another.      Setting Name  What It Does      Static Friction  The friction used when an object is laying still on a surface. Usually a value from 0 to 1. A value of zero feels like ice, a value of 1 will make it very hard to get the object moving.    Dynamic Friction  The friction used when already moving. Usually a value from 0 to 1. A value of zero feels like ice, a value of 1 will make it come to rest very quickly unless a lot of force or gravity pushes the object.    Bounciness  How bouncy is the surface? A value of 0 will not bounce. A value of 1 will bounce without any loss of energy.", 
+            "title": "Material"
+        }, 
+        {
             "location": "/host-guides/grids/", 
-            "text": "", 
+            "text": "You can add grid lines to the table, and objects, using \nOptions \n Grid\n.\n\n\n\n\nFeatures\n \n\n\n\n\nProject grids onto any surface (top-down).\n\n\nOptional snapping to points on the grid.\n\n\nHex or square grids.\n\n\nFlexible size and placement.\n\n\n\n\n\n\nSelect Where Grids Appear\n\n\nGrids only project onto boards and the table by default. You can enable any other object by right clicking on it and selecting \nToggles \n Grid Projection\n.\n\n\n\n\n\nMenu Options\n \n\n\nThe grid menu allows you to modify if the grids appears as well as how they look/function.\n\n\n\n\n\n\n\n\n\n\nSetting Name\n\n\nWhat It Does\n\n\n\n\n\n\n\n\n\n\nType\n\n\nChoose between vertical and horizontal grids for hex and squares.\n\n\n\n\n\n\nShow\nLines\n\n\nEnable grids appearing.\n\n\n\n\n\n\nColor\n\n\nChange the color of the grid.\n\n\n\n\n\n\nOpacity\n\n\nChange the transparency of the grid lines.\n\n\n\n\n\n\nLine\nThickness\n\n\nSelect between thick or thin grid lines.\n\n\n\n\n\n\nSnapping\n\n\nEnables grid snapping. \nSee tip below for details\n\n\n\n\n\n\nOffset\n\n\nOffsets the grid, to line it up with your table.\n\n\n\n\n\n\nGrid\nSize\n\n\nChange the size of the grid's cells. The chain button on the right keeps the 2 bars synced. Click the numbers to manually input a number.\n\n\n\n\n\n\n\n\n\n\nGrid Snapping\n\n\nGrid snapping to lines causes Objects to snap to the corners of the grid's cells.\n\n\nGrid snapping to center causes Objects to snap to the center of the cells.\n\n\nIf you only want certain objects to snap to the grid, you can disable grid snapping in the context menu of each individual object.", 
             "title": "Grids"
         }, 
         {
-            "location": "/host-guides/turns-menu/", 
-            "text": "", 
+            "location": "/host-guides/grids/#features", 
+            "text": "Project grids onto any surface (top-down).  Optional snapping to points on the grid.  Hex or square grids.  Flexible size and placement.    Select Where Grids Appear  Grids only project onto boards and the table by default. You can enable any other object by right clicking on it and selecting  Toggles   Grid Projection .", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/host-guides/grids/#menu-options", 
+            "text": "The grid menu allows you to modify if the grids appears as well as how they look/function.      Setting Name  What It Does      Type  Choose between vertical and horizontal grids for hex and squares.    Show Lines  Enable grids appearing.    Color  Change the color of the grid.    Opacity  Change the transparency of the grid lines.    Line Thickness  Select between thick or thin grid lines.    Snapping  Enables grid snapping.  See tip below for details    Offset  Offsets the grid, to line it up with your table.    Grid Size  Change the size of the grid's cells. The chain button on the right keeps the 2 bars synced. Click the numbers to manually input a number.      Grid Snapping  Grid snapping to lines causes Objects to snap to the corners of the grid's cells.  Grid snapping to center causes Objects to snap to the center of the cells.  If you only want certain objects to snap to the grid, you can disable grid snapping in the context menu of each individual object.", 
+            "title": "Menu Options"
+        }, 
+        {
+            "location": "/host-guides/turns/", 
+            "text": "The turns system tracks player turn order. To enable turns, click \nOptions \n Turns\n at the top of the screen.\n\n\n\n\nTurns Menu\n \n\n\nThe turns menu allows for control over how turns work, and in what order.\n\n\n\n\n\n\n\n\nSetting Name\n\n\nWhat It Does\n\n\n\n\n\n\n\n\n\n\nTurns\n\n\nEnable the turns system\n\n\n\n\n\n\nType\n\n\nChoose between default turn order or enable order customization.\n\n\n\n\n\n\nOrder\n\n\nIf \nCustom\n \nType\n is selected, drag-and-drop colors to change turn order\n\n\n\n\n\n\nReverse\nOrder\n\n\nReverse order (default is left-to-right)\n\n\n\n\n\n\nSkip\nEmpty Hands\n\n\nSkip over player seats that are not occupied\n\n\n\n\n\n\nPass\nTurns\n\n\nAllow players to pass turns (see Using Turns)\n\n\n\n\n\n\nDisable\nInteractions\n\n\nBlocks player interactions if it is not their turn.\n\n\n\n\n\n\n\n\nUsing Turns\n \n\n\nWhen turns are enabled, the first player hears a sound and gets a prompt on their screen. After taking their turn, players click \nEnd Turn\n at the top of the screen.\n\n\n\n\nIf enabled, you can also give the active turn to another player by clicking on the player's name in the upper right and selecting \nPass Turn\n.\n\n\n\n\n\n\nWho's Turn Is It?\n\n\nThe player with the star next to their name (in the upper right) is used to display who's turn it is.", 
+            "title": "Turns"
+        }, 
+        {
+            "location": "/host-guides/turns/#turns-menu", 
+            "text": "The turns menu allows for control over how turns work, and in what order.     Setting Name  What It Does      Turns  Enable the turns system    Type  Choose between default turn order or enable order customization.    Order  If  Custom   Type  is selected, drag-and-drop colors to change turn order    Reverse Order  Reverse order (default is left-to-right)    Skip Empty Hands  Skip over player seats that are not occupied    Pass Turns  Allow players to pass turns (see Using Turns)    Disable Interactions  Blocks player interactions if it is not their turn.", 
             "title": "Turns Menu"
         }, 
         {
+            "location": "/host-guides/turns/#using-turns", 
+            "text": "When turns are enabled, the first player hears a sound and gets a prompt on their screen. After taking their turn, players click  End Turn  at the top of the screen.   If enabled, you can also give the active turn to another player by clicking on the player's name in the upper right and selecting  Pass Turn .    Who's Turn Is It?  The player with the star next to their name (in the upper right) is used to display who's turn it is.", 
+            "title": "Using Turns"
+        }, 
+        {
             "location": "/host-guides/spawning-objects/", 
-            "text": "", 
+            "text": "Often there is a need to spawn individual objects rather than an entirely new table. There are three ways to import objects onto your current table.\n\n\nComponents Menu\n \n\n\nFound under \nObjects \n Components\n, Components is where all the basic in-game objects are when you need them, from dice to RPG figurines, to tools, etc.\n\n\n\n\nUsing Components\n \n\n\nTo spawn an object, click on one of the categories. Similar to the games menu, when you click on a category, that section will now open up so you can choose from a variety of different objects within that category to spawn. Either click on one of the objects or drag and drop into your scene. Clicking on an object will spawn it in the middle of the table, while drag and dropping will allow you to place the object where you want. To get the best idea of where the object will spawn, bring your lift height down to zero.\n\n\n\n\nSaved Objects Menu\n \n\n\nFound under \nObjects \n Saved Objects\n, this is a list of objects that have been saved to the computer by the user. Items can be organized into folders to aid in organization.\n\n\n\n\nAdding Saved Objects\n \n\n\nWhen in-game, right click on an object and click \nSave Object\n. Please note that this may not be available to players who join other tables due to the fact that the host is able to disable the feature.\n\n\nUsing Saved Objects\n \n\n\nWhen you view your Saved Objects menu you will see your folders and objects in the root folder. You can drag and drop any individual object or just click to spawn it on the table. Click on a folder to see what\u2019s inside that folder. You can click the 3dots icon on the folders to either delete the folder or move it into another folder.\n\n\nUse the sort icon at the top to sort by name, updated, loaded or random. Folders will always remain at the top.\n\n\n\n\nObjects From Workshop \n Saved Games\n \n\n\nYou can also spawn objects from the Games menu from your Workshop and Save \n Load categories. Just hover over the mod or saved game and click on the options icon (3 dots). Then choose expand to see what is in it and drag and drop or click to spawn the objects. If you click on an entire folder in the Workshop and Save \n Load menus, it will just load the entire game, overwriting your previous game.", 
             "title": "Spawning Objects"
         }, 
         {
+            "location": "/host-guides/spawning-objects/#components-menu", 
+            "text": "Found under  Objects   Components , Components is where all the basic in-game objects are when you need them, from dice to RPG figurines, to tools, etc.", 
+            "title": "Components Menu"
+        }, 
+        {
+            "location": "/host-guides/spawning-objects/#using-components", 
+            "text": "To spawn an object, click on one of the categories. Similar to the games menu, when you click on a category, that section will now open up so you can choose from a variety of different objects within that category to spawn. Either click on one of the objects or drag and drop into your scene. Clicking on an object will spawn it in the middle of the table, while drag and dropping will allow you to place the object where you want. To get the best idea of where the object will spawn, bring your lift height down to zero.", 
+            "title": "Using Components"
+        }, 
+        {
+            "location": "/host-guides/spawning-objects/#saved-objects-menu", 
+            "text": "Found under  Objects   Saved Objects , this is a list of objects that have been saved to the computer by the user. Items can be organized into folders to aid in organization.", 
+            "title": "Saved Objects Menu"
+        }, 
+        {
+            "location": "/host-guides/spawning-objects/#adding-saved-objects", 
+            "text": "When in-game, right click on an object and click  Save Object . Please note that this may not be available to players who join other tables due to the fact that the host is able to disable the feature.", 
+            "title": "Adding Saved Objects"
+        }, 
+        {
+            "location": "/host-guides/spawning-objects/#using-saved-objects", 
+            "text": "When you view your Saved Objects menu you will see your folders and objects in the root folder. You can drag and drop any individual object or just click to spawn it on the table. Click on a folder to see what\u2019s inside that folder. You can click the 3dots icon on the folders to either delete the folder or move it into another folder.  Use the sort icon at the top to sort by name, updated, loaded or random. Folders will always remain at the top.", 
+            "title": "Using Saved Objects"
+        }, 
+        {
+            "location": "/host-guides/spawning-objects/#objects-from-workshop-saved-games", 
+            "text": "You can also spawn objects from the Games menu from your Workshop and Save   Load categories. Just hover over the mod or saved game and click on the options icon (3 dots). Then choose expand to see what is in it and drag and drop or click to spawn the objects. If you click on an entire folder in the Workshop and Save   Load menus, it will just load the entire game, overwriting your previous game.", 
+            "title": "Objects From Workshop &amp; Saved Games"
+        }, 
+        {
             "location": "/host-guides/tables/", 
-            "text": "", 
+            "text": "There are 7 default tables and 2 custom table available to play on. Additionally, any model can be imported and used in place of a table by selecting the \nNone\n option.\n\n\n\n\nPlayer Counts\n \n\n\nEach table has a default player count. The player count can be adjusted by adding/removing \nhand zones\n.\n\n\n\n\n\n\n\n\nTable\n\n\nPlayer Count\n\n\n\n\n\n\n\n\n\n\n* Square\n\n\n1-4 players\n\n\n\n\n\n\n* Hexagon\n\n\n1-6 players\n\n\n\n\n\n\n* Octagon\n\n\n1-8 players\n\n\n\n\n\n\n* Round\n\n\n1-8 players\n\n\n\n\n\n\n* Poker\n\n\n1-8 players\n\n\n\n\n\n\n* Rectangle\n\n\n1-8 players\n\n\n\n\n\n\n* Round Glass\n\n\n1-8 players\n\n\n\n\n\n\n* Custom Square\n\n\n1-8 players\n\n\n\n\n\n\n* Custom Rectangle\n\n\n1-10 players\n\n\n\n\n\n\n\n\nCustom Table\n \n\n\nThe \nCustom Square\n and the \nCustom Rectangle\n are tables that allow for a custom image to be used for the table's surface. The custom image is selected when the table is chosen.\n\n\n\n\nCustom Models As Table\n \n\n\nSelect \nNone\n for your table, import the model you want as a table, lock it, and then add Hand Zones around it for players to be able to sit at it.\n\n\nGrids on Custom Model\n \n\n\nRight click on the table model, go to \nToggles \n Grid Projection\n and enable it. If this is not done, the table will not accept grids if they are enabled.\n\n\nMake It Non-Interactable\n \n\n\nIt is also recommended you make the table non-interactable (so it isn't accidentally unlocked) by following steps:\n\n\n\n\nSave the game and then load from that save.\n\n\nRight click the table and select \nScripting \n Scripting Editor\n.\n\n\nInsert this: \nfunction\n \nonload\n()\n \nself\n.\ninteractable\n \n=\n \nfalse\n \nend\n into the editor.\n\n\nClick \nSave \n Play\n in the upper left.\n\n\n\n\nIf you ever need to remove the non-interactable status, follow the steps above and remove the code you pasted. Also, you will not be able to right click the table, so instead go to \nScripting\n at the top of the screen and select the table in the left column to access the code window.", 
             "title": "Tables"
+        }, 
+        {
+            "location": "/host-guides/tables/#player-counts", 
+            "text": "Each table has a default player count. The player count can be adjusted by adding/removing  hand zones .     Table  Player Count      * Square  1-4 players    * Hexagon  1-6 players    * Octagon  1-8 players    * Round  1-8 players    * Poker  1-8 players    * Rectangle  1-8 players    * Round Glass  1-8 players    * Custom Square  1-8 players    * Custom Rectangle  1-10 players", 
+            "title": "Player Counts"
+        }, 
+        {
+            "location": "/host-guides/tables/#custom-table", 
+            "text": "The  Custom Square  and the  Custom Rectangle  are tables that allow for a custom image to be used for the table's surface. The custom image is selected when the table is chosen.", 
+            "title": "Custom Table"
+        }, 
+        {
+            "location": "/host-guides/tables/#custom-models-as-table", 
+            "text": "Select  None  for your table, import the model you want as a table, lock it, and then add Hand Zones around it for players to be able to sit at it.", 
+            "title": "Custom Models As Table"
+        }, 
+        {
+            "location": "/host-guides/tables/#grids-on-custom-model", 
+            "text": "Right click on the table model, go to  Toggles   Grid Projection  and enable it. If this is not done, the table will not accept grids if they are enabled.", 
+            "title": "Grids on Custom Model"
+        }, 
+        {
+            "location": "/host-guides/tables/#make-it-non-interactable", 
+            "text": "It is also recommended you make the table non-interactable (so it isn't accidentally unlocked) by following steps:   Save the game and then load from that save.  Right click the table and select  Scripting   Scripting Editor .  Insert this:  function   onload ()   self . interactable   =   false   end  into the editor.  Click  Save   Play  in the upper left.   If you ever need to remove the non-interactable status, follow the steps above and remove the code you pasted. Also, you will not be able to right click the table, so instead go to  Scripting  at the top of the screen and select the table in the left column to access the code window.", 
+            "title": "Make It Non-Interactable"
         }, 
         {
             "location": "/custom-content/cloud-manager/", 
