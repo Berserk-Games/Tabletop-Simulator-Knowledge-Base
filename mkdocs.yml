@@ -100,6 +100,7 @@ pages:
     - Spawning Objects: host-guides/spawning-objects.md
     - Tables: host-guides/tables.md
   - Custom Content:
+    - Custom Assets: custom-content/custom-assets.md
     - Cloud Manager: custom-content/cloud-manager.md
     - Custom AssetBundle: custom-content/custom-assetbundle.md
     - Custom Board: custom-content/custom-board.md
@@ -111,7 +112,7 @@ pages:
     - Custom Rotation Values: custom-content/custom-rotation-values.md
     - Custom Tile: custom-content/custom-tile.md
     - Custom Token: custom-content/custom-token.md
-    - Image Resolution: custom-content/image-resolution.md
+    - Asset Resolution: custom-content/asset-resolution.md
     - Importing Files: custom-content/importing-files.md
     - Importing Mods: custom-content/importing-mods.md
     - Modding Tools: custom-content/modding-tools.md
