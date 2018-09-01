@@ -3015,6 +3015,45 @@
   </li>
 
         
+          
+          
+          <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine class according to level -->
+
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../community-guides/" title="Community Guides"
+        class="md-nav__link">
+      Community Guides
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3212,21 +3251,27 @@
 <p>When the game engine renders certain images, textures sometimes are forced into a <a href="http://www.tsm-resources.com/alists/pow2.html">power of 2</a> rule for their resolution. The game engine will force textures to a resolution tied to the power of 2, but it will not do as good of a job up/down-scaling your image as you could do with image-editing software. It is not required your images adhere to this "rule", but using it as a guideline for image creation can help produce cleaner in-game results.</p>
 <p>This is especially true when creating textures for models.</p>
 <h2 id="models">Models<a class="headerlink" href="#models" title="Permanent link"> </a></h2>
+<p>There are several hard limits related to model creation.</p>
 <h3 id="model-resolution">Model Resolution<a class="headerlink" href="#model-resolution" title="Permanent link"> </a></h3>
 <table>
 <thead>
 <tr>
 <th>For Use With</th>
-<th>Recommended Resolution</th>
+<th>Maximum Limits</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>3d Model (obj)</td>
-<td>Less than 25k vertices per model. More vertices will cause physic simulation issues, failure to import or game crashes.</td>
+<td>Less than 25k vertices per model. More vertices will cause failure to import or game crashes.</td>
+</tr>
+<tr>
+<td>Collider</td>
+<td>Less than 256 tris per model. More tris will cause the collider to fail.</td>
 </tr>
 </tbody>
 </table>
+<hr />
                 
                   
                 

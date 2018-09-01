@@ -1707,7 +1707,7 @@
         }, 
         {
             "location": "/custom-content/asset-resolution/", 
-            "text": "Custom Assets can be made in many sizes and shapes, but there are recommended guidelines to follow to ensure functionality and quality.\n\n\nImages\n \n\n\nImage File Type\n \n\n\nEither \nPNG\n or \nJPG/JPEG\n are acceptable image formats. The color mode MUST be set to \nRGB\n. CMYK color mode will not work in Tabletop Simulator.\n\n\nImage Resolution\n \n\n\nYou are not required to use an image with these resolutions, but these will provide the best results for the file size used.\n\n\n\n\n\n\n\n\nFor Use With\n\n\nRecommended Resolution\n\n\n\n\n\n\n\n\n\n\nCustom Background\n\n\n4000x2000 (Maximum of 8000x4000)\n\n\n\n\n\n\nCustom Board\n\n\nAny, the board is re-scaled based on the image used.\n\n\n\n\n\n\nCustom Deck (Square)\n\n\n4096\u00d74096 \n(see \nTemplates\n)\n\n\n\n\n\n\nCustom Deck (Rectangle)\n\n\n4096\u00d7(whatever height fits) \n(see \nTemplates\n)\n\n\n\n\n\n\nCustom Dice\n\n\n(see \nTemplates\n)\n\n\n\n\n\n\nCustom Figurine\n\n\n(none)\n\n\n\n\n\n\nCustom Jigsaw\n\n\n(none)\n\n\n\n\n\n\nCustom Model\n\n\nAny, but it is recommended to follow the \npower of two\n guideline.\n\n\n\n\n\n\nCustom Tile\n\n\n(none)\n\n\n\n\n\n\nCustom Token\n\n\n(none)\n\n\n\n\n\n\nCustom Table (Square)\n\n\nA square image (ex. 2048x2048)\n\n\n\n\n\n\nCustom Table (Rectangle)\n\n\n4400\u00d72600\n\n\n\n\n\n\n\n\n\n\nMax Resolution\n\n\nA good general rule is to keep the dimensions of your images under 4096x4096 unless recommended otherwise.\n\n\n\n\nTemplates\n \n\n\nDecks\n and \nDice\n both come with templates. They can be found in Steam directory:\n\n\n\n\nSteam\\steamapps\\common\\Tabletop Simulator\\Modding\n\n\n\n\nPower of Two\n \n\n\nWhen the game engine renders certain images, textures sometimes are forced into a \npower of 2\n rule for their resolution. The game engine will force textures to a resolution tied to the power of 2, but it will not do as good of a job up/down-scaling your image as you could do with image-editing software. It is not required your images adhere to this \"rule\", but using it as a guideline for image creation can help produce cleaner in-game results.\n\n\nThis is especially true when creating textures for models.\n\n\nModels\n \n\n\nModel Resolution\n \n\n\n\n\n\n\n\n\nFor Use With\n\n\nRecommended Resolution\n\n\n\n\n\n\n\n\n\n\n3d Model (obj)\n\n\nLess than 25k vertices per model. More vertices will cause physic simulation issues, failure to import or game crashes.", 
+            "text": "Custom Assets can be made in many sizes and shapes, but there are recommended guidelines to follow to ensure functionality and quality.\n\n\nImages\n \n\n\nImage File Type\n \n\n\nEither \nPNG\n or \nJPG/JPEG\n are acceptable image formats. The color mode MUST be set to \nRGB\n. CMYK color mode will not work in Tabletop Simulator.\n\n\nImage Resolution\n \n\n\nYou are not required to use an image with these resolutions, but these will provide the best results for the file size used.\n\n\n\n\n\n\n\n\nFor Use With\n\n\nRecommended Resolution\n\n\n\n\n\n\n\n\n\n\nCustom Background\n\n\n4000x2000 (Maximum of 8000x4000)\n\n\n\n\n\n\nCustom Board\n\n\nAny, the board is re-scaled based on the image used.\n\n\n\n\n\n\nCustom Deck (Square)\n\n\n4096\u00d74096 \n(see \nTemplates\n)\n\n\n\n\n\n\nCustom Deck (Rectangle)\n\n\n4096\u00d7(whatever height fits) \n(see \nTemplates\n)\n\n\n\n\n\n\nCustom Dice\n\n\n(see \nTemplates\n)\n\n\n\n\n\n\nCustom Figurine\n\n\n(none)\n\n\n\n\n\n\nCustom Jigsaw\n\n\n(none)\n\n\n\n\n\n\nCustom Model\n\n\nAny, but it is recommended to follow the \npower of two\n guideline.\n\n\n\n\n\n\nCustom Tile\n\n\n(none)\n\n\n\n\n\n\nCustom Token\n\n\n(none)\n\n\n\n\n\n\nCustom Table (Square)\n\n\nA square image (ex. 2048x2048)\n\n\n\n\n\n\nCustom Table (Rectangle)\n\n\n4400\u00d72600\n\n\n\n\n\n\n\n\n\n\nMax Resolution\n\n\nA good general rule is to keep the dimensions of your images under 4096x4096 unless recommended otherwise.\n\n\n\n\nTemplates\n \n\n\nDecks\n and \nDice\n both come with templates. They can be found in Steam directory:\n\n\n\n\nSteam\\steamapps\\common\\Tabletop Simulator\\Modding\n\n\n\n\nPower of Two\n \n\n\nWhen the game engine renders certain images, textures sometimes are forced into a \npower of 2\n rule for their resolution. The game engine will force textures to a resolution tied to the power of 2, but it will not do as good of a job up/down-scaling your image as you could do with image-editing software. It is not required your images adhere to this \"rule\", but using it as a guideline for image creation can help produce cleaner in-game results.\n\n\nThis is especially true when creating textures for models.\n\n\nModels\n \n\n\nThere are several hard limits related to model creation.\n\n\nModel Resolution\n \n\n\n\n\n\n\n\n\nFor Use With\n\n\nMaximum Limits\n\n\n\n\n\n\n\n\n\n\n3d Model (obj)\n\n\nLess than 25k vertices per model. More vertices will cause failure to import or game crashes.\n\n\n\n\n\n\nCollider\n\n\nLess than 256 tris per model. More tris will cause the collider to fail.", 
             "title": "Asset Resolution"
         }, 
         {
@@ -1737,12 +1737,12 @@
         }, 
         {
             "location": "/custom-content/asset-resolution/#models", 
-            "text": "", 
+            "text": "There are several hard limits related to model creation.", 
             "title": "Models"
         }, 
         {
             "location": "/custom-content/asset-resolution/#model-resolution", 
-            "text": "For Use With  Recommended Resolution      3d Model (obj)  Less than 25k vertices per model. More vertices will cause physic simulation issues, failure to import or game crashes.", 
+            "text": "For Use With  Maximum Limits      3d Model (obj)  Less than 25k vertices per model. More vertices will cause failure to import or game crashes.    Collider  Less than 256 tris per model. More tris will cause the collider to fail.", 
             "title": "Model Resolution"
         }, 
         {
@@ -1769,6 +1769,11 @@
             "location": "/custom-content/steam-workshop/", 
             "text": "", 
             "title": "Steam Workshop"
+        }, 
+        {
+            "location": "/custom-content/community-guides/", 
+            "text": "Members of the community are often happy to share their expertise when it comes to creating assets.\n\n\nIf you know or have created a quality guide, please be sure to add it to this list!\n\n\n\n\n\n\n\n\nGuide\n\n\nCreated By\n\n\n\n\n\n\n\n\n\n\nAsset Creation Part 1\n\n\nCHRY \n Becca Diore \n John Wick\n\n\n\n\n\n\nCreating Decks and Sheets\n\n\nCHRY\n\n\n\n\n\n\nAsset Creation Part 3\n\n\nCHRY", 
+            "title": "Community Guides"
         }
     ]
 }

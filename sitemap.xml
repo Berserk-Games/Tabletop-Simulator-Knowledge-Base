@@ -379,6 +379,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>/custom-content/community-guides/</loc>
+     <lastmod>2018-09-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
