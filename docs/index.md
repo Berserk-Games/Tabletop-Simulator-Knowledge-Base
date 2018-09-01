@@ -5,7 +5,7 @@
     * Add a descriptive page on how the core game works regarding downloading files
 
 
-<center>![Tabletop Simulator](img/index/logo.png)</center>
+<center>![Tabletop Simulator](/img/index/logo.png)</center>
 
 ##About Tabletop Simulator
 
