@@ -37,9 +37,13 @@ When the game engine renders certain images, textures sometimes are forced into 
 This is especially true when creating textures for models.
 
 ##Models
+There are several hard limits related to model creation.
 
 ###Model Resolution
 
-For Use With | Recommended Resolution
+For Use With | Maximum Limits
 -- | --
-3d Model (obj) | Less than 25k vertices per model. More vertices will cause physic simulation issues, failure to import or game crashes.
+3d Model (obj) | Less than 25k vertices per model. More vertices will cause failure to import or game crashes.
+Collider | Less than 256 tris per model. More tris will cause the collider to fail.
+
+---
