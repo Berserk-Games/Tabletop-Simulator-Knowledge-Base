@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "TO DO:\n\n\nAdd a page for the new migration feature\n\n\nMake sure a page outlines what it means to be promoted\n\n\n\n\n\n\n\n\n\n\nAbout Tabletop Simulator\n \n\n\nTabletop Simulator is not your everyday simulator. It can be used for a wide variety of things. The general purpose use of it is to play any board, card, and any tabletop game you can think of with up to 10 players.\n\n\nTo get a bit more in-depth, Tabletop Simulator is the ultimate digital platform for not only playing games, but for game designers to use as a prototyping and game creation tool.\n\n\nYou can do things like create Unity AssetBundles with particle effects, lighting, sounds, animations and more, script game behavior and tools with Lua, import 3D models, create games from scratch, manipulate physics, create hinges and joints, and much more! Not only that, but the host can set physics and permissions for players, so you can decide how serious or silly you want your games to be.\n\n\nTabletop Simulator is continually growing. We are still adding new features and content, fixing any issues that come up and working with companies to bring official games into TTS.\n\n\nThis Knowledge Base\n \n\n\nThere is a LOT you can do in Tabletop Simulator, both as a creator and a player. It is recommended you watch video tutorials and read through this Knowledge Base to explore all the possibilities. If you have questions or want to connect with others, visit the \nforums\n or join the \nofficial Discord channel\n.", 
+            "text": "TO DO:\n\n\nAdd a page for the new migration feature\n\n\nMake sure a page outlines what it means to be promoted\n\n\nUpdate line drawing tool info\n\n\nAdd a descriptive page on how the core game works regarding downloading files\n\n\n\n\n\n\n\n\n\n\nAbout Tabletop Simulator\n \n\n\nTabletop Simulator is not your everyday simulator. It can be used for a wide variety of things. The general purpose use of it is to play any board, card, and any tabletop game you can think of with up to 10 players.\n\n\nTo get a bit more in-depth, Tabletop Simulator is the ultimate digital platform for not only playing games, but for game designers to use as a prototyping and game creation tool.\n\n\nYou can do things like create Unity AssetBundles with particle effects, lighting, sounds, animations and more, script game behavior and tools with Lua, import 3D models, create games from scratch, manipulate physics, create hinges and joints, and much more! Not only that, but the host can set physics and permissions for players, so you can decide how serious or silly you want your games to be.\n\n\nTabletop Simulator is continually growing. We are still adding new features and content, fixing any issues that come up and working with companies to bring official games into TTS.\n\n\nThis Knowledge Base\n \n\n\nThere is a LOT you can do in Tabletop Simulator, both as a creator and a player. It is recommended you watch video tutorials and read through this Knowledge Base to explore all the possibilities. If you have questions or want to connect with others, visit the \nforums\n or join the \nofficial Discord channel\n.", 
             "title": "Tabletop Simulator"
         }, 
         {
@@ -1516,6 +1516,36 @@
             "title": "Make It Non-Interactable"
         }, 
         {
+            "location": "/custom-content/custom-assets/", 
+            "text": "Tabletop Simulator allows you to use files, either online or offline, to play custom-made games. Any time a custom asset is being created in-game, you have a choice on how the file is hosted.\n\n\nLocal Files\n \n\n\nThese are files that are hosted on your own computer. \nOther players CANNOT see these assets!\n These are for local games only.\n\n\nOnline Files\n \n\n\nThese are files that are hosted online. Other players are able to download and see these assets as long as the host remains active. There are two ways to host your files online.\n\n\nSteam Cloud\n \n\n\nYou get 100GB worth of storage tied to you Steam Account for Tabletop Simulator, and any files uploaded to your steam account through Tabletop Simulator will persist indefinitely. This makes it an ideal file host. See the \nCloud Manager\n page for details on using this hosting method.\n\n\nThird Party Hosts\n \n\n\nYou can use any online host for your files by simply posting the URL of the file into the asset prompt. However third party hosts may have rules or restrictions that prevent your assets from being shared correct or being hosted indefinitely. It is strongly recommended that you use Steam Cloud hosting instead.\n\n\nCached Files\n \n\n\nWhen you download assets for a custom game, they are saved on your computer indefinitely. This way, you do not need to download them again if you load up the same custom game a second time. By default, \nMod Caching\n is on. It can be toggled off if the game's settings menu.\n\n\n\n\nTip\n\n\nIf you are able to see files that are hosted online but someone else cannot, it may be because you have these files Cached. A possible solution would be to use \nSteam Cloud\n to re-host the files.", 
+            "title": "Custom Assets"
+        }, 
+        {
+            "location": "/custom-content/custom-assets/#local-files", 
+            "text": "These are files that are hosted on your own computer.  Other players CANNOT see these assets!  These are for local games only.", 
+            "title": "Local Files"
+        }, 
+        {
+            "location": "/custom-content/custom-assets/#online-files", 
+            "text": "These are files that are hosted online. Other players are able to download and see these assets as long as the host remains active. There are two ways to host your files online.", 
+            "title": "Online Files"
+        }, 
+        {
+            "location": "/custom-content/custom-assets/#steam-cloud", 
+            "text": "You get 100GB worth of storage tied to you Steam Account for Tabletop Simulator, and any files uploaded to your steam account through Tabletop Simulator will persist indefinitely. This makes it an ideal file host. See the  Cloud Manager  page for details on using this hosting method.", 
+            "title": "Steam Cloud"
+        }, 
+        {
+            "location": "/custom-content/custom-assets/#third-party-hosts", 
+            "text": "You can use any online host for your files by simply posting the URL of the file into the asset prompt. However third party hosts may have rules or restrictions that prevent your assets from being shared correct or being hosted indefinitely. It is strongly recommended that you use Steam Cloud hosting instead.", 
+            "title": "Third Party Hosts"
+        }, 
+        {
+            "location": "/custom-content/custom-assets/#cached-files", 
+            "text": "When you download assets for a custom game, they are saved on your computer indefinitely. This way, you do not need to download them again if you load up the same custom game a second time. By default,  Mod Caching  is on. It can be toggled off if the game's settings menu.   Tip  If you are able to see files that are hosted online but someone else cannot, it may be because you have these files Cached. A possible solution would be to use  Steam Cloud  to re-host the files.", 
+            "title": "Cached Files"
+        }, 
+        {
             "location": "/custom-content/cloud-manager/", 
             "text": "The Cloud Manager is where all the files you have uploaded to the Cloud are located. You access this menu by navigating at the top of the screen to \nUpload \n Cloud Manager\n.\n\n\n\n\nFeatures\n \n\n\nEvery user gets \n100 GB\n of total storage, tied to their Steam account. The images are hosted until they are removed by the user. You can view the remaining GB free to the right of the search bar.\n\n\nClicking on an asset with copy its URL to your clipboard.\n\n\nAdding Elements\n \n\n\nIn the Cloud Manager Menu, clicking on the folder icon to the left of the search bar will allow you to upload a file from your computer to your cloud.\n\n\nAdditionally, any time you are prompted to select an image/model/assetbundle for a custom object, you will be asked if you would like to upload the object automatically to your cloud. Selecting \nCloud\n will automatically fill in the URL.\n\n\n\n\nUpload All\n \n\n\nIt is possible to migrate all current files, cached and local, to the Cloud with the click of a button. Click the black up arrow at the top of the Cloud Manager Menu and wait a moment while the assets upload.\n\n\n\n\n\n\nTip\n\n\nRemember to save after performing this action. You are changing the source for all the game assets and if you do not save, the old save will still point to the old assets.\n\n\nThis works great when you have been building something locally that is ready for multiplayer or have files cached from a mod that you friend can't get anymore.\n\n\n\n\nRemoving Elements\n \n\n\nIn the Cloud Manager Menu, mouse-over the item you want to delete. A box with 3 dots will appear. Clicking on it will allow you to select \nDelete\n to permanently remove the element.\n\n\n\n\nDeleting an element CANNOT be undone.", 
             "title": "Cloud Manager"
@@ -1622,8 +1652,18 @@
         }, 
         {
             "location": "/custom-content/custom-board/", 
-            "text": "", 
+            "text": "A custom board is a game board created using any image.\n\n\nBoard Features\n \n\n\n\n\nThe dimensions of the board will be based off the dimensions of the image used.\n\n\nThe board starts off as \"locked\" and can be unlocked via its context menu.\n\n\nBoards accept \"grids\" by default. This too can be changed via the context menu.\n\n\n\n\n\n\nSee \nAsset Resolution\n for suggested image resolution.\n\n\n\n\nCreating a Board\n \n\n\nSelect \nObjects \n Components \n Custom\n to open the Custom Object menu, then select \nBoard\n.\n\n\n\n\nSelect an image, following the rules for all \nCustom Assets\n. With your image selected, click Import.", 
             "title": "Custom Board"
+        }, 
+        {
+            "location": "/custom-content/custom-board/#board-features", 
+            "text": "The dimensions of the board will be based off the dimensions of the image used.  The board starts off as \"locked\" and can be unlocked via its context menu.  Boards accept \"grids\" by default. This too can be changed via the context menu.    See  Asset Resolution  for suggested image resolution.", 
+            "title": "Board Features"
+        }, 
+        {
+            "location": "/custom-content/custom-board/#creating-a-board", 
+            "text": "Select  Objects   Components   Custom  to open the Custom Object menu, then select  Board .   Select an image, following the rules for all  Custom Assets . With your image selected, click Import.", 
+            "title": "Creating a Board"
         }, 
         {
             "location": "/custom-content/custom-deck/", 
@@ -1666,9 +1706,39 @@
             "title": "Custom Token"
         }, 
         {
-            "location": "/custom-content/image-resolution/", 
+            "location": "/custom-content/asset-resolution/", 
+            "text": "Custom Assets can be made in many sizes and shapes, but there are recommended guidelines to follow to ensure functionality and quality.\n\n\nImages\n \n\n\nImage File Type\n \n\n\nEither \nPNG\n or \nJPG/JPEG\n are acceptable image formats. The color mode MUST be set to \nRGB\n. CMYK color mode will not work in Tabletop Simulator.\n\n\nImage Resolution\n \n\n\nYou are not required to use an image with these resolutions, but these will provide the best results for the file size used.\n\n\n\n\n\n\n\n\nFor Use With\n\n\nRecommended Resolution\n\n\n\n\n\n\n\n\n\n\nCustom Background\n\n\n4000x2000 (Maximum of 8000x4000)\n\n\n\n\n\n\nCustom Board\n\n\nAny, the board is re-scaled based on the image used.\n\n\n\n\n\n\nCustom Deck (Square)\n\n\n4096\u00d74096\n\n\n\n\n\n\nCustom Deck (Rectangle)\n\n\n4096\u00d7\n(whatever height fits)\n\n\n\n\n\n\nCustom Dice\n\n\n(none)\n\n\n\n\n\n\nCustom Figurine\n\n\n(none)\n\n\n\n\n\n\nCustom Jigsaw\n\n\n(none)\n\n\n\n\n\n\nCustom Model\n\n\nAny, but it is recommended to follow the \npower of two\n guideline.\n\n\n\n\n\n\nCustom Tile\n\n\n(none)\n\n\n\n\n\n\nCustom Token\n\n\n(none)\n\n\n\n\n\n\nCustom Table (Square)\n\n\nA square image (ex. 2048x2048)\n\n\n\n\n\n\nCustom Table (Rectangle)\n\n\n4400\u00d72600\n\n\n\n\n\n\n\n\n\n\nMax Resolution\n\n\nA good general rule is to keep the dimensions of your images under 4096x4096 unless recommended otherwise.\n\n\n\n\nPower of Two\n \n\n\nWhen the game engine renders certain images, textures sometimes are forced into a \npower of 2\n rule for their resolution. The game engine will force textures to a resolution tied to the power of 2, but it will not do as good of a job up/down-scaling your image as you could do with image-editing software. It is not required your images adhere to this \"rule\", but using it as a guideline for image creation can help produce cleaner in-game results.\n\n\nThis is especially true when creating textures for models.\n\n\nModels\n \n\n\nModel Resolution\n \n\n\n\n\n\n\n\n\nFor Use With\n\n\nRecommended Resolution\n\n\n\n\n\n\n\n\n\n\n3d Model (obj)\n\n\nLess than 25k vertices per model. More vertices will cause physic simulation issues, failure to import or game crashes.", 
+            "title": "Asset Resolution"
+        }, 
+        {
+            "location": "/custom-content/asset-resolution/#images", 
             "text": "", 
+            "title": "Images"
+        }, 
+        {
+            "location": "/custom-content/asset-resolution/#image-file-type", 
+            "text": "Either  PNG  or  JPG/JPEG  are acceptable image formats. The color mode MUST be set to  RGB . CMYK color mode will not work in Tabletop Simulator.", 
+            "title": "Image File Type"
+        }, 
+        {
+            "location": "/custom-content/asset-resolution/#image-resolution", 
+            "text": "You are not required to use an image with these resolutions, but these will provide the best results for the file size used.     For Use With  Recommended Resolution      Custom Background  4000x2000 (Maximum of 8000x4000)    Custom Board  Any, the board is re-scaled based on the image used.    Custom Deck (Square)  4096\u00d74096    Custom Deck (Rectangle)  4096\u00d7 (whatever height fits)    Custom Dice  (none)    Custom Figurine  (none)    Custom Jigsaw  (none)    Custom Model  Any, but it is recommended to follow the  power of two  guideline.    Custom Tile  (none)    Custom Token  (none)    Custom Table (Square)  A square image (ex. 2048x2048)    Custom Table (Rectangle)  4400\u00d72600      Max Resolution  A good general rule is to keep the dimensions of your images under 4096x4096 unless recommended otherwise.", 
             "title": "Image Resolution"
+        }, 
+        {
+            "location": "/custom-content/asset-resolution/#power-of-two", 
+            "text": "When the game engine renders certain images, textures sometimes are forced into a  power of 2  rule for their resolution. The game engine will force textures to a resolution tied to the power of 2, but it will not do as good of a job up/down-scaling your image as you could do with image-editing software. It is not required your images adhere to this \"rule\", but using it as a guideline for image creation can help produce cleaner in-game results.  This is especially true when creating textures for models.", 
+            "title": "Power of Two"
+        }, 
+        {
+            "location": "/custom-content/asset-resolution/#models", 
+            "text": "", 
+            "title": "Models"
+        }, 
+        {
+            "location": "/custom-content/asset-resolution/#model-resolution", 
+            "text": "For Use With  Recommended Resolution      3d Model (obj)  Less than 25k vertices per model. More vertices will cause physic simulation issues, failure to import or game crashes.", 
+            "title": "Model Resolution"
         }, 
         {
             "location": "/custom-content/importing-files/", 
