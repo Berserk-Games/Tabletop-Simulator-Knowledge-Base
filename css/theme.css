@@ -127,3 +127,12 @@ disabled due to lack of need currently, but works*/
     left:1.3rem;
     top:-0.5rem;
 }
+
+/*Image Borders*/
+img {
+   border:1px solid #D2D2D2;
+}
+/*Overwrite for header bar icon, removing its border*/
+.md-header-nav__button.md-logo * {
+    border:0px !important;
+}

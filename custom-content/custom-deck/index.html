@@ -103,6 +103,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#deck-features" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -2236,9 +2240,9 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-assets/" title="Custom Assets"
+    <a href="../asset-hosting/" title="Asset Hosting"
         class="md-nav__link">
-      Custom Assets
+      Asset Hosting
     </a>
   </li>
 
@@ -2405,12 +2409,73 @@
 
     <!-- Render table of contents, if not empty -->
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Custom Deck
+      </label>
+    
     <a href="./" title="Custom Deck"
         class="md-nav__link md-nav__link--active">
       Custom Deck
     </a>
 
     <!-- Show table of contents -->
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deck-features" title="Deck Features" class="md-nav__link">
+    Deck Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-card-sheet" title="Creating a Card Sheet" class="md-nav__link">
+    Creating a Card Sheet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#card-sheet-template" title="Card Sheet Template" class="md-nav__link">
+    Card Sheet Template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deck-builder" title="Deck Builder" class="md-nav__link">
+    Deck Builder
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-deck" title="Creating a Deck" class="md-nav__link">
+    Creating a Deck
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -2984,6 +3049,69 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deck-features" title="Deck Features" class="md-nav__link">
+    Deck Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-card-sheet" title="Creating a Card Sheet" class="md-nav__link">
+    Creating a Card Sheet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#card-sheet-template" title="Card Sheet Template" class="md-nav__link">
+    Card Sheet Template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deck-builder" title="Deck Builder" class="md-nav__link">
+    Deck Builder
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-deck" title="Creating a Deck" class="md-nav__link">
+    Creating a Deck
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -2994,7 +3122,94 @@
                 
                   <h1>Custom Deck</h1>
                 
-                
+                <p>A custom deck is a collections of cards created via "card sheets".</p>
+<p><center><img alt="Custom Board Example" src="../../img/custom-deck/deck.png" /></center></p>
+<h2 id="deck-features">Deck Features<a class="headerlink" href="#deck-features" title="Permanent link"> </a></h2>
+<ul>
+<li>Decks can b e square or rectangular, depending on dimensions of card sheet.</li>
+<li>Cards may be held in <a href="../../game-tools/zone-tools#hand-zone">hand zones</a> by default. This can be changed via its <a href="../../player-guides/context-menu#toggles">context menu</a>.</li>
+<li>Multiple card sheets can be combined into larger decks if needed.</li>
+<li>Card sheets use the last image on a card sheet for a "hidden" image when those cards are in a hand-zone or otherwise hidden.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">See <a href="../asset-resolution">Asset Resolution</a> for suggested card sheet image resolution.</p>
+</div>
+<h2 id="creating-a-card-sheet">Creating a Card Sheet<a class="headerlink" href="#creating-a-card-sheet" title="Permanent link"> </a></h2>
+<p>A deck is created from a card sheet, which is an array of images which get "cut up" into cards by the game engine. There are two methods to create these sheets, Template and Deck Builder.</p>
+<h3 id="card-sheet-template">Card Sheet Template<a class="headerlink" href="#card-sheet-template" title="Permanent link"> </a></h3>
+<p>This is the simplest way to create a card sheet. Place your card images in the relevant template and then save the resulting image. In your Steam install directory are two general-use templates for creating a card sheet.</p>
+<blockquote>
+<p>\Steam\steamapps\common\Tabletop Simulator\Modding\Deck Templates</p>
+</blockquote>
+<details class="question"><summary>Can't Find Your Steam Folder?</summary><ul><li>In <strong>Steam</strong>, go to your <strong>Library</strong></li><li><strong>Right Click</strong> on <strong>Tabletop Simulator</strong> and select <strong>Properties</strong></li><li>In the Properties Menu, click <strong>Local Files</strong> at the top</li><li>Click <strong>Browse Local Files</strong></li></ul></details><p><center><img alt="Card Sheet Template Example" src="../../img/custom-deck/template-sheet.png" /></center></p>
+<h3 id="deck-builder">Deck Builder<a class="headerlink" href="#deck-builder" title="Permanent link"> </a></h3>
+<p>This tool is a little more complicated, but allows for control over the number of cards per sheet. The Deck Editor was created by <strong>Froghut</strong>. The Deck Builder utility is located in your game's Steam folder.</p>
+<blockquote>
+<p>\Steam\steamapps\common\Tabletop Simulator\Modding\Deck Builder</p>
+</blockquote>
+<details class="question"><summary>Can't Find Your Steam Folder?</summary><ul><li>In <strong>Steam</strong>, go to your <strong>Library</strong></li><li><strong>Right Click</strong> on <strong>Tabletop Simulator</strong> and select <strong>Properties</strong></li><li>In the Properties Menu, click <strong>Local Files</strong> at the top</li><li>Click <strong>Browse Local Files</strong></li></ul></details><p><center><img alt="Deck Editor Example" src="../../img/custom-deck/deck-editor.png" /></center></p>
+<ul>
+<li>Click on <strong>New Deck</strong></li>
+<li>Select how many cards the sheet will feature horizontally and vertically and hit <strong>OK</strong></li>
+<li>Drag and Drop in your cards OR go to File and choose Add Cards</li>
+<li>Arrange the cards by drag-and-dropping them int othe desired order<ul>
+<li>Remember that the final card image is used as the "hidden" card face for all cards</li>
+</ul>
+</li>
+<li>You can save/load these deck setups by going to File then Save Deck</li>
+<li>There are many other features, like background color options, view settings, etc accessible from the top menu selections</li>
+<li>When you are finished, go to File &gt; Export to create the card sheet.</li>
+</ul>
+<h2 id="creating-a-deck">Creating a Deck<a class="headerlink" href="#creating-a-deck" title="Permanent link"> </a></h2>
+<p>Once you have a card sheet, start a Tabletop Simulator table then select <strong>Objects &gt; Components &gt; Custom</strong> to open the Custom Object menu, then select <strong>Deck</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Importing Assets</p>
+<p>How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit <a href="../asset-hosting">Asset Hosting</a>.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Setting Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Face</td>
+<td>The path to the card sheet that will make up the face of all the cards.</td>
+</tr>
+<tr>
+<td>Unique Backs</td>
+<td>If each card will have its own back (in card sheet format) or if they will all share the same back image.</td>
+</tr>
+<tr>
+<td>Back</td>
+<td>The path to the card sheet or single card-back image.</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>How many cards are on the card sheet (horizontal).</td>
+</tr>
+<tr>
+<td>Height</td>
+<td>How many cards are on the card sheet (vertical).</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>How many cards are on the card sheet.</td>
+</tr>
+<tr>
+<td>Sideways</td>
+<td>Changes the ALT zoom for cards to match sideways cards.</td>
+</tr>
+<tr>
+<td>Back is Hidden</td>
+<td>Instead of using the last card from the card sheet as the "hidden" card, this option can use the back of the card instead.</td>
+</tr>
+</tbody>
+</table>
+<p><center><img alt="Deck Menu" src="../../img/custom-deck/menu.png" /></center></p>
+<hr />
                 
                   
                 
