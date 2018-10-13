@@ -51,6 +51,9 @@ This tool is a little more complicated, but allows for control over the number o
 ##Creating a Deck
 Once you have a card sheet, start a Tabletop Simulator table then select **Objects > Components > Custom** to open the Custom Object menu, then select **Deck**.
 
+!!!warning "Importing Assets"
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-hosting).
+
 Setting Name | Description
 -- | --
 Face | The path to the card sheet that will make up the face of all the cards.
