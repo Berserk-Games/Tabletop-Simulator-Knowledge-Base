@@ -2,8 +2,8 @@ A custom board is a game board created using any image.
 
 ##Board Features
 * The dimensions of the board will be based off the dimensions of the image used.
-* The board starts off as "locked" and can be unlocked via its context menu.
-* Boards accept "grids" by default. This too can be changed via the context menu.
+* The board starts off as "locked" and can be unlocked via its [context menu](/player-guides/context-menu#toggles).
+* Boards accept "grids" by default. This too can be changed via the [context menu](/player-guides/context-menu#toggles).
 
 !!!info "See [Asset Resolution](asset-resolution) for suggested image resolution."
 

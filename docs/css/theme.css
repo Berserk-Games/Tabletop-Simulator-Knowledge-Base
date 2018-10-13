@@ -127,3 +127,8 @@ disabled due to lack of need currently, but works*/
     left:1.3rem;
     top:-0.5rem;
 }
+
+/*Image Borders*/
+img {
+   border:1px solid #D3D3D3;
+}
