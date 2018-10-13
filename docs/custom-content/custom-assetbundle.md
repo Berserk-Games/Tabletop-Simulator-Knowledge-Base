@@ -134,6 +134,9 @@ The resulting file that is created will be found in the Project folder under *As
 ###Import AssetBundle
 Open Tabletop Simulator and upload your AssetBundle to a webhost or the in-game [Steam Cloud](cloud-manager).
 
+!!!warning "Importing Assets"
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-hosting).
+
 <center>
     <video controls
         loop

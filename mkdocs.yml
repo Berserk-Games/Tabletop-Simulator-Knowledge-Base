@@ -100,7 +100,7 @@ pages:
     - Spawning Objects: host-guides/spawning-objects.md
     - Tables: host-guides/tables.md
   - Custom Content:
-    - Custom Asset Hosting: custom-content/custom-asset-hosting.md
+    - Asset Hosting: custom-content/asset-hosting.md
     - Cloud Manager: custom-content/cloud-manager.md
     - Custom AssetBundle: custom-content/custom-assetbundle.md
     - Custom Board: custom-content/custom-board.md

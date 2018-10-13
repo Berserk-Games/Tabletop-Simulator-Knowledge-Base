@@ -12,7 +12,10 @@ Select **Objects > Components > Custom** to open the Custom Object menu, then se
 
 <center>![Custom Board Example](/img/custom-board/board1.png)</center>
 
-Select an image, following the rules for all [Custom Assets](custom-assets). With your image selected, click Import.
+Select an image then click Import.
+
+!!!warning "Importing Assets"
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-hosting).
 
 <center>![Custom Board Example](/img/custom-board/board4.png)</center>
 
