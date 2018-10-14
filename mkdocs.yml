@@ -100,8 +100,6 @@ pages:
     - Spawning Objects: host-guides/spawning-objects.md
     - Tables: host-guides/tables.md
   - Custom Content:
-    - Asset Hosting: custom-content/asset-hosting.md
-    - Cloud Manager: custom-content/cloud-manager.md
     - Custom AssetBundle: custom-content/custom-assetbundle.md
     - Custom Board: custom-content/custom-board.md
     - Custom Deck: custom-content/custom-deck.md
@@ -109,10 +107,11 @@ pages:
     - Custom Figurine: custom-content/custom-figurine.md
     - Custom Jigsaw: custom-content/custom-jigsaw.md
     - Custom Model: custom-content/custom-model.md
-    - Custom Rotation Values: custom-content/custom-rotation-values.md
     - Custom Tile: custom-content/custom-tile.md
     - Custom Token: custom-content/custom-token.md
+    - Asset Hosting: custom-content/asset-hosting.md
     - Asset Resolution: custom-content/asset-resolution.md
+    - Cloud Manager: custom-content/cloud-manager.md
     - Importing Files: custom-content/importing-files.md
     - Importing Mods: custom-content/importing-mods.md
     - Modding Tools: custom-content/modding-tools.md
