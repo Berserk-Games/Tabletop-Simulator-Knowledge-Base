@@ -1516,61 +1516,6 @@
             "title": "Make It Non-Interactable"
         }, 
         {
-            "location": "/custom-content/asset-hosting/", 
-            "text": "Tabletop Simulator allows you to use files, either online or offline, to play custom-made games. Any time a custom asset is being created in-game, you have a choice on how the file is hosted.\n\n\nLocal Files\n \n\n\nThese are files that are hosted on your own computer. \nOther players CANNOT see these assets!\n These are for local games only.\n\n\nExample file path:\n\n\nC:\\Users\\MrStump\\Documents\\Tabletop Creations\\example.png\n\n\n\n\n\nOnline Files\n \n\n\nThese are files that are hosted online. Other players are able to download and see these assets as long as the host remains active. There are two ways to host your files online.\n\n\nSteam Cloud\n \n\n\nYou get 100GB worth of storage tied to you Steam Account for Tabletop Simulator, and any files uploaded to your steam account through Tabletop Simulator will persist indefinitely. This makes it an ideal file host. See the \nCloud Manager\n page for details on using this hosting method.\n\n\nExample file path:\n\n\nhttp://cloud-3.steamusercontent.com/ugc/936064212973557569/9D9F00D3BAEB906B3393649C931267AB6F24D915/\n\n\n\n\n\nThird Party Hosts\n \n\n\nYou can use any online host for your files by simply posting the URL of the file into the asset prompt. However third party hosts may have rules or restrictions that prevent your assets from being shared correct or being hosted indefinitely.\n\n\n\n\nIt is strongly recommended that you use Steam Cloud hosting instead.\n\n\n\n\nExample file path:\n\n\nhttps://i.imgur.com/OfkTbKq.png\n\n\n\n\n\nCached Files\n \n\n\nWhen you download assets for a custom game, they are saved on your computer indefinitely. This way, you do not need to download them again if you load up the same custom game a second time. By default, \nMod Caching\n is on. It can be toggled off if the game's settings menu.\n\n\n\n\nTip\n\n\nIf you are able to see files that are hosted online but someone else cannot, it may be because you have these files Cached. A possible solution would be to use \nSteam Cloud\n to re-host the files.", 
-            "title": "Asset Hosting"
-        }, 
-        {
-            "location": "/custom-content/asset-hosting/#local-files", 
-            "text": "These are files that are hosted on your own computer.  Other players CANNOT see these assets!  These are for local games only.  Example file path:  C:\\Users\\MrStump\\Documents\\Tabletop Creations\\example.png", 
-            "title": "Local Files"
-        }, 
-        {
-            "location": "/custom-content/asset-hosting/#online-files", 
-            "text": "These are files that are hosted online. Other players are able to download and see these assets as long as the host remains active. There are two ways to host your files online.", 
-            "title": "Online Files"
-        }, 
-        {
-            "location": "/custom-content/asset-hosting/#steam-cloud", 
-            "text": "You get 100GB worth of storage tied to you Steam Account for Tabletop Simulator, and any files uploaded to your steam account through Tabletop Simulator will persist indefinitely. This makes it an ideal file host. See the  Cloud Manager  page for details on using this hosting method.  Example file path:  http://cloud-3.steamusercontent.com/ugc/936064212973557569/9D9F00D3BAEB906B3393649C931267AB6F24D915/", 
-            "title": "Steam Cloud"
-        }, 
-        {
-            "location": "/custom-content/asset-hosting/#third-party-hosts", 
-            "text": "You can use any online host for your files by simply posting the URL of the file into the asset prompt. However third party hosts may have rules or restrictions that prevent your assets from being shared correct or being hosted indefinitely.   It is strongly recommended that you use Steam Cloud hosting instead.   Example file path:  https://i.imgur.com/OfkTbKq.png", 
-            "title": "Third Party Hosts"
-        }, 
-        {
-            "location": "/custom-content/asset-hosting/#cached-files", 
-            "text": "When you download assets for a custom game, they are saved on your computer indefinitely. This way, you do not need to download them again if you load up the same custom game a second time. By default,  Mod Caching  is on. It can be toggled off if the game's settings menu.   Tip  If you are able to see files that are hosted online but someone else cannot, it may be because you have these files Cached. A possible solution would be to use  Steam Cloud  to re-host the files.", 
-            "title": "Cached Files"
-        }, 
-        {
-            "location": "/custom-content/cloud-manager/", 
-            "text": "The Cloud Manager is where all the files you have uploaded to the Cloud are located. You access this menu by navigating at the top of the screen to \nUpload \n Cloud Manager\n.\n\n\n\n\nFeatures\n \n\n\nEvery user gets \n100 GB\n of total storage, tied to their Steam account. The images are hosted until they are removed by the user. You can view the remaining GB free to the right of the search bar.\n\n\nClicking on an asset with copy its URL to your clipboard.\n\n\nAdding Elements\n \n\n\nIn the Cloud Manager Menu, clicking on the folder icon to the left of the search bar will allow you to upload a file from your computer to your cloud.\n\n\nAdditionally, any time you are prompted to select an image/model/assetbundle for a custom object, you will be asked if you would like to upload the object automatically to your cloud. Selecting \nCloud\n will automatically fill in the URL.\n\n\n\n\nUpload All\n \n\n\nIt is possible to migrate all current files, cached and local, to the Cloud with the click of a button. Click the black up arrow at the top of the Cloud Manager Menu and wait a moment while the assets upload.\n\n\n\n\n\n\nTip\n\n\nRemember to save after performing this action. You are changing the source for all the game assets and if you do not save, the old save will still point to the old assets.\n\n\nThis works great when you have been building something locally that is ready for multiplayer or have files cached from a mod that you friend can't get anymore.\n\n\n\n\nRemoving Elements\n \n\n\nIn the Cloud Manager Menu, mouse-over the item you want to delete. A box with 3 dots will appear. Clicking on it will allow you to select \nDelete\n to permanently remove the element.\n\n\n\n\nDeleting an element CANNOT be undone.", 
-            "title": "Cloud Manager"
-        }, 
-        {
-            "location": "/custom-content/cloud-manager/#features", 
-            "text": "Every user gets  100 GB  of total storage, tied to their Steam account. The images are hosted until they are removed by the user. You can view the remaining GB free to the right of the search bar.  Clicking on an asset with copy its URL to your clipboard.", 
-            "title": "Features"
-        }, 
-        {
-            "location": "/custom-content/cloud-manager/#adding-elements", 
-            "text": "In the Cloud Manager Menu, clicking on the folder icon to the left of the search bar will allow you to upload a file from your computer to your cloud.  Additionally, any time you are prompted to select an image/model/assetbundle for a custom object, you will be asked if you would like to upload the object automatically to your cloud. Selecting  Cloud  will automatically fill in the URL.", 
-            "title": "Adding Elements"
-        }, 
-        {
-            "location": "/custom-content/cloud-manager/#upload-all", 
-            "text": "It is possible to migrate all current files, cached and local, to the Cloud with the click of a button. Click the black up arrow at the top of the Cloud Manager Menu and wait a moment while the assets upload.    Tip  Remember to save after performing this action. You are changing the source for all the game assets and if you do not save, the old save will still point to the old assets.  This works great when you have been building something locally that is ready for multiplayer or have files cached from a mod that you friend can't get anymore.", 
-            "title": "Upload All"
-        }, 
-        {
-            "location": "/custom-content/cloud-manager/#removing-elements", 
-            "text": "In the Cloud Manager Menu, mouse-over the item you want to delete. A box with 3 dots will appear. Clicking on it will allow you to select  Delete  to permanently remove the element.   Deleting an element CANNOT be undone.", 
-            "title": "Removing Elements"
-        }, 
-        {
             "location": "/custom-content/custom-assetbundle/", 
             "text": "View the \nAssetBundles Tutorial Video\n\n\n\n\nAn AssetBundle is the most advanced, fully featured asset type for Tabletop Simulator. An asset is created in Unity, and then expected in a special format to be imported into your game.\n\n\n\n\nAssetBundle Features\n \n\n\nAssetBundles can do many things other custom Objects cannot.\n\n\n\n\nCustomizable physics sounds\n\n\nAccess to the full array of Unity materials\n\n\nPlay custom sounds\n\n\nTriggerable animations and looping animations\n\n\nParticles\n\n\nLights\n\n\nAnd more\n\n\n\n\nBasically, if you can make the object in Unity using all of the default resources available, you can import it into your game.\n\n\n\n\nInstructions\n \n\n\nIn order to create an AssetBundle, you will need to:\n\n\n\n\nDownload/Install Unity\n\n\nDownload GitHub Project file\n\n\nOpen project file in Unity\n\n\nCreate Asset using Unity\n\n\nExport to AssetBundle\n\n\nImport in Tabletop Simulator\n\n\n\n\nFollow the instructions for each step closely.\n\n\nInstall Unity\n \n\n\nThe first thing you need is Unity. But not just any version of Unity, it needs to be \nUnity 5.6.5\n.\n\n\nYou want the \ninstaller\n.\n\n\n\n\nWrong Unity Version\n\n\nUsing the wrong version of Unity will result in possible issues in your exported AssetBundles, if it works at all.\n\n\n\n\nRun the installer and you will be asked which components to include. Be sure \nWindows, Linux and Mac\n are all checked.\n\n\n\n\nDownload Project\n \n\n\nDownload the project file from \nGitHub\n.\n\n\n\n\nIf needed, unzip the files, and then place them into the directory of your choice.\n\n\nOpen Project\n \n\n\nRun Unity. A window opens, asking if you want to create a new project or open one.\n\n\nSelect \nOpen\n and choose the folder obtained from GitHub.\n\n\n\n\nCreate Asset\n \n\n\nAny number of methods can be used to create an Asset, so the steps you take here are based on the end-result of what you are trying to make.\n\n\nAsset Examples\n \n\n\nThe project file contains some examples of assets as well as an example scene that matches the Museum background's lighting.\n\n\n\n\nYou are not required to use any of these when creating your asset.\n\n\nExample Asset Creation\n \n\n\nYou can create any asset, but here is an example of basic asset creation.\n\n\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nOptional Scripts\n \n\n\nThere are 2 scripts included which you can add to Assets you create.\n\n\n\n\nTTSAssetBundleEffects\n: In Tabletop Simulator, this will add an option in the Object's context menu. There are two types:\n\n\nTrigger\n: Used to activate animations, sounds, lights, etc that run once and stop.\n\n\nLooping\n: Used to activate animations, sounds, lights, etc that continue running until another Loop is activated.\n\n\n\n\n\n\nTTSAssetBundleSounds\n: In Tabletop Simulator, this lets you replace the sound that this Object would make with custom sounds.\n\n\n\n\nIn Tabletop Simulator, Lua scripting is able to interact with these triggers. However you are not able to create/add your own Unity scripts to Objects.\n\n\nExport AssetBundle\n \n\n\nOnce you are finished creating your asset, you must turn it into a pre-fab.\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nGive it a unique name.\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nThen Build the AssetBundle by right-clicking anywhere in the project view and selecting \nBuild AssetBundles\n.\n\n\n\n\nThe resulting file that is created will be found in the Project folder under \nAssetBundles\n.\n\n\n\n\nThe file format for an AssetBundle is \n.unity3d\n\n\n\n\n\n\nImport AssetBundle\n \n\n\nOpen Tabletop Simulator and upload your AssetBundle to a webhost or the in-game \nSteam Cloud\n.\n\n\n\n\nImporting Assets\n\n\nHow you choose to import files impacts if other players can see them when you're finished.\nFor help with importing, visit \nAsset Hosting\n.\n\n\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\n\n\nSecondary AssetBundles\n \n\n\nSecondary AssetBundles are an additional AssetBundle which are great for shared effects like sound or particle effects that you want to use on multiple objects without duplicating them in each individual asset bundle. Great for reducing memory and bandwidth usage.\n\n\n\n\nIn the example below, the main AssetBundle is the blue capsule and the secondary AssetBundle is the explosion and light effect. This allows you to reuse the explosion and light effect on any one of your AssestBundles for greater modularity and reduced memory and bandwidth usage.\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\n\n\nBest Practices\n \n\n\n\n\nAvoid duplicating large assets like textures and sounds on multiple AssetBundles by using Secondary AssetBundles.\n\n\nDon\u2019t use legacy, mobile, or custom shaders because they will most likely show up as pink on other platforms.\n\n\n\n\nTexture Import Settings\n \n\n\n\n\nIf your textures don\u2019t need transparency, use RGB Compressed DXT1.\n\n\nIf your textures need alphas retained, highlight just those textures and change the format to RGBA Compressed DXT5.\n\n\nNEVER use uncompressed textures.\n\n\nMake sure the texture is the size that makes sense for it, but watch out for the size of the texture as that will eat up a lot of space.\n\n\nSave 4k textures for large boards and other similar items.\n\n\n\n\nTutorials\n \n\n\n\n\nUnity Manual\n\n\nUnity Tutorials\n\n\nLighting and Rendering\n\n\nAnimation", 
             "title": "Custom AssetBundle"
@@ -1742,13 +1687,63 @@
         }, 
         {
             "location": "/custom-content/custom-model/", 
-            "text": "", 
+            "text": "It is possible to import 3D Models into the game, complete with their own diffuse, colliders, sounds, specular intensity and more!\n\n\nImporting Custom Model\n \n\n\nIn-game, navigate to the top of your screen and select \nObjects \n Components \n Custom \n Custom Model\n.\n\n\n\n\n\n\nImporting Assets\n\n\nHow you choose to import files impacts if other players can see them when you're finished.\nFor help with importing, visit \nAsset Hosting\n.\n\n\n\n\nImport Options\n \n\n\nThere are two tabs, Model and Material, which contain all the options for importing a single model.\n\n\n\n    \n\n        Sorry, your browser doesn't support embedded videos.\n    \n\n\n\n\nModel Options\n \n\n\nThese options determine the basic, physical aspects of the custom object.\n\n\n\n\n\n\n\n\nSetting Name\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nModel/Mesh\n\n\n(Required)\n The model for the 3D object.\n\n\n\n\n\n\nDiffuse/Image\n\n\n(Required)\n The primary material for the object.\n\n\n\n\n\n\nNormal/Bump\n\n\nNormal/bump map image for the object.\n\n\n\n\n\n\nCollider\n\n\nCustomized collider. By default, a simple collider is generated automatically.\n\n\n\n\n\n\nNon-Convex\n\n\nIf the object is non-convex.\n\n\n\n\n\n\nType\n\n\nThe model's type. See the \nModel Type\n section.\n\n\n\n\n\n\n\n\nMaterial Options\n \n\n\n\n\n\n\n\n\nSetting Name\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nMaterial\n\n\nDetermines the fault material settings, as well as the audio profile used for when the 3D object collides with others.\n\n\n\n\n\n\nSpecular Intensity\n\n\nThe level of specular intensity.\n\n\n\n\n\n\nSpecular Color\n\n\nSpecular color setting.\n\n\n\n\n\n\nSpecular Sharpness\n\n\nSpecular sharpness setting.\n\n\n\n\n\n\nFresnel Strength\n\n\nFresnel Strength setting.\n\n\n\n\n\n\nCast Shadows\n\n\nIf the object casts shadows.\n\n\n\n\n\n\n\n\nRead more about Specular Settings and Fresnel in the \nUnity Documentation\n.\n\n\nModel Type\n \n\n\nWhen making your model, you can decide what the model will be used for. Each selection has its own special attributes.\n\n\n\n\n\n\n\n\nSetting Name\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nGeneric\n\n\n No special attributes.\n\n\n\n\n\n\nFigurine\n\n\n Automatically rights itself when picked up into its \"vertical\" orientation.\n\n\n\n\n\n\nDice*\n\n\n Randomizes object rotation when shaken or the \"roll\" key is used.\n Number keys will cause it to face a given direction.\n\n\n\n\n\n\nCoin*\n\n\n Randomizes object rotation when shaken or the \"roll\" key is used.\n Object flips up into the air when released after being shaken.\n\n\n\n\n\n\nBoard\n\n\n Object accepts grid projections by default.\n Alt-zoom will not work on it.\n It ignores hidden zones, always remaining visible.\n\n\n\n\n\n\nChip\n\n\n Object can stack with others of its own type.\n\n\n\n\n\n\nBag\n\n\n Can contain other objects dropped onto it.\n\n\n\n\n\n\nInfinite\n\n\n Like a bag, but it contains an infinite number of the first object placed into it.\n\n\n\n\n\n\n\n\n Values can be assigned to these objects, just like regular or custom dice have. See the \nrotation vector tool\n section for details.\n\n\nCustom Model Tips\n \n\n\nMaking custom objects allows for a lot of freedom, so here are some guidelines you will need to follow when creating your models.\n\n\nValid File Formats\n \n\n\n\n\nModel/Mesh file format: \n.obj\n\n\nCollider file format: \n.obj\n\n\nImage file format: \n.jpg\n \nor\n \n.png\n\n\n\n\nModel Tips\n \n\n\n\n\nTriangulate all meshes/models to avoid holes.\n\n\nMake sure the normals on your mesh are facing the right direction.\n\n\nSet the origin point of the model to the center of mass for best physics. Objects in TTS rotate around their origin point.\n\n\nDon\u2019t go crazy with poly counts, use a normal map to add fine detail.\n\n\nKeep the vertices below 25k for best results, as any higher your objects may not import and/or crash your game.\n\n\nIf you want to access additional elements for importing a Model, you might be interested in \nCustom AssetBundles\n instead.\n\n\n\n\nCollider Tips\n \n\n\n\n\nIf you do not specify a custom mesh collider .obj, then the game will calculate a box collider to fit your object.\n\n\nCustom mesh collider is just a way for you to have a collider that isn\u2019t a box.\n\n\nOnly use a custom mesh collider if a box collider will not work, due to performance.\n\n\nBox colliders are much more optimized in the physics engine.\n\n\nIt\u2019s best to use a simplified version of your model with less than 255 triangles. (As simple as possible)\n\n\nIf your model is already sufficiently low poly enough you can use the same for the Custom Mesh Collider.\n\n\n\n\nNon-Convex Tips\n \n\n\n\n\nNon-convex colliders allow collisions to work like the Chinese Checkers board which has indents and is concave.\n\n\nConvex colliders will fill in any indents or holes in the mesh due to how it calculates the collider.\n\n\nThe problem with non-convex colliders it only works properly on locked object.\n\n\nIf you need concave colliders and also need the object to move then you must use compound colliders.\n\n\n\n\nCompound Collider Tips\n \n\n\n\n\nCompound colliders are multiple meshes inside one .obj file that create multiple colliders on a singular object.\n\n\nCompound colliders allow you make concave shapes and get around the fact that you can\u2019t have non-convex colliders that move.\n\n\nBreak you mesh into multiple convex shapes then export them in a single .obj file to create compound colliders.\n\n\nNon-convex should be set to false (unchecked) when using compound colliders.", 
             "title": "Custom Model"
         }, 
         {
-            "location": "/custom-content/custom-rotation-values/", 
-            "text": "", 
-            "title": "Custom Rotation Values"
+            "location": "/custom-content/custom-model/#importing-custom-model", 
+            "text": "In-game, navigate to the top of your screen and select  Objects   Components   Custom   Custom Model .    Importing Assets  How you choose to import files impacts if other players can see them when you're finished. For help with importing, visit  Asset Hosting .", 
+            "title": "Importing Custom Model"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#import-options", 
+            "text": "There are two tabs, Model and Material, which contain all the options for importing a single model.  \n     \n        Sorry, your browser doesn't support embedded videos.", 
+            "title": "Import Options"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#model-options", 
+            "text": "These options determine the basic, physical aspects of the custom object.     Setting Name  Description      Model/Mesh  (Required)  The model for the 3D object.    Diffuse/Image  (Required)  The primary material for the object.    Normal/Bump  Normal/bump map image for the object.    Collider  Customized collider. By default, a simple collider is generated automatically.    Non-Convex  If the object is non-convex.    Type  The model's type. See the  Model Type  section.", 
+            "title": "Model Options"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#material-options", 
+            "text": "Setting Name  Description      Material  Determines the fault material settings, as well as the audio profile used for when the 3D object collides with others.    Specular Intensity  The level of specular intensity.    Specular Color  Specular color setting.    Specular Sharpness  Specular sharpness setting.    Fresnel Strength  Fresnel Strength setting.    Cast Shadows  If the object casts shadows.     Read more about Specular Settings and Fresnel in the  Unity Documentation .", 
+            "title": "Material Options"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#model-type", 
+            "text": "When making your model, you can decide what the model will be used for. Each selection has its own special attributes.     Setting Name  Description      Generic   No special attributes.    Figurine   Automatically rights itself when picked up into its \"vertical\" orientation.    Dice*   Randomizes object rotation when shaken or the \"roll\" key is used.  Number keys will cause it to face a given direction.    Coin*   Randomizes object rotation when shaken or the \"roll\" key is used.  Object flips up into the air when released after being shaken.    Board   Object accepts grid projections by default.  Alt-zoom will not work on it.  It ignores hidden zones, always remaining visible.    Chip   Object can stack with others of its own type.    Bag   Can contain other objects dropped onto it.    Infinite   Like a bag, but it contains an infinite number of the first object placed into it.      Values can be assigned to these objects, just like regular or custom dice have. See the  rotation vector tool  section for details.", 
+            "title": "Model Type"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#custom-model-tips", 
+            "text": "Making custom objects allows for a lot of freedom, so here are some guidelines you will need to follow when creating your models.", 
+            "title": "Custom Model Tips"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#valid-file-formats", 
+            "text": "Model/Mesh file format:  .obj  Collider file format:  .obj  Image file format:  .jpg   or   .png", 
+            "title": "Valid File Formats"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#model-tips", 
+            "text": "Triangulate all meshes/models to avoid holes.  Make sure the normals on your mesh are facing the right direction.  Set the origin point of the model to the center of mass for best physics. Objects in TTS rotate around their origin point.  Don\u2019t go crazy with poly counts, use a normal map to add fine detail.  Keep the vertices below 25k for best results, as any higher your objects may not import and/or crash your game.  If you want to access additional elements for importing a Model, you might be interested in  Custom AssetBundles  instead.", 
+            "title": "Model Tips"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#collider-tips", 
+            "text": "If you do not specify a custom mesh collider .obj, then the game will calculate a box collider to fit your object.  Custom mesh collider is just a way for you to have a collider that isn\u2019t a box.  Only use a custom mesh collider if a box collider will not work, due to performance.  Box colliders are much more optimized in the physics engine.  It\u2019s best to use a simplified version of your model with less than 255 triangles. (As simple as possible)  If your model is already sufficiently low poly enough you can use the same for the Custom Mesh Collider.", 
+            "title": "Collider Tips"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#non-convex-tips", 
+            "text": "Non-convex colliders allow collisions to work like the Chinese Checkers board which has indents and is concave.  Convex colliders will fill in any indents or holes in the mesh due to how it calculates the collider.  The problem with non-convex colliders it only works properly on locked object.  If you need concave colliders and also need the object to move then you must use compound colliders.", 
+            "title": "Non-Convex Tips"
+        }, 
+        {
+            "location": "/custom-content/custom-model/#compound-collider-tips", 
+            "text": "Compound colliders are multiple meshes inside one .obj file that create multiple colliders on a singular object.  Compound colliders allow you make concave shapes and get around the fact that you can\u2019t have non-convex colliders that move.  Break you mesh into multiple convex shapes then export them in a single .obj file to create compound colliders.  Non-convex should be set to false (unchecked) when using compound colliders.", 
+            "title": "Compound Collider Tips"
         }, 
         {
             "location": "/custom-content/custom-tile/", 
@@ -1759,6 +1754,36 @@
             "location": "/custom-content/custom-token/", 
             "text": "", 
             "title": "Custom Token"
+        }, 
+        {
+            "location": "/custom-content/asset-hosting/", 
+            "text": "Tabletop Simulator allows you to use files, either online or offline, to play custom-made games. Any time a custom asset is being created in-game, you have a choice on how the file is hosted.\n\n\nLocal Files\n \n\n\nThese are files that are hosted on your own computer. \nOther players CANNOT see these assets!\n These are for local games only.\n\n\nExample file path:\n\n\nC:\\Users\\MrStump\\Documents\\Tabletop Creations\\example.png\n\n\n\n\n\nOnline Files\n \n\n\nThese are files that are hosted online. Other players are able to download and see these assets as long as the host remains active. There are two ways to host your files online.\n\n\nSteam Cloud\n \n\n\nYou get 100GB worth of storage tied to you Steam Account for Tabletop Simulator, and any files uploaded to your steam account through Tabletop Simulator will persist indefinitely. This makes it an ideal file host. See the \nCloud Manager\n page for details on using this hosting method.\n\n\nExample file path:\n\n\nhttp://cloud-3.steamusercontent.com/ugc/936064212973557569/9D9F00D3BAEB906B3393649C931267AB6F24D915/\n\n\n\n\n\nThird Party Hosts\n \n\n\nYou can use any online host for your files by simply posting the URL of the file into the asset prompt. However third party hosts may have rules or restrictions that prevent your assets from being shared correct or being hosted indefinitely.\n\n\n\n\nIt is strongly recommended that you use Steam Cloud hosting instead.\n\n\n\n\nExample file path:\n\n\nhttps://i.imgur.com/OfkTbKq.png\n\n\n\n\n\nCached Files\n \n\n\nWhen you download assets for a custom game, they are saved on your computer indefinitely. This way, you do not need to download them again if you load up the same custom game a second time. By default, \nMod Caching\n is on. It can be toggled off if the game's settings menu.\n\n\n\n\nTip\n\n\nIf you are able to see files that are hosted online but someone else cannot, it may be because you have these files Cached. A possible solution would be to use \nSteam Cloud\n to re-host the files.", 
+            "title": "Asset Hosting"
+        }, 
+        {
+            "location": "/custom-content/asset-hosting/#local-files", 
+            "text": "These are files that are hosted on your own computer.  Other players CANNOT see these assets!  These are for local games only.  Example file path:  C:\\Users\\MrStump\\Documents\\Tabletop Creations\\example.png", 
+            "title": "Local Files"
+        }, 
+        {
+            "location": "/custom-content/asset-hosting/#online-files", 
+            "text": "These are files that are hosted online. Other players are able to download and see these assets as long as the host remains active. There are two ways to host your files online.", 
+            "title": "Online Files"
+        }, 
+        {
+            "location": "/custom-content/asset-hosting/#steam-cloud", 
+            "text": "You get 100GB worth of storage tied to you Steam Account for Tabletop Simulator, and any files uploaded to your steam account through Tabletop Simulator will persist indefinitely. This makes it an ideal file host. See the  Cloud Manager  page for details on using this hosting method.  Example file path:  http://cloud-3.steamusercontent.com/ugc/936064212973557569/9D9F00D3BAEB906B3393649C931267AB6F24D915/", 
+            "title": "Steam Cloud"
+        }, 
+        {
+            "location": "/custom-content/asset-hosting/#third-party-hosts", 
+            "text": "You can use any online host for your files by simply posting the URL of the file into the asset prompt. However third party hosts may have rules or restrictions that prevent your assets from being shared correct or being hosted indefinitely.   It is strongly recommended that you use Steam Cloud hosting instead.   Example file path:  https://i.imgur.com/OfkTbKq.png", 
+            "title": "Third Party Hosts"
+        }, 
+        {
+            "location": "/custom-content/asset-hosting/#cached-files", 
+            "text": "When you download assets for a custom game, they are saved on your computer indefinitely. This way, you do not need to download them again if you load up the same custom game a second time. By default,  Mod Caching  is on. It can be toggled off if the game's settings menu.   Tip  If you are able to see files that are hosted online but someone else cannot, it may be because you have these files Cached. A possible solution would be to use  Steam Cloud  to re-host the files.", 
+            "title": "Cached Files"
         }, 
         {
             "location": "/custom-content/asset-resolution/", 
@@ -1799,6 +1824,31 @@
             "location": "/custom-content/asset-resolution/#model-resolution", 
             "text": "For Use With  Maximum Limits      3d Model (obj)  Less than 25k vertices per model. More vertices will cause failure to import or game crashes.    Collider  Less than 256 tris per model. More tris will cause the collider to fail.", 
             "title": "Model Resolution"
+        }, 
+        {
+            "location": "/custom-content/cloud-manager/", 
+            "text": "The Cloud Manager is where all the files you have uploaded to the Cloud are located. You access this menu by navigating at the top of the screen to \nUpload \n Cloud Manager\n.\n\n\n\n\nFeatures\n \n\n\nEvery user gets \n100 GB\n of total storage, tied to their Steam account. The images are hosted until they are removed by the user. You can view the remaining GB free to the right of the search bar.\n\n\nClicking on an asset with copy its URL to your clipboard.\n\n\nAdding Elements\n \n\n\nIn the Cloud Manager Menu, clicking on the folder icon to the left of the search bar will allow you to upload a file from your computer to your cloud.\n\n\nAdditionally, any time you are prompted to select an image/model/assetbundle for a custom object, you will be asked if you would like to upload the object automatically to your cloud. Selecting \nCloud\n will automatically fill in the URL.\n\n\n\n\nUpload All\n \n\n\nIt is possible to migrate all current files, cached and local, to the Cloud with the click of a button. Click the black up arrow at the top of the Cloud Manager Menu and wait a moment while the assets upload.\n\n\n\n\n\n\nTip\n\n\nRemember to save after performing this action. You are changing the source for all the game assets and if you do not save, the old save will still point to the old assets.\n\n\nThis works great when you have been building something locally that is ready for multiplayer or have files cached from a mod that you friend can't get anymore.\n\n\n\n\nRemoving Elements\n \n\n\nIn the Cloud Manager Menu, mouse-over the item you want to delete. A box with 3 dots will appear. Clicking on it will allow you to select \nDelete\n to permanently remove the element.\n\n\n\n\nDeleting an element CANNOT be undone.", 
+            "title": "Cloud Manager"
+        }, 
+        {
+            "location": "/custom-content/cloud-manager/#features", 
+            "text": "Every user gets  100 GB  of total storage, tied to their Steam account. The images are hosted until they are removed by the user. You can view the remaining GB free to the right of the search bar.  Clicking on an asset with copy its URL to your clipboard.", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/custom-content/cloud-manager/#adding-elements", 
+            "text": "In the Cloud Manager Menu, clicking on the folder icon to the left of the search bar will allow you to upload a file from your computer to your cloud.  Additionally, any time you are prompted to select an image/model/assetbundle for a custom object, you will be asked if you would like to upload the object automatically to your cloud. Selecting  Cloud  will automatically fill in the URL.", 
+            "title": "Adding Elements"
+        }, 
+        {
+            "location": "/custom-content/cloud-manager/#upload-all", 
+            "text": "It is possible to migrate all current files, cached and local, to the Cloud with the click of a button. Click the black up arrow at the top of the Cloud Manager Menu and wait a moment while the assets upload.    Tip  Remember to save after performing this action. You are changing the source for all the game assets and if you do not save, the old save will still point to the old assets.  This works great when you have been building something locally that is ready for multiplayer or have files cached from a mod that you friend can't get anymore.", 
+            "title": "Upload All"
+        }, 
+        {
+            "location": "/custom-content/cloud-manager/#removing-elements", 
+            "text": "In the Cloud Manager Menu, mouse-over the item you want to delete. A box with 3 dots will appear. Clicking on it will allow you to select  Delete  to permanently remove the element.   Deleting an element CANNOT be undone.", 
+            "title": "Removing Elements"
         }, 
         {
             "location": "/custom-content/importing-files/", 
