@@ -1,4 +1,4 @@
-A custom deck is a collections of cards created via "card sheets".
+sA custom deck is a collections of cards created via "card sheets".
 
 <center>![Custom Board Example](/img/custom-deck/deck.png)</center>
 
@@ -8,7 +8,7 @@ A custom deck is a collections of cards created via "card sheets".
 * Multiple card sheets can be combined into larger decks if needed.
 * Card sheets use the last image on a card sheet for a "hidden" image when those cards are in a hand-zone or otherwise hidden.
 
-!!!info "See [Asset Resolution](asset-resolution) for suggested card sheet image resolution."
+!!!info "See [Asset Creation](asset-creation) for suggested card sheet image resolution."
 
 ##Creating a Card Sheet
 A deck is created from a card sheet, which is an array of images which get "cut up" into cards by the game engine. There are two methods to create these sheets, Template and Deck Builder.
@@ -52,7 +52,7 @@ This tool is a little more complicated, but allows for control over the number o
 Once you have a card sheet, start a Tabletop Simulator table then select **Objects > Components > Custom** to open the Custom Object menu, then select **Deck**.
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-hosting).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing).
 
 Setting Name | Description
 -- | --

@@ -3,10 +3,12 @@ Custom Assets can be made in many sizes and shapes, but there are recommended gu
 ##Images
 
 ###Image File Type
-Either **PNG** or **JPG/JPEG** are acceptable image formats. The color mode MUST be set to **RGB**. CMYK color mode will not work in Tabletop Simulator.
+Either **PNG** or **JPG** are acceptable image formats. The color mode MUST be set to **RGB**.
+
+!!!warning "CMYK color mode will not work in Tabletop Simulator!"
 
 ###Image Resolution
-You are not required to use an image with these resolutions, but these will provide the best results for the file size used.
+There is rarely a "perfect image resolution", however you can use this list as a reference for what makes a good quality-to-file-size ratio.
 
 For Use With | Recommended Resolution
 -- | --
@@ -26,18 +28,21 @@ Custom Table (Rectangle) | 4400×2600
 !!!tip "Max Resolution"
     A good general rule is to keep the dimensions of your images under 4096x4096 unless recommended otherwise.
 
+!!!tip "Power of Two"
+    When the game engine renders certain images, textures sometimes are forced into a [power of 2](http://www.tsm-resources.com/alists/pow2.html) rule for their resolution. The game engine will force textures to a resolution tied to the power of 2, but it will not do as good of a job up/down-scaling your image as you could do with image-editing software. It is not required your images adhere to this "rule", but using it as a guideline for image creation can help produce cleaner in-game results.
+
+    This is especially true when creating textures for models.
+
 ####Templates
 **Decks** and **Dice** both come with templates. They can be found in Steam directory:
 
 > Steam\steamapps\common\Tabletop Simulator\Modding
 
-####Power of Two
-When the game engine renders certain images, textures sometimes are forced into a [power of 2](http://www.tsm-resources.com/alists/pow2.html) rule for their resolution. The game engine will force textures to a resolution tied to the power of 2, but it will not do as good of a job up/down-scaling your image as you could do with image-editing software. It is not required your images adhere to this "rule", but using it as a guideline for image creation can help produce cleaner in-game results.
-
-This is especially true when creating textures for models.
-
 ##Models
 There are several hard limits related to model creation.
+
+###Model File Type
+Only **OBJ** is an acceptable file format.
 
 ###Model Resolution
 

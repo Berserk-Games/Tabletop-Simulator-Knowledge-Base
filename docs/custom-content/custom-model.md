@@ -6,7 +6,7 @@ In-game, navigate to the top of your screen and select **Objects > Components > 
 <center>![Model Import Menu](/img/custom-model/import.png)</center>
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-hosting).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing).
 
 ###Import Options
 There are two tabs, Model and Material, which contain all the options for importing a single model.
