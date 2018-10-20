@@ -6,7 +6,7 @@ In-game, navigate to the top of your screen and select **Objects > Components > 
 <center>![Figurine Creation](/img/custom-figurine/import.png)</center>
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-hosting).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing).
 
 ###Front and Back Images
 If you use different images for the front/back back, each side will have its own image.

@@ -23,7 +23,7 @@ To import your custom die, while in-game go to the top of your screen, click **O
 <center>![Importing Dice Templates](/img/custom-dice/import.png)</center>
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-hosting).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing).
 
 <center>![Example Die In-Game](/img/custom-dice/finished.png)</center>
 

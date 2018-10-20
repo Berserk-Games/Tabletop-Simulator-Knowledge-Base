@@ -4,7 +4,7 @@ You can easily create a jigsaw puzzle using the Custom Jigsaw tool.
 In-game, navigate to the top of your screen and select **Objects > Components > Custom > Custom Jigsaw**.
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-hosting).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing).
 
 <center>![Jigsaw Creation](/img/custom-jigsaw/import.png)</center>
 

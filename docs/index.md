@@ -2,7 +2,6 @@
     * Add a page for the new migration feature
     * Make sure a page outlines what it means to be promoted
     * Update line drawing tool info
-    * Add a descriptive page on how the core game works regarding downloading files
 
 
 <center>![Tabletop Simulator](/img/index/logo.png)</center>
