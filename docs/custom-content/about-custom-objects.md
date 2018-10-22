@@ -32,7 +32,7 @@ These types of objects only require an image to make the in-game object.
 * [Custom Tile](custom-tile)
 * [Custom Token](custom-token)
 
-    \* See [Modding Tools](modding-tools) for templates and tools to help creating these images.
+<sup>* These object types have special tools/templates to help creating the image.</sup>
 
 ###Image and Model
 These types of objects require an image as well as a 3d model.

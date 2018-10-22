@@ -65,6 +65,7 @@ pages:
     - Games - Classic: getting-started/games-classic.md
     - Games - DLC: getting-started/games-dlc.md
     - Games - Workshop: getting-started/games-workshop.md
+    - Games - Save & Load: getting-started/games-save-load.md
     - Games - FAQ: getting-started/faq.md
   - Game Tools:
     - Drawing Tools: game-tools/drawing-tools.md
@@ -115,6 +116,5 @@ pages:
     - Custom Token: custom-content/custom-token.md
     - Steam Workshop: custom-content/steam-workshop.md
     - Importing Mods: custom-content/importing-mods.md
-    - Modding Tools: custom-content/modding-tools.md
     - Save File Format: custom-content/save-file-format.md
     - Community Guides: custom-content/community-guides.md
