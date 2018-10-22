@@ -1,7 +1,15 @@
 There are many different dice in the game, but sometimes you just need your own. This can be done by modeling your own dice as a [Custom Model](custom-model) or [AssetBundle](custom-assetbundle). However if you are looking a way to import your own dice without any of the complications of model creation, the Custom Dice tool is for you.
 
 ##Dice Template
-The Dice Template, as well as other modding tools, can be found on your computer. Instructions to locate them can be found in the [modding tools](modding-tools) section.
+The Dice Template, as well as other modding tools, can be found on your computer.
+
+>\Steam\steamapps\common\Tabletop Simulator\Modding\Dice Templates
+
+???question "Can't Find Your Steam Folder?"
+    * In **Steam**, go to your **Library**
+    * **Right Click** on **Tabletop Simulator** and select **Properties**
+    * In the Properties Menu, click **Local Files** at the top
+    * Click **Browse Local Files**
 
 <center>![Dice Templates](/img/custom-dice/folder.png)</center>
 

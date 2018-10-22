@@ -130,9 +130,12 @@ disabled due to lack of need currently, but works*/
 
 /*Image Borders*/
 img {
-   border:1px solid #D2D2D2;
+   /*border:1px solid #EDEDED;*/
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   box-shadow: 2px 2px 4px #aaa;
 }
 /*Overwrite for header bar icon, removing its border*/
 .md-header-nav__button.md-logo * {
     border:0px !important;
+    box-shadow: 0px 0px 0px #aaa !important;
 }
