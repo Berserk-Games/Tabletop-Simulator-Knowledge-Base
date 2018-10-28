@@ -1,10 +1,5 @@
 * TO DO:
-    * Add a page for the new migration feature
-    * Make sure a page outlines what it means to be promoted
-    * Update line drawing tool info
-    * Add troubleshooting page https://steamcommunity.com/app/286160/discussions/0/3183345176721925234/
-    * Make border around white images less noticable, lighten it maybe, or make it a mini dropshadow kind of thing
-    * Games - Save & Load ~ need to add this section, I missed it initially
+    * Update line drawing tool info (waiting to learn if pixel paint will stay, and need new icons in place for screenshots)
 
 
 <center>![Tabletop Simulator](/img/index/logo.png)</center>

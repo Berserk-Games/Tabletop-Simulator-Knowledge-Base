@@ -67,6 +67,7 @@ pages:
     - Games - Workshop: getting-started/games-workshop.md
     - Games - Save & Load: getting-started/games-save-load.md
     - Games - FAQ: getting-started/faq.md
+    - Troubleshooting: getting-started/troubleshooting.md
   - Game Tools:
     - Drawing Tools: game-tools/drawing-tools.md
     - Zone Tools: game-tools/zone-tools.md
