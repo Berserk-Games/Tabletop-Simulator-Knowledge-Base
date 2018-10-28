@@ -13,11 +13,21 @@ When you’re the host, all buttons on the top menu will be available. Click on 
 
 !!!info Options and Permissions
     A full list of options and permissions that the host can be found on the [permissions](/host-options/permissions) page.
-    
+
 ###Promoting
 The host can promote trusted players to give them most of the power that the host has. To promote a player, just click on the player’s name on the top right and choose the “Promote” option. Once the player is promoted, they have a shield next to their name to show the promotion.
 
 <center>![Player Promotion Menu](/img/player-roles/player-options.png)</center>
+
+###Give Host
+In the player options, you can select **Give Host** to make someone else the host of the game. This is known as "Host Migration" and causes that player to become the host.
+
+!!!warning "DLC Host Migration"
+    DLC can only be played if the HOST of the game owns the DLC. If you are playing an official DLC and the host does not own it, it will cause the migration to fail.
+
+
+---
+
 
 ##Promoted Players
 Promoted Players can do most of the things that the Host can do with a few exceptions:
@@ -26,6 +36,14 @@ Promoted Players can do most of the things that the Host can do with a few excep
 * They cannot import any custom content, although they can import saved custom objects and Workshop items.
 * They cannot modify custom objects.
 * They do not have access to the Points tool.
+
+
+
+
+
+
+---
+
 
 ##Player
 Anyone who joins a server and takes a seat is a Player. What they can or cannot do is determined by the permissions the Host allows and their promotion status.
