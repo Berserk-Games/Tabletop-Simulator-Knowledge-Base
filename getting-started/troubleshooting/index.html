@@ -36,7 +36,7 @@
     
     
       
-        <title>Custom Tile - Tabletop Simulator Knowledge&nbsp;Base</title>
+        <title>Troubleshooting - Tabletop Simulator Knowledge&nbsp;Base</title>
       
     
     
@@ -103,7 +103,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#importing-custom-tile" tabindex="1" class="md-skip">
+      <a href="#first-steps" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -129,7 +129,7 @@
                 Tabletop Simulator Knowledge&nbsp;Base
               </span>
               <span class="md-header-nav__topic">
-                Custom Tile
+                Troubleshooting
               </span>
             
           
@@ -297,17 +297,19 @@
 <!-- Determine class according to level -->
 
 
+  
+
 
 
 <!-- Main navigation item with nested items -->
 
   <hr class="custom-line">
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
 
     <!-- Active checkbox expands items contained within nested section -->
     
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1"
-          type="checkbox" id="nav-1" />
+          type="checkbox" id="nav-1" checked />
     
 
     <!-- Expand active pages -->
@@ -395,7 +397,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/technical-info/" title="Technical Info"
+    <a href="../technical-info/" title="Technical Info"
         class="md-nav__link">
       Technical Info
     </a>
@@ -434,7 +436,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/launch-options/" title="Launch Options"
+    <a href="../launch-options/" title="Launch Options"
         class="md-nav__link">
       Launch Options
     </a>
@@ -473,7 +475,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/configuration-menu/" title="Configuration Menu"
+    <a href="../configuration-menu/" title="Configuration Menu"
         class="md-nav__link">
       Configuration Menu
     </a>
@@ -512,7 +514,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/help-menu/" title="Help Menu"
+    <a href="../help-menu/" title="Help Menu"
         class="md-nav__link">
       Help Menu
     </a>
@@ -551,7 +553,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/in-game-communication/" title="In-Game Communication"
+    <a href="../in-game-communication/" title="In-Game Communication"
         class="md-nav__link">
       In-Game Communication
     </a>
@@ -590,7 +592,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/player-roles/" title="Player Roles"
+    <a href="../player-roles/" title="Player Roles"
         class="md-nav__link">
       Player Roles
     </a>
@@ -629,7 +631,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/video-tutorials/" title="Video Tutorials"
+    <a href="../video-tutorials/" title="Video Tutorials"
         class="md-nav__link">
       Video Tutorials
     </a>
@@ -668,7 +670,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/games-classic/" title="Games - Classic"
+    <a href="../games-classic/" title="Games - Classic"
         class="md-nav__link">
       Games - Classic
     </a>
@@ -707,7 +709,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/games-dlc/" title="Games - DLC"
+    <a href="../games-dlc/" title="Games - DLC"
         class="md-nav__link">
       Games - DLC
     </a>
@@ -746,7 +748,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/games-workshop/" title="Games - Workshop"
+    <a href="../games-workshop/" title="Games - Workshop"
         class="md-nav__link">
       Games - Workshop
     </a>
@@ -785,7 +787,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/games-save-load/" title="Games - Save & Load"
+    <a href="../games-save-load/" title="Games - Save & Load"
         class="md-nav__link">
       Games - Save & Load
     </a>
@@ -824,7 +826,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../getting-started/faq/" title="Games - FAQ"
+    <a href="../faq/" title="Games - FAQ"
         class="md-nav__link">
       Games - FAQ
     </a>
@@ -858,16 +860,306 @@
 <!-- Determine class according to level -->
 
 
+  
+
 
 
 <!-- Main navigation item with nested items -->
 
-  <li class="md-nav__item">
-    <a href="../../getting-started/troubleshooting/" title="Troubleshooting"
-        class="md-nav__link">
+  <li class="md-nav__item md-nav__item--active">
+    
+
+    <!-- Active checkbox expands items contained within nested section -->
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc"
+        type="checkbox" id="toc" />
+
+    <!-- Hack: see partials/toc.html for more information -->
+    
+
+    <!-- Render table of contents, if not empty -->
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Troubleshooting
+      </label>
+    
+    <a href="./" title="Troubleshooting"
+        class="md-nav__link md-nav__link--active">
       Troubleshooting
     </a>
+
+    <!-- Show table of contents -->
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-steps" title="First Steps" class="md-nav__link">
+    First Steps
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#port-forwarding" title="Port Forwarding" class="md-nav__link">
+    Port Forwarding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-logging" title="Enable Logging" class="md-nav__link">
+    Enable Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging" title="Debugging" class="md-nav__link">
+    Debugging
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crashing-on-startup" title="Crashing on Startup" class="md-nav__link">
+    Crashing on Startup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mac" title="Mac" class="md-nav__link">
+    Mac
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" title="Linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vr" title="VR" class="md-nav__link">
+    VR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crash-mentioning-resolution" title="Crash Mentioning Resolution" class="md-nav__link">
+    Crash Mentioning Resolution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphical-issues" title="Graphical Issues" class="md-nav__link">
+    Graphical Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#everything-is-blurry" title="Everything is Blurry" class="md-nav__link">
+    Everything is Blurry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pink-screen-on-startup" title="Pink Screen on Startup" class="md-nav__link">
+    Pink Screen on Startup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#black-background-and-dark" title="Black Background and Dark" class="md-nav__link">
+    Black Background and Dark
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#www-errors" title="WWW Errors" class="md-nav__link">
+    WWW Errors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improper-url-or-could-not-resolve-host" title="Improper URL or Could Not Resolve Host" class="md-nav__link">
+    Improper URL or Could Not Resolve Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#www-error-could-not-open-file" title="WWW Error; Could Not Open File" class="md-nav__link">
+    WWW Error; Could Not Open File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-closed-with-___-bytes-remaining" title="Transfer Closed with ___ Bytes Remaining" class="md-nav__link">
+    Transfer Closed with ___ Bytes Remaining
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshopmod-issues" title="Workshop/Mod Issues" class="md-nav__link">
+    Workshop/Mod Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mod-not-uploading" title="Mod Not Uploading" class="md-nav__link">
+    Mod Not Uploading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#black-texture-when-loading" title="Black Texture When Loading" class="md-nav__link">
+    Black Texture When Loading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incorrect-steam-workshop-id-number" title="Incorrect Steam Workshop ID Number" class="md-nav__link">
+    Incorrect Steam Workshop ID Number
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller-issues" title="Controller Issues" class="md-nav__link">
+    Controller Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spinning-mouse" title="Spinning Mouse" class="md-nav__link">
+    Spinning Mouse
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-issues" title="General Issues" class="md-nav__link">
+    General Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tablet-doesnt-work" title="Tablet Doesn't Work" class="md-nav__link">
+    Tablet Doesn't Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-not-working-in-menu" title="UI Not Working in Menu" class="md-nav__link">
+    UI Not Working in Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mic-not-detected" title="Mic Not Detected" class="md-nav__link">
+    Mic Not Detected
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host-password-invalid-to-all-joiners" title="Host Password Invalid to All Joiners" class="md-nav__link">
+    Host Password Invalid to All Joiners
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-modstextures" title="Missing Mods/Textures" class="md-nav__link">
+    Missing Mods/Textures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
+
+<!-- Main navigation item -->
 
         
       </ul>
@@ -2257,19 +2549,17 @@
 <!-- Determine class according to level -->
 
 
-  
-
 
 
 <!-- Main navigation item with nested items -->
 
   <hr class="custom-line">
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
 
     <!-- Active checkbox expands items contained within nested section -->
     
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5"
-          type="checkbox" id="nav-5" checked />
+          type="checkbox" id="nav-5" />
     
 
     <!-- Expand active pages -->
@@ -2318,7 +2608,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../about-custom-objects/" title="About Custom Objects"
+    <a href="../../custom-content/about-custom-objects/" title="About Custom Objects"
         class="md-nav__link">
       About Custom Objects
     </a>
@@ -2357,7 +2647,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../asset-creation/" title="Asset Creation"
+    <a href="../../custom-content/asset-creation/" title="Asset Creation"
         class="md-nav__link">
       Asset Creation
     </a>
@@ -2396,7 +2686,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../asset-importing/" title="Asset Importing"
+    <a href="../../custom-content/asset-importing/" title="Asset Importing"
         class="md-nav__link">
       Asset Importing
     </a>
@@ -2435,7 +2725,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../cloud-manager/" title="Cloud Manager"
+    <a href="../../custom-content/cloud-manager/" title="Cloud Manager"
         class="md-nav__link">
       Cloud Manager
     </a>
@@ -2474,7 +2764,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-assetbundle/" title="Custom AssetBundle"
+    <a href="../../custom-content/custom-assetbundle/" title="Custom AssetBundle"
         class="md-nav__link">
       Custom AssetBundle
     </a>
@@ -2513,7 +2803,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-board/" title="Custom Board"
+    <a href="../../custom-content/custom-board/" title="Custom Board"
         class="md-nav__link">
       Custom Board
     </a>
@@ -2552,7 +2842,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-deck/" title="Custom Deck"
+    <a href="../../custom-content/custom-deck/" title="Custom Deck"
         class="md-nav__link">
       Custom Deck
     </a>
@@ -2591,7 +2881,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-dice/" title="Custom Dice"
+    <a href="../../custom-content/custom-dice/" title="Custom Dice"
         class="md-nav__link">
       Custom Dice
     </a>
@@ -2630,7 +2920,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-figurine/" title="Custom Figurine"
+    <a href="../../custom-content/custom-figurine/" title="Custom Figurine"
         class="md-nav__link">
       Custom Figurine
     </a>
@@ -2669,7 +2959,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-jigsaw/" title="Custom Jigsaw"
+    <a href="../../custom-content/custom-jigsaw/" title="Custom Jigsaw"
         class="md-nav__link">
       Custom Jigsaw
     </a>
@@ -2708,115 +2998,11 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-model/" title="Custom Model"
+    <a href="../../custom-content/custom-model/" title="Custom Model"
         class="md-nav__link">
       Custom Model
     </a>
   </li>
-
-        
-          
-          
-          <!--
-  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Determine class according to level -->
-
-
-  
-
-
-
-<!-- Main navigation item with nested items -->
-
-  <li class="md-nav__item md-nav__item--active">
-    
-
-    <!-- Active checkbox expands items contained within nested section -->
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc"
-        type="checkbox" id="toc" />
-
-    <!-- Hack: see partials/toc.html for more information -->
-    
-
-    <!-- Render table of contents, if not empty -->
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Custom Tile
-      </label>
-    
-    <a href="./" title="Custom Tile"
-        class="md-nav__link md-nav__link--active">
-      Custom Tile
-    </a>
-
-    <!-- Show table of contents -->
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#importing-custom-tile" title="Importing Custom Tile" class="md-nav__link">
-    Importing Custom Tile
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#import-options" title="Import Options" class="md-nav__link">
-    Import Options
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" title="Examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-<!-- Main navigation item -->
 
         
           
@@ -2851,7 +3037,46 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../custom-token/" title="Custom Token"
+    <a href="../../custom-content/custom-tile/" title="Custom Tile"
+        class="md-nav__link">
+      Custom Tile
+    </a>
+  </li>
+
+        
+          
+          
+          <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine class according to level -->
+
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../custom-content/custom-token/" title="Custom Token"
         class="md-nav__link">
       Custom Token
     </a>
@@ -2890,7 +3115,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../steam-workshop/" title="Steam Workshop"
+    <a href="../../custom-content/steam-workshop/" title="Steam Workshop"
         class="md-nav__link">
       Steam Workshop
     </a>
@@ -2929,7 +3154,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../importing-mods/" title="Importing Mods"
+    <a href="../../custom-content/importing-mods/" title="Importing Mods"
         class="md-nav__link">
       Importing Mods
     </a>
@@ -2968,7 +3193,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../save-file-format/" title="Save File Format"
+    <a href="../../custom-content/save-file-format/" title="Save File Format"
         class="md-nav__link">
       Save File Format
     </a>
@@ -3007,7 +3232,7 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../community-guides/" title="Community Guides"
+    <a href="../../custom-content/community-guides/" title="Community Guides"
         class="md-nav__link">
       Community Guides
     </a>
@@ -3047,16 +3272,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#importing-custom-tile" title="Importing Custom Tile" class="md-nav__link">
-    Importing Custom Tile
+  <a href="#first-steps" title="First Steps" class="md-nav__link">
+    First Steps
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-options" title="Import Options" class="md-nav__link">
-    Import Options
+  <a href="#port-forwarding" title="Port Forwarding" class="md-nav__link">
+    Port Forwarding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-logging" title="Enable Logging" class="md-nav__link">
+    Enable Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging" title="Debugging" class="md-nav__link">
+    Debugging
   </a>
   
 </li>
@@ -3067,9 +3306,220 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" title="Examples" class="md-nav__link">
-    Examples
+  <a href="#crashing-on-startup" title="Crashing on Startup" class="md-nav__link">
+    Crashing on Startup
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mac" title="Mac" class="md-nav__link">
+    Mac
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" title="Linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vr" title="VR" class="md-nav__link">
+    VR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crash-mentioning-resolution" title="Crash Mentioning Resolution" class="md-nav__link">
+    Crash Mentioning Resolution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphical-issues" title="Graphical Issues" class="md-nav__link">
+    Graphical Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#everything-is-blurry" title="Everything is Blurry" class="md-nav__link">
+    Everything is Blurry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pink-screen-on-startup" title="Pink Screen on Startup" class="md-nav__link">
+    Pink Screen on Startup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#black-background-and-dark" title="Black Background and Dark" class="md-nav__link">
+    Black Background and Dark
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#www-errors" title="WWW Errors" class="md-nav__link">
+    WWW Errors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improper-url-or-could-not-resolve-host" title="Improper URL or Could Not Resolve Host" class="md-nav__link">
+    Improper URL or Could Not Resolve Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#www-error-could-not-open-file" title="WWW Error; Could Not Open File" class="md-nav__link">
+    WWW Error; Could Not Open File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-closed-with-___-bytes-remaining" title="Transfer Closed with ___ Bytes Remaining" class="md-nav__link">
+    Transfer Closed with ___ Bytes Remaining
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshopmod-issues" title="Workshop/Mod Issues" class="md-nav__link">
+    Workshop/Mod Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mod-not-uploading" title="Mod Not Uploading" class="md-nav__link">
+    Mod Not Uploading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#black-texture-when-loading" title="Black Texture When Loading" class="md-nav__link">
+    Black Texture When Loading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incorrect-steam-workshop-id-number" title="Incorrect Steam Workshop ID Number" class="md-nav__link">
+    Incorrect Steam Workshop ID Number
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller-issues" title="Controller Issues" class="md-nav__link">
+    Controller Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spinning-mouse" title="Spinning Mouse" class="md-nav__link">
+    Spinning Mouse
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-issues" title="General Issues" class="md-nav__link">
+    General Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tablet-doesnt-work" title="Tablet Doesn't Work" class="md-nav__link">
+    Tablet Doesn't Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-not-working-in-menu" title="UI Not Working in Menu" class="md-nav__link">
+    UI Not Working in Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mic-not-detected" title="Mic Not Detected" class="md-nav__link">
+    Mic Not Detected
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host-password-invalid-to-all-joiners" title="Host Password Invalid to All Joiners" class="md-nav__link">
+    Host Password Invalid to All Joiners
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-modstextures" title="Missing Mods/Textures" class="md-nav__link">
+    Missing Mods/Textures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3089,62 +3539,152 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/MisterStump/Tabletop-Simulator-Documentation/edit/master/docs/custom-content/custom-tile.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/MisterStump/Tabletop-Simulator-Documentation/edit/master/docs/getting-started/troubleshooting.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Custom Tile</h1>
+                  <h1>Troubleshooting</h1>
                 
-                <p>Custom Tiles are an easy way to use an image to create versatile tiles for tabletop games. Various shapes are available, and can be used in most games.</p>
-<h2 id="importing-custom-tile">Importing Custom Tile<a class="headerlink" href="#importing-custom-tile" title="Permanent link"> </a></h2>
-<p>In-game, navigate to the top of your screen and select <strong>Objects &gt; Components &gt; Custom &gt; Custom Tile</strong>.</p>
-<p><center><img alt="Tile Import Menu" src="../../img/custom-tile/import.png" /></center></p>
-<div class="admonition warning">
-<p class="admonition-title">Importing Assets</p>
-<p>How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit <a href="../asset-importing">Asset Importing</a>.</p>
-</div>
-<h3 id="import-options">Import Options<a class="headerlink" href="#import-options" title="Permanent link"> </a></h3>
-<table>
-<thead>
-<tr>
-<th>Setting Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Type</td>
-<td><strong>(Required)</strong> The shape the tile will be. Rounded is a square with rounded corners.</td>
-</tr>
-<tr>
-<td>Top Image</td>
-<td><strong>(Required)</strong> The image that will be displayed on the tile.</td>
-</tr>
-<tr>
-<td>Bottom Image</td>
-<td>The image that will be displayed on the other side of the tile. If none is supplied, the Top Image is used.</td>
-</tr>
-<tr>
-<td>Thickness</td>
-<td>How thick, in in-game units (about an inch), the tile is.</td>
-</tr>
-<tr>
-<td>Stackable</td>
-<td>If this tile can form a stack with others of the same type.</td>
-</tr>
-<tr>
-<td>Stretch Aspect Ratio</td>
-<td>If the source image is stretched to make for a symmetrical tile. If this is unchecked, your tile will stretch to fit the image dimensions instead.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link"> </a></h2>
-<p>The various image types.
-<center><img alt="Tile Example" src="../../img/custom-tile/example1.png" /></center></p>
-<p>Various tile thickness displayed. Going to Custom will let you modify the tile's settings after its initial creation.
-<center><img alt="Tile Example" src="../../img/custom-tile/example2.png" /></center></p>
+                <p>Having technical difficulties with Tabletop Simulator? Follow this guide to help resolve them.</p>
 <div class="admonition tip">
-<p class="admonition-title">Tile Tinting</p>
-<p>When you use the in-game object tinting feature on a custom tile, it re-colors the SIDES of the tile. It does not tint the image used.</p>
+<p class="admonition-title">Can't find your answer here?</p>
+<p>Your next stop should be the <a href="http://www.berserk-games.com/forums/forumdisplay.php?12-Technical-Support">Official Forums</a>. You can search for a solution there and, if none is available, post your problem there.</p>
+</div>
+<h2 id="first-steps">First Steps<a class="headerlink" href="#first-steps" title="Permanent link"> </a></h2>
+<p>These should always be the first things you try when running into issues with a Steam game.</p>
+<ul>
+<li><a href="https://support.steampowered.com/kb_article.php?ref=2037-QEUH-3335">Verify the integrity of the game cache</a></li>
+<li>Ensure drivers are updated</li>
+<li>Restart Steam and/or your computer</li>
+</ul>
+<h3 id="port-forwarding">Port Forwarding<a class="headerlink" href="#port-forwarding" title="Permanent link"> </a></h3>
+<p>If you want to enable port forwarding:</p>
+<blockquote>
+<p>UDP (outbound) - 3478, 4379, 4380 (Steam P2P Ports)</p>
+</blockquote>
+<h3 id="enable-logging">Enable Logging<a class="headerlink" href="#enable-logging" title="Permanent link"> </a></h3>
+<p>To enable logging, type /log in chat or add <code class="codehilite">-log</code> to your <a href="../launch-options">launch options</a>.</p>
+<p>Log Locations:</p>
+<ul>
+<li><strong>Windows</strong> - <code class="codehilite">Steam Library/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/output_log.txt</code></li>
+<li><strong>Mac</strong> - <code class="codehilite">~/Library/Logs/Unity/Player.log</code></li>
+<li><strong>Linux</strong> - <code class="codehilite">~/.config/unity3d/Berserk Games/Tabletop Simulator/Player.log</code></li>
+</ul>
+<h3 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link"> </a></h3>
+<p>If your game is crashing, using <a href="../launch-options">launch options</a> to disable various elements of the game can help track down the source.</p>
+<p>For example, if -nosteam stops the crashing, try reinstalling Steam.</p>
+<h2 id="crashing-on-startup">Crashing on Startup<a class="headerlink" href="#crashing-on-startup" title="Permanent link"> </a></h2>
+<p>Does the game fail to load, and either freeze or crash?</p>
+<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link"> </a></h3>
+<ul>
+<li>Go into programs and features and uninstall both Microsoft Visual C++ 2012 Redistributable Package x86 &amp; x64.
+Then RE-install this: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">https://www.microsoft.com/en-us/download/details.aspx?id=30679</a> (both the x86 and x64 versions)</li>
+<li>Turn off MSI Afterburner and/or Riva Tuner if installed.</li>
+<li>Ensure all your drivers are up to date.</li>
+<li>Your firewall/anti-virus could be completely blocking Tabletop Simulator causing it not to load. Manually exclude Tabletop Simulator.exe from the detection of modified applications list (this could be worded differently depending on your program).</li>
+</ul>
+<h3 id="mac">Mac<a class="headerlink" href="#mac" title="Permanent link"> </a></h3>
+<ul>
+<li>Try using the second launch option.</li>
+<li>Try disabling Steam's FPS counter if you have it enabled.</li>
+</ul>
+<h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link"> </a></h3>
+<ul>
+<li>Add -force-opengl to your launch options.</li>
+<li>Turn off the Steam Overlay and add -force-gfx-st to your launch options.</li>
+</ul>
+<h3 id="vr">VR<a class="headerlink" href="#vr" title="Permanent link"> </a></h3>
+<ul>
+<li>Delete <code class="codehilite">C:\Program Files (x86)\Steam\vr\runtime</code> as this will fix the issue.</li>
+</ul>
+<h3 id="crash-mentioning-resolution">Crash Mentioning Resolution<a class="headerlink" href="#crash-mentioning-resolution" title="Permanent link"> </a></h3>
+<ul>
+<li>Set the launch options of the game to -screen-width 800 -screen-height 600. This can be set in Steam properties for the game.</li>
+<li>Change your monitor's resolution and run TTS. Try changing it back to normal and load up TTS once more.</li>
+</ul>
+<h2 id="graphical-issues">Graphical Issues<a class="headerlink" href="#graphical-issues" title="Permanent link"> </a></h2>
+<p>Visual issues, although the game runs fine otherwise:</p>
+<h3 id="everything-is-blurry">Everything is Blurry<a class="headerlink" href="#everything-is-blurry" title="Permanent link"> </a></h3>
+<ul>
+<li>Open your graphics card properties and make sure your graphical settings are on quality and nothing lower.</li>
+</ul>
+<h3 id="pink-screen-on-startup">Pink Screen on Startup<a class="headerlink" href="#pink-screen-on-startup" title="Permanent link"> </a></h3>
+<ul>
+<li>Do a clean reinstall of graphics drivers (uninstall and then reinstall)</li>
+</ul>
+<h3 id="black-background-and-dark">Black Background and Dark<a class="headerlink" href="#black-background-and-dark" title="Permanent link"> </a></h3>
+<ul>
+<li>Try resizing the game window, swapping between fullscreen and windowed mode or vice versa.</li>
+</ul>
+<h2 id="www-errors">WWW Errors<a class="headerlink" href="#www-errors" title="Permanent link"> </a></h2>
+<p>Online connectivity issues:</p>
+<h3 id="improper-url-or-could-not-resolve-host">Improper URL or Could Not Resolve Host<a class="headerlink" href="#improper-url-or-could-not-resolve-host" title="Permanent link"> </a></h3>
+<ul>
+<li>Check to make sure you don't have any firewall or anti-virus blocking the game.</li>
+</ul>
+<h3 id="www-error-could-not-open-file">WWW Error; Could Not Open File<a class="headerlink" href="#www-error-could-not-open-file" title="Permanent link"> </a></h3>
+<ul>
+<li>Disable 'Mod Caching' in settings, for a temporary work around.</li>
+</ul>
+<h3 id="transfer-closed-with-___-bytes-remaining">Transfer Closed with ___ Bytes Remaining<a class="headerlink" href="#transfer-closed-with-___-bytes-remaining" title="Permanent link"> </a></h3>
+<p>Also comes up as <url> Malformed:</p>
+<ul>
+<li>The domain that those images are hosted from are blocked for you.</li>
+<li>URLs could be broken.</li>
+<li>Try <a href="https://support.steampowered.com/kb_article.php?ref=2037-QEUH-3335">verifying the integrity of the game cache</a>.</li>
+</ul>
+<h2 id="workshopmod-issues">Workshop/Mod Issues<a class="headerlink" href="#workshopmod-issues" title="Permanent link"> </a></h2>
+<p>Steam Workshop uploading/downloading issues:</p>
+<h3 id="mod-not-uploading">Mod Not Uploading<a class="headerlink" href="#mod-not-uploading" title="Permanent link"> </a></h3>
+<ul>
+<li>Save your mod, then restart the game and try again.</li>
+</ul>
+<h3 id="black-texture-when-loading">Black Texture When Loading<a class="headerlink" href="#black-texture-when-loading" title="Permanent link"> </a></h3>
+<ul>
+<li>Try playing on a higher video setting in the launcher. Or making sure your images are using power of 2 sizes (128, 256, 512, 1024, 2048, 4096).</li>
+</ul>
+<h3 id="incorrect-steam-workshop-id-number">Incorrect Steam Workshop ID Number<a class="headerlink" href="#incorrect-steam-workshop-id-number" title="Permanent link"> </a></h3>
+<ul>
+<li>Did you get TTS as a gift and it's the only game you have? In this case, we have found that Steam restricts your account from doing certain things (including uploading to the Workshop) until you have purchased a game.</li>
+<li>If you purchased TTS on another site, you may need to add funds to your wallet so Steam knows your account is legit.</li>
+<li>Try deleting your remotecache.vdf from your userdata for Tabletop Simulator and restart Steam</li>
+<li>Still having issues? Try looking over <a href="http://www.berserk-games.com/forums/showthread.php?2512-Workshop-Upload-Broken&amp;highlight=workshop">this thread</a> from the forums.</li>
+</ul>
+<h2 id="controller-issues">Controller Issues<a class="headerlink" href="#controller-issues" title="Permanent link"> </a></h2>
+<p>Input device issues:</p>
+<h3 id="spinning-mouse">Spinning Mouse<a class="headerlink" href="#spinning-mouse" title="Permanent link"> </a></h3>
+<ul>
+<li>Check to make sure your controller/joystick/etc is not plugged into your computer.</li>
+<li>Uncheck the controller box in the configuration/controls menu.</li>
+<li>Try disabling "HID - compliant game controller" in device manager.</li>
+</ul>
+<h2 id="general-issues">General Issues<a class="headerlink" href="#general-issues" title="Permanent link"> </a></h2>
+<p>Misc issues with know fixes:</p>
+<h3 id="tablet-doesnt-work">Tablet Doesn't Work<a class="headerlink" href="#tablet-doesnt-work" title="Permanent link"> </a></h3>
+<ul>
+<li>Make sure you install <a href="https://get.adobe.com/flashplayer/otherversions">basic flash</a> to your computer.</li>
+<li>The tablet doesn't work on Linux. This is a limitation of the plugin. It is something we hope to fix in the future.</li>
+</ul>
+<h3 id="ui-not-working-in-menu">UI Not Working in Menu<a class="headerlink" href="#ui-not-working-in-menu" title="Permanent link"> </a></h3>
+<ul>
+<li>Go into programs and features and uninstall Microsoft Visual C++ 2010 Redistributable Package (x86)</li>
+<li>Then RE-install this: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=5555">https://www.microsoft.com/en-us/download/details.aspx?id=5555</a></li>
+</ul>
+<h3 id="mic-not-detected">Mic Not Detected<a class="headerlink" href="#mic-not-detected" title="Permanent link"> </a></h3>
+<ul>
+<li>If you can't be heard in voice chat, manually select your mic audio source in the <a href="../configuration-menu#sound">Configuration Menu</a>.</li>
+</ul>
+<h3 id="host-password-invalid-to-all-joiners">Host Password Invalid to All Joiners<a class="headerlink" href="#host-password-invalid-to-all-joiners" title="Permanent link"> </a></h3>
+<ul>
+<li>Type <code class="codehilite">/resetallsaved</code> in chat. This will clear any old player preferences that is causing this issue. (This will also reset ALL your keybinds/controls)</li>
+</ul>
+<h3 id="missing-modstextures">Missing Mods/Textures<a class="headerlink" href="#missing-modstextures" title="Permanent link"> </a></h3>
+<ul>
+<li>Go into programs and features and uninstall Microsoft Visual C++ 2012 Redistributable Package (x86)</li>
+<li>Then RE-install this: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">https://www.microsoft.com/en-us/download/details.aspx?id=30679</a></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you're getting the asset popups asking for paths to assets, then there is nothing wrong on your end. It just means the site the images are hosted on are down or removed. You need to post on the Workshop page and let the modder know the issue so they can update the mod.</p>
 </div>
 <hr />
                 

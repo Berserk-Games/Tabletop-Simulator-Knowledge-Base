@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "TO DO:\n\n\nAdd a page for the new migration feature\n\n\nMake sure a page outlines what it means to be promoted\n\n\nUpdate line drawing tool info\n\n\nAdd troubleshooting page \nhttps://steamcommunity.com/app/286160/discussions/0/3183345176721925234/\n\n\nMake border around white images less noticable, lighten it maybe, or make it a mini dropshadow kind of thing\n\n\nGames - Save \n Load ~ need to add this section, I missed it initially\n\n\n\n\n\n\n\n\n\n\nAbout Tabletop Simulator\n \n\n\nTabletop Simulator is not your everyday simulator. It can be used for a wide variety of things. The general purpose use of it is to play any board, card, and any tabletop game you can think of with up to 10 players.\n\n\nTo get a bit more in-depth, Tabletop Simulator is the ultimate digital platform for not only playing games, but for game designers to use as a prototyping and game creation tool.\n\n\nYou can do things like create Unity AssetBundles with particle effects, lighting, sounds, animations and more, script game behavior and tools with Lua, import 3D models, create games from scratch, manipulate physics, create hinges and joints, and much more! Not only that, but the host can set physics and permissions for players, so you can decide how serious or silly you want your games to be.\n\n\nTabletop Simulator is continually growing. We are still adding new features and content, fixing any issues that come up and working with companies to bring official games into TTS.\n\n\nThis Knowledge Base\n \n\n\nThere is a LOT you can do in Tabletop Simulator, both as a creator and a player. It is recommended you watch video tutorials and read through this Knowledge Base to explore all the possibilities. If you have questions or want to connect with others, visit the \nforums\n or join the \nofficial Discord channel\n.", 
+            "text": "TO DO:\n\n\nUpdate line drawing tool info (waiting to learn if pixel paint will stay, and need new icons in place for screenshots)\n\n\n\n\n\n\n\n\n\n\nAbout Tabletop Simulator\n \n\n\nTabletop Simulator is not your everyday simulator. It can be used for a wide variety of things. The general purpose use of it is to play any board, card, and any tabletop game you can think of with up to 10 players.\n\n\nTo get a bit more in-depth, Tabletop Simulator is the ultimate digital platform for not only playing games, but for game designers to use as a prototyping and game creation tool.\n\n\nYou can do things like create Unity AssetBundles with particle effects, lighting, sounds, animations and more, script game behavior and tools with Lua, import 3D models, create games from scratch, manipulate physics, create hinges and joints, and much more! Not only that, but the host can set physics and permissions for players, so you can decide how serious or silly you want your games to be.\n\n\nTabletop Simulator is continually growing. We are still adding new features and content, fixing any issues that come up and working with companies to bring official games into TTS.\n\n\nThis Knowledge Base\n \n\n\nThere is a LOT you can do in Tabletop Simulator, both as a creator and a player. It is recommended you watch video tutorials and read through this Knowledge Base to explore all the possibilities. If you have questions or want to connect with others, visit the \nforums\n or join the \nofficial Discord channel\n.", 
             "title": "Tabletop Simulator"
         }, 
         {
@@ -242,7 +242,7 @@
         }, 
         {
             "location": "/getting-started/player-roles/", 
-            "text": "There are a lot of tools in Tabletop Simulator to help make your gameplay sessions manageable and easy to run. As such, there are different player roles in place to make your life easier.\n\n\nHost\n \n\n\nThe host is the admin of his/her server and is in full control. Hosts can mute, kick and ban disruptive players, change players\u2019 seats, teams and many other things. He/she can promote trusted players to help run the room. A gold crown is placed next to the host\u2019s name.\n\n\nIf you start a game, even if it single player, you are still considered to be the Host.\n\n\nOptions\n \n\n\nWhen you\u2019re the host, all buttons on the top menu will be available. Click on \nOPTIONS\n. You will get a drop down showing \nOptions\n, \nGrid\n, \nHands\n and \nTurns\n. Options is the one where you set the different permissions for the rest of your users.\n\n\n\n\n!!!info Options and Permissions\n    A full list of options and permissions that the host can be found on the \npermissions\n page.\n\n\nPromoting\n \n\n\nThe host can promote trusted players to give them most of the power that the host has. To promote a player, just click on the player\u2019s name on the top right and choose the \u201cPromote\u201d option. Once the player is promoted, they have a shield next to their name to show the promotion.\n\n\n\n\nPromoted Players\n \n\n\nPromoted Players can do most of the things that the Host can do with a few exceptions:\n\n\n\n\nThey cannot control/change any scripting.\n\n\nThey cannot import any custom content, although they can import saved custom objects and Workshop items.\n\n\nThey cannot modify custom objects.\n\n\nThey do not have access to the Points tool.\n\n\n\n\nPlayer\n \n\n\nAnyone who joins a server and takes a seat is a Player. What they can or cannot do is determined by the permissions the Host allows and their promotion status.\n\n\n\n\nPlayers can choose a seat when they join a server if the host allows the option. Once seated, the player has access to various parts of the game depending on what permissions the host has available.\n\n\nPlayers can leave their seat and become a spectator (grey) at any time.\n\n\nPlayers can change their color and team by clicking their name on the top right.\n\n\nPlayers can mute another player by clicking on a name on the top right. This is a local mute, so the other person will still be heard by the anyone else in the game.\n\n\n\n\nGame Master\n \n\n\nA person in the \"Black\" seat is considered the Game Master and has special access to game information.\n\n\n\n\nGame Master is the \u201cBlack\u201d color.\n\n\nGame Masters have the all-seeing eye. They can see all information that is hidden to other players. Game Masters can see everything in Hidden Zones, Card Hands and all pages in the Notebook.\n\n\nGame Masters do not have any host controls, so the host will need to enable certain features if the GM is supposed to use them or just promote the GM.\n\n\nOnly the host can choose a Game Master. They can also select someone else to be the Game Master.\n\n\n\n\nSpectator\n \n\n\nA person who joins a server and selects the \"Grey\" seat (or no seat at all) is a spectator.\n\n\n\n\nAs a spectator, you can do just that \u2013 spectate. You cannot interact or manipulate anything in the room. If you try, a message will show up in chat letting you know. You can control your camera and chat in both the game and global chat as well as view rules of the game in the Notebook.\n\n\nIf the option is not disabled by the Host, spectators can change their color at any time to an open seat around the table. Otherwise the Host would need to move them to a seat.", 
+            "text": "There are a lot of tools in Tabletop Simulator to help make your gameplay sessions manageable and easy to run. As such, there are different player roles in place to make your life easier.\n\n\nHost\n \n\n\nThe host is the admin of his/her server and is in full control. Hosts can mute, kick and ban disruptive players, change players\u2019 seats, teams and many other things. He/she can promote trusted players to help run the room. A gold crown is placed next to the host\u2019s name.\n\n\nIf you start a game, even if it single player, you are still considered to be the Host.\n\n\nOptions\n \n\n\nWhen you\u2019re the host, all buttons on the top menu will be available. Click on \nOPTIONS\n. You will get a drop down showing \nOptions\n, \nGrid\n, \nHands\n and \nTurns\n. Options is the one where you set the different permissions for the rest of your users.\n\n\n\n\n!!!info Options and Permissions\n    A full list of options and permissions that the host can be found on the \npermissions\n page.\n\n\nPromoting\n \n\n\nThe host can promote trusted players to give them most of the power that the host has. To promote a player, just click on the player\u2019s name on the top right and choose the \u201cPromote\u201d option. Once the player is promoted, they have a shield next to their name to show the promotion.\n\n\n\n\nGive Host\n \n\n\nIn the player options, you can select \nGive Host\n to make someone else the host of the game. This is known as \"Host Migration\" and causes that player to become the host.\n\n\n\n\nDLC Host Migration\n\n\nDLC can only be played if the HOST of the game owns the DLC. If you are playing an official DLC and the host does not own it, it will cause the migration to fail.\n\n\n\n\n\n\nPromoted Players\n \n\n\nPromoted Players can do most of the things that the Host can do with a few exceptions:\n\n\n\n\nThey cannot control/change any scripting.\n\n\nThey cannot import any custom content, although they can import saved custom objects and Workshop items.\n\n\nThey cannot modify custom objects.\n\n\nThey do not have access to the Points tool.\n\n\n\n\n\n\nPlayer\n \n\n\nAnyone who joins a server and takes a seat is a Player. What they can or cannot do is determined by the permissions the Host allows and their promotion status.\n\n\n\n\nPlayers can choose a seat when they join a server if the host allows the option. Once seated, the player has access to various parts of the game depending on what permissions the host has available.\n\n\nPlayers can leave their seat and become a spectator (grey) at any time.\n\n\nPlayers can change their color and team by clicking their name on the top right.\n\n\nPlayers can mute another player by clicking on a name on the top right. This is a local mute, so the other person will still be heard by the anyone else in the game.\n\n\n\n\nGame Master\n \n\n\nA person in the \"Black\" seat is considered the Game Master and has special access to game information.\n\n\n\n\nGame Master is the \u201cBlack\u201d color.\n\n\nGame Masters have the all-seeing eye. They can see all information that is hidden to other players. Game Masters can see everything in Hidden Zones, Card Hands and all pages in the Notebook.\n\n\nGame Masters do not have any host controls, so the host will need to enable certain features if the GM is supposed to use them or just promote the GM.\n\n\nOnly the host can choose a Game Master. They can also select someone else to be the Game Master.\n\n\n\n\nSpectator\n \n\n\nA person who joins a server and selects the \"Grey\" seat (or no seat at all) is a spectator.\n\n\n\n\nAs a spectator, you can do just that \u2013 spectate. You cannot interact or manipulate anything in the room. If you try, a message will show up in chat letting you know. You can control your camera and chat in both the game and global chat as well as view rules of the game in the Notebook.\n\n\nIf the option is not disabled by the Host, spectators can change their color at any time to an open seat around the table. Otherwise the Host would need to move them to a seat.", 
             "title": "Player Roles"
         }, 
         {
@@ -259,6 +259,11 @@
             "location": "/getting-started/player-roles/#promoting", 
             "text": "The host can promote trusted players to give them most of the power that the host has. To promote a player, just click on the player\u2019s name on the top right and choose the \u201cPromote\u201d option. Once the player is promoted, they have a shield next to their name to show the promotion.", 
             "title": "Promoting"
+        }, 
+        {
+            "location": "/getting-started/player-roles/#give-host", 
+            "text": "In the player options, you can select  Give Host  to make someone else the host of the game. This is known as \"Host Migration\" and causes that player to become the host.   DLC Host Migration  DLC can only be played if the HOST of the game owns the DLC. If you are playing an official DLC and the host does not own it, it will cause the migration to fail.", 
+            "title": "Give Host"
         }, 
         {
             "location": "/getting-started/player-roles/#promoted-players", 
@@ -497,8 +502,38 @@
         }, 
         {
             "location": "/getting-started/games-save-load/", 
-            "text": "", 
+            "text": "When you launch into single player, or click the \nGames\n button at the top of your screen when in game, you will be met with the Games menu. It is where you choose from pre-made tables, either Classic, DLC or Steam Workshop content. But you can also create and load your OWN saved setups. This is ideal for making your own, customized setups or recording a game that is mid-play.\n\n\nGames Menu\n \n\n\nOn the main Games menu, you will see Save \n Load. It shows your 4 most recent saves and the most recent auto-save that was taken last time you were playing.\n\n\n\n\nSave Options\n \n\n\nPutting your mouse over a save makes the options button appear in its upper right. Click on it to view the options for that save.\n\n\n\n\n\n\nOverwrite:\n Overwrite the existing save with the current state of your current table.\n\n\nExpand:\n Open a window of all of the elements that make up that game's save. This allows you to pull elements from a save without loading the save first.\n\n\nDelete:\n Remove the save.\n\n\n\n\nSave \n Load Menu\n \n\n\nClicking on the Save \n Load button expands the Save \n Load menu. The Save \n Load menu displays all of your saves and allows you to organize them.\n\n\nSaving\n \n\n\nClick \nCreate\n at the top of the menu, and enter a name for your save. Click \nSave\n once finished.\n\n\n\n\nLoading\n \n\n\nClick on any save to load it.\n\n\n\n\nSorting\n \n\n\nClicking the \nSort\n button at the top of the menu gives you the option to order your saves.\n\n\n\n\n\n\nSlot:\n The order the saves were created and automatically numbered.\n\n\nDate:\n The date the save was created, most recent first.\n\n\nName:\n Alphabetical sort.\n\n\nRandom:\n Random order for anarchists.", 
             "title": "Games - Save & Load"
+        }, 
+        {
+            "location": "/getting-started/games-save-load/#games-menu", 
+            "text": "On the main Games menu, you will see Save   Load. It shows your 4 most recent saves and the most recent auto-save that was taken last time you were playing.", 
+            "title": "Games Menu"
+        }, 
+        {
+            "location": "/getting-started/games-save-load/#save-options", 
+            "text": "Putting your mouse over a save makes the options button appear in its upper right. Click on it to view the options for that save.    Overwrite:  Overwrite the existing save with the current state of your current table.  Expand:  Open a window of all of the elements that make up that game's save. This allows you to pull elements from a save without loading the save first.  Delete:  Remove the save.", 
+            "title": "Save Options"
+        }, 
+        {
+            "location": "/getting-started/games-save-load/#save-load-menu", 
+            "text": "Clicking on the Save   Load button expands the Save   Load menu. The Save   Load menu displays all of your saves and allows you to organize them.", 
+            "title": "Save &amp; Load Menu"
+        }, 
+        {
+            "location": "/getting-started/games-save-load/#saving", 
+            "text": "Click  Create  at the top of the menu, and enter a name for your save. Click  Save  once finished.", 
+            "title": "Saving"
+        }, 
+        {
+            "location": "/getting-started/games-save-load/#loading", 
+            "text": "Click on any save to load it.", 
+            "title": "Loading"
+        }, 
+        {
+            "location": "/getting-started/games-save-load/#sorting", 
+            "text": "Clicking the  Sort  button at the top of the menu gives you the option to order your saves.    Slot:  The order the saves were created and automatically numbered.  Date:  The date the save was created, most recent first.  Name:  Alphabetical sort.  Random:  Random order for anarchists.", 
+            "title": "Sorting"
         }, 
         {
             "location": "/getting-started/faq/", 
@@ -554,6 +589,161 @@
             "location": "/getting-started/faq/#why-cant-i-purchase-more-4-packs-for-my-family-and-friends", 
             "text": "This is completely out of our control as this is a Steam limitation. Steam does not allow you to purchase a 4-pack if you already own Tabletop Simulator. This is to prevent the reselling of keys in the grey market areas. The only thing you can do is purchase individual copies when they are on sale, or send a 4-pack as a gift to a trusted person and have them pass out the other 3 copies for you.", 
             "title": "Why can\u2019t I purchase more 4-packs for my family and friends?"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/", 
+            "text": "Having technical difficulties with Tabletop Simulator? Follow this guide to help resolve them.\n\n\n\n\nCan't find your answer here?\n\n\nYour next stop should be the \nOfficial Forums\n. You can search for a solution there and, if none is available, post your problem there.\n\n\n\n\nFirst Steps\n \n\n\nThese should always be the first things you try when running into issues with a Steam game.\n\n\n\n\nVerify the integrity of the game cache\n\n\nEnsure drivers are updated\n\n\nRestart Steam and/or your computer\n\n\n\n\nPort Forwarding\n \n\n\nIf you want to enable port forwarding:\n\n\n\n\nUDP (outbound) - 3478, 4379, 4380 (Steam P2P Ports)\n\n\n\n\nEnable Logging\n \n\n\nTo enable logging, type /log in chat or add \n-log\n to your \nlaunch options\n.\n\n\nLog Locations:\n\n\n\n\nWindows\n - \nSteam Library/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/output_log.txt\n\n\nMac\n - \n~/Library/Logs/Unity/Player.log\n\n\nLinux\n - \n~/.config/unity3d/Berserk Games/Tabletop Simulator/Player.log\n\n\n\n\nDebugging\n \n\n\nIf your game is crashing, using \nlaunch options\n to disable various elements of the game can help track down the source.\n\n\nFor example, if -nosteam stops the crashing, try reinstalling Steam.\n\n\nCrashing on Startup\n \n\n\nDoes the game fail to load, and either freeze or crash?\n\n\nWindows\n \n\n\n\n\nGo into programs and features and uninstall both Microsoft Visual C++ 2012 Redistributable Package x86 \n x64.\nThen RE-install this: \nhttps://www.microsoft.com/en-us/download/details.aspx?id=30679\n (both the x86 and x64 versions)\n\n\nTurn off MSI Afterburner and/or Riva Tuner if installed.\n\n\nEnsure all your drivers are up to date.\n\n\nYour firewall/anti-virus could be completely blocking Tabletop Simulator causing it not to load. Manually exclude Tabletop Simulator.exe from the detection of modified applications list (this could be worded differently depending on your program).\n\n\n\n\nMac\n \n\n\n\n\nTry using the second launch option.\n\n\nTry disabling Steam's FPS counter if you have it enabled.\n\n\n\n\nLinux\n \n\n\n\n\nAdd -force-opengl to your launch options.\n\n\nTurn off the Steam Overlay and add -force-gfx-st to your launch options.\n\n\n\n\nVR\n \n\n\n\n\nDelete \nC:\\Program Files (x86)\\Steam\\vr\\runtime\n as this will fix the issue.\n\n\n\n\nCrash Mentioning Resolution\n \n\n\n\n\nSet the launch options of the game to -screen-width 800 -screen-height 600. This can be set in Steam properties for the game.\n\n\nChange your monitor's resolution and run TTS. Try changing it back to normal and load up TTS once more.\n\n\n\n\nGraphical Issues\n \n\n\nVisual issues, although the game runs fine otherwise:\n\n\nEverything is Blurry\n \n\n\n\n\nOpen your graphics card properties and make sure your graphical settings are on quality and nothing lower.\n\n\n\n\nPink Screen on Startup\n \n\n\n\n\nDo a clean reinstall of graphics drivers (uninstall and then reinstall)\n\n\n\n\nBlack Background and Dark\n \n\n\n\n\nTry resizing the game window, swapping between fullscreen and windowed mode or vice versa.\n\n\n\n\nWWW Errors\n \n\n\nOnline connectivity issues:\n\n\nImproper URL or Could Not Resolve Host\n \n\n\n\n\nCheck to make sure you don't have any firewall or anti-virus blocking the game.\n\n\n\n\nWWW Error; Could Not Open File\n \n\n\n\n\nDisable 'Mod Caching' in settings, for a temporary work around.\n\n\n\n\nTransfer Closed with ___ Bytes Remaining\n \n\n\nAlso comes up as \n Malformed:\n\n\n\n\nThe domain that those images are hosted from are blocked for you.\n\n\nURLs could be broken.\n\n\nTry \nverifying the integrity of the game cache\n.\n\n\n\n\nWorkshop/Mod Issues\n \n\n\nSteam Workshop uploading/downloading issues:\n\n\nMod Not Uploading\n \n\n\n\n\nSave your mod, then restart the game and try again.\n\n\n\n\nBlack Texture When Loading\n \n\n\n\n\nTry playing on a higher video setting in the launcher. Or making sure your images are using power of 2 sizes (128, 256, 512, 1024, 2048, 4096).\n\n\n\n\nIncorrect Steam Workshop ID Number\n \n\n\n\n\nDid you get TTS as a gift and it's the only game you have? In this case, we have found that Steam restricts your account from doing certain things (including uploading to the Workshop) until you have purchased a game.\n\n\nIf you purchased TTS on another site, you may need to add funds to your wallet so Steam knows your account is legit.\n\n\nTry deleting your remotecache.vdf from your userdata for Tabletop Simulator and restart Steam\n\n\nStill having issues? Try looking over \nthis thread\n from the forums.\n\n\n\n\nController Issues\n \n\n\nInput device issues:\n\n\nSpinning Mouse\n \n\n\n\n\nCheck to make sure your controller/joystick/etc is not plugged into your computer.\n\n\nUncheck the controller box in the configuration/controls menu.\n\n\nTry disabling \"HID - compliant game controller\" in device manager.\n\n\n\n\nGeneral Issues\n \n\n\nMisc issues with know fixes:\n\n\nTablet Doesn't Work\n \n\n\n\n\nMake sure you install \nbasic flash\n to your computer.\n\n\nThe tablet doesn't work on Linux. This is a limitation of the plugin. It is something we hope to fix in the future.\n\n\n\n\nUI Not Working in Menu\n \n\n\n\n\nGo into programs and features and uninstall Microsoft Visual C++ 2010 Redistributable Package (x86)\n\n\nThen RE-install this: \nhttps://www.microsoft.com/en-us/download/details.aspx?id=5555\n\n\n\n\nMic Not Detected\n \n\n\n\n\nIf you can't be heard in voice chat, manually select your mic audio source in the \nConfiguration Menu\n.\n\n\n\n\nHost Password Invalid to All Joiners\n \n\n\n\n\nType \n/resetallsaved\n in chat. This will clear any old player preferences that is causing this issue. (This will also reset ALL your keybinds/controls)\n\n\n\n\nMissing Mods/Textures\n \n\n\n\n\nGo into programs and features and uninstall Microsoft Visual C++ 2012 Redistributable Package (x86)\n\n\nThen RE-install this: \nhttps://www.microsoft.com/en-us/download/details.aspx?id=30679\n\n\n\n\n\n\nImportant\n\n\nIf you're getting the asset popups asking for paths to assets, then there is nothing wrong on your end. It just means the site the images are hosted on are down or removed. You need to post on the Workshop page and let the modder know the issue so they can update the mod.", 
+            "title": "Troubleshooting"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#first-steps", 
+            "text": "These should always be the first things you try when running into issues with a Steam game.   Verify the integrity of the game cache  Ensure drivers are updated  Restart Steam and/or your computer", 
+            "title": "First Steps"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#port-forwarding", 
+            "text": "If you want to enable port forwarding:   UDP (outbound) - 3478, 4379, 4380 (Steam P2P Ports)", 
+            "title": "Port Forwarding"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#enable-logging", 
+            "text": "To enable logging, type /log in chat or add  -log  to your  launch options .  Log Locations:   Windows  -  Steam Library/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/output_log.txt  Mac  -  ~/Library/Logs/Unity/Player.log  Linux  -  ~/.config/unity3d/Berserk Games/Tabletop Simulator/Player.log", 
+            "title": "Enable Logging"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#debugging", 
+            "text": "If your game is crashing, using  launch options  to disable various elements of the game can help track down the source.  For example, if -nosteam stops the crashing, try reinstalling Steam.", 
+            "title": "Debugging"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#crashing-on-startup", 
+            "text": "Does the game fail to load, and either freeze or crash?", 
+            "title": "Crashing on Startup"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#windows", 
+            "text": "Go into programs and features and uninstall both Microsoft Visual C++ 2012 Redistributable Package x86   x64.\nThen RE-install this:  https://www.microsoft.com/en-us/download/details.aspx?id=30679  (both the x86 and x64 versions)  Turn off MSI Afterburner and/or Riva Tuner if installed.  Ensure all your drivers are up to date.  Your firewall/anti-virus could be completely blocking Tabletop Simulator causing it not to load. Manually exclude Tabletop Simulator.exe from the detection of modified applications list (this could be worded differently depending on your program).", 
+            "title": "Windows"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#mac", 
+            "text": "Try using the second launch option.  Try disabling Steam's FPS counter if you have it enabled.", 
+            "title": "Mac"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#linux", 
+            "text": "Add -force-opengl to your launch options.  Turn off the Steam Overlay and add -force-gfx-st to your launch options.", 
+            "title": "Linux"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#vr", 
+            "text": "Delete  C:\\Program Files (x86)\\Steam\\vr\\runtime  as this will fix the issue.", 
+            "title": "VR"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#crash-mentioning-resolution", 
+            "text": "Set the launch options of the game to -screen-width 800 -screen-height 600. This can be set in Steam properties for the game.  Change your monitor's resolution and run TTS. Try changing it back to normal and load up TTS once more.", 
+            "title": "Crash Mentioning Resolution"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#graphical-issues", 
+            "text": "Visual issues, although the game runs fine otherwise:", 
+            "title": "Graphical Issues"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#everything-is-blurry", 
+            "text": "Open your graphics card properties and make sure your graphical settings are on quality and nothing lower.", 
+            "title": "Everything is Blurry"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#pink-screen-on-startup", 
+            "text": "Do a clean reinstall of graphics drivers (uninstall and then reinstall)", 
+            "title": "Pink Screen on Startup"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#black-background-and-dark", 
+            "text": "Try resizing the game window, swapping between fullscreen and windowed mode or vice versa.", 
+            "title": "Black Background and Dark"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#www-errors", 
+            "text": "Online connectivity issues:", 
+            "title": "WWW Errors"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#improper-url-or-could-not-resolve-host", 
+            "text": "Check to make sure you don't have any firewall or anti-virus blocking the game.", 
+            "title": "Improper URL or Could Not Resolve Host"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#www-error-could-not-open-file", 
+            "text": "Disable 'Mod Caching' in settings, for a temporary work around.", 
+            "title": "WWW Error; Could Not Open File"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#transfer-closed-with-___-bytes-remaining", 
+            "text": "Also comes up as   Malformed:   The domain that those images are hosted from are blocked for you.  URLs could be broken.  Try  verifying the integrity of the game cache .", 
+            "title": "Transfer Closed with ___ Bytes Remaining"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#workshopmod-issues", 
+            "text": "Steam Workshop uploading/downloading issues:", 
+            "title": "Workshop/Mod Issues"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#mod-not-uploading", 
+            "text": "Save your mod, then restart the game and try again.", 
+            "title": "Mod Not Uploading"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#black-texture-when-loading", 
+            "text": "Try playing on a higher video setting in the launcher. Or making sure your images are using power of 2 sizes (128, 256, 512, 1024, 2048, 4096).", 
+            "title": "Black Texture When Loading"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#incorrect-steam-workshop-id-number", 
+            "text": "Did you get TTS as a gift and it's the only game you have? In this case, we have found that Steam restricts your account from doing certain things (including uploading to the Workshop) until you have purchased a game.  If you purchased TTS on another site, you may need to add funds to your wallet so Steam knows your account is legit.  Try deleting your remotecache.vdf from your userdata for Tabletop Simulator and restart Steam  Still having issues? Try looking over  this thread  from the forums.", 
+            "title": "Incorrect Steam Workshop ID Number"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#controller-issues", 
+            "text": "Input device issues:", 
+            "title": "Controller Issues"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#spinning-mouse", 
+            "text": "Check to make sure your controller/joystick/etc is not plugged into your computer.  Uncheck the controller box in the configuration/controls menu.  Try disabling \"HID - compliant game controller\" in device manager.", 
+            "title": "Spinning Mouse"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#general-issues", 
+            "text": "Misc issues with know fixes:", 
+            "title": "General Issues"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#tablet-doesnt-work", 
+            "text": "Make sure you install  basic flash  to your computer.  The tablet doesn't work on Linux. This is a limitation of the plugin. It is something we hope to fix in the future.", 
+            "title": "Tablet Doesn't Work"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#ui-not-working-in-menu", 
+            "text": "Go into programs and features and uninstall Microsoft Visual C++ 2010 Redistributable Package (x86)  Then RE-install this:  https://www.microsoft.com/en-us/download/details.aspx?id=5555", 
+            "title": "UI Not Working in Menu"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#mic-not-detected", 
+            "text": "If you can't be heard in voice chat, manually select your mic audio source in the  Configuration Menu .", 
+            "title": "Mic Not Detected"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#host-password-invalid-to-all-joiners", 
+            "text": "Type  /resetallsaved  in chat. This will clear any old player preferences that is causing this issue. (This will also reset ALL your keybinds/controls)", 
+            "title": "Host Password Invalid to All Joiners"
+        }, 
+        {
+            "location": "/getting-started/troubleshooting/#missing-modstextures", 
+            "text": "Go into programs and features and uninstall Microsoft Visual C++ 2012 Redistributable Package (x86)  Then RE-install this:  https://www.microsoft.com/en-us/download/details.aspx?id=30679    Important  If you're getting the asset popups asking for paths to assets, then there is nothing wrong on your end. It just means the site the images are hosted on are down or removed. You need to post on the Workshop page and let the modder know the issue so they can update the mod.", 
+            "title": "Missing Mods/Textures"
         }, 
         {
             "location": "/game-tools/drawing-tools/", 
