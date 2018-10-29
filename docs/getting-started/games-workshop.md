@@ -1,4 +1,4 @@
-The Workshop is where all the mods you subscribed to from the Steam Workshop is located. To subscribe to mods on the Workshop, you can click the **Browse** button at the top of the Workshop games menu to open it up in the Steam overlay, or go directly to the [Workshop](https://steamcommunity.com/app/286160/workshop/).
+The Workshop is where all the mods you subscribed to from the Steam Workshop are located. To subscribe to mods on the Workshop, you can click the **Browse** button at the top of the Workshop games menu to open it up in the Steam overlay, or go directly to the [Workshop](https://steamcommunity.com/app/286160/workshop/).
 
 <center>![In-Game Workshop Menu](/img/games-workshop/menu-main.png)</center>
 
@@ -22,3 +22,5 @@ Lastly, you can hover over a mod or folder for more options by clicking the trip
 * **Expand:** This allows you to see all the files inside the mod, so you can save each file individually or load a background or table without having to change the mod completely.
 * **Move:** If you want to move a mod to a specific folder or sub-folder, you can do so here.
 Delete: To completely unsubscribe from the mod and delete the contents from your computer, use this option. If you just unsubscribe from the mod on the Workshop you will still have the files on your computer and will not receive updates to the mod.
+
+---

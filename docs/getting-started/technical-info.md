@@ -20,9 +20,9 @@ Linux | ~/.local/share/Tabletop Simulator
 
 !!!info "Changing the Save Game Data Location"
     Using the in-game menu, you can choose to change the directory to the game's file location.
-    
+
 ---
-    
+
 ##Save game cloud syncing
 
 Steam cloud allows for up to **100 GB** of storage for Tabletop Simulator. You can utilize this for storage of in-game assets like images and models. Check out the [Cloud Manager](/custom-content/cloud-manager) page for details on how to manage the contents of your Tabletop Simulator Steam cloud.
@@ -100,7 +100,7 @@ These are the default Steam P2P ports.
     * 3478
     * 4379
     * 4380
-    
+
 ---
 
 ##VR Support
@@ -155,7 +155,7 @@ Video card (GPU) | Integrated graphics
 Element | Minimum Requirement
 -- | --
 Operating system (OS) | XP SP2
-Processor (CPU) | 
+Processor (CPU) |
 System memory (RAM) | 4 GB
 Hard disk drive (HDD) | 7 GB
 Video card (GPU) | Integrated graphics
@@ -164,8 +164,10 @@ Video card (GPU) | Integrated graphics
 
 Element | Minimum Requirement
 -- | --
-Operating system (OS) | 
-Processor (CPU) | 
+Operating system (OS) |
+Processor (CPU) |
 System memory (RAM) | 4 GB
 Hard disk drive (HDD) | 7 GB
 Video card (GPU) | Integrated graphics
+
+---

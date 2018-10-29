@@ -31,3 +31,5 @@ Launch Option | What It Does
 `-novid -nosteam -notablet`
 
 ![Launch Options Example](/img/launch-options/launch-options.png)
+
+---

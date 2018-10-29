@@ -1,4 +1,6 @@
-Welcome to our Tutorial Series for Tabletop Simulator. These video tutorials give you a basic overview of how to use Tabletop Simulator, from the various controls, to using and uploading to the Steam Workshop, to creating your own custom content and much more! Complete Tutorial Series is below. Each episode after the Introduction video includes a written transcript. Feel free to subscribe to our [YouTube](https://www.youtube.com/channel/UCbOm4vGY8a7LVD2UqJoCpbg) channel to stay up to date or follow us on [Twitter](https://twitter.com/berserkgames) to get the latest development updates.
+Welcome to our Tutorial Series for Tabletop Simulator. These video tutorials give you a basic overview of how to use the game, from the various controls, to using and uploading to the Steam Workshop, to creating your own custom content and much more!
+
+The Complete Tutorial Series is below. Each episode after the Introduction video includes a written transcript. Feel free to subscribe to our [YouTube](https://www.youtube.com/channel/UCbOm4vGY8a7LVD2UqJoCpbg) channel to stay up to date or follow us on [Twitter](https://twitter.com/berserkgames) to get the latest development updates.
 
 ##Using Tabletop Simulator
 
@@ -75,7 +77,7 @@ frameborder="0" allowfullscreen></iframe></center>
     And that’s going to wrap up this video about the basic controls and movement in Tabletop Simulator. The next video will go over the advanced controls which may just cover some things even you veterans were not even aware of!
 
     So stay tuned and see you next time!
-    
+
 ---
 
 
@@ -150,9 +152,9 @@ frameborder="0" allowfullscreen></iframe></center>
     And there you have it! That’s going to wrap up this video about the advanced controls in Tabletop Simulator.
 
     The next video will go over how you can create a custom game in Tabletop Simulator from start to finish. So stay tuned and see you next time!
-    
+
 ---
-    
+
 ###Custom Game Creation
 <center><iframe
 width="672" height="378" src="https://www.youtube.com/embed/_xbED5HDSYU"
@@ -258,7 +260,7 @@ frameborder="0" allowfullscreen></iframe></center>
     And that’s all there is to it! I hope you enjoyed this tutorial and it helps you in creating your own custom games! If you have any questions, just post them in the comments below. And don’t forget to check out the Knowledge for a lot more info on what you can do in Tabletop Simulator!
 
     Thanks for watching and see you next time!
-    
+
 ---
 
 ###Custom Asset Bundles
@@ -445,7 +447,7 @@ frameborder="0" allowfullscreen></iframe></center>
     Be sure to check out the Knowledge Base on our website for additional info.
 
     See you in the next video!
-    
+
 ---
 
 ###Tools Menu Part B
@@ -550,7 +552,7 @@ frameborder="0" allowfullscreen></iframe></center>
     And that covers everything about the Tools Menu. The next video in this series will be going over the Contextual Menu. You can find all this info and more in our Knowledge Base. If you still have questions about something, then please ask in our forums as we have a very helpful community!
 
     Thanks for watching and see you next time!
-    
+
 ---
 
 ###Contextual Menu
@@ -622,3 +624,6 @@ frameborder="0" allowfullscreen></iframe></center>
     You can also access the Blindfold in the global contextual menu. Just click it to turn it on or you can use the B hotkey.
 
     And that covers the basics of the Contextual Menu in this series. While there are still other parts of the Contextual menu, we will be going over those in more detail when we create other videos that will go over specific areas of Tabletop Simulator. We’ll also be making some fun videos like how to create a custom game from start to finish. Thanks for watching and see you next time!
+
+
+---

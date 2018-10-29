@@ -1,18 +1,18 @@
+<center><img src="/img/index/logo.png" alt="Tabletop Simulator", class="borderdisable"></center>
+
 * TO DO:
     * Update line drawing tool info (waiting to learn if pixel paint will stay, and need new icons in place for screenshots)
 
 
-<center>![Tabletop Simulator](/img/index/logo.png)</center>
-
 ##About Tabletop Simulator
 
-Tabletop Simulator is not your everyday simulator. It can be used for a wide variety of things. The general purpose use of it is to play any board, card, and any tabletop game you can think of with up to 10 players.
+Tabletop Simulator is exactly that: a simulation of a tabletop. It comes with classic games to play, offers DLC of officially licensed versions of other games and has tens of thousands of Steam Workshop contributions from the community. This is the premier platform for creating digital representations of real-life games. If you can't find what you'd like in the Steam Workshop, you can create your own games with nothing more than a handful of images to import.
 
-To get a bit more in-depth, Tabletop Simulator is the ultimate digital platform for not only playing games, but for game designers to use as a prototyping and game creation tool.
+Anyone who owns Tabletop Simulator can join any public game, or you can have private ones with friends. Have control over your game by giving certain players additional access rights, or limiting what players can do to trip up spoilsports.
 
-You can do things like create Unity AssetBundles with particle effects, lighting, sounds, animations and more, script game behavior and tools with Lua, import 3D models, create games from scratch, manipulate physics, create hinges and joints, and much more! Not only that, but the host can set physics and permissions for players, so you can decide how serious or silly you want your games to be.
+Want to add some flair? Import your own models. Access Unity's suite of tools to add particle effects, light, sound, animations and more. Write scripts to run your game, automate setup, trigger events, and more. Joint/hinge objects together, draw on the table, flick and nudge pieces around the board. When the game is over, flip the table in a fit of rage! If you can do it in real life, you can probably do it in Tabletop Simulator.
 
-Tabletop Simulator is continually growing. We are still adding new features and content, fixing any issues that come up and working with companies to bring official games into TTS.
+Years after its release, this game is still growing. We are still adding new features and content, fixing any issues that come up and working with companies to bring official games into TTS.
 
 ##This Knowledge Base
 
