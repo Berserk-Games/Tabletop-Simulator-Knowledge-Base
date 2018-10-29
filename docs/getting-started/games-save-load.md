@@ -1,4 +1,4 @@
-When you launch into single player, or click the **Games** button at the top of your screen when in game, you will be met with the Games menu. It is where you choose from pre-made tables, either Classic, DLC or Steam Workshop content. But you can also create and load your OWN saved setups. This is ideal for making your own, customized setups or recording a game that is mid-play.
+When you launch into single player, or click the **Games** button at the top of your screen when in game, you will be met with the Games menu. It is where you choose from pre-made tables, either Classic, DLC or Steam Workshop content. Additionally, you can also create and load your OWN saved setups. This is ideal for making your own, customized setups or recording a game that is mid-play.
 
 ##Games Menu
 On the main Games menu, you will see Save & Load. It shows your 4 most recent saves and the most recent auto-save that was taken last time you were playing.

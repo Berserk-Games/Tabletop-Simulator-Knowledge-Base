@@ -62,11 +62,11 @@ There are currently over 25 licensed games with many more on the way! If you lik
 ![DLC Games Menu](/img/games-dlc/fp.jpg)
 
 * [Cosmic Encounter](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/) {>>(Released Sept 29, 2015)<<}
-* [Expansion #1: Cosmic Incursion](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/) 
-* [Expansion #2: Cosmic Conflict](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/) 
-* [Expansion #3: Cosmic Alliance](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/) 
+* [Expansion #1: Cosmic Incursion](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/)
+* [Expansion #2: Cosmic Conflict](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/)
+* [Expansion #3: Cosmic Alliance](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/)
 * [Expansion #4: Cosmic Storm](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/)
-* [Expansion #5: Cosmic Dominion](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/) 
+* [Expansion #5: Cosmic Dominion](https://store.steampowered.com/app/405130/Tabletop_Simulator__Cosmic_Encounter_Connector/)
 
 
 ###The Game Crafter
@@ -155,7 +155,7 @@ There are currently over 25 licensed games with many more on the way! If you lik
 
 * [Superfight](https://store.steampowered.com/app/367330/Tabletop_Simulator__Superfight/) {>>(Released Jan 5, 2015)<<}
     * *(Includes the Core, Purple, Blue, Green, Challenge, Anime & The Walking Dead Decks)*
-    * [The Orange Deck is available for $1.99](https://store.steampowered.com/app/367330/Tabletop_Simulator__Superfight/) 
+    * [The Orange Deck is available for $1.99](https://store.steampowered.com/app/367330/Tabletop_Simulator__Superfight/)
     * [The Red Deck is available for $1.99](https://store.steampowered.com/app/367330/Tabletop_Simulator__Superfight/)
 
 
@@ -176,3 +176,5 @@ There are currently over 25 licensed games with many more on the way! If you lik
 
 ##Developers and Publishers
 Are you a publisher or developer with an established physical game and would like to bring it to digital life in Tabletop Simulator? Read our [info packet](http://berserk-games.com/business/publishers/) and then send us an email to business@berserk-games.com if interested!
+
+---
