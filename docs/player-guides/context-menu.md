@@ -13,7 +13,7 @@ There are many different options to choose from and depending on the object, the
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Documentation/img/context-menu/context-demo.webm">
+        src="/Tabletop-Simulator-Knowledge-Base/img/context-menu/context-demo.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>

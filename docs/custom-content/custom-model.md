@@ -16,7 +16,7 @@ There are two tabs, Model and Material, which contain all the options for import
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Documentation/img/custom-model/import.webm">
+        src="/Tabletop-Simulator-Knowledge-Base/img/custom-model/import.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>

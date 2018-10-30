@@ -17,7 +17,7 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Documentation/img/basic-controls/mouse.webm">
+        src="/Tabletop-Simulator-Knowledge-Base/img/basic-controls/mouse.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -33,7 +33,7 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Documentation/img/basic-controls/keyboard.webm">
+        src="/Tabletop-Simulator-Knowledge-Base/img/basic-controls/keyboard.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -48,7 +48,7 @@ Move with the Keyboard, Mouse or both. All keys given are defaults, most of whic
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Documentation/img/basic-controls/keyboard-fp.webm">
+        src="/Tabletop-Simulator-Knowledge-Base/img/basic-controls/keyboard-fp.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -75,7 +75,7 @@ The majority of gameplay within Tabletop Simulator requires your to manipulate O
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Documentation/img/basic-controls/object-controls.webm">
+        src="/Tabletop-Simulator-Knowledge-Base/img/basic-controls/object-controls.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
