@@ -5,7 +5,7 @@ Hand zones are a critical part of Tabletop Simulator and have many uses.
 * Holding any cards or objects
 * Receiving dealt cards/objects
 * Hiding cards from select players
-* Invisible {>>*unless a held object is moved into it<<}
+* Invisible {>>unless a held object is moved into it<<}
 * Displaying its contents on the player screen
 
 If needed, you can read about creating hand zones on the [Zone Tool](/game-tools/zone-tools#hand-zone) page.
