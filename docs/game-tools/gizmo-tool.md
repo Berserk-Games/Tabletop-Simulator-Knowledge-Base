@@ -3,7 +3,7 @@ The Gizmo Tool is an advanced feature where you can move, rotate and scale objec
 !!!tip "You can even modify "locked" Objects and zones!"
 
 !!!tip "Transform multiple objects at once by CTRL+Clicking each object."
-    
+
 
 ##Transform Menu
 <center>![Transform Menu](/img/gizmo-tool/transform.png)</center>
@@ -16,7 +16,7 @@ Changing any of the values and pressing enter (or clicking outside of the field)
 ###X Y Z
 Objects in 3D space are referred to having 3 axes, with the center of each axis being 0. One direction is positive, the other negative. They are labeled **X**, **Y** and **Z**. If you were an Object, here is how those directions would line up with your default facing:
 
-* **X**: Drawing a line from your next to your right shoulder. Negative values would be from your next to the left shoulder.
+* **X**: Drawing a line from your neck to your right shoulder. Negative values would be from your neck to the left shoulder.
 * **Y**: Drawing a line from your heart to the top of your head. Negative values would be from your heart to your feet.
 * **Z**: Drawing a line from your heart to your chest. Negative values would from your heart to your back.
 
@@ -161,7 +161,7 @@ The window has 2 settings.
 This is what the Object will display when this face is pointed up. You can use numbers for dice or words.
 
 #####Rotation
-This is the rotation the Object when a given face is pointed up. It allows for the same modifications as the [Transform Menu](#transform-menu). 
+This is the rotation the Object when a given face is pointed up. It allows for the same modifications as the [Transform Menu](#transform-menu).
 
 The red arrow button will copy over the rotation that the Object is currently set to into the fields. These fields always default to 0,0,0. Be sure to update them!
 

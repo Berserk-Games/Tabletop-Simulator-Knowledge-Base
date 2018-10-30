@@ -7,7 +7,7 @@ When you have the Text Tool (`F8`) selected, your pointer will turn into either 
 
 <center>![Text Tool](/img/text-tool/text.png)</center>
 
-* **Buttons 1+2**: Increase/decrease the font size.
+* **Buttons 1+2**: Decrease/Increase the font size.
 * **Button 3**: Change the font color.
 * **Button 4**: Delete this text field.
 

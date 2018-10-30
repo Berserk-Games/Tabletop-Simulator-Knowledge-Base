@@ -10,7 +10,7 @@ With your mouse, left-click and hold. Drag your mouse so that the created zone w
 With the same zone tool selected, left-clicking on a pre-existing zone will remove it.
 
 ###Modification
-Right-clicking on a pre-existing zone will provide some additional feature/options. What the right-click does depends on the zone type. Details can be found below, in the following sections.
+Right-clicking on a pre-existing zone will provide some additional feature/options. What the right-click does depends on the zone type. You can find more information on the right-click feature below.
 
 !!!tip
     When you draw a zone, you aren't stuck with the shape you made it! All zones can be moved/resized/rotated by using the [Gizmo Tool](gizmo-tool.md).
@@ -41,7 +41,7 @@ Clicking on the gear will open the options for this specific hidden zone.
 
 * **Hide Pointers**: If checked, the zone will hide pointers that are within the zone, preventing any clues to what is being done in it.
 * **Reverse Hiding**: If checked, it will reveal its contents to all other players. Unchecked, it hides the contents from everyone but the select color.
-* **See-through**: If checked, the hidden zone is semi-transparent. If unchecked, it is a solid color. Either way, you cannot see the contents.
+* **See-through**: If checked, the hidden zone is semi-transparent. If unchecked, it is a solid color. Either way, you cannot see the zone's contents.
 
 
 
@@ -52,7 +52,7 @@ Clicking on the gear will open the options for this specific hidden zone.
 ###Randomize Zone
 ![Randomize Zone Menu](/img/zone-tools/randomize-zone-menu.png)
 
-A randomize zone will, any time the game is loaded, ask if you want to randomize the objects inside of it. The randomization will shuffle the positions of loose tokens as well as the order of tokens in a stack/cards in a deck. 
+A randomize zone will, any time the game is loaded, ask if you want to randomize the objects inside of it. The randomization will shuffle the positions of loose tokens as well as the order of tokens in a stack/cards in a deck.
 
 Randomize zones are invisible to all players unless you select the randomize zone or gizmo tools.
 
