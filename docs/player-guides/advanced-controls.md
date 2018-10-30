@@ -150,3 +150,5 @@ Alternative scaling method.
 ---
 
 <center>![Card Stack](/img/advanced-controls/cardstack.png)</center>
+
+---
