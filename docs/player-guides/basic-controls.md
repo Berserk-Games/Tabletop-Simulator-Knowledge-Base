@@ -67,7 +67,7 @@ The majority of gameplay within Tabletop Simulator requires your to manipulate O
 5. While in ALT Zoom mode, use the middle mouse button to zoom in and out further and the Q & E keys to rotate.
 6. LMB picks up a single object.
 7. To pick up two objects, you can hold one object and hover over a second and ‘right click’ to pick up the second. Keep holding and right click over other objects to keep picking them up.
-8. An easier option is to ‘box highlight’ around the objects you want to pick up. Hold left click anywhere on the table and around multiple objects. When you let go, all those objects will be highlighted. Pick up one of the objects and all of those that were highlighted will be picked up. Find more details on the [Object Selection](object-selection) page.
+8. An easier option is to ‘box highlight’ around the objects you want to pick up. Hold left click anywhere on the table and around multiple objects. When you let go, all those objects will be highlighted. Pick up one of the objects and all of those that were highlighted will be picked up.
 9. Right clicking on any object will bring up the [Context Menu](context-menu).
 
 <center>
@@ -79,3 +79,5 @@ The majority of gameplay within Tabletop Simulator requires your to manipulate O
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
+
+--
