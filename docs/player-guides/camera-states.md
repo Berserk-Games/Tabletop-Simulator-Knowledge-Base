@@ -18,7 +18,7 @@ You can also change your default seat position (spacebar) so everyone is sharing
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/camera-states/state-example.webm">
+        src="/img/camera-states/state-example.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>

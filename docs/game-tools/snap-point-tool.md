@@ -29,7 +29,7 @@ These Snap Points cause Objects to move towards them when dropped as well as rot
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/snap-point-tool/demo.webm">
+        src="/img/snap-point-tool/demo.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
