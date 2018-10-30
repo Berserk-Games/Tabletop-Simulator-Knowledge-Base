@@ -1,7 +1,9 @@
-<center><img src="/img/index/logo.png" alt="Tabletop Simulator", class="borderdisable"></center>
+<center><img src="/img/index/logo.png" alt="Tabletop Simulator" class="borderdisable"></center>
 
-* TO DO:
+* TO DO BEFORE RELEASE:
     * Update line drawing tool info (waiting to learn if pixel paint will stay, and need new icons in place for screenshots)
+    * Fog of War added to the Zone section
+        * Fog of war Reveal and options added to context menu page
 
 
 ##About Tabletop Simulator

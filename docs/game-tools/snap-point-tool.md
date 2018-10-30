@@ -3,7 +3,7 @@ Snap Points are locations where dropped Objects will gravitate towards. It makes
 
 
 !!!tip
-    Each Object can have its attraction to Snap Points enabled or disabled using its context menu.
+    Each Object can have its attraction to Snap Points enabled or disabled using its [context menu](/player-guides/context-menu).
 
 ##Snap Point Types
 There are 2 types of Snap Points: Snap and Rotation Snap
@@ -23,7 +23,17 @@ These Snap Points cause Objects to move towards them when dropped as well as rot
 <center>![Example of Rotation Snap](/img/snap-point-tool/demo-rotation.png)</center>
 
 ####Example of Placement
-<center>![Rotation Snap Point Demo](/img/snap-point-tool/demo.gif)</center>
+
+<center>
+    <video controls
+        loop
+        autoPlay
+        muted
+        src="/Tabletop-Simulator-Knowledge-Base/img/snap-point-tool/demo.webm">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+</center>
+
 
 
 
