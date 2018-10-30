@@ -39,7 +39,7 @@ Now you will have a single Object which "contains" the others. Hovering your poi
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/creating-states/demonstration.webm">
+        src="/img/creating-states/demonstration.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>

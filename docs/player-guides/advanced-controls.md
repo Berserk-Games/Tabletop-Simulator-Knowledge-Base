@@ -16,7 +16,7 @@ Scales Objects.
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/advanced-controls/scale.webm">
+        src="/img/advanced-controls/scale.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -42,7 +42,7 @@ Groups Objects together.
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/advanced-controls/group.webm">
+        src="/img/advanced-controls/group.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -62,7 +62,7 @@ Magnify areas.
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/advanced-controls/zoom.webm">
+        src="/img/advanced-controls/zoom.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -106,7 +106,7 @@ Peek at the underside of an Object.
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/advanced-controls/peek.webm">
+        src="/img/advanced-controls/peek.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>

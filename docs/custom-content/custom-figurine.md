@@ -16,7 +16,7 @@ If you use different images for the front/back back, each side will have its own
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/custom-figurine/example.webm">
+        src="/img/custom-figurine/example.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>

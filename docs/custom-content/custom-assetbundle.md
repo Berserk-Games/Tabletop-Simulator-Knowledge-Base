@@ -81,7 +81,7 @@ You can create any asset, but here is an example of basic asset creation.
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/custom-assetbundle/create3.webm">
+        src="/img/custom-assetbundle/create3.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -104,7 +104,7 @@ Once you are finished creating your asset, you must turn it into a pre-fab.
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/custom-assetbundle/prefab.webm">
+        src="/img/custom-assetbundle/prefab.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -116,7 +116,7 @@ Give it a unique name.
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/custom-assetbundle/name.webm">
+        src="/img/custom-assetbundle/name.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -142,7 +142,7 @@ Open Tabletop Simulator and upload your AssetBundle to a webhost or the in-game 
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/custom-assetbundle/import-assetbundle.webm">
+        src="/img/custom-assetbundle/import-assetbundle.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
@@ -162,7 +162,7 @@ In the example below, the main AssetBundle is the blue capsule and the secondary
         loop
         autoPlay
         muted
-        src="/Tabletop-Simulator-Knowledge-Base/img/custom-assetbundle/secondary-example.webm">
+        src="/img/custom-assetbundle/secondary-example.webm">
         Sorry, your browser doesn't support embedded videos.
     </video>
 </center>
