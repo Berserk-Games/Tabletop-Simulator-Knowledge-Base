@@ -1,11 +1,6 @@
-Saving now uses [JSON serialization](https://en.wikipedia.org/wiki/JSON) for easy to use, human readable format. More specifically, **JSON .NET for Unity**. This page is a technical document which can be used to better understand how an in-game table is recorded into a save file.
-
-You can modify the physics properties of an object in the save file. By adding and modifying the [PhysicsMaterial](https://docs.unity3d.com/Manual/class-PhysicMaterial.html) and [Rigidbody](https://docs.unity3d.com/Manual/class-Rigidbody.html). You can see an example of that in the JSON below.
-
-You can also change an objects scaling separately in each axis, unlike the uniform only scaling in-game.
+Saving uses [JSON serialization](https://en.wikipedia.org/wiki/JSON) for easy to use, human readable format. More specifically, **JSON .NET for Unity**. This page is a technical document which can be used to better understand how an in-game table is recorded into a save file. Bson is used for saving to the workshop, but is converted back to JSON when saved to disk.
 
 If you make any mistakes when editing a save, the chat will spit out a debugging error for troubleshooting.
-If you have any questions on this topic feel free to post about it on our forums.
 
 ##Example JSON
 
