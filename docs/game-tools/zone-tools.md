@@ -112,6 +112,8 @@ Right-click on a Fog of War zone will do two thing. First, it copy the GUID into
 * The purpose of Fog of War is to allow game pieces to reveal map/props as they move around.
 * The player in the GM seat, the Black seat, is capable of seeing everything hiding within the Fog of War. Hidden objects have a grey border around them.
 * You can prevent an object from being hidden by Fog of War in its [toggles menu](/player-guides/context-menu#toggles).
+* If you join a player's [team](/player-guides/teams), you can see what they have revealed for them.
+    * Example: If you wanted 2 of your 4 players to see what is revealed, you could put them on a team together and reveal for only 1 of the colors.
 
 ![Fog of War Zone Example](/img/zone-tools/fog-of-war-demo.png)
 
