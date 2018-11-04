@@ -69,7 +69,7 @@ pages:
     - FAQ: getting-started/faq.md
     - Troubleshooting: getting-started/troubleshooting.md
   - Game Tools:
-    - Drawing Tools: game-tools/drawing-tools.md
+    - Drawing Tool: game-tools/drawing-tools.md
     - Zone Tools: game-tools/zone-tools.md
     - Line Tool: game-tools/line-tool.md
     - Flick Tool: game-tools/flick-tool.md

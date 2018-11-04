@@ -1,3 +1,5 @@
+![Zone Tools](/img/zone-tools/zone.png)
+
 The zone tools allow you to create areas on the table that have different impacts on game objects inside them. Hand zones are particularly important because they determine the "seats" a player is able to "sit" in.
 
 ##General Zone Modification
@@ -82,6 +84,36 @@ Right-clicking on a hand zone will bring up a color circle.
 
 Clicking on a color will set the hand zone will set the zone to match that color player. This determines who the zone belongs to. If this is the first hand zone of this color on the table, it also determines where that player "sits".
 
+---
+
+
+
+
+###Fog of War Zone
+![Fog of War Zone Menu](/img/zone-tools/fog-of-war-zone-menu.png)
+
+Fog of War is an area that is concealed, similar to a [hidden zone](#hidden-zone). The difference is that concealed areas can be revealed by moving a piece set to [Reveal Fog of War](/player-guides/context-menu#toggles) into it.
+
+####Right-Click Action
+Right-click on a Fog of War zone will do two thing. First, it copy the GUID into the clipboard (for scripting). Secondly, it will open a menu.
+
+![Fog of War Zone Right Click](/img/zone-tools/fog-of-war-rc.png)
+
+* **Hide GM Pointer**: If checked, this prevents players from seeing the hand cursor of the player in the Black seat.
+* **Hide Objects**: If checked, this causes the fog to hide objects. If you uncheck it, it will just make a black plane which obscures anything under it.
+* **Fog Height**: How high up the black plane is placed within the zone.
+* **Reset Fog**: Causes any revealed fog to obscure again, as if it had been newly drawn.
+
+####Fog of War Tips
+* If you have enabled "Reveal Fog of War" in an item's [toggles menu](/player-guides/context-menu#toggles) you get access to additional settings in the [Context Menu](/player-guides/context-menu).
+    * **Reveal Color**: Which color player the fog is revealed for. Default is Black, which is "all players".
+    * **Reveal Range**: The radius which the object reveals.
+* "Line of sight" is used, which means props can block the revealed area.
+* The purpose of Fog of War is to allow game pieces to reveal map/props as they move around.
+* The player in the GM seat, the Black seat, is capable of seeing everything hiding within the Fog of War. Hidden objects have a grey border around them.
+* You can prevent an object from being hidden by Fog of War in its [toggles menu](/player-guides/context-menu#toggles).
+
+![Fog of War Zone Example](/img/zone-tools/fog-of-war-demo.png)
 
 
 

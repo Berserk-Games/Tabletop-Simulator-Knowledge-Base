@@ -1,11 +1,5 @@
 <center><img src="/img/index/logo.png" alt="Tabletop Simulator" class="borderdisable"></center>
 
-* TO DO BEFORE RELEASE:
-    * Update line drawing tool info (waiting to learn if pixel paint will stay, and need new icons in place for screenshots)
-    * Fog of War added to the Zone section
-        * Fog of war Reveal and options added to context menu page
-
-
 ##About Tabletop Simulator
 
 Tabletop Simulator is exactly that: a simulation of a tabletop. It comes with classic games to play, offers DLC of officially licensed versions of other games and has tens of thousands of Steam Workshop contributions from the community. This is the premier platform for creating digital representations of real-life games. If you can't find what you'd like in the Steam Workshop, you can create your own games with nothing more than a handful of images to import.
