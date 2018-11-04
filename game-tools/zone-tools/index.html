@@ -965,9 +965,9 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../drawing-tools/" title="Drawing Tools"
+    <a href="../drawing-tools/" title="Drawing Tool"
         class="md-nav__link">
-      Drawing Tools
+      Drawing Tool
     </a>
   </li>
 
@@ -1139,6 +1139,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#fog-of-war-zone" title="Fog of War Zone" class="md-nav__link">
+    Fog of War Zone
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#right-click-action_3" title="Right-Click Action" class="md-nav__link">
+    Right-Click Action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fog-of-war-tips" title="Fog of War Tips" class="md-nav__link">
+    Fog of War Tips
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#scripting-zone" title="Scripting Zone" class="md-nav__link">
     Scripting Zone
   </a>
@@ -1147,7 +1174,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#right-click-action_3" title="Right-Click Action" class="md-nav__link">
+  <a href="#right-click-action_4" title="Right-Click Action" class="md-nav__link">
     Right-Click Action
   </a>
   
@@ -3249,6 +3276,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#fog-of-war-zone" title="Fog of War Zone" class="md-nav__link">
+    Fog of War Zone
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#right-click-action_3" title="Right-Click Action" class="md-nav__link">
+    Right-Click Action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fog-of-war-tips" title="Fog of War Tips" class="md-nav__link">
+    Fog of War Tips
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#scripting-zone" title="Scripting Zone" class="md-nav__link">
     Scripting Zone
   </a>
@@ -3257,7 +3311,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#right-click-action_3" title="Right-Click Action" class="md-nav__link">
+  <a href="#right-click-action_4" title="Right-Click Action" class="md-nav__link">
     Right-Click Action
   </a>
   
@@ -3294,7 +3348,8 @@
                 
                   <h1>Zone Tools</h1>
                 
-                <p>The zone tools allow you to create areas on the table that have different impacts on game objects inside them. Hand zones are particularly important because they determine the "seats" a player is able to "sit" in.</p>
+                <p><img alt="Zone Tools" src="../../img/zone-tools/zone.png" /></p>
+<p>The zone tools allow you to create areas on the table that have different impacts on game objects inside them. Hand zones are particularly important because they determine the "seats" a player is able to "sit" in.</p>
 <h2 id="general-zone-modification">General Zone Modification<a class="headerlink" href="#general-zone-modification" title="Permanent link"> </a></h2>
 <p>Although all zone types work differently, the creation and modification of them is all similar.</p>
 <h3 id="creation">Creation<a class="headerlink" href="#creation" title="Permanent link"> </a></h3>
@@ -3343,11 +3398,37 @@
 <p><center><img alt="Hand Zone Right Click" src="../../img/zone-tools/hand-rc1.png" /></center></p>
 <p>Clicking on a color will set the hand zone will set the zone to match that color player. This determines who the zone belongs to. If this is the first hand zone of this color on the table, it also determines where that player "sits".</p>
 <hr />
+<h3 id="fog-of-war-zone">Fog of War Zone<a class="headerlink" href="#fog-of-war-zone" title="Permanent link"> </a></h3>
+<p><img alt="Fog of War Zone Menu" src="../../img/zone-tools/fog-of-war-zone-menu.png" /></p>
+<p>Fog of War is an area that is concealed, similar to a <a href="#hidden-zone">hidden zone</a>. The difference is that concealed areas can be revealed by moving a piece set to <a href="../../player-guides/context-menu#toggles">Reveal Fog of War</a> into it.</p>
+<h4 id="right-click-action_3">Right-Click Action<a class="headerlink" href="#right-click-action_3" title="Permanent link"> </a></h4>
+<p>Right-click on a Fog of War zone will do two thing. First, it copy the GUID into the clipboard (for scripting). Secondly, it will open a menu.</p>
+<p><img alt="Fog of War Zone Right Click" src="../../img/zone-tools/fog-of-war-rc.png" /></p>
+<ul>
+<li><strong>Hide GM Pointer</strong>: If checked, this prevents players from seeing the hand cursor of the player in the Black seat.</li>
+<li><strong>Hide Objects</strong>: If checked, this causes the fog to hide objects. If you uncheck it, it will just make a black plane which obscures anything under it.</li>
+<li><strong>Fog Height</strong>: How high up the black plane is placed within the zone.</li>
+<li><strong>Reset Fog</strong>: Causes any revealed fog to obscure again, as if it had been newly drawn.</li>
+</ul>
+<h4 id="fog-of-war-tips">Fog of War Tips<a class="headerlink" href="#fog-of-war-tips" title="Permanent link"> </a></h4>
+<ul>
+<li>If you have enabled "Reveal Fog of War" in an item's <a href="../../player-guides/context-menu#toggles">toggles menu</a> you get access to additional settings in the <a href="../../player-guides/context-menu">Context Menu</a>.<ul>
+<li><strong>Reveal Color</strong>: Which color player the fog is revealed for. Default is Black, which is "all players".</li>
+<li><strong>Reveal Range</strong>: The radius which the object reveals.</li>
+</ul>
+</li>
+<li>"Line of sight" is used, which means props can block the revealed area.</li>
+<li>The purpose of Fog of War is to allow game pieces to reveal map/props as they move around.</li>
+<li>The player in the GM seat, the Black seat, is capable of seeing everything hiding within the Fog of War. Hidden objects have a grey border around them.</li>
+<li>You can prevent an object from being hidden by Fog of War in its <a href="../../player-guides/context-menu#toggles">toggles menu</a>.</li>
+</ul>
+<p><img alt="Fog of War Zone Example" src="../../img/zone-tools/fog-of-war-demo.png" /></p>
+<hr />
 <h3 id="scripting-zone">Scripting Zone<a class="headerlink" href="#scripting-zone" title="Permanent link"> </a></h3>
 <p><img alt="Script Zone Menu" src="../../img/zone-tools/script-zone-menu.png" /></p>
 <p>A scripting zone has no impact on game objects itself, but it can be utilized by Lua scripting to detect/affect objects in an area. It has no use outside of scripting.</p>
 <p>Scripting zones are invisible to all players unless you select the hand zone or gizmo tools.</p>
-<h4 id="right-click-action_3">Right-Click Action<a class="headerlink" href="#right-click-action_3" title="Permanent link"> </a></h4>
+<h4 id="right-click-action_4">Right-Click Action<a class="headerlink" href="#right-click-action_4" title="Permanent link"> </a></h4>
 <p>Right-clicking on a scripting zone copies it GUID to the clipboard. You can then paste it into your scripts. This is generally how you identify scripting zones in your code.</p>
 <p><center><img alt="Script Zone Right Click" src="../../img/zone-tools/script-rc1.png" /></center></p>
 <p>You will see a pop-up message announcing that this has been done, as well as a message in the Game chat log.</p>

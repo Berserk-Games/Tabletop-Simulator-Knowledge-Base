@@ -963,9 +963,9 @@
 <!-- Main navigation item with nested items -->
 
   <li class="md-nav__item">
-    <a href="../../game-tools/drawing-tools/" title="Drawing Tools"
+    <a href="../../game-tools/drawing-tools/" title="Drawing Tool"
         class="md-nav__link">
-      Drawing Tools
+      Drawing Tool
     </a>
   </li>
 
@@ -3082,11 +3082,8 @@
                 
                   <h1>Save File Format</h1>
                 
-                <p>Saving now uses <a href="https://en.wikipedia.org/wiki/JSON">JSON serialization</a> for easy to use, human readable format. More specifically, <strong>JSON .NET for Unity</strong>. This page is a technical document which can be used to better understand how an in-game table is recorded into a save file.</p>
-<p>You can modify the physics properties of an object in the save file. By adding and modifying the <a href="https://docs.unity3d.com/Manual/class-PhysicMaterial.html">PhysicsMaterial</a> and <a href="https://docs.unity3d.com/Manual/class-Rigidbody.html">Rigidbody</a>. You can see an example of that in the JSON below.</p>
-<p>You can also change an objects scaling separately in each axis, unlike the uniform only scaling in-game.</p>
-<p>If you make any mistakes when editing a save, the chat will spit out a debugging error for troubleshooting.
-If you have any questions on this topic feel free to post about it on our forums.</p>
+                <p>Saving uses <a href="https://en.wikipedia.org/wiki/JSON">JSON serialization</a> for easy to use, human readable format. More specifically, <strong>JSON .NET for Unity</strong>. This page is a technical document which can be used to better understand how an in-game table is recorded into a save file. Bson is used for saving to the workshop, but is converted back to JSON when saved to disk.</p>
+<p>If you make any mistakes when editing a save, the chat will spit out a debugging error for troubleshooting.</p>
 <h2 id="example-json">Example JSON<a class="headerlink" href="#example-json" title="Permanent link"> </a></h2>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="err">“SaveName”:</span> <span class="err">“JSON</span> <span class="err">Example</span> <span class="err">Save”,</span>
@@ -3202,124 +3199,520 @@ If you have any questions on this topic feel free to post about it on our forums
 
 <h2 id="serialized-classes">Serialized Classes<a class="headerlink" href="#serialized-classes" title="Permanent link"> </a></h2>
 <p>Here are the classes that are serialized:</p>
-<div class="codehilite"><pre><span></span><span class="err">public</span> <span class="err">class</span> <span class="err">SaveState</span> <span class="p">{</span> <span class="err">//Holds</span> <span class="err">a</span> <span class="err">state</span> <span class="err">of</span> <span class="err">the</span> <span class="err">game</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">SaveName</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">GameMode</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">Date</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">Table</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">TableURL</span> <span class="err">=</span> <span class="err">null;</span> <span class="err">//For</span> <span class="err">custom</span> <span class="err">large</span> <span class="err">table</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">Sky</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">SkyURL</span> <span class="err">=</span> <span class="err">null;</span> <span class="err">//For</span> <span class="err">custom</span> <span class="err">sky</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">Note</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">Rules</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">PlayerTurn</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">GridState</span> <span class="err">Grid;</span>
-<span class="err">public</span> <span class="err">byte[]</span> <span class="err">DrawImage;</span> <span class="err">//PNG</span> <span class="err">converted</span> <span class="err">to</span> <span class="err">bytes</span>
-<span class="err">public</span> <span class="err">List&lt;ObjectState&gt;</span> <span class="err">ObjectStates;</span> <span class="err">//Object</span> <span class="err">on</span> <span class="err">the</span> <span class="err">table</span>
+<div class="codehilite"><pre><span></span><span class="err">public</span> <span class="err">class</span> <span class="err">SaveState</span> <span class="err">//Holds</span> <span class="err">a</span> <span class="err">state</span> <span class="err">of</span> <span class="err">the</span> <span class="err">game</span>
+<span class="p">{</span> 
+    <span class="err">public</span> <span class="err">string</span> <span class="err">SaveName</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">GameMode</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Gravity</span> <span class="err">=</span> <span class="mf">0.5</span><span class="err">f;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">PlayArea</span> <span class="err">=</span> <span class="mf">0.5</span><span class="err">f;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Date</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Table</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="p">[</span><span class="err">Tag(TagType.URL)</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">TableURL</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span> <span class="err">//For</span> <span class="err">custom</span> <span class="err">tables</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Sky</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="p">[</span><span class="err">Tag(TagType.URL)</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">SkyURL</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span> <span class="err">//For</span> <span class="err">custom</span> <span class="err">sky</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Note</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Rules</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">XmlUI</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span> <span class="err">//Custom</span> <span class="err">Xml</span> <span class="err">UI</span>
+    <span class="err">public</span> <span class="err">List&lt;CustomAssetState&gt;</span> <span class="err">CustomUIAssets;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">LuaScript</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">LuaScriptState</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span> <span class="err">//</span> <span class="err">Serialized</span> <span class="err">running</span> <span class="err">Lua</span> <span class="err">code</span>    
+    <span class="err">public</span> <span class="err">GridState</span> <span class="err">Grid;</span> <span class="err">//Grid</span> <span class="err">menu</span> <span class="err">settings</span>    
+    <span class="err">public</span> <span class="err">LightingState</span> <span class="err">Lighting;</span> <span class="err">//Lighting</span> <span class="err">menu</span> <span class="err">settings</span>
+    <span class="err">public</span> <span class="err">HandsState</span> <span class="err">Hands;</span> <span class="err">//Hand</span> <span class="err">menu</span> <span class="err">settings</span> <span class="err">and</span> <span class="err">hand</span> <span class="err">positions</span>
+    <span class="err">public</span> <span class="err">TurnsState</span> <span class="err">Turns;</span> <span class="err">//Turn</span> <span class="err">menu</span> <span class="err">settings</span>    
+    <span class="err">public</span> <span class="err">List&lt;VectorLineState&gt;</span> <span class="err">VectorLines;</span> <span class="err">//</span> <span class="err">Vector</span> <span class="err">lines</span> <span class="err">on</span> <span class="err">canvas</span> <span class="mi">0</span> <span class="err">(table</span> <span class="err">+</span> <span class="err">beyond)</span>   
+    <span class="err">public</span> <span class="err">List&lt;ObjectState&gt;</span> <span class="err">ObjectStates;</span> <span class="err">//Objects</span> <span class="err">on</span> <span class="err">the</span> <span class="err">table</span>
+    <span class="err">public</span> <span class="err">List&lt;SnapPointState&gt;</span> <span class="err">SnapPoints;</span> <span class="err">//Snap</span> <span class="err">points</span> <span class="err">not</span> <span class="err">attached</span> <span class="err">to</span> <span class="err">objects</span>
+    <span class="err">public</span> <span class="err">List&lt;CustomDecalState&gt;</span> <span class="err">DecalPallet;</span> <span class="err">//Decals</span> <span class="err">that</span> <span class="err">can</span> <span class="err">be</span> <span class="err">placed</span> <span class="err">in</span> <span class="err">the</span> <span class="err">world</span>
+    <span class="err">public</span> <span class="err">List&lt;DecalState&gt;</span> <span class="err">Decals;</span> <span class="err">//Decals</span> <span class="err">not</span> <span class="err">attached</span> <span class="err">to</span> <span class="err">objects</span>
+    <span class="err">public</span> <span class="err">Dictionary&lt;int</span><span class="p">,</span> <span class="err">TabState&gt;</span> <span class="err">TabStates</span> <span class="err">=</span> <span class="err">new</span> <span class="err">Dictionary&lt;int,</span> <span class="err">TabState&gt;();</span> <span class="err">//Notepad</span> <span class="err">tabs</span>
+    <span class="err">public</span> <span class="err">CameraState[]</span> <span class="err">CameraStates;</span> <span class="err">//Saved</span> <span class="err">camera</span> <span class="err">positions</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">VersionNumber</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
 <span class="p">}</span>
 
-<span class="err">public</span> <span class="err">class</span> <span class="err">ObjectState</span> <span class="p">{</span> <span class="err">//Moveable</span> <span class="err">objects</span>
+<span class="err">public</span> <span class="err">class</span> <span class="err">ObjectState</span> <span class="err">//Moveable</span> <span class="err">objects</span>
+<span class="p">{</span> 
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Name</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span> <span class="err">//Internal</span> <span class="err">object</span> <span class="err">name</span>
+    <span class="err">public</span> <span class="err">TransformState</span> <span class="err">Transform;</span> <span class="err">//Position</span><span class="p">,</span> <span class="err">Rotation,</span> <span class="err">Scale</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Nickname</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span> <span class="err">//Name</span> <span class="err">supplied</span> <span class="err">in</span> <span class="err">game</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Description</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">ColorDiffuse;</span> <span class="err">//Material</span> <span class="err">color</span> <span class="err">tint</span>
+    <span class="err">/*Toggles*/</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Locked</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span> <span class="err">//Freeze</span> <span class="err">object</span> <span class="err">in</span> <span class="err">place</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Grid</span> <span class="err">=</span> <span class="kc">true</span><span class="err">;</span> <span class="err">//Object</span> <span class="err">will</span> <span class="err">snap</span> <span class="err">to</span> <span class="err">grid</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Snap</span> <span class="err">=</span> <span class="kc">true</span><span class="err">;</span> <span class="err">//Object</span> <span class="err">will</span> <span class="err">snap</span> <span class="err">to</span> <span class="err">snap</span> <span class="err">points</span>  
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Autoraise</span> <span class="err">=</span> <span class="kc">true</span><span class="err">;</span> <span class="err">//Object</span> <span class="err">will</span> <span class="err">raise</span> <span class="err">above</span> <span class="err">others</span> <span class="err">and</span> <span class="err">avoid</span> <span class="err">collision</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Sticky</span> <span class="err">=</span> <span class="kc">true</span><span class="err">;</span> <span class="err">//When</span> <span class="err">picked</span> <span class="err">up</span> <span class="err">objects</span> <span class="err">above</span> <span class="err">this</span> <span class="err">one</span> <span class="err">will</span> <span class="err">be</span> <span class="err">attached</span> <span class="err">to</span> <span class="err">it</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Tooltip</span> <span class="err">=</span> <span class="kc">true</span><span class="err">;</span> <span class="err">//When</span> <span class="err">hovering</span> <span class="err">object</span> <span class="err">will</span> <span class="err">display</span> <span class="err">tooltips</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">GridProjection</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span> <span class="err">//Grid</span> <span class="err">will</span> <span class="err">project</span> <span class="err">on</span> <span class="err">this</span> <span class="err">object</span>
+    <span class="err">/*Nullable</span> <span class="err">to</span> <span class="err">hide</span> <span class="err">object</span> <span class="err">specific</span> <span class="err">properties</span> <span class="err">and</span> <span class="err">save</span> <span class="err">space*/</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">HideWhenFaceDown;</span> <span class="err">//When</span> <span class="err">face</span> <span class="err">down</span> <span class="err">object</span> <span class="err">is</span> <span class="err">question</span> <span class="err">mark</span> <span class="err">hidden</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">Hands;</span> <span class="err">//Object</span> <span class="err">will</span> <span class="err">enter</span> <span class="err">player</span> <span class="err">hands</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">AltSound;</span> <span class="err">//Some</span> <span class="err">objects</span> <span class="err">have</span> <span class="mi">2</span> <span class="err">materials</span><span class="p">,</span> <span class="err">with</span> <span class="err">two</span> <span class="err">sound</span> <span class="err">sets</span>
+    <span class="err">public</span> <span class="err">int?</span> <span class="err">MaterialIndex;</span> <span class="err">//Some</span> <span class="err">objects</span> <span class="err">can</span> <span class="err">have</span> <span class="err">multiple</span> <span class="err">materials</span>
+    <span class="err">public</span> <span class="err">int?</span> <span class="err">MeshIndex;</span> <span class="err">//Some</span> <span class="err">objects</span> <span class="err">can</span> <span class="err">have</span> <span class="err">multiple</span> <span class="err">meshes</span>
+    <span class="err">public</span> <span class="err">int?</span> <span class="err">Layer;</span> <span class="err">//Sound</span> <span class="err">Layer</span>
+    <span class="err">public</span> <span class="err">int?</span> <span class="err">Number;</span>
+    <span class="err">public</span> <span class="err">int?</span> <span class="err">CardID;</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">SidewaysCard;</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">RPGmode;</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">RPGdead;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">FogColor</span> <span class="err">=</span> <span class="err">null;</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">FogHidePointers;</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">FogReverseHiding;</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">FogSeethrough;</span>
+    <span class="err">public</span> <span class="err">List&lt;int&gt;</span> <span class="err">DeckIDs;</span>
+    <span class="err">public</span> <span class="err">Dictionary&lt;int,</span> <span class="err">CustomDeckState&gt;</span> <span class="err">CustomDeck;</span> <span class="err">//Key</span> <span class="err">matches</span> <span class="err">the</span> <span class="err">hundreth</span> <span class="err">place</span> <span class="err">of</span> <span class="err">the</span> <span class="err">id</span> <span class="err">(ex.</span> <span class="err">id</span> <span class="err">=</span> <span class="err">354,</span> <span class="err">index</span> <span class="err">=</span> <span class="err">3)</span>
+    <span class="err">public</span> <span class="err">CustomMeshState</span> <span class="err">CustomMesh;</span>
+    <span class="err">public</span> <span class="err">CustomImageState</span> <span class="err">CustomImage;</span>
+    <span class="err">public</span> <span class="err">CustomAssetbundleState</span> <span class="err">CustomAssetbundle;</span>
+    <span class="err">public</span> <span class="err">FogOfWarSaveState</span> <span class="err">FogOfWar;</span>
+    <span class="err">public</span> <span class="err">FogOfWarRevealerSaveState</span> <span class="err">FogOfWarRevealer;</span>
+    <span class="err">public</span> <span class="err">ClockSaveState</span> <span class="err">Clock;</span>
+    <span class="err">public</span> <span class="err">CounterState</span> <span class="err">Counter;</span>
+    <span class="err">public</span> <span class="err">TabletState</span> <span class="err">Tablet;</span>
+    <span class="err">public</span> <span class="err">Mp3PlayerState</span> <span class="err">Mp3Player;</span>
+    <span class="err">public</span> <span class="err">CalculatorState</span> <span class="err">Calculator;</span>
+    <span class="err">public</span> <span class="err">TextState</span> <span class="err">Text;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">XmlUI</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span> <span class="err">//Custom</span> <span class="err">Xml</span> <span class="err">UI</span>
+    <span class="err">public</span> <span class="err">List&lt;CustomAssetState&gt;</span> <span class="err">CustomUIAssets;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">LuaScript</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">LuaScriptState</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span> <span class="err">//</span> <span class="err">Serialized</span> <span class="err">running</span> <span class="err">Lua</span> <span class="err">code</span>
+    <span class="err">public</span> <span class="err">List&lt;ObjectState&gt;</span> <span class="err">ContainedObjects;</span> <span class="err">//Objects</span> <span class="err">inside</span> <span class="err">this</span> <span class="err">one</span>
+    <span class="err">public</span> <span class="err">PhysicsMaterialState</span> <span class="err">PhysicsMaterial;</span> <span class="err">//Use</span> <span class="err">to</span> <span class="err">modify</span> <span class="err">the</span> <span class="err">physics</span> <span class="err">material</span> <span class="err">(friction</span><span class="p">,</span> <span class="err">bounce,</span> <span class="err">etc.)</span> <span class="err">http://docs.unity3d.com/Manual/class-PhysicMaterial.html</span>
+    <span class="err">public</span> <span class="err">RigidbodyState</span> <span class="err">Rigidbody;</span> <span class="err">//Use</span> <span class="err">to</span> <span class="err">modify</span> <span class="err">the</span> <span class="err">physical</span> <span class="err">properties</span> <span class="err">(mass,</span> <span class="err">drag,</span> <span class="err">etc)</span> <span class="err">http://docs.unity3d.com/Manual/class-Rigidbody.html</span>
+    <span class="err">public</span> <span class="err">JointFixedState</span> <span class="err">JointFixed;</span> <span class="err">//Joints</span> <span class="err">can</span> <span class="err">be</span> <span class="err">used</span> <span class="err">to</span> <span class="err">attached/link</span> <span class="err">objects</span> <span class="err">together</span> <span class="err">check</span> <span class="err">the</span> <span class="err">classes</span> <span class="err">below</span>
+    <span class="err">public</span> <span class="err">JointHingeState</span> <span class="err">JointHinge;</span>
+    <span class="err">public</span> <span class="err">JointSpringState</span> <span class="err">JointSpring;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">GUID</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span> <span class="err">//Used</span> <span class="err">so</span> <span class="err">objects</span> <span class="err">can</span> <span class="err">reference</span> <span class="err">other</span> <span class="err">objects</span><span class="p">,</span> <span class="err">ex.</span> <span class="err">joints</span> <span class="err">or</span> <span class="err">scripting</span>
+    <span class="err">public</span> <span class="err">List&lt;SnapPointState&gt;</span> <span class="err">AttachedSnapPoints;</span> <span class="err">//Snap</span> <span class="err">points</span> <span class="err">that</span> <span class="err">are</span> <span class="err">stuck</span> <span class="err">to</span> <span class="err">this</span> <span class="err">object,</span> <span class="err">happens</span> <span class="err">when</span> <span class="err">placing</span> <span class="err">a</span> <span class="err">snap</span> <span class="err">point</span> <span class="err">on</span> <span class="err">a</span> <span class="err">locked</span> <span class="err">object</span>
+    <span class="err">public</span> <span class="err">List&lt;VectorLineState&gt;</span> <span class="err">AttachedVectorLines;</span> <span class="err">//</span> <span class="err">Vector</span> <span class="err">lines</span> <span class="err">that</span> <span class="err">are</span> <span class="err">stuck</span> <span class="err">to</span> <span class="err">this</span> <span class="err">object,</span> <span class="err">happens</span> <span class="err">when</span> <span class="err">drawing</span> <span class="err">a</span> <span class="err">vector</span> <span class="err">line</span> <span class="err">on</span> <span class="err">a</span> <span class="err">locked</span> <span class="err">object</span>
+    <span class="err">public</span> <span class="err">List&lt;DecalState&gt;</span> <span class="err">AttachedDecals;</span> <span class="err">//Decals</span> <span class="err">that</span> <span class="err">are</span> <span class="err">attached</span> <span class="err">to</span> <span class="err">this</span> <span class="err">objects</span>
+    <span class="err">public</span> <span class="err">Dictionary&lt;int,</span> <span class="err">ObjectState&gt;</span> <span class="err">States;</span> <span class="err">//Objects</span> <span class="err">can</span> <span class="err">have</span> <span class="err">multiple</span> <span class="err">states</span> <span class="err">which</span> <span class="err">can</span> <span class="err">be</span> <span class="err">swapped</span> <span class="err">between</span>    
+    <span class="err">public</span> <span class="err">List&lt;RotationValueState&gt;</span> <span class="err">RotationValues;</span> <span class="err">//Rotation</span> <span class="err">values</span> <span class="err">are</span> <span class="err">tooltip</span> <span class="err">values</span> <span class="err">tied</span> <span class="err">to</span> <span class="err">rotations</span>
 
-<span class="err">public</span> <span class="err">string</span> <span class="err">Name</span> <span class="err">=</span> <span class="err">“”;</span> <span class="err">//Internal</span> <span class="err">object</span> <span class="err">name</span>
-<span class="err">public</span> <span class="err">TransformState</span> <span class="err">Transform;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">Nickname</span> <span class="err">=</span> <span class="err">“”;</span> <span class="err">//Name</span> <span class="err">supplied</span> <span class="err">in</span> <span class="err">game</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">Description</span> <span class="err">=</span> <span class="err">“”;</span>
-<span class="err">public</span> <span class="err">ColorState</span> <span class="err">ColorDiffuse;</span>
-<span class="err">public</span> <span class="err">bool</span> <span class="err">Grid</span> <span class="err">=</span> <span class="err">true;</span>
-<span class="err">public</span> <span class="err">bool</span> <span class="err">Locked</span> <span class="err">=</span> <span class="err">false;</span>
-<span class="err">/*Nullable</span> <span class="err">to</span> <span class="err">hide</span> <span class="err">object</span> <span class="err">specific</span> <span class="err">properties</span> <span class="err">and</span> <span class="err">save</span> <span class="err">space*/</span>
-<span class="err">public</span> <span class="err">Nullable&lt;bool&gt;</span> <span class="err">AltSound;</span> <span class="err">//Some</span> <span class="err">objects</span> <span class="err">have</span> <span class="err">2</span> <span class="err">materials,</span> <span class="err">with</span> <span class="err">two</span> <span class="err">sound</span> <span class="err">sets</span>
-<span class="err">public</span> <span class="err">Nullable&lt;int&gt;</span> <span class="err">MaterialIndex;</span>
-<span class="err">public</span> <span class="err">Nullable&lt;int&gt;</span> <span class="err">MeshIndex;</span>
-<span class="err">public</span> <span class="err">Nullable&lt;int&gt;</span> <span class="err">Layer;</span> <span class="err">//Sound</span> <span class="err">Layer</span>
-<span class="err">public</span> <span class="err">Nullable&lt;int&gt;</span> <span class="err">Number;</span>
-<span class="err">public</span> <span class="err">Nullable&lt;int&gt;</span> <span class="err">CardID;</span>
-<span class="err">public</span> <span class="err">Nullable&lt;bool&gt;</span> <span class="err">SidewaysCard;</span>
-<span class="err">public</span> <span class="err">Nullable&lt;bool&gt;</span> <span class="err">RPGmode;</span>
-<span class="err">public</span> <span class="err">Nullable&lt;bool&gt;</span> <span class="err">RPGdead;</span>
-<span class="err">public</span> <span class="err">string</span> <span class="err">FogColor</span> <span class="err">=</span> <span class="err">null;</span>
-<span class="err">public</span> <span class="err">Nullable&lt;bool&gt;</span> <span class="err">FogHidePointers;</span>
-<span class="err">public</span> <span class="err">List&lt;int&gt;</span> <span class="err">DeckIDs;</span>
-<span class="err">public</span> <span class="err">Dictionary&lt;int,</span> <span class="err">CustomDeckState&gt;</span> <span class="err">CustomDeck;</span> <span class="err">//Key</span> <span class="err">matches</span> <span class="err">the</span> <span class="err">hundreth</span> <span class="err">place</span> <span class="err">of</span> <span class="err">the</span> <span class="err">id</span> <span class="err">(ex.</span> <span class="err">id</span> <span class="err">=</span> <span class="err">354,</span> <span class="err">index</span> <span class="err">=</span> <span class="err">3)</span>
-<span class="err">public</span> <span class="err">CustomMeshState</span> <span class="err">CustomMesh;</span>
-<span class="err">public</span> <span class="err">CustomImageState</span> <span class="err">CustomImage;</span>
-<span class="err">public</span> <span class="err">ClockSaveState</span> <span class="err">Clock;</span>
-<span class="err">public</span> <span class="err">TabletState</span> <span class="err">Tablet;</span>
-<span class="err">public</span> <span class="err">List&lt;ObjectState&gt;</span> <span class="err">ContainedObjects;</span> <span class="err">//Objects</span> <span class="err">in</span> <span class="err">bag</span>
-<span class="err">public</span> <span class="err">PhysicsMaterialState</span> <span class="err">PhysicsMaterial;</span> <span class="err">//Use</span> <span class="err">to</span> <span class="err">modify</span> <span class="err">the</span> <span class="err">physics</span> <span class="err">material</span> <span class="err">(friction,</span> <span class="err">bounce,</span> <span class="err">etc.)</span>
-<span class="err">http://docs.unity3d.com/Manual/class-PhysicMaterial.html</span>
-<span class="err">public</span> <span class="err">RigidbodyState</span> <span class="err">Rigidbody;</span> <span class="err">//Use</span> <span class="err">to</span> <span class="err">modify</span> <span class="err">the</span> <span class="err">physical</span> <span class="err">properties</span> <span class="err">(mass,</span> <span class="err">drag,</span> <span class="err">etc)</span> <span class="err">http://docs.unity3d.com/Manual/class-Rigidbody.html</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">EqualsObject(object</span> <span class="err">obj)</span>
+    <span class="err">{</span>
+        <span class="err">if</span> <span class="err">(obj</span> <span class="err">==</span> <span class="err">null)</span>
+        <span class="err">{</span>
+            <span class="err">return</span> <span class="err">false;</span>
+        <span class="p">}</span>       
 
-<span class="err">public</span> <span class="err">bool</span> <span class="err">EqualsJSON(System.Object</span> <span class="err">obj)</span>
-<span class="err">{</span>
-<span class="err">if</span> <span class="err">(obj</span> <span class="err">==</span> <span class="err">null)</span>
-<span class="err">{</span>
-<span class="err">return</span> <span class="err">false;</span>
-<span class="p">}</span>
+        <span class="err">ObjectState</span> <span class="err">os</span> <span class="err">=</span> <span class="err">obj</span> <span class="err">as</span> <span class="err">ObjectState;</span>
+        <span class="err">if</span> <span class="err">(os</span> <span class="err">==</span> <span class="kc">null</span><span class="err">)</span>
+        <span class="p">{</span>
+            <span class="err">return</span> <span class="err">false;</span>
+        <span class="p">}</span>
 
-<span class="err">ObjectState</span> <span class="err">p</span> <span class="err">=</span> <span class="err">obj</span> <span class="err">as</span> <span class="err">ObjectState;</span>
-<span class="err">if</span> <span class="err">((System.Object)p</span> <span class="err">==</span> <span class="kc">null</span><span class="err">)</span>
-<span class="p">{</span>
-<span class="err">return</span> <span class="err">false;</span>
-<span class="p">}</span>
+        <span class="err">TransformState</span> <span class="err">ThisTransform</span> <span class="err">=</span> <span class="err">this.Transform;</span>
+        <span class="err">TransformState</span> <span class="err">OtherTransform</span> <span class="err">=</span> <span class="err">os.Transform;</span>        
 
-<span class="err">string</span> <span class="err">ThisJSON</span> <span class="err">=</span> <span class="err">SaveScript.GetJSONString(this);</span>
-<span class="err">string</span> <span class="err">NewJSON</span> <span class="err">=</span> <span class="err">SaveScript.GetJSONString(p);</span>
-<span class="err">return</span> <span class="err">ThisJSON</span> <span class="err">==</span> <span class="err">NewJSON;</span>
+        <span class="err">ColourState</span> <span class="err">ThisColor</span> <span class="err">=</span> <span class="err">this.ColorDiffuse;</span>
+        <span class="err">ColourState</span> <span class="err">OtherColor</span> <span class="err">=</span> <span class="err">os.ColorDiffuse;</span>
+        <span class="err">if</span> <span class="err">(ThisColor</span> <span class="err">!=</span> <span class="kc">null</span> <span class="err">&amp;&amp;</span> <span class="err">OtherColor</span> <span class="err">!=</span> <span class="kc">null</span> <span class="err">&amp;&amp;</span> <span class="err">ThisColor.ToColour()</span> <span class="err">!=</span> <span class="err">OtherColor.ToColour())</span>
+        <span class="p">{</span>
+            <span class="err">return</span> <span class="err">false;</span>
+        <span class="p">}</span>               
+
+        <span class="err">string</span> <span class="err">ThisGUID</span> <span class="err">=</span> <span class="err">this.GUID;</span>
+        <span class="err">string</span> <span class="err">OtherGUID</span> <span class="err">=</span> <span class="err">os.GUID;</span>
+
+        <span class="err">bool</span> <span class="err">ThisLocked</span> <span class="err">=</span> <span class="err">this.Locked;</span>
+        <span class="err">bool</span> <span class="err">ThisGrid</span> <span class="err">=</span> <span class="err">this.Grid;</span>
+        <span class="err">bool</span> <span class="err">ThisSnap</span> <span class="err">=</span> <span class="err">this.Snap;</span>
+        <span class="err">bool</span> <span class="err">ThisAutoraise</span> <span class="err">=</span> <span class="err">this.Autoraise;</span>
+        <span class="err">bool</span> <span class="err">ThisSticky</span> <span class="err">=</span> <span class="err">this.Sticky;</span>
+        <span class="err">bool</span> <span class="err">ThisTooltip</span> <span class="err">=</span> <span class="err">this.Tooltip;</span>
+        <span class="err">bool</span> <span class="err">ThisGridProjection</span> <span class="err">=</span> <span class="err">this.GridProjection;</span>
+        <span class="err">bool?</span> <span class="err">ThisHideWhenFaceDown</span> <span class="err">=</span> <span class="err">this.HideWhenFaceDown;</span>
+        <span class="err">bool?</span> <span class="err">ThisHands</span> <span class="err">=</span> <span class="err">this.Hands;</span>
+
+        <span class="err">bool</span> <span class="err">OtherLocked</span> <span class="err">=</span> <span class="err">os.Locked;</span>
+        <span class="err">bool</span> <span class="err">OtherGrid</span> <span class="err">=</span> <span class="err">os.Grid;</span>
+        <span class="err">bool</span> <span class="err">OtherSnap</span> <span class="err">=</span> <span class="err">os.Snap;</span>
+        <span class="err">bool</span> <span class="err">OtherAutoraise</span> <span class="err">=</span> <span class="err">os.Autoraise;</span>
+        <span class="err">bool</span> <span class="err">OtherSticky</span> <span class="err">=</span> <span class="err">os.Sticky;</span>
+        <span class="err">bool</span> <span class="err">OtherTooltip</span> <span class="err">=</span> <span class="err">os.Tooltip;</span>
+        <span class="err">bool</span> <span class="err">OtherGridProjection</span> <span class="err">=</span> <span class="err">os.GridProjection;</span>
+        <span class="err">bool?</span> <span class="err">OtherHideWhenFaceDown</span> <span class="err">=</span> <span class="err">os.HideWhenFaceDown;</span>
+        <span class="err">bool?</span> <span class="err">OtherHands</span> <span class="err">=</span> <span class="err">os.Hands;</span>
+
+        <span class="err">this.Transform</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span>
+        <span class="err">os.Transform</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span>
+        <span class="err">this.ColorDiffuse</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span>
+        <span class="err">os.ColorDiffuse</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span>
+        <span class="err">this.GUID</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span>
+        <span class="err">os.GUID</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span>
+
+        <span class="err">this.Locked</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">this.Grid</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">this.Snap</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">this.Autoraise</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">this.Sticky</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">this.Tooltip</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">this.GridProjection</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">this.HideWhenFaceDown</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">this.Hands</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span>
+
+        <span class="err">os.Locked</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">os.Grid</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">os.Snap</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">os.Autoraise</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">os.Sticky</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">os.Tooltip</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">os.GridProjection</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">os.HideWhenFaceDown</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+        <span class="err">os.Hands</span> <span class="err">=</span> <span class="kc">null</span><span class="err">;</span>
+
+        <span class="err">string</span> <span class="err">ThisJson</span> <span class="err">=</span> <span class="err">Json.GetJson(this,</span> <span class="kc">false</span><span class="err">);</span>
+        <span class="err">string</span> <span class="err">NewJson</span> <span class="err">=</span> <span class="err">Json.GetJson(os,</span> <span class="kc">false</span><span class="err">);</span>        
+
+        <span class="err">this.Transform</span> <span class="err">=</span> <span class="err">ThisTransform;</span>
+        <span class="err">os.Transform</span> <span class="err">=</span> <span class="err">OtherTransform;</span>
+        <span class="err">this.ColorDiffuse</span> <span class="err">=</span> <span class="err">ThisColor;</span>
+        <span class="err">os.ColorDiffuse</span> <span class="err">=</span> <span class="err">OtherColor;</span>
+        <span class="err">this.GUID</span> <span class="err">=</span> <span class="err">ThisGUID;</span>
+        <span class="err">os.GUID</span> <span class="err">=</span> <span class="err">OtherGUID;</span>
+
+        <span class="err">this.Locked</span> <span class="err">=</span> <span class="err">ThisLocked;</span>
+        <span class="err">this.Grid</span> <span class="err">=</span> <span class="err">ThisGrid;</span>
+        <span class="err">this.Snap</span> <span class="err">=</span> <span class="err">ThisSnap;</span>
+        <span class="err">this.Autoraise</span> <span class="err">=</span> <span class="err">ThisAutoraise;</span>
+        <span class="err">this.Sticky</span> <span class="err">=</span> <span class="err">ThisSticky;</span>
+        <span class="err">this.Tooltip</span> <span class="err">=</span> <span class="err">ThisTooltip;</span>
+        <span class="err">this.GridProjection</span> <span class="err">=</span> <span class="err">ThisGridProjection;</span>
+        <span class="err">this.HideWhenFaceDown</span> <span class="err">=</span> <span class="err">ThisHideWhenFaceDown;</span>
+        <span class="err">this.Hands</span> <span class="err">=</span> <span class="err">ThisHands;</span>
+
+        <span class="err">os.Locked</span> <span class="err">=</span> <span class="err">OtherLocked;</span>
+        <span class="err">os.Grid</span> <span class="err">=</span> <span class="err">OtherGrid;</span>
+        <span class="err">os.Snap</span> <span class="err">=</span> <span class="err">OtherSnap;</span>
+        <span class="err">os.Autoraise</span> <span class="err">=</span> <span class="err">OtherAutoraise;</span>
+        <span class="err">os.Sticky</span> <span class="err">=</span> <span class="err">OtherSticky;</span>
+        <span class="err">os.Tooltip</span> <span class="err">=</span> <span class="err">OtherTooltip;</span>
+        <span class="err">os.GridProjection</span> <span class="err">=</span> <span class="err">OtherGridProjection;</span>
+        <span class="err">os.HideWhenFaceDown</span> <span class="err">=</span> <span class="err">OtherHideWhenFaceDown;</span>
+        <span class="err">os.Hands</span> <span class="err">=</span> <span class="err">OtherHands;</span>
+
+        <span class="err">return</span> <span class="err">ThisJson</span> <span class="err">==</span> <span class="err">NewJson;</span>
+    <span class="err">}</span>
+
+    <span class="err">public</span> <span class="err">ObjectState</span> <span class="err">Clone()</span>
+    <span class="p">{</span>       
+        <span class="err">return</span> <span class="err">Json.Clone(this);</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">string</span> <span class="err">ToJson()</span>
+    <span class="p">{</span>
+        <span class="err">return</span> <span class="err">Json.GetJson(this);</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">static</span> <span class="err">List&lt;ObjectState&gt;</span> <span class="err">RemoveDuplicates(List&lt;ObjectState&gt;</span> <span class="err">objectStates)</span>
+    <span class="p">{</span>
+        <span class="err">List&lt;ObjectState&gt;</span> <span class="err">newObjectStates</span> <span class="err">=</span> <span class="err">new</span> <span class="err">List&lt;ObjectState&gt;();</span>
+
+        <span class="err">for</span> <span class="err">(int</span> <span class="err">i</span> <span class="err">=</span> <span class="err">0;</span> <span class="err">i</span> <span class="err">&lt;</span> <span class="err">objectStates.Count;</span> <span class="err">i++)</span>
+        <span class="err">{</span>
+            <span class="err">ObjectState</span> <span class="err">objectState</span> <span class="err">=</span> <span class="err">objectStates[i];</span>
+
+            <span class="err">if</span> <span class="err">(objectState</span> <span class="err">==</span> <span class="err">null)</span> <span class="err">continue;</span>
+
+            <span class="err">bool</span> <span class="err">isDuplicate</span> <span class="err">=</span> <span class="err">false;</span>
+
+            <span class="err">for</span> <span class="err">(int</span> <span class="err">j</span> <span class="err">=</span> <span class="err">0;</span> <span class="err">j</span> <span class="err">&lt;</span> <span class="err">newObjectStates.Count;</span> <span class="err">j++)</span>
+            <span class="err">{</span>
+                <span class="err">ObjectState</span> <span class="err">os</span> <span class="err">=</span> <span class="err">newObjectStates[j];</span>
+
+                <span class="err">if</span> <span class="err">(objectState.EqualsObject(os))</span>
+                <span class="err">{</span>
+                    <span class="err">isDuplicate</span> <span class="err">=</span> <span class="err">true;</span>
+                    <span class="err">break;</span>
+                <span class="p">}</span>
+            <span class="err">}</span>
+
+            <span class="err">if</span> <span class="err">(isDuplicate)</span> <span class="err">continue;</span>
+
+            <span class="err">newObjectStates.Add(objectState);</span>
+        <span class="err">}</span>
+
+        <span class="err">return</span> <span class="err">newObjectStates;</span>
+    <span class="err">}</span>
 <span class="err">}</span>
 
-<span class="err">public</span> <span class="err">ObjectState</span> <span class="err">Clone()</span>
-<span class="p">{</span>
-<span class="err">string</span> <span class="err">JSONString</span> <span class="err">=</span> <span class="err">SaveScript.GetJSONString(this);</span>
-<span class="err">return</span> <span class="err">SaveScript.GetObjectState(JSONString);</span>
-<span class="p">}</span>
-
-<span class="err">public</span> <span class="err">string</span> <span class="err">ToJSON()</span>
-<span class="p">{</span>
-<span class="err">return</span> <span class="err">SaveScript.GetJSONString(this);</span>
-<span class="p">}</span>
-
-<span class="err">}</span>
-
-<span class="err">public</span> <span class="err">class</span> <span class="err">GridState</span> <span class="p">{</span>
-
-<span class="err">public</span> <span class="err">GridType</span> <span class="err">Type;</span>
-<span class="err">public</span> <span class="err">bool</span> <span class="err">Lines;</span>
-<span class="err">public</span> <span class="err">bool</span> <span class="err">Snapping;</span>
-<span class="err">public</span> <span class="err">bool</span> <span class="err">Offset;</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">xSize;</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">ySize;</span>
+<span class="err">public</span> <span class="err">class</span> <span class="err">GridState</span>
+<span class="p">{</span>   
+    <span class="err">public</span> <span class="err">GridType</span> <span class="err">Type</span> <span class="err">=</span> <span class="err">GridType.Box;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Lines</span> <span class="err">=</span> <span class="err">false;</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">Color</span> <span class="err">=</span> <span class="err">new</span> <span class="err">ColourState(0,0,0);</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Opacity</span> <span class="err">=</span> <span class="err">0.75f;</span> <span class="err">//0-1</span> <span class="err">Alpha</span> <span class="err">opacity</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">ThickLines</span> <span class="err">=</span> <span class="err">false;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Snapping</span> <span class="err">=</span> <span class="err">false;</span> <span class="err">//Line</span> <span class="err">snapping</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Offset</span> <span class="err">=</span> <span class="err">false;</span> <span class="err">//Center</span> <span class="err">snapping</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">BothSnapping</span> <span class="err">=</span> <span class="err">false;</span> <span class="err">//Both</span> <span class="err">snapping</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">xSize</span> <span class="err">=</span> <span class="err">2f;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">ySize</span> <span class="err">=</span> <span class="err">2f;</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">PosOffset</span> <span class="err">=</span> <span class="err">new</span> <span class="err">VectorState(0,1,0);</span>
 <span class="p">}</span>
 
 <span class="err">public</span> <span class="err">enum</span> <span class="err">GridType</span>
 <span class="p">{</span>
-<span class="err">Box,</span> <span class="err">Hex</span>
+    <span class="err">Box,</span> <span class="err">HexHorizontal,</span> <span class="err">HexVertical</span>
 <span class="p">}</span><span class="err">;</span>
 
-<span class="err">public</span> <span class="err">class</span> <span class="err">TransformState</span> <span class="p">{</span>
-
-<span class="err">public</span> <span class="err">float</span> <span class="err">posX;</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">posY;</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">posZ;</span>
-
-<span class="err">public</span> <span class="err">float</span> <span class="err">rotX;</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">rotY;</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">rotZ;</span>
-
-<span class="err">public</span> <span class="err">float</span> <span class="err">scaleX;</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">scaleY;</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">scaleZ;</span>
+<span class="err">public</span> <span class="err">class</span> <span class="err">LightingState</span>
+<span class="p">{</span>    
+    <span class="err">public</span> <span class="err">float</span> <span class="err">LightIntensity</span> <span class="err">=</span> <span class="err">0.54f;</span> <span class="err">//0-8</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">LightColor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">ColourState(1f,</span> <span class="err">0.9804f,</span> <span class="err">0.8902f);</span>    
+    <span class="err">public</span> <span class="err">float</span> <span class="err">AmbientIntensity</span> <span class="err">=</span> <span class="err">1.3f;</span> <span class="err">//0-8</span>
+    <span class="err">public</span> <span class="err">AmbientType</span> <span class="err">AmbientType</span> <span class="err">=</span> <span class="err">AmbientType.Background;</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">AmbientSkyColor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">ColourState(0.5f,</span> <span class="err">0.5f,</span> <span class="err">0.5f);</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">AmbientEquatorColor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">ColourState(0.5f,</span> <span class="err">0.5f,</span> <span class="err">0.5f);</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">AmbientGroundColor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">ColourState(0.5f,</span> <span class="err">0.5f,</span> <span class="err">0.5f);</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">ReflectionIntensity</span> <span class="err">=</span> <span class="err">1f;</span> <span class="err">//0-1</span>
+    <span class="err">public</span> <span class="err">int</span> <span class="err">LutIndex</span> <span class="err">=</span> <span class="err">0;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">LutContribution</span> <span class="err">=</span> <span class="err">1f;</span> <span class="err">//0-1</span>
+    <span class="err">[Tag(TagType.URL)]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">LutURL;</span> <span class="err">//LUT</span> <span class="err">256x16</span>
 <span class="p">}</span>
 
-<span class="err">public</span> <span class="err">class</span> <span class="err">ColorState</span>
+<span class="err">public</span> <span class="err">enum</span> <span class="err">AmbientType</span>
 <span class="p">{</span>
-<span class="err">public</span> <span class="err">float</span> <span class="err">r,</span> <span class="err">g,</span> <span class="err">b;</span>
-<span class="err">public</span> <span class="err">ColorState(float</span> <span class="err">r,</span> <span class="err">float</span> <span class="err">g,</span> <span class="err">float</span> <span class="err">b)</span>
-<span class="err">{</span>
-    <span class="err">this.r</span> <span class="err">=</span> <span class="err">r;</span>
-    <span class="err">this.g</span> <span class="err">=</span> <span class="err">g;</span>
-    <span class="err">this.b</span> <span class="err">=</span> <span class="err">b;</span>
+    <span class="err">Background,</span> <span class="err">Gradient</span> <span class="err">//Background</span> <span class="err">=</span> <span class="err">ambient</span> <span class="err">light</span> <span class="err">comes</span> <span class="err">from</span> <span class="err">the</span> <span class="err">background,</span> <span class="err">Gradient</span> <span class="err">=</span> <span class="err">ambient</span> <span class="err">light</span> <span class="err">comes</span> <span class="err">from</span> <span class="err">the</span> <span class="err">three</span> <span class="err">ambient</span> <span class="err">colors</span>
 <span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">HandsState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Enable</span> <span class="err">=</span> <span class="err">true;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">DisableUnused</span> <span class="err">=</span> <span class="err">false;</span>
+    <span class="err">public</span> <span class="err">HidingType</span> <span class="err">Hiding</span> <span class="err">=</span> <span class="err">HidingType.Default;</span>
+    <span class="err">public</span> <span class="err">List&lt;HandTransformState&gt;</span> <span class="err">HandTransforms;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">enum</span> <span class="err">HidingType</span>
+<span class="p">{</span>
+    <span class="err">Default,</span> <span class="err">Reverse,</span> <span class="err">Disable</span> <span class="err">//Default</span> <span class="err">=</span> <span class="err">only</span> <span class="err">owner</span> <span class="err">can</span> <span class="err">see,</span> <span class="err">Reverse</span> <span class="err">=</span> <span class="err">opposite</span> <span class="err">of</span> <span class="err">default,</span> <span class="err">Disable</span> <span class="err">=</span> <span class="err">hiding</span> <span class="err">is</span> <span class="err">disabled</span>
+<span class="p">}</span><span class="err">;</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">HandTransformState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Color;</span>
+    <span class="err">public</span> <span class="err">TransformState</span> <span class="err">Transform;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">TurnsState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Enable;</span>
+    <span class="err">public</span> <span class="err">TurnType</span> <span class="err">Type</span> <span class="err">=</span> <span class="err">TurnType.Auto;</span>
+    <span class="err">public</span> <span class="err">List&lt;string&gt;</span> <span class="err">TurnOrder</span> <span class="err">=</span> <span class="err">new</span> <span class="err">List&lt;string&gt;();</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Reverse;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">SkipEmpty;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">DisableInteractions;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">PassTurns</span> <span class="err">=</span> <span class="err">true;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">TurnColor;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">enum</span> <span class="err">TurnType</span>
+<span class="p">{</span>
+    <span class="err">Auto,</span> <span class="err">Custom</span> <span class="err">//Auto</span> <span class="err">=</span> <span class="err">turn</span> <span class="err">order</span> <span class="err">is</span> <span class="err">based</span> <span class="err">on</span> <span class="err">positioning</span> <span class="err">of</span> <span class="err">hands</span> <span class="err">on</span> <span class="err">around</span> <span class="err">table,</span> <span class="err">Custom</span> <span class="err">=</span> <span class="err">turn</span> <span class="err">order</span> <span class="err">is</span> <span class="err">based</span> <span class="err">on</span> <span class="err">an</span> <span class="err">user</span> <span class="err">color</span> <span class="err">list</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">TextState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Text;</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">colorstate;</span>
+    <span class="err">public</span> <span class="err">int</span> <span class="err">fontSize</span> <span class="err">=</span> <span class="err">64;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">TabState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">title;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">body;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">color;</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">visibleColor;</span>
+    <span class="err">public</span> <span class="err">int</span> <span class="err">id</span> <span class="err">=</span> <span class="err">-1;</span>
+
+    <span class="err">[JsonConstructor]</span>
+    <span class="err">public</span> <span class="err">TabState()</span> <span class="err">{</span> <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">TabState(UITab</span> <span class="err">to)</span>
+    <span class="p">{</span>
+        <span class="err">title</span> <span class="err">=</span> <span class="err">to.title;</span>
+        <span class="err">body</span> <span class="err">=</span> <span class="err">to.body;</span>
+        <span class="err">visibleColor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">ColourState(to.VisibleColor);</span>
+        <span class="err">color</span> <span class="err">=</span> <span class="err">Colour.LabelFromColour(to.VisibleColor);</span>
+        <span class="err">id</span> <span class="err">=</span> <span class="err">to.id;</span>
+    <span class="p">}</span>
+<span class="err">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">SnapPointState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">Position;</span> <span class="err">//World</span> <span class="err">position</span> <span class="err">when</span> <span class="err">not</span> <span class="err">attached</span> <span class="err">and</span> <span class="err">local</span> <span class="err">position</span> <span class="err">when</span> <span class="err">attached</span> <span class="err">to</span> <span class="err">an</span> <span class="err">object</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">Rotation;</span> <span class="err">//Rotate</span> <span class="err">is</span> <span class="err">only</span> <span class="err">set</span> <span class="err">for</span> <span class="err">rotation</span> <span class="err">snap</span> <span class="err">points</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">DecalState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">TransformState</span> <span class="err">Transform;</span>
+    <span class="err">public</span> <span class="err">CustomDecalState</span> <span class="err">CustomDecal;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CustomDecalState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Name;</span>
+    <span class="err">[Tag(TagType.URL)]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">ImageURL;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Size;</span> <span class="err">//Size</span> <span class="err">in</span> <span class="err">inches</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">RotationValueState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">object</span> <span class="err">Value;</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">Rotation;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CustomAssetState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Name;</span>
+    <span class="err">[Tag(TagType.URL)]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">URL;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">OrientationState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">Vector3</span> <span class="err">position;</span>
+    <span class="err">public</span> <span class="err">Quaternion</span> <span class="err">rotation;</span>
+    <span class="err">public</span> <span class="err">OrientationState(Vector3</span> <span class="err">position,</span> <span class="err">Quaternion</span> <span class="err">rotation)</span>
+    <span class="err">{</span>
+        <span class="err">this.position</span> <span class="err">=</span> <span class="err">position;</span>
+        <span class="err">this.rotation</span> <span class="err">=</span> <span class="err">rotation;</span>
+    <span class="p">}</span>
+    <span class="err">public</span> <span class="err">OrientationState()</span>
+    <span class="p">{</span>
+        <span class="err">this.position</span> <span class="err">=</span> <span class="err">Vector3.zero;</span>
+        <span class="err">this.rotation</span> <span class="err">=</span> <span class="err">Quaternion.identity;</span>
+    <span class="p">}</span>
+<span class="err">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">TransformState</span>
+<span class="p">{</span>   
+    <span class="err">public</span> <span class="err">float</span> <span class="err">posX;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">posY;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">posZ;</span>
+
+    <span class="err">public</span> <span class="err">float</span> <span class="err">rotX;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">rotY;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">rotZ;</span>
+
+    <span class="err">public</span> <span class="err">float</span> <span class="err">scaleX;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">scaleY;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">scaleZ;</span>
+
+    <span class="err">[JsonConstructor]</span>
+    <span class="err">public</span> <span class="err">TransformState()</span> <span class="err">{</span><span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">TransformState(Transform</span> <span class="err">T)</span>
+    <span class="p">{</span>
+        <span class="err">Vector3</span> <span class="err">pos</span> <span class="err">=</span> <span class="err">T.position;</span>
+        <span class="err">posX</span> <span class="err">=</span> <span class="err">pos.x;</span>
+        <span class="err">posY</span> <span class="err">=</span> <span class="err">pos.y;</span>
+        <span class="err">posZ</span> <span class="err">=</span> <span class="err">pos.z;</span>
+
+        <span class="err">Vector3</span> <span class="err">rot</span> <span class="err">=</span> <span class="err">T.eulerAngles;</span>
+        <span class="err">rotX</span> <span class="err">=</span> <span class="err">rot.x;</span>
+        <span class="err">rotY</span> <span class="err">=</span> <span class="err">rot.y;</span>
+        <span class="err">rotZ</span> <span class="err">=</span> <span class="err">rot.z;</span>
+
+        <span class="err">Vector3</span> <span class="err">scale</span> <span class="err">=</span> <span class="err">T.localScale;</span>
+        <span class="err">scaleX</span> <span class="err">=</span> <span class="err">scale.x;</span>
+        <span class="err">scaleY</span> <span class="err">=</span> <span class="err">scale.y;</span>
+        <span class="err">scaleZ</span> <span class="err">=</span> <span class="err">scale.z;</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">TransformState(Vector</span><span class="mi">3</span> <span class="err">pos,</span> <span class="err">Vector</span><span class="mi">3</span> <span class="err">rot,</span> <span class="err">Vector</span><span class="mi">3</span> <span class="err">scale)</span>
+    <span class="p">{</span>        
+        <span class="err">posX</span> <span class="err">=</span> <span class="err">pos.x;</span>
+        <span class="err">posY</span> <span class="err">=</span> <span class="err">pos.y;</span>
+        <span class="err">posZ</span> <span class="err">=</span> <span class="err">pos.z;</span>
+
+        <span class="err">rotX</span> <span class="err">=</span> <span class="err">rot.x;</span>
+        <span class="err">rotY</span> <span class="err">=</span> <span class="err">rot.y;</span>
+        <span class="err">rotZ</span> <span class="err">=</span> <span class="err">rot.z;</span>
+
+        <span class="err">scaleX</span> <span class="err">=</span> <span class="err">scale.x;</span>
+        <span class="err">scaleY</span> <span class="err">=</span> <span class="err">scale.y;</span>
+        <span class="err">scaleZ</span> <span class="err">=</span> <span class="err">scale.z;</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">Vector</span><span class="mi">3</span> <span class="err">ToPosition()</span>
+    <span class="p">{</span>
+        <span class="err">return</span> <span class="err">new</span> <span class="err">Vector3(posX,</span> <span class="err">posY,</span> <span class="err">posZ);</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">Vector</span><span class="mi">3</span> <span class="err">ToRotation()</span>
+    <span class="p">{</span>
+        <span class="err">return</span> <span class="err">new</span> <span class="err">Vector3(rotX,</span> <span class="err">rotY,</span> <span class="err">rotZ);</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">Vector</span><span class="mi">3</span> <span class="err">ToScale()</span>
+    <span class="p">{</span>
+        <span class="err">return</span> <span class="err">new</span> <span class="err">Vector3(scaleX,</span> <span class="err">scaleY,</span> <span class="err">scaleZ);</span>
+    <span class="p">}</span>
+<span class="err">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">ColourState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">r,</span> <span class="err">g,</span> <span class="err">b;</span>
+
+    <span class="err">public</span> <span class="err">ColourState()</span> <span class="err">{</span> <span class="p">}</span>
+
+    <span class="p">[</span><span class="err">JsonConstructor</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">ColourState(float</span> <span class="err">r,</span> <span class="err">float</span> <span class="err">g,</span> <span class="err">float</span> <span class="err">b)</span>
+    <span class="p">{</span>
+        <span class="err">this.r</span> <span class="err">=</span> <span class="err">r;</span>
+        <span class="err">this.g</span> <span class="err">=</span> <span class="err">g;</span>
+        <span class="err">this.b</span> <span class="err">=</span> <span class="err">b;</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">ColourState(Colour</span> <span class="err">c)</span>
+    <span class="p">{</span>
+        <span class="err">this.r</span> <span class="err">=</span> <span class="err">c.r;</span>
+        <span class="err">this.g</span> <span class="err">=</span> <span class="err">c.g;</span>
+        <span class="err">this.b</span> <span class="err">=</span> <span class="err">c.b;</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">Colour</span> <span class="err">ToColour()</span>
+    <span class="p">{</span>
+        <span class="err">return</span> <span class="err">new</span> <span class="err">Colour(r,</span> <span class="err">g,</span> <span class="err">b);</span>
+    <span class="p">}</span>
+<span class="err">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">VectorState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">x,</span> <span class="err">y,</span> <span class="err">z;</span>
+
+    <span class="err">public</span> <span class="err">VectorState()</span> <span class="err">{</span> <span class="p">}</span>
+
+    <span class="p">[</span><span class="err">JsonConstructor</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">VectorState(float</span> <span class="err">x,</span> <span class="err">float</span> <span class="err">y,</span> <span class="err">float</span> <span class="err">z)</span>
+    <span class="p">{</span>
+        <span class="err">this.x</span> <span class="err">=</span> <span class="err">x;</span>
+        <span class="err">this.y</span> <span class="err">=</span> <span class="err">y;</span>
+        <span class="err">this.z</span> <span class="err">=</span> <span class="err">z;</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">VectorState(Vector</span><span class="mi">3</span> <span class="err">vector)</span>
+    <span class="p">{</span>
+        <span class="err">this.x</span> <span class="err">=</span> <span class="err">vector.x;</span>
+        <span class="err">this.y</span> <span class="err">=</span> <span class="err">vector.y;</span>
+        <span class="err">this.z</span> <span class="err">=</span> <span class="err">vector.z;</span>
+    <span class="p">}</span>
+
+    <span class="err">public</span> <span class="err">Vector</span><span class="mi">3</span> <span class="err">ToVector()</span>
+    <span class="p">{</span>
+        <span class="err">return</span> <span class="err">new</span> <span class="err">Vector3(x,</span> <span class="err">y,</span> <span class="err">z);</span>
+    <span class="p">}</span>
 <span class="err">}</span>
 
 <span class="err">public</span> <span class="err">class</span> <span class="err">RigidbodyState</span>
@@ -3332,8 +3725,8 @@ If you have any questions on this topic feel free to post about it on our forums
 
 <span class="err">public</span> <span class="err">class</span> <span class="err">PhysicsMaterialState</span>
 <span class="p">{</span>
-    <span class="err">public</span> <span class="err">float</span> <span class="err">DynamicFriction</span> <span class="err">=</span> <span class="err">0.4f;</span> <span class="err">//The</span> <span class="err">friction</span> <span class="err">used</span> <span class="err">when</span> <span class="err">already</span> <span class="err">moving.</span> <span class="err">Usually</span> <span class="err">a</span> <span class="err">value</span> <span class="err">from</span> <span class="err">0</span> <span class="err">to</span> <span class="err">1.</span> <span class="err">A</span> <span class="err">value</span> <span class="err">of</span> <span class="err">zero</span> <span class="err">feels</span> <span class="err">like</span> <span class="err">ice,</span> <span class="err">a</span> <span class="err">value</span> <span class="err">of</span> <span class="err">1</span> <span class="err">will</span> <span class="err">make</span> <span class="err">it</span> <span class="err">come</span> <span class="err">to</span> <span class="err">rest</span> <span class="err">very</span> <span class="err">quickly</span> <span class="err">unless</span> <span class="err">a</span> <span class="err">lot</span> <span class="err">of</span> <span class="err">force</span> <span class="err">or</span> <span class="err">gravity</span> <span class="err">pushes</span> <span class="err">the</span> <span class="err">object.</span>
     <span class="err">public</span> <span class="err">float</span> <span class="err">StaticFriction</span> <span class="err">=</span> <span class="err">0.4f;</span> <span class="err">//The</span> <span class="err">friction</span> <span class="err">used</span> <span class="err">when</span> <span class="err">an</span> <span class="err">object</span> <span class="err">is</span> <span class="err">laying</span> <span class="err">still</span> <span class="err">on</span> <span class="err">a</span> <span class="err">surface.</span> <span class="err">Usually</span> <span class="err">a</span> <span class="err">value</span> <span class="err">from</span> <span class="err">0</span> <span class="err">to</span> <span class="err">1.</span> <span class="err">A</span> <span class="err">value</span> <span class="err">of</span> <span class="err">zero</span> <span class="err">feels</span> <span class="err">like</span> <span class="err">ice,</span> <span class="err">a</span> <span class="err">value</span> <span class="err">of</span> <span class="err">1</span> <span class="err">will</span> <span class="err">make</span> <span class="err">it</span> <span class="err">very</span> <span class="err">hard</span> <span class="err">to</span> <span class="err">get</span> <span class="err">the</span> <span class="err">object</span> <span class="err">moving.</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">DynamicFriction</span> <span class="err">=</span> <span class="err">0.4f;</span> <span class="err">//The</span> <span class="err">friction</span> <span class="err">used</span> <span class="err">when</span> <span class="err">already</span> <span class="err">moving.</span> <span class="err">Usually</span> <span class="err">a</span> <span class="err">value</span> <span class="err">from</span> <span class="err">0</span> <span class="err">to</span> <span class="err">1.</span> <span class="err">A</span> <span class="err">value</span> <span class="err">of</span> <span class="err">zero</span> <span class="err">feels</span> <span class="err">like</span> <span class="err">ice,</span> <span class="err">a</span> <span class="err">value</span> <span class="err">of</span> <span class="err">1</span> <span class="err">will</span> <span class="err">make</span> <span class="err">it</span> <span class="err">come</span> <span class="err">to</span> <span class="err">rest</span> <span class="err">very</span> <span class="err">quickly</span> <span class="err">unless</span> <span class="err">a</span> <span class="err">lot</span> <span class="err">of</span> <span class="err">force</span> <span class="err">or</span> <span class="err">gravity</span> <span class="err">pushes</span> <span class="err">the</span> <span class="err">object.</span>
     <span class="err">public</span> <span class="err">float</span> <span class="err">Bounciness</span> <span class="err">=</span> <span class="err">0f;</span> <span class="err">//How</span> <span class="err">bouncy</span> <span class="err">is</span> <span class="err">the</span> <span class="err">surface?</span> <span class="err">A</span> <span class="err">value</span> <span class="err">of</span> <span class="err">0</span> <span class="err">will</span> <span class="err">not</span> <span class="err">bounce.</span> <span class="err">A</span> <span class="err">value</span> <span class="err">of</span> <span class="err">1</span> <span class="err">will</span> <span class="err">bounce</span> <span class="err">without</span> <span class="err">any</span> <span class="err">loss</span> <span class="err">of</span> <span class="err">energy.</span>
     <span class="err">public</span> <span class="err">PhysicMaterialCombine</span> <span class="err">FrictionCombine</span> <span class="err">=</span> <span class="err">PhysicMaterialCombine.Average;</span> <span class="err">//How</span> <span class="err">the</span> <span class="err">friction</span> <span class="err">of</span> <span class="err">two</span> <span class="err">colliding</span> <span class="err">objects</span> <span class="err">is</span> <span class="err">combined.</span> <span class="err">0</span> <span class="err">=</span> <span class="err">Average,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Minimum,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Maximum,</span> <span class="err">3</span> <span class="err">=</span> <span class="err">Multiply.</span>
     <span class="err">public</span> <span class="err">PhysicMaterialCombine</span> <span class="err">BounceCombine</span> <span class="err">=</span> <span class="err">PhysicMaterialCombine.Average;</span> <span class="err">//How</span> <span class="err">the</span> <span class="err">bounciness</span> <span class="err">of</span> <span class="err">two</span> <span class="err">colliding</span> <span class="err">objects</span> <span class="err">is</span> <span class="err">combined.</span> <span class="err">0</span> <span class="err">=</span> <span class="err">Average,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Minimum,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Maximum,</span> <span class="err">3</span> <span class="err">=</span> <span class="err">Multiply.</span>
@@ -3341,39 +3734,110 @@ If you have any questions on this topic feel free to post about it on our forums
 
 <span class="err">public</span> <span class="err">class</span> <span class="err">CustomDeckState</span>
 <span class="p">{</span>
-    <span class="err">public</span> <span class="err">string</span> <span class="err">FaceURL</span> <span class="err">=</span> <span class="err">“”;</span>
-    <span class="err">public</span> <span class="err">string</span> <span class="err">BackURL</span> <span class="err">=</span> <span class="err">“”;</span>
+    <span class="err">[Tag(TagType.URL)]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">FaceURL</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
+    <span class="p">[</span><span class="err">Tag(TagType.URL)</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">BackURL</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">int?</span> <span class="err">NumWidth;</span>
+    <span class="err">public</span> <span class="err">int?</span> <span class="err">NumHeight;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">BackIsHidden</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span> <span class="err">//Back</span> <span class="err">of</span> <span class="err">cards</span> <span class="err">becames</span> <span class="err">the</span> <span class="err">hidden</span> <span class="err">card</span> <span class="err">when</span> <span class="err">in</span> <span class="err">a</span> <span class="err">hand</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">UniqueBack</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span> <span class="err">//Each</span> <span class="err">back</span> <span class="err">is</span> <span class="err">a</span> <span class="err">unique</span> <span class="err">card</span> <span class="err">just</span> <span class="err">like</span> <span class="err">the</span> <span class="err">front</span>
 <span class="p">}</span>
 
 <span class="err">public</span> <span class="err">class</span> <span class="err">CustomImageState</span>
 <span class="p">{</span>
-    <span class="err">public</span> <span class="err">string</span> <span class="err">ImageURL</span> <span class="err">=</span> <span class="err">“”;</span>
-    <span class="err">public</span> <span class="err">float</span> <span class="err">WidthScale;</span>
+    <span class="err">[Tag(TagType.URL)]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">ImageURL</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
+    <span class="p">[</span><span class="err">Tag(TagType.URL)</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">ImageSecondaryURL</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">WidthScale;</span> <span class="err">//Holds</span> <span class="err">the</span> <span class="err">scaled</span> <span class="err">size</span> <span class="err">of</span> <span class="err">the</span> <span class="err">object</span> <span class="err">based</span> <span class="err">on</span> <span class="err">the</span> <span class="err">image</span> <span class="err">dimensions</span>
+    <span class="err">public</span> <span class="err">CustomDiceState</span> <span class="err">CustomDice;</span>
+    <span class="err">public</span> <span class="err">CustomTokenState</span> <span class="err">CustomToken;</span>
+    <span class="err">public</span> <span class="err">CustomJigsawPuzzleState</span> <span class="err">CustomJigsawPuzzle;</span>
+    <span class="err">public</span> <span class="err">CustomTileState</span> <span class="err">CustomTile;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CustomAssetbundleState</span>
+<span class="p">{</span>
+    <span class="err">[Tag(TagType.URL)]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">AssetbundleURL</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
+    <span class="p">[</span><span class="err">Tag(TagType.URL)</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">AssetbundleSecondaryURL</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">int</span> <span class="err">MaterialIndex</span> <span class="err">=</span> <span class="mi">0</span><span class="err">;</span> <span class="err">//</span><span class="mi">0</span> <span class="err">=</span> <span class="err">Plastic</span><span class="p">,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Wood,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Metal,</span> <span class="err">3</span> <span class="err">=</span> <span class="err">Cardboard</span>   
+    <span class="err">public</span> <span class="err">int</span> <span class="err">TypeIndex</span> <span class="err">=</span> <span class="err">0;</span> <span class="err">//0</span> <span class="err">=</span> <span class="err">Generic,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Figurine,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Dice,</span> <span class="err">3</span> <span class="err">=</span> <span class="err">Coin,</span> <span class="err">4</span> <span class="err">=</span> <span class="err">Board,</span> <span class="err">5</span> <span class="err">=</span> <span class="err">Chip,</span> <span class="err">6</span> <span class="err">=</span> <span class="err">Bag,</span> <span class="err">7</span> <span class="err">=</span> <span class="err">Infinite</span>   
+    <span class="err">public</span> <span class="err">int</span> <span class="err">LoopingEffectIndex</span> <span class="err">=</span> <span class="err">0;</span>     
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CustomDiceState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">DiceType</span> <span class="err">Type;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CustomTokenState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Thickness;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">MergeDistancePixels;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Stackable</span> <span class="err">=</span> <span class="err">false;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CustomTileState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">TileType</span> <span class="err">Type;</span> <span class="err">//0</span> <span class="err">=</span> <span class="err">Box,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Hex,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Circle,</span> <span class="err">3</span> <span class="err">=</span> <span class="err">Rounded</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Thickness;</span>    
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Stackable</span> <span class="err">=</span> <span class="err">false;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Stretch</span> <span class="err">=</span> <span class="err">false;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CustomJigsawPuzzleState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">int</span> <span class="err">NumPuzzlePieces</span> <span class="err">=</span> <span class="err">80;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">ImageOnBoard</span> <span class="err">=</span> <span class="err">true;</span>
 <span class="p">}</span>
 
 <span class="err">public</span> <span class="err">class</span> <span class="err">CustomMeshState</span>
 <span class="p">{</span>
-    <span class="err">public</span> <span class="err">string</span> <span class="err">MeshURL</span> <span class="err">=</span> <span class="err">“”;</span>
-    <span class="err">public</span> <span class="err">string</span> <span class="err">DiffuseURL</span> <span class="err">=</span> <span class="err">“”;</span>
-    <span class="err">public</span> <span class="err">string</span> <span class="err">NormalURL</span> <span class="err">=</span> <span class="err">“”;</span>
-    <span class="err">public</span> <span class="err">string</span> <span class="err">ColliderURL</span> <span class="err">=</span> <span class="err">“”;</span>
-    <span class="err">public</span> <span class="err">bool</span> <span class="err">Convex</span> <span class="err">=</span> <span class="err">true;</span>
-    <span class="err">public</span> <span class="err">int</span> <span class="err">MaterialIndex</span> <span class="err">=</span> <span class="err">0;</span> <span class="err">//0</span> <span class="err">=</span> <span class="err">Plastic,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Wood,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Metal.</span>
-    <span class="err">public</span> <span class="err">int</span> <span class="err">TypeIndex</span> <span class="err">=</span> <span class="err">0;</span> <span class="err">//0</span> <span class="err">=</span> <span class="err">Generic,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Figurine,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Dice,</span> <span class="err">3</span> <span class="err">=</span> <span class="err">Coin,</span> <span class="err">4</span> <span class="err">=</span> <span class="err">Board,</span> <span class="err">5</span> <span class="err">=</span> <span class="err">Chip</span>
+    <span class="err">[Tag(TagType.URL)]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">MeshURL</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
+    <span class="p">[</span><span class="err">Tag(TagType.URL)</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">DiffuseURL</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="p">[</span><span class="err">Tag(TagType.URL)</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">NormalURL</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="p">[</span><span class="err">Tag(TagType.URL)</span><span class="p">]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">ColliderURL</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Convex</span> <span class="err">=</span> <span class="kc">true</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">int</span> <span class="err">MaterialIndex</span> <span class="err">=</span> <span class="mi">0</span><span class="err">;</span> <span class="err">//</span><span class="mi">0</span> <span class="err">=</span> <span class="err">Plastic</span><span class="p">,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Wood,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Metal,</span> <span class="err">3</span> <span class="err">=</span> <span class="err">Cardboard</span>
+    <span class="err">public</span> <span class="err">int</span> <span class="err">TypeIndex</span> <span class="err">=</span> <span class="err">0;</span> <span class="err">//0</span> <span class="err">=</span> <span class="err">Generic,</span> <span class="err">1</span> <span class="err">=</span> <span class="err">Figurine,</span> <span class="err">2</span> <span class="err">=</span> <span class="err">Dice,</span> <span class="err">3</span> <span class="err">=</span> <span class="err">Coin,</span> <span class="err">4</span> <span class="err">=</span> <span class="err">Board,</span> <span class="err">5</span> <span class="err">=</span> <span class="err">Chip,</span> <span class="err">6</span> <span class="err">=</span> <span class="err">Bag,</span> <span class="err">7</span> <span class="err">=</span> <span class="err">Infinite</span>
     <span class="err">public</span> <span class="err">CustomShaderState</span> <span class="err">CustomShader;</span> <span class="err">//Used</span> <span class="err">to</span> <span class="err">override</span> <span class="err">the</span> <span class="err">shader</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">CastShadows</span> <span class="err">=</span> <span class="err">true;</span>
 <span class="p">}</span>
 
 <span class="err">public</span> <span class="err">class</span> <span class="err">CustomShaderState</span>
 <span class="p">{</span>
-    <span class="err">public</span> <span class="err">ColorState</span> <span class="err">SpecularColor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">ColorState(0.9f,</span> <span class="err">0.9f,</span> <span class="err">0.9f);</span>
-    <span class="err">public</span> <span class="err">float</span> <span class="err">SpecularIntensity</span> <span class="err">=</span> <span class="err">0.1f;</span>
-    <span class="err">public</span> <span class="err">float</span> <span class="err">SpecularSharpness</span> <span class="err">=</span> <span class="err">3f;</span> <span class="err">//Range:</span> <span class="err">2</span> <span class="err">–</span> <span class="err">8</span>
-    <span class="err">public</span> <span class="err">float</span> <span class="err">FresnelStrength</span> <span class="err">=</span> <span class="err">0.1f;</span> <span class="err">//Range:</span> <span class="err">0</span> <span class="err">–</span> <span class="err">1</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">SpecularColor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">ColourState(0.9f,</span> <span class="err">0.9f,</span> <span class="err">0.9f);</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">SpecularIntensity</span> <span class="err">=</span> <span class="err">0.1f;</span> 
+    <span class="err">public</span> <span class="err">float</span> <span class="err">SpecularSharpness</span> <span class="err">=</span> <span class="err">3f;</span> <span class="err">//Range:</span> <span class="err">2</span> <span class="err">-</span> <span class="err">8</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">FresnelStrength</span> <span class="err">=</span> <span class="err">0.1f;</span> <span class="err">//Range:</span> <span class="err">0</span> <span class="err">-</span> <span class="err">1</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">FogOfWarSaveState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">HideGmPointer;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">HideObjects;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Height;</span>
+    <span class="err">public</span> <span class="err">Dictionary&lt;string,</span> <span class="err">HashSet&lt;int&gt;&gt;</span> <span class="err">RevealedLocations;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">FogOfWarRevealerSaveState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Active;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Range;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">Color;</span>
 <span class="p">}</span>
 
 <span class="err">public</span> <span class="err">class</span> <span class="err">TabletState</span>
 <span class="p">{</span>
-    <span class="err">public</span> <span class="err">string</span> <span class="err">PageURL</span> <span class="err">=</span> <span class="err">“”;</span>
+    <span class="err">[Tag(TagType.URL)]</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">PageURL</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
 <span class="p">}</span>
 
 <span class="err">public</span> <span class="err">class</span> <span class="err">ClockSaveState</span>
@@ -3381,6 +3845,90 @@ If you have any questions on this topic feel free to post about it on our forums
     <span class="err">public</span> <span class="err">ClockScript.ClockState</span> <span class="err">ClockState;</span>
     <span class="err">public</span> <span class="err">int</span> <span class="err">SecondsPassed</span> <span class="err">=</span> <span class="err">0;</span>
     <span class="err">public</span> <span class="err">bool</span> <span class="err">Paused</span> <span class="err">=</span> <span class="err">false;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CounterState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">int</span> <span class="err">value</span> <span class="err">=</span> <span class="err">0;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">Mp</span><span class="mi">3</span><span class="err">PlayerState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">songTitle</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">genre</span> <span class="err">=</span> <span class="s2">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">volume</span> <span class="err">=</span> <span class="mf">0.5</span><span class="err">f;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">isPlaying</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">loopOne</span> <span class="err">=</span> <span class="kc">false</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">menuTitle</span> <span class="err">=</span> <span class="s2">&quot;GENRES&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">Menus</span> <span class="err">menu</span> <span class="err">=</span> <span class="err">Menus.GENRES;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CalculatorState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">string</span> <span class="err">value</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">memory</span> <span class="err">=</span> <span class="mi">0</span><span class="err">;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">VectorLineState</span>
+<span class="p">{</span>    
+    <span class="err">public</span> <span class="err">List&lt;VectorState&gt;</span> <span class="err">points3;</span>
+    <span class="err">public</span> <span class="err">ColourState</span> <span class="err">color;</span>    
+    <span class="err">public</span> <span class="err">float</span> <span class="err">thickness</span> <span class="err">=</span> <span class="err">0.1f;</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">rotation;</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">loop;</span>
+    <span class="err">public</span> <span class="err">bool?</span> <span class="err">square;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">CameraState</span>
+<span class="p">{</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">Position;</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">Rotation;</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Distance;</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">Zoomed</span> <span class="err">=</span> <span class="err">false;</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">JointState</span> <span class="err">//http://docs.unity</span><span class="mi">3</span><span class="err">d.com/ScriptReference/Joint.html</span>
+<span class="p">{</span>   
+    <span class="err">public</span> <span class="err">string</span> <span class="err">ConnectedBodyGUID</span> <span class="err">=</span> <span class="nt">&quot;&quot;</span><span class="err">;</span> <span class="err">//A</span> <span class="err">reference</span> <span class="err">to</span> <span class="err">another</span> <span class="err">rigidbody</span> <span class="err">this</span> <span class="err">joint</span> <span class="err">connects</span> <span class="err">to.</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">EnableCollision;</span> <span class="err">//Enable</span> <span class="err">collision</span> <span class="err">between</span> <span class="err">bodies</span> <span class="err">connected</span> <span class="err">with</span> <span class="err">the</span> <span class="err">joint.</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">Axis</span> <span class="err">=</span> <span class="err">new</span> <span class="err">VectorState();</span> <span class="err">//The</span> <span class="err">Direction</span> <span class="err">of</span> <span class="err">the</span> <span class="err">axis</span> <span class="err">around</span> <span class="err">which</span> <span class="err">the</span> <span class="err">body</span> <span class="err">is</span> <span class="err">constrained.</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">Anchor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">VectorState();</span> <span class="err">//The</span> <span class="err">Position</span> <span class="err">of</span> <span class="err">the</span> <span class="err">anchor</span> <span class="err">around</span> <span class="err">which</span> <span class="err">the</span> <span class="err">joints</span> <span class="err">motion</span> <span class="err">is</span> <span class="err">constrained.</span>
+    <span class="err">public</span> <span class="err">VectorState</span> <span class="err">ConnectedAnchor</span> <span class="err">=</span> <span class="err">new</span> <span class="err">VectorState();</span> <span class="err">//Position</span> <span class="err">of</span> <span class="err">the</span> <span class="err">anchor</span> <span class="err">relative</span> <span class="err">to</span> <span class="err">the</span> <span class="err">connected</span> <span class="err">Rigidbody.</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">BreakForce;</span> <span class="err">//The</span> <span class="err">force</span> <span class="err">that</span> <span class="err">needs</span> <span class="err">to</span> <span class="err">be</span> <span class="err">applied</span> <span class="err">for</span> <span class="err">this</span> <span class="err">joint</span> <span class="err">to</span> <span class="err">break.</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">BreakTorgue;</span> <span class="err">//The</span> <span class="err">torque</span> <span class="err">that</span> <span class="err">needs</span> <span class="err">to</span> <span class="err">be</span> <span class="err">applied</span> <span class="err">for</span> <span class="err">this</span> <span class="err">joint</span> <span class="err">to</span> <span class="err">break.</span>
+
+    <span class="err">public</span> <span class="err">void</span> <span class="err">Assign(JointState</span> <span class="err">jointState)</span>
+    <span class="p">{</span>
+        <span class="err">this.ConnectedBodyGUID</span> <span class="err">=</span> <span class="err">jointState.ConnectedBodyGUID;</span>
+        <span class="err">this.EnableCollision</span> <span class="err">=</span> <span class="err">jointState.EnableCollision;</span>
+        <span class="err">this.Anchor</span> <span class="err">=</span> <span class="err">jointState.Anchor;</span>
+        <span class="err">this.Axis</span> <span class="err">=</span> <span class="err">jointState.Axis;</span>
+        <span class="err">this.ConnectedAnchor</span> <span class="err">=</span> <span class="err">jointState.ConnectedAnchor;</span>
+        <span class="err">this.BreakForce</span> <span class="err">=</span> <span class="err">jointState.BreakForce;</span>
+        <span class="err">this.BreakTorgue</span> <span class="err">=</span> <span class="err">jointState.BreakTorgue;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">JointFixedState</span> <span class="err">:</span> <span class="err">JointState</span> <span class="err">//http://docs.unity</span><span class="mi">3</span><span class="err">d.com/ScriptReference/FixedJoint.html</span>
+<span class="p">{</span> 
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">JointHingeState</span> <span class="err">:</span> <span class="err">JointState</span> <span class="err">//http://docs.unity</span><span class="mi">3</span><span class="err">d.com/ScriptReference/HingeJoint.html</span>
+<span class="p">{</span> 
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">UseLimits;</span>
+    <span class="err">public</span> <span class="err">JointLimits</span> <span class="err">Limits;</span> <span class="err">//Limit</span> <span class="err">of</span> <span class="err">angular</span> <span class="err">rotation</span> <span class="err">on</span> <span class="err">the</span> <span class="err">hinge</span> <span class="err">joint.</span> <span class="err">http://docs.unity3d.com/ScriptReference/JointLimits.html</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">UseMotor;</span>
+    <span class="err">public</span> <span class="err">JointMotor</span> <span class="err">Motor;</span> <span class="err">//The</span> <span class="err">motor</span> <span class="err">will</span> <span class="err">apply</span> <span class="err">a</span> <span class="err">force</span> <span class="err">up</span> <span class="err">to</span> <span class="err">a</span> <span class="err">maximum</span> <span class="err">force</span> <span class="err">to</span> <span class="err">achieve</span> <span class="err">the</span> <span class="err">target</span> <span class="err">velocity</span> <span class="err">in</span> <span class="err">degrees</span> <span class="err">per</span> <span class="err">second.</span> <span class="err">http://docs.unity3d.com/ScriptReference/JointMotor.html</span>
+    <span class="err">public</span> <span class="err">bool</span> <span class="err">UseSpring;</span>
+    <span class="err">public</span> <span class="err">JointSpring</span> <span class="err">Spring;</span> <span class="err">//The</span> <span class="err">spring</span> <span class="err">attempts</span> <span class="err">to</span> <span class="err">reach</span> <span class="err">a</span> <span class="err">target</span> <span class="err">angle</span> <span class="err">by</span> <span class="err">adding</span> <span class="err">spring</span> <span class="err">and</span> <span class="err">damping</span> <span class="err">forces.</span> <span class="err">http://docs.unity3d.com/ScriptReference/JointSpring.html</span>
+<span class="p">}</span>
+
+<span class="err">public</span> <span class="err">class</span> <span class="err">JointSpringState</span> <span class="err">:</span> <span class="err">JointState</span> <span class="err">//http://docs.unity</span><span class="mi">3</span><span class="err">d.com/ScriptReference/SpringJoint.html</span>
+<span class="p">{</span> 
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Damper;</span> <span class="err">//The</span> <span class="err">damper</span> <span class="err">force</span> <span class="err">used</span> <span class="err">to</span> <span class="err">dampen</span> <span class="err">the</span> <span class="err">spring</span> <span class="err">force.</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">MaxDistance;</span> <span class="err">//The</span> <span class="err">maximum</span> <span class="err">distance</span> <span class="err">between</span> <span class="err">the</span> <span class="err">bodies</span> <span class="err">relative</span> <span class="err">to</span> <span class="err">their</span> <span class="err">initial</span> <span class="err">distance.</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">MinDistance;</span> <span class="err">//The</span> <span class="err">minimum</span> <span class="err">distance</span> <span class="err">between</span> <span class="err">the</span> <span class="err">bodies</span> <span class="err">relative</span> <span class="err">to</span> <span class="err">their</span> <span class="err">initial</span> <span class="err">distance.</span>
+    <span class="err">public</span> <span class="err">float</span> <span class="err">Spring;</span> <span class="err">//The</span> <span class="err">spring</span> <span class="err">force</span> <span class="err">used</span> <span class="err">to</span> <span class="err">keep</span> <span class="err">the</span> <span class="err">two</span> <span class="err">objects</span> <span class="err">together.</span>
 <span class="p">}</span>
 </pre></div>
 
