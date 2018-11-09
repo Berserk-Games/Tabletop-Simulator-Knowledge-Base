@@ -1,6 +1,6 @@
-# Tabletop Simulator API
+# Tabletop Simulator Knowledge Base
 
-This is the source of the api documentation in Tabletop Simulator. It uses a modified version of [Material-Design](https://github.com/squidfunk/mkdocs-material) for MKDocs.
+This is the source of the knowledge base in Tabletop Simulator. It uses a modified version of [Material-Design](https://github.com/squidfunk/mkdocs-material) for MKDocs.
 
 ## How it Works
 
