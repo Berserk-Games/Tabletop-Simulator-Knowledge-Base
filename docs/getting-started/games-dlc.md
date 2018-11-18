@@ -121,6 +121,7 @@ There are currently over 25 licensed games with many more on the way! If you lik
 ![DLC Games Menu](/img/games-dlc/robertburkegames.png)
 
 * [Battle For Souls](https://store.steampowered.com/app/438980/Tabletop_Simulator__Battle_For_Souls/) {>>(Released Jan 29, 2016)<<}
+* [Draco Magi](https://store.steampowered.com/app/610696/Tabletop_Simulator__Draco_Magi/) {>>(Released Nov 7, 2018)<<}
 
 
 ###Slugfest Games
