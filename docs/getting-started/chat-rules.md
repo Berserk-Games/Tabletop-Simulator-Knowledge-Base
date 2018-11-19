@@ -27,7 +27,7 @@ These rules only apply to Global Chat, not in-game chat.
 
     If you still feel that a moderator has been seriously abusive, you can report it by emailing `berserkgames@gmail.com` with the Steam names involved and a rough timeframe of when it occurred.
 
-##Conciquences
+##Consequences
 Failure to adhere to the above rules can result in a temporary, and rarely permanent, removal from Global chat.
 
 ###Kicks
