@@ -23,9 +23,9 @@ Linux | ~/.local/share/Tabletop Simulator
 
 ---
 
-##Save game cloud syncing
+##Save Game Cloud Sync
 
-Steam cloud allows for up to **100 GB** of storage for Tabletop Simulator. You can utilize this for storage of in-game assets like images and models. Check out the [Cloud Manager](/custom-content/cloud-manager) page for details on how to manage the contents of your Tabletop Simulator Steam cloud.
+Steam cloud allows for up to **100 GB** of storage for Tabletop Simulator. You can use this to store in-game assets like images and models. Check out the [Cloud Manager](/custom-content/cloud-manager) page for details on how to manage the contents of your Tabletop Simulator Steam cloud.
 
 ---
 
@@ -105,13 +105,13 @@ These are the default Steam P2P ports.
 
 ##VR Support
 
-All VR support is still a focus for development, but it is very functional.
+Existing VR support is very functional and continues to be a development focus.
 
 ###Supported Headsets
 * HTC Vive
 * Oculus Rift
 
-Windows Mixed Reality may be playable with the Revive Compatibility Layer
+Windows Mixed Reality may be playable with the Revive Compatibility Layer.
 
 ###Controls in VR
 * Tracked motion controllers
