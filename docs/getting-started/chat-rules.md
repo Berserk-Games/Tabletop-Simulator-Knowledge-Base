@@ -29,7 +29,11 @@ Rules are open to interpretation. Do not discuss them in chat. See the "Admin Ab
     If you still feel that a moderator has been seriously abusive, you can report it by emailing `berserkgames@gmail.com` with the Steam names involved and a rough timeframe of when it occurred. **Do not discuss it in chat, please.**
 
 ##Consequences
+<<<<<<< HEAD
 Failure to adhere to the above rules can result in a temporary, and rarely permanent, removal from Global chat. All of these consequences only impact Global Chat, not your ability to talk when in-game.
+=======
+Failure to adhere to the above rules can result in a temporary, and rarely permanent, removal from Global chat.
+>>>>>>> 4d2868cac04269062b890a51d16b507e2845bf23
 
 ###Kicks
 If you break a rule, you can be kicked from chat without cause given. You are allowed to rejoin chat at any time.
