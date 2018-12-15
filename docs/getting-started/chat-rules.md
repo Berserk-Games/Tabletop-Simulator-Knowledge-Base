@@ -14,10 +14,12 @@ Rules are open to interpretation. Do not discuss them in chat. See the "Admin Ab
 5. **Do not harass players or moderators.**
 6. **Do not complain about games or players.**
 7. **Do not discuss chat rules or moderators.** If you do not like something a moderator did, you can ask them why they did it using `/msg name message` in private. If they do not respond, or if you feel they have been abusive, you can contact `berserkgames@gmail.com`.
-8. **Bots are not allowed.** No, the ones from Geekshed/Tabletop Simulator are not covered by this rule.
+8. **Bots are not allowed.** GeekShed/Tabletop Simulator bots are the obvious exception.
 9. **No hate speech. Do not joke about it either.**
 10. **No external advertising.** You may advertise your table within reason.
 11. **Do not spam chat. Do not participate in group spam.**
+
+*All rules also apply to your username.*
 
 !!!help "Admin Abuse?"
     If you feel an admin has been abusive please consider the following points:
@@ -51,6 +53,7 @@ There are exceptions made for certain individuals, but these permanent bans are 
     RogueRedux
     _pigneedle_
     Shockwave
+    RogueRedux
     Coyote`(Geekshed Admin)
 
 ##Developers
