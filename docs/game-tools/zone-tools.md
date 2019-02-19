@@ -101,6 +101,7 @@ Right-click on a Fog of War zone will do two thing. First, it copy the GUID into
 
 * **Hide GM Pointer**: If checked, this prevents players from seeing the hand cursor of the player in the Black seat.
 * **Hide Objects**: If checked, this causes the fog to hide objects. If you uncheck it, it will just make a black plane which obscures anything under it.
+* **ReHide Objects**: If checked, this causes any object that had been revealed in the fog to become hidden again if it is not in direct "line of sight" of a revealer.
 * **Fog Height**: How high up the black plane is placed within the zone.
 * **Reset Fog**: Causes any revealed fog to obscure again, as if it had been newly drawn.
 
