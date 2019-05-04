@@ -19,7 +19,7 @@ To enable logging, type /log in chat or add `-log` to your [launch options](laun
 
 Log Locations:
 
-* **Windows** - `Steam Library/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/output_log.txt`
+* **Windows** - `C:\Users\username\AppData\LocalLow\Berserk Games\Tabletop Simulator\Player.log`
 * **Mac** - `~/Library/Logs/Unity/Player.log`
 * **Linux** - `~/.config/unity3d/Berserk Games/Tabletop Simulator/Player.log`
 
