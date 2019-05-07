@@ -12,7 +12,7 @@ There is rarely a "perfect image resolution", however you can use this list as a
 
 For Use With | Recommended Resolution
 -- | --
-Custom Background | 4000x2000 (Maximum of 8000x4000)
+Custom Background | 4096x2048
 Custom Board | Any, the board is re-scaled based on the image used.
 Custom Deck (Square) | 4096×4096 *(see [Templates](#templates))*
 Custom Deck (Rectangle) | 4096×(whatever height fits) *(see [Templates](#templates))*
