@@ -52,7 +52,7 @@ extra:
       link: 'https://www.youtube.com/user/berserkgames'
 
 
-pages:
+nav:
   - Getting Started:
     - Tabletop Simulator: index.md
     - Technical Info: getting-started/technical-info.md
