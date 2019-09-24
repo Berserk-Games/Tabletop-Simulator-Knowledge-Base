@@ -2,7 +2,7 @@
 
 ##About Tabletop Simulator
 
-TTabletop Simulator is exactly that: a simulation of a tabletop. It comes with classic games to play, offers DLC of officially licensed versions of other games and has tens of thousands of Steam Workshop contributions from the community. This is the premier platform for creating digital representations of real-life games. If you can't find what you'd like in the Steam Workshop, you can create your own games with nothing more than a handful of images to import.
+Tabletop Simulator is exactly that: a simulation of a tabletop. It comes with classic games to play, offers DLC of officially licensed versions of other games and has tens of thousands of Steam Workshop contributions from the community. This is the premier platform for creating digital representations of real-life games. If you can't find what you'd like in the Steam Workshop, you can create your own games with nothing more than a handful of images to import.
 
 Anyone who owns Tabletop Simulator can join any public game, or you can have private ones with friends. Have control over your game by giving certain players additional access rights, or limiting what players can do to trip up spoilsports.
 
