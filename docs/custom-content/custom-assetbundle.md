@@ -34,7 +34,7 @@ In order to create an AssetBundle, you will need to:
 Follow the instructions for each step closely.
 
 ###Install Unity
-The first thing you need is Unity. But not just any version of Unity, it needs to be **[Unity 2019.1.14](https://unity3d.com/get-unity/download/archive)**.
+The first thing you need is Unity. But not just any version of Unity, it needs to be **[Unity 2019.1.14f1](https://unity3d.com/get-unity/download/archive)**.
 
 You want the **installer**.
 
