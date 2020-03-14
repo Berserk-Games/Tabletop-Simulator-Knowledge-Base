@@ -1,4 +1,4 @@
-sA custom deck is a collections of cards created via "card sheets".
+A custom deck is a collections of cards created via "card sheets".
 
 <center>![Custom Board Example](/img/custom-deck/deck.png)</center>
 
