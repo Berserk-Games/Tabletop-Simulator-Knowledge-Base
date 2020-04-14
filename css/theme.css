@@ -1,4 +1,6 @@
 /*Changing icon for permalinks*/
+body {background-color:#FFF}
+
 .headerlink:after {
     font-family: "Material Icons";
     content: "\E157";
