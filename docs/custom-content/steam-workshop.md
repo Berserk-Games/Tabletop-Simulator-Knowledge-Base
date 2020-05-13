@@ -35,7 +35,7 @@ In the next section, you can either upload your files to an external site and in
 <center>![Workshop Export Browser](/img/steam-workshop/browser.png)</center>
 
 !!!important "Image Upload"
-    If you don’t put in an image for the thumbnail, you will get an error and the mod won’t upload, so don’t forget this step!
+    If you don’t put in an image for the thumbnail, you will get an error and the mod won’t upload, so don’t forget this step! Also, make sure your thumbnail file is Local and not in the Steam Cloud. Cloud files could freeze your upload with no confirmation at all.  This is just for the thumbnail file.
 
 Next, check mark the game type for your mod. Is your mod full of custom models that you created from scratch? Then you want to check that box. Is your mod a board game, but also a role-playing game? Then check both of those.
 
