@@ -1,9 +1,9 @@
-sA custom deck is a collections of cards created via "card sheets".
+A custom deck is a collections of cards created via "card sheets".
 
 <center>![Custom Board Example](/img/custom-deck/deck.png)</center>
 
 ##Deck Features
-* Decks can b e square or rectangular, depending on dimensions of card sheet.
+* Decks can be square or rectangular, depending on dimensions of card sheet.
 * Cards may be held in [hand zones](/game-tools/zone-tools#hand-zone) by default. This can be changed via its [context menu](/player-guides/context-menu#toggles).
 * Multiple card sheets can be combined into larger decks if needed.
 * Card sheets use the last image on a card sheet for a "hidden" image when those cards are in a hand-zone or otherwise hidden.
