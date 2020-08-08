@@ -63,6 +63,8 @@ You can now check out your mod in the Workshop. Since it’s currently hidden, y
 
 It’s recommended to add as much info/details as possible of your mod as people are more likely to subscribe if it’s well done. Adding screenshots is important so people can see right away what your game looks like. You can also add any contributors* that helped you create the mod as well as add any of your social media links. And if you decide you no longer wish to update or have your mod public, you can either make it hidden or just delete it altogether. Once you’re ready to make it public, you can change the visibility either to friends only or to the general public.
 
+If your mod is an implementation of an existing board game, you might like to increase visibility by adding a [link](https://boardgamegeek.com/wiki/page/Link_Submissions) to it from the game’s page on [BoardGameGeek](https://boardgamegeek.com/).  Search for the game on BoardGameGeek, then go “More ▾ > Web Links > + Add”.  Select “Online Play” as the category.
+
 !!!tip "Contributors"
     Please note that contributors cannot update your mod for you. This is an ability that Valve needs to add, and at this time it’s not high on their list.
 
