@@ -154,7 +154,7 @@ Video card (GPU) | Integrated graphics
 
 Element | Minimum Requirement
 -- | --
-Operating system (OS) | XP SP2
+Operating system (OS) | macOS 10.12+
 Processor (CPU) |
 System memory (RAM) | 4 GB
 Hard disk drive (HDD) | 7 GB
