@@ -1,6 +1,6 @@
 > View the [AssetBundles Tutorial Video](/getting-started/video-tutorials#custom-asset-bundles)
 
-An AssetBundle is the most advanced, fully featured asset type for Tabletop Simulator. An asset is created in Unity, and then expected in a special format to be imported into your game.
+An AssetBundle is the most advanced, fully featured asset type for Tabletop Simulator. An asset is created in Unity, and then exported in a special format to be imported into your game.
 
 <center>![Example Asset Bundle in Unity](/img/custom-assetbundle/example.gif)</center>
 
