@@ -13,3 +13,17 @@ Alternatively, you can make modifications to individual pages then submit them f
 If you choose to install MKDocs so you can live-preview your changes, you may do so [by following these instructions](https://squidfunk.github.io/mkdocs-material/getting-started/).
 
 Otherwise, you will not need to install anything to edit the text files.
+
+
+#### Steps
+
+* Have a working `pipenv`
+* In this folder, do `pipenv install`.  You might need elevated priviledges.
+* `pipenv shell`
+* `pip install mkdocs`
+* `pip install pymdown-extensions `
+* `pip install mkdocs-material==4.6.3`
+
+* `mkdocs build` to build the docs
+* `mkdocs serve` to run the docs on a local webserver for testing.
+* `mkdocs gh-deploy` to deploy
