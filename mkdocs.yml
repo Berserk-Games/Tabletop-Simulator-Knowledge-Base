@@ -79,6 +79,7 @@ nav:
     - Gizmo Tool: game-tools/gizmo-tool.md
     - Snap Point Tool: game-tools/snap-point-tool.md
     - Decal Tool: game-tools/decal-tool.md
+    - Object Tags: game-tools/object-tags.md
   - Player Guides:
     - Controls & Movement: player-guides/basic-controls.md
     - Advanced Controls: player-guides/advanced-controls.md
