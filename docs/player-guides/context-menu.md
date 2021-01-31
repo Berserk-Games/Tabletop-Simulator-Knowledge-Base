@@ -45,8 +45,8 @@ The Global Contextual Menu has extra functions that can be used without clicking
 <center>![Camera States Context Menu](/img/context-menu/camera.png)</center>
 
 * **Camera Mode**: Switch between 3'rd, 1'st and top-down viewing modes. {>>Shortcut: P<<}
-* **Load Camera**: Load pre-set camera viewing angles. {>>Shortcut: 1-9<<}
-* **Save Camera**: Create a pre-set camera viewing angle. {>>Shortcut: Shift + 1-9<<}
+* **Load Camera**: Load pre-set camera viewing angles. {>>Shortcut: Shift + 1-9<<}
+* **Save Camera**: Create a pre-set camera viewing angle. {>>Shortcut: Ctrl + 1-9<<}
 * **Blindfold**: Apply/remove blindfold from yourself. {>>Shortcut: B<<}
 * **Paste**: Paste any copied object/objects.{>>Shortcut: Ctrl + V<<}
 
