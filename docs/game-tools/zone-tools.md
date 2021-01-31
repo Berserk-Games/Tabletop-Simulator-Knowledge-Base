@@ -100,9 +100,103 @@ If you set a tag on the Hand Zone then it will ignore any objects which do not h
 ### Layout Zone
 ![Layout Zone Menu](/img/zone-tools/layout-zone-menu.png)
 
-Layout Zones allow you to automate some standard ways to arrange objects, typically cards.  It can be used to splay cards in melds (for games like Gin), or group them into bundles (for trick-taking games like Whist), or to generally lay out groups of objects in a regimented fashion.
+Layout Zones allow you to automate some standard ways to arrange objects, typically cards.  It can be used to splay cards in melds (for games like Gin), or group them into bundles (for trick-taking games like Whist), or to generally lay out groups of objects in a regimented fashion.  They are geenrally most useful for arranging cards, but can be used with any object if you wish.
+
+The Layout Zone works on groups of objects.  When you drop a bunch of objects into the zone it will group those objects together, and lay them out in a pre-determined manner.
+
 
 #### Left-Click Action
+<center>![Layout Zone Left Click](/img/zone-tools/layout-left-click.png)</center>
+
+When you left-click a Layout Zone you will see a big `Layout` button, and a small `Settings` cog.
+
+* Hitting the big button will make the zone re-layout its contents.
+* Hitting the small button will show the zone's settings window.
+
+
+##### Layout Settings
+<center>![Layout Zone Layout Settings](/img/zone-tools/layout-zone-layout-settings.png)</center>
+
+These settings govern the overall functionality of the zone: what objects it affects and how groups are arranged with regard to each other.
+
+The **Components** section specifies what objects the Layout Zone will affect:
+
+* **Face-Up** : Lay-out any face-up cards dropped in the zone.
+* **Face-Down** : Lay-out any face-down cards dropped in the zone.
+* **Non-Cards** : Lay-out other, non-card objects dropped in the zone.
+* **Split** : The zone will split any decks dropped in it into their individual cards.
+
+* **Combine Into Decks** : Cards dropped in the zone will be combined into decks with the specified number of cards.
+* **Cards Per Deck** : The number of cards per deck when **Combine Into Decks** is enabled.
+
+!!!tip
+    **Split** happens before **Combine Into Decks** triggers.
+
+* **Direction** determines both the directions the zone's groups will be layed out along, as well as the location of the first group.  For example, the default setting of `Right / Down` will lay out zones horizontally, moving right, and then when the row is filled will move down and reset to the left hand side.  The starting position is always the opposite of the chosen direction (so that the space to grow into is maximised), so for a direction of `Right / Down`, the first group will be placed in the top-left.
+* **Facing** sets what happens to cards when they are added to the zone:
+    * **Do Not Change** : The card's orientation remains as-is.
+    * **Become Face-Up** : If the card is face-down it will be flipped over.
+    * **Become Face-Down** : If the card is face-up it will be flipped over.
+    * **Group Is Tipped** : All the cards in the group will be flipped face-down, except for the last one which will be flipped face-up (this is a common layout in different Patience card games)
+* **Padding** sets how much space exists between one group and the next.
+
+!!!tip
+    Most of these settings update live as you change them, so as long as there are objects being layed out by the zone you can play with them to see the layout in action.
+
+* **Sticky Cards** : Will enable the `Sticky` behaviour of objects, just like the object toggle (which does not apply inside a Layout Zone). i.e. if enabled and you pick up a card which has other cards resting on it, all such cards will be picked up.
+* **Instant Refill** : When you pick up a group from the Layout Zone and move it to a different position, or remove it from the zone entirely, the gap left behind remains.  Enabling this option will cause the zone to layout its objects again, filling in the gap.
+* **Randomize** : When enabled, whenever the zone performs a layout it will randomize all the objects inside it, similar to how a Randomize Zone works.
+* **Manual Only** : When enabled the zone will no longer automatically lay out objects inside it: you must hit the Layout button (or the Layout object-menu) to cause it to perform a layout.
+
+##### Group Settings
+<center>![Layout Zone Group Settings](/img/zone-tools/layout-zone-group-settings.png)</center>
+
+These settings govern how objects within a group are arranged.
+
+* **Direction** determines the direction objects within the group are layed out in.  This is distinct from the **Direction** on the Layout tab, which decides how *groups* are layed out.
+
+Here you can see that while the Layout Direction is set to `Left / Up` (causing the groups to start in the bottom right corner), the Group Direction is set to `Eastward`, meaning the cards within each group are layed out left-to-right:
+<center>![Layout Zone Example](/img/zone-tools/layout-zone-example.png)</center>
+
+This is the same setup, except with the Group Direction set to `Westward`:
+<center>![Layout Zone Example](/img/zone-tools/layout-zone-example2.png)</center>
+
+* **Sort** sets how objects within a group are sorted:
+    * **None** : no sorting is applied.
+    * **Added Time** : sorted on the time they were added to the zone.
+    * **Value** : sort on the `value` property set in your lua script.
+    * **Memo** : sort on the `memo` property set in your lua script.
+    * **Name** : sort on the object's `Name`
+    * **Description** : sort on the object's `Description`
+    * **GM Notes** : sort on the object's `GM Notes`
+* **Reversed** : when enabled the sort is applied in the opposite direction.
+* **Sort Existing** : by default only newly added groups will be sorted.  When this is enabled every group will be sorted whenever the zone is layed out.
+
+!!!tip
+    If you will be moving objects around with groups a lot during play then it is best to set the **Sort** to `None`.
+
+* **Spread** sets the distance each subsequent object within a group is moved from the preceding object.
+
+!!!note
+    The **Direction** setting directly relates to the two **Spread** settings: an `Eastward` or `Westward` direction will only make sense of the **Horizontal Spread** is non-zero, and likewise `Northward` and `Southward` should only be used when the **Vertical Spread** is non-zero.
+
+* **Objects Per Group** sets how many objects will be placed in a group when objects are dropped into the zone.  If more objects are dropped together than this setting then they will be split up into multiple groups.
+* **Alternate Direction** will cause each object in a group to either be placed normally, or rotated 90 degrees to the right, alternating from the preceding object.  This is a layout style commonly used in trick-taking games to allow for easy counting of points.
+*  **Max. Objects Per Group** sets the maximum number of objects in each group.  While **Objects Per Group** set how many objects are in a group when they are added to the zone, it still allows you to manually drop more objects into each group.  This setting will prohibit a group having more objects than the specified object count.  Set to `0` to have no maximum.
+*  **Allow Swapping** activates a special behaviour when you drag an object from one group to a group which already has the maximum number of objects possible: the object you drop on top of will be swapped back to the place you picked up from.
+
+
+#### Layout Option in Object Context Menu
+
+Having to select the Layout Zone tool then click on the zone and hit the button in order to manually layout a zone is a little cumbersome, so there is a shortcut: if you right-click an object which is in a Layout Zone it can be layed-out by, it will have a Layout option.  Clicking it will cause that zone to perform its layout operation.
+
+<center>![Object Layout Context Menu](/img/zone-tools/layout-zone-object-context.png)</center>
+
+
+#### Tags
+
+If the Layout Zone has a tag set on it then only objects with a matching tag will be layed out by it.
+
 
 ---
 
