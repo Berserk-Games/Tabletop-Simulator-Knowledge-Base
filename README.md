@@ -10,7 +10,7 @@ Alternatively, you can make modifications to individual pages then submit them f
 
 ## Contributing
 
-The API website is built using [MkDocs](https://www.mkdocs.org/) and several related extensions.
+The Knowledge Base website is built using [MkDocs](https://www.mkdocs.org/) and several related extensions.
 
 Pull requests are welcome, however in order to preview your changes, you must follow the instructions below:
 
