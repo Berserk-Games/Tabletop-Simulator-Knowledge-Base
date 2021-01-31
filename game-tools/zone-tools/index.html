@@ -683,6 +683,40 @@
     Left-Click Action
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layout-settings" title="Layout Settings" class="md-nav__link">
+    Layout Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-settings" title="Group Settings" class="md-nav__link">
+    Group Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-option-in-object-context-menu" title="Layout Option in Object Context Menu" class="md-nav__link">
+    Layout Option in Object Context Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags_3" title="Tags" class="md-nav__link">
+    Tags
+  </a>
+  
 </li>
         
       </ul>
@@ -733,7 +767,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tags_3" title="Tags" class="md-nav__link">
+  <a href="#tags_4" title="Tags" class="md-nav__link">
     Tags
   </a>
   
@@ -1557,6 +1591,40 @@
     Left-Click Action
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layout-settings" title="Layout Settings" class="md-nav__link">
+    Layout Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-settings" title="Group Settings" class="md-nav__link">
+    Group Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-option-in-object-context-menu" title="Layout Option in Object Context Menu" class="md-nav__link">
+    Layout Option in Object Context Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags_3" title="Tags" class="md-nav__link">
+    Tags
+  </a>
+  
 </li>
         
       </ul>
@@ -1607,7 +1675,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tags_3" title="Tags" class="md-nav__link">
+  <a href="#tags_4" title="Tags" class="md-nav__link">
     Tags
   </a>
   
@@ -1705,8 +1773,102 @@
 <hr />
 <h3 id="layout-zone">Layout Zone<a class="headerlink" href="#layout-zone" title="Permanent link"> </a></h3>
 <p><img alt="Layout Zone Menu" src="/img/zone-tools/layout-zone-menu.png" /></p>
-<p>Layout Zones allow you to automate some standard ways to arrange objects, typically cards.  It can be used to splay cards in melds (for games like Gin), or group them into bundles (for trick-taking games like Whist), or to generally lay out groups of objects in a regimented fashion.</p>
+<p>Layout Zones allow you to automate some standard ways to arrange objects, typically cards.  It can be used to splay cards in melds (for games like Gin), or group them into bundles (for trick-taking games like Whist), or to generally lay out groups of objects in a regimented fashion.  They are geenrally most useful for arranging cards, but can be used with any object if you wish.</p>
+<p>The Layout Zone works on groups of objects.  When you drop a bunch of objects into the zone it will group those objects together, and lay them out in a pre-determined manner.</p>
 <h4 id="left-click-action_3">Left-Click Action<a class="headerlink" href="#left-click-action_3" title="Permanent link"> </a></h4>
+<p><center><img alt="Layout Zone Left Click" src="/img/zone-tools/layout-left-click.png" /></center></p>
+<p>When you left-click a Layout Zone you will see a big <code class="codehilite">Layout</code> button, and a small <code class="codehilite">Settings</code> cog.</p>
+<ul>
+<li>Hitting the big button will make the zone re-layout its contents.</li>
+<li>Hitting the small button will show the zone's settings window.</li>
+</ul>
+<h5 id="layout-settings">Layout Settings<a class="headerlink" href="#layout-settings" title="Permanent link"> </a></h5>
+<p><center><img alt="Layout Zone Layout Settings" src="/img/zone-tools/layout-zone-layout-settings.png" /></center></p>
+<p>These settings govern the overall functionality of the zone: what objects it affects and how groups are arranged with regard to each other.</p>
+<p>The <strong>Components</strong> section specifies what objects the Layout Zone will affect:</p>
+<ul>
+<li><strong>Face-Up</strong> : Lay-out any face-up cards dropped in the zone.</li>
+<li><strong>Face-Down</strong> : Lay-out any face-down cards dropped in the zone.</li>
+<li><strong>Non-Cards</strong> : Lay-out other, non-card objects dropped in the zone.</li>
+<li>
+<p><strong>Split</strong> : The zone will split any decks dropped in it into their individual cards.</p>
+</li>
+<li>
+<p><strong>Combine Into Decks</strong> : Cards dropped in the zone will be combined into decks with the specified number of cards.</p>
+</li>
+<li><strong>Cards Per Deck</strong> : The number of cards per deck when <strong>Combine Into Decks</strong> is enabled.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Split</strong> happens before <strong>Combine Into Decks</strong> triggers.</p>
+</div>
+<ul>
+<li><strong>Direction</strong> determines both the directions the zone's groups will be layed out along, as well as the location of the first group.  For example, the default setting of <code class="codehilite">Right / Down</code> will lay out zones horizontally, moving right, and then when the row is filled will move down and reset to the left hand side.  The starting position is always the opposite of the chosen direction (so that the space to grow into is maximised), so for a direction of <code class="codehilite">Right / Down</code>, the first group will be placed in the top-left.</li>
+<li><strong>Facing</strong> sets what happens to cards when they are added to the zone:<ul>
+<li><strong>Do Not Change</strong> : The card's orientation remains as-is.</li>
+<li><strong>Become Face-Up</strong> : If the card is face-down it will be flipped over.</li>
+<li><strong>Become Face-Down</strong> : If the card is face-up it will be flipped over.</li>
+<li><strong>Group Is Tipped</strong> : All the cards in the group will be flipped face-down, except for the last one which will be flipped face-up (this is a common layout in different Patience card games)</li>
+</ul>
+</li>
+<li><strong>Padding</strong> sets how much space exists between one group and the next.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Most of these settings update live as you change them, so as long as there are objects being layed out by the zone you can play with them to see the layout in action.</p>
+</div>
+<ul>
+<li><strong>Sticky Cards</strong> : Will enable the <code class="codehilite">Sticky</code> behaviour of objects, just like the object toggle (which does not apply inside a Layout Zone). i.e. if enabled and you pick up a card which has other cards resting on it, all such cards will be picked up.</li>
+<li><strong>Instant Refill</strong> : When you pick up a group from the Layout Zone and move it to a different position, or remove it from the zone entirely, the gap left behind remains.  Enabling this option will cause the zone to layout its objects again, filling in the gap.</li>
+<li><strong>Randomize</strong> : When enabled, whenever the zone performs a layout it will randomize all the objects inside it, similar to how a Randomize Zone works.</li>
+<li><strong>Manual Only</strong> : When enabled the zone will no longer automatically lay out objects inside it: you must hit the Layout button (or the Layout object-menu) to cause it to perform a layout.</li>
+</ul>
+<h5 id="group-settings">Group Settings<a class="headerlink" href="#group-settings" title="Permanent link"> </a></h5>
+<p><center><img alt="Layout Zone Group Settings" src="/img/zone-tools/layout-zone-group-settings.png" /></center></p>
+<p>These settings govern how objects within a group are arranged.</p>
+<ul>
+<li><strong>Direction</strong> determines the direction objects within the group are layed out in.  This is distinct from the <strong>Direction</strong> on the Layout tab, which decides how <em>groups</em> are layed out.</li>
+</ul>
+<p>Here you can see that while the Layout Direction is set to <code class="codehilite">Left / Up</code> (causing the groups to start in the bottom right corner), the Group Direction is set to <code class="codehilite">Eastward</code>, meaning the cards within each group are layed out left-to-right:
+<center><img alt="Layout Zone Example" src="/img/zone-tools/layout-zone-example.png" /></center></p>
+<p>This is the same setup, except with the Group Direction set to <code class="codehilite">Westward</code>:
+<center><img alt="Layout Zone Example" src="/img/zone-tools/layout-zone-example2.png" /></center></p>
+<ul>
+<li><strong>Sort</strong> sets how objects within a group are sorted:<ul>
+<li><strong>None</strong> : no sorting is applied.</li>
+<li><strong>Added Time</strong> : sorted on the time they were added to the zone.</li>
+<li><strong>Value</strong> : sort on the <code class="codehilite">value</code> property set in your lua script.</li>
+<li><strong>Memo</strong> : sort on the <code class="codehilite">memo</code> property set in your lua script.</li>
+<li><strong>Name</strong> : sort on the object's <code class="codehilite">Name</code></li>
+<li><strong>Description</strong> : sort on the object's <code class="codehilite">Description</code></li>
+<li><strong>GM Notes</strong> : sort on the object's <code class="codehilite">GM Notes</code></li>
+</ul>
+</li>
+<li><strong>Reversed</strong> : when enabled the sort is applied in the opposite direction.</li>
+<li><strong>Sort Existing</strong> : by default only newly added groups will be sorted.  When this is enabled every group will be sorted whenever the zone is layed out.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you will be moving objects around with groups a lot during play then it is best to set the <strong>Sort</strong> to <code class="codehilite">None</code>.</p>
+</div>
+<ul>
+<li><strong>Spread</strong> sets the distance each subsequent object within a group is moved from the preceding object.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Direction</strong> setting directly relates to the two <strong>Spread</strong> settings: an <code class="codehilite">Eastward</code> or <code class="codehilite">Westward</code> direction will only make sense of the <strong>Horizontal Spread</strong> is non-zero, and likewise <code class="codehilite">Northward</code> and <code class="codehilite">Southward</code> should only be used when the <strong>Vertical Spread</strong> is non-zero.</p>
+</div>
+<ul>
+<li><strong>Objects Per Group</strong> sets how many objects will be placed in a group when objects are dropped into the zone.  If more objects are dropped together than this setting then they will be split up into multiple groups.</li>
+<li><strong>Alternate Direction</strong> will cause each object in a group to either be placed normally, or rotated 90 degrees to the right, alternating from the preceding object.  This is a layout style commonly used in trick-taking games to allow for easy counting of points.</li>
+<li><strong>Max. Objects Per Group</strong> sets the maximum number of objects in each group.  While <strong>Objects Per Group</strong> set how many objects are in a group when they are added to the zone, it still allows you to manually drop more objects into each group.  This setting will prohibit a group having more objects than the specified object count.  Set to <code class="codehilite">0</code> to have no maximum.</li>
+<li><strong>Allow Swapping</strong> activates a special behaviour when you drag an object from one group to a group which already has the maximum number of objects possible: the object you drop on top of will be swapped back to the place you picked up from.</li>
+</ul>
+<h4 id="layout-option-in-object-context-menu">Layout Option in Object Context Menu<a class="headerlink" href="#layout-option-in-object-context-menu" title="Permanent link"> </a></h4>
+<p>Having to select the Layout Zone tool then click on the zone and hit the button in order to manually layout a zone is a little cumbersome, so there is a shortcut: if you right-click an object which is in a Layout Zone it can be layed-out by, it will have a Layout option.  Clicking it will cause that zone to perform its layout operation.</p>
+<p><center><img alt="Object Layout Context Menu" src="/img/zone-tools/layout-zone-object-context.png" /></center></p>
+<h4 id="tags_3">Tags<a class="headerlink" href="#tags_3" title="Permanent link"> </a></h4>
+<p>If the Layout Zone has a tag set on it then only objects with a matching tag will be layed out by it.</p>
 <hr />
 <h3 id="fog-of-war-zone">Fog of War Zone<a class="headerlink" href="#fog-of-war-zone" title="Permanent link"> </a></h3>
 <p><img alt="Fog of War Zone Menu" src="/img/zone-tools/fog-of-war-zone-menu.png" /></p>
@@ -1747,7 +1909,7 @@
 <p>Left-clicking on a scripting zone copies it GUID to the clipboard. You can then paste it into your scripts. This is generally how you identify scripting zones in your code.</p>
 <p><center><img alt="Script Zone Left Click" src="/img/zone-tools/script-rc1.png" /></center></p>
 <p>You will see a pop-up message announcing that this has been done, as well as a message in the Game chat log.</p>
-<h4 id="tags_3">Tags<a class="headerlink" href="#tags_3" title="Permanent link"> </a></h4>
+<h4 id="tags_4">Tags<a class="headerlink" href="#tags_4" title="Permanent link"> </a></h4>
 <p>If a Scripting Zone has Tags set on it then only objects with matching tags will be reported when you do <code class="codehilite">zone.getObjects()</code> in your lua script.</p>
 <hr />
                 
