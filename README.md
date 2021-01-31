@@ -8,22 +8,41 @@ The `.md` files in the `/docs` folder are written in Markdown, which is an easy-
 
 Alternatively, you can make modifications to individual pages then submit them for review. The developers will always be the ones to build and publish the site anyway, all you will do is modify the contents of this Git.
 
-### Installing
+## Contributing
 
-If you choose to install MKDocs so you can live-preview your changes, you may do so [by following these instructions](https://squidfunk.github.io/mkdocs-material/getting-started/).
+The API website is built using [MkDocs](https://www.mkdocs.org/) and several related extensions.
 
-Otherwise, you will not need to install anything to edit the text files.
+Pull requests are welcome, however in order to preview your changes, you must follow the instructions below:
 
+### Prerequisites
 
-#### Steps
+You will need to ensure Python `3.6` is installed on your system.
 
-* Have a working `pipenv`
-* In this folder, do `pipenv install`.  You might need elevated priviledges.
-* `pipenv shell`
-* `pip install mkdocs`
-* `pip install pymdown-extensions `
-* `pip install mkdocs-material==4.6.3`
+If your system doesn't have it installed, you can either [download directly](https://www.python.org/downloads/release/python-366/) or install from a Python version manager such as [pyenv](https://github.com/pyenv/pyenv).
 
-* `mkdocs build` to build the docs
-* `mkdocs serve` to run the docs on a local webserver for testing.
-* `mkdocs gh-deploy` to deploy
+We utilise Pipenv and a `Pipfile` to ensure builds are consistent. If you don't already have Pipenv installed, please follow the official [pipenv install instructions](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv) for you platform.
+
+### Installing Dependencies
+
+Once've you installed the prerequisites, you must initialize your environment. From command line, this is done with:
+
+```
+pipenv install
+```
+
+You can then "activate" this environment with:
+
+```
+pipenv shell
+```
+
+### Previewing
+
+Once your Pipenv environment is activated, you can simply execute:
+
+```
+mkdocs serve
+```
+
+Then open your browser and navigate to `http://localhost:8000` in order to view your changes.
+
