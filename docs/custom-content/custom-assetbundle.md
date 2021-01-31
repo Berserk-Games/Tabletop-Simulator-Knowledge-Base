@@ -109,7 +109,7 @@ Once you are finished creating your asset, you must turn it into a pre-fab.
     </video>
 </center>
 
-Give it a unique name.
+Then, while selecting the prefab you wish to export in Unity look at the Inspector tab and scroll to the bottom until you see a dropdown labeled "AssetBundle". Name it whatever you would like your final unity.3d file to be named.
 
 <center>
     <video controls
