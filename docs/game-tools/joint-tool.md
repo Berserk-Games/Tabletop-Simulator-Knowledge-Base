@@ -51,7 +51,7 @@ More than solid joints are available, you just need to modify an existing joint 
     * **Hinge**: A solid joint that can twist. "Motor" force can also be applied, causing rotation.
     * **Spring**: A flexible joint.
 * Each type has its own properties which can be modified to change the joints behavior. Mousing over the `?` next to each property will provide information on what it does.
-* When you're done, his Apply or Save & Exit to save the changes.
+* When you're done, hit Apply or Save & Exit to save the changes.
 * Hitting X in the upper right will close the menu without saving any changes.
 
 
