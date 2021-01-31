@@ -1,6 +1,6 @@
 > View the [AssetBundles Tutorial Video](/getting-started/video-tutorials#custom-asset-bundles)
 
-An AssetBundle is the most advanced, fully featured asset type for Tabletop Simulator. An asset is created in Unity, and then expected in a special format to be imported into your game.
+An AssetBundle is the most advanced, fully featured asset type for Tabletop Simulator. An asset is created in Unity, and then exported in a special format to be imported into your game.
 
 <center>![Example Asset Bundle in Unity](/img/custom-assetbundle/example.gif)</center>
 
@@ -109,7 +109,7 @@ Once you are finished creating your asset, you must turn it into a pre-fab.
     </video>
 </center>
 
-Give it a unique name.
+Then, while selecting the prefab you wish to export in Unity look at the Inspector tab and scroll to the bottom until you see a dropdown labeled "AssetBundle". Name it whatever you would like your final unity.3d file to be named.
 
 <center>
     <video controls

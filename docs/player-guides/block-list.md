@@ -40,7 +40,7 @@ Using Steam Name and SteamID, you can manually block any individual.
 Add their name and Steam ID and  click BLOCK to your Blocked menu.
 
 ####Via JSON Edit
-You can also manually add people to your Block list by editing the Blocklist.json. If you do not have a BlockList.json in your `Documents/My Games/Tabletop Simulator` folder, just create one and save it. Once you have their name and ID, open up the Blocklist.json file and input the following:
+You can also manually add people to your Block list by editing the Blocklist.json. If you do not have a BlockList.json in your `Documents/My Games/Tabletop Simulator` folder (see also [Save Game Data Location](/getting-started/technical-info#save-game-data-location)), just create one and save it. Once you have their name and ID, open up the Blocklist.json file and input the following:
 
 > “Name”: “Steam Name”,
 “SteamID”: “123456200220000”

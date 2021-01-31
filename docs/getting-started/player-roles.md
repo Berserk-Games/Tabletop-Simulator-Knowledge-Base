@@ -1,7 +1,7 @@
 There are a lot of tools in Tabletop Simulator, and all tools are not always available to all users in a game. What determines what tools you have available is your role.
 
 ##Host
-The host is the admin of his/her server and is in full control. Hosts can mute, kick and ban disruptive players, change players’ seats, teams and many other things. He/she can promote trusted players to help run the room. A gold crown is placed next to the host’s name in the upper right.
+The host is the admin of their server and is in full control. Hosts can mute, kick and ban disruptive players, change players’ seats, teams and many other things. They can promote trusted players to help run the room. A gold crown is placed next to the host’s name in the upper right.
 
 If you start a game, even if it single player, you are still considered to be the Host.
 
