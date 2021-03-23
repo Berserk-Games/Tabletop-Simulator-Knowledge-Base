@@ -14,7 +14,7 @@
 /*background behind current selection in left bar*/
 [data-md-color-primary=indigo] .md-nav__link--active, [data-md-color-primary=indigo] .md-nav__link:active {
     color: black;
-    background-color: #d3d3d3;    
+    background-color: #d3d3d3;
 }
 
 /*Coloring of top bar*/
@@ -96,17 +96,14 @@ disabled due to lack of need currently, but works*/
 
 .custom-line {
     border:0;
-    height:0;
     border-top:1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
 }
 
 .custom-link {
     color:#bb0c0d;
     position:relative;
     left:0.65rem;
-    top:-0.25rem;
 }
 
 /*Image Borders*/
