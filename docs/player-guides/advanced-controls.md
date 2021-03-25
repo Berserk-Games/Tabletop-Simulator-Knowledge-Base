@@ -6,7 +6,7 @@ You can read about the basic controls and movement [here](/player-guides/basic-c
 
 ##Keys
 
-###Scale (+/-)
+###Scale (+/-) {: #scale }
 Scales Objects.
 
 > Hover over the Object (or selected Objects) and hold the + or - key on your keyboard.
@@ -24,7 +24,7 @@ Scales Objects.
 ---
 
 
-###Blindfold (B)
+###Blindfold (B) {: #blindfold }
 Applies or removes a Blindfold.
 
 > Blindfolded players cannot see others putting on/removing blindfolds.
@@ -34,7 +34,7 @@ Applies or removes a Blindfold.
 ---
 
 
-###Group (G)
+###Group (G) {: #group }
 Groups Objects together.
 
 <center>
@@ -50,7 +50,7 @@ Groups Objects together.
 ---
 
 
-###Magnify (M)
+###Magnify (M) {: #magnify }
 Magnify areas.
 
 > ALT Zoom allows you to view an element up close. M allows you to get a closeup of an entire area.
@@ -70,7 +70,7 @@ Magnify areas.
 ---
 
 
-###Nudge (N)
+###Nudge (N) {: #nudge }
 Nudge Objects.
 
 > Holding N while moving the pointer around will nudge Objects away from the pointer.
@@ -78,7 +78,7 @@ Nudge Objects.
 ---
 
 
-###Camera Mode (P)
+###Camera Mode (P) {: camera-mode }
 Change Camera View.
 
 > Toggles between 3rd Person / 1st Person / Top-down.
@@ -88,13 +88,13 @@ Change Camera View.
 ---
 
 
-###Place Under (U)
+###Place Under (U) {: #place-under }
 Place an Object under another. (Not meant for decks)
 
 ---
 
 
-###Peek (ALT+SHIFT)
+###Peek (ALT+SHIFT) {: #peek }
 Peek at the underside of an Object.
 
 > Holding ALT and clicking SHIFT while hovering over an Object shows the underside.
@@ -135,16 +135,16 @@ Activate scripting via hotkeys.
 ##ALT Modifier
 By default, ALT shows a zoomed preview of the Object the mouse is hovering over. But it is also used as a modifier for other keys.
 
-###ALT Rotate (Q/E/Scroll wheel)
+###ALT Rotate (Q/E/Scroll wheel) {: #alt-rotate }
 Rotate on a different axis.
 
-###ALT Flip (MMB)
+###ALT Flip (MMB) {: #alt-flip }
 Flips on a different axis.
 
-###ALT DROP (RMB)
+###ALT DROP (RMB) {: #alt-drop }
 Drops the last grabbed Object or the bottom card of a held deck.
 
-###ALT SCALE (Shift+Q/E)
+###ALT SCALE (Shift+Q/E) {: #alt-scale }
 Alternative scaling method.
 
 ---
