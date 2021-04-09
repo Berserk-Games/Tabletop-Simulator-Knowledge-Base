@@ -113,8 +113,8 @@ img {
    box-shadow: 2px 2px 4px #aaa;
 }
 /*Overwrite for header bar icon, removing its border*/
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
+.md-logo img,
+.md-logo svg {
     border:0px !important;
     box-shadow: 0px 0px 0px #aaa !important;
 }
