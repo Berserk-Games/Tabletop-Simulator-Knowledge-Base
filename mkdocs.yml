@@ -12,7 +12,6 @@ extra_css:
   - css/theme.css
   - css/table.css
   - css/type_icons.css
-  - css/i_icons.css
   - css/player_color_table.css
 
 markdown_extensions:
