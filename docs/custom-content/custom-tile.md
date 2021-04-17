@@ -6,7 +6,7 @@ In-game, navigate to the top of your screen and select **Objects > Components > 
 <center>![Tile Import Menu](/img/custom-tile/import.png)</center>
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing.md).
 
 ###Import Options
 Setting Name | Description

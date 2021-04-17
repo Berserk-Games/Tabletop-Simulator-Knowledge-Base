@@ -1,4 +1,4 @@
-There are many different dice in the game, but sometimes you just need your own. This can be done by modeling your own dice as a [Custom Model](custom-model) or [AssetBundle](custom-assetbundle). However if you are looking a way to import your own dice without any of the complications of model creation, the Custom Dice tool is for you.
+There are many different dice in the game, but sometimes you just need your own. This can be done by modeling your own dice as a [Custom Model](custom-model.md) or [AssetBundle](custom-assetbundle.md). However if you are looking a way to import your own dice without any of the complications of model creation, the Custom Dice tool is for you.
 
 ##Dice Template
 The Dice Template, as well as other modding tools, can be found on your computer.
@@ -31,7 +31,7 @@ To import your custom die, while in-game go to the top of your screen, click **O
 <center>![Importing Dice Templates](/img/custom-dice/import.png)</center>
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing.md).
 
 <center>![Example Die In-Game](/img/custom-dice/finished.png)</center>
 

@@ -1,7 +1,7 @@
 !!!tip "Getting Started in Tabletop Simulator"
-    As you first start playing with Tabletop Simulator, it is recommended you try out the in-game **tutorial**. A link can be found on the Main Menu. You can also check out the [video tutorial](/getting-started/video-tutorials#basic-controls).
+    As you first start playing with Tabletop Simulator, it is recommended you try out the in-game **tutorial**. A link can be found on the Main Menu. You can also check out the [video tutorial](../getting-started/video-tutorials.md#basic-controls).
 
-Tabletop Simulator supports taking a wide variety of actions and as a result has many controls. Here you can find the basic controls to get started, but you can find even more from the [Context Menu](context-menu) in game.
+Tabletop Simulator supports taking a wide variety of actions and as a result has many controls. Here you can find the basic controls to get started, but you can find even more from the [Context Menu](context-menu.md) in game.
 
 ##Movement and Camera Controls
 Move with the Keyboard, Mouse, or both. All keys given are defaults, most of which can be changed in the in-game Settings menu, under Controls.
@@ -68,7 +68,7 @@ The majority of gameplay within Tabletop Simulator requires you to manipulate ob
 6. LMB picks up a single object.
 7. To pick up two objects, you can hold one object and hover over a second and ‘right click’ to pick up the second. Keep holding and right click over other objects to keep picking them up.
 8. An easier option is to 'box highlight' around the objects you want to pick up. Hold left click anywhere on the table and around multiple objects. When you let go, all those objects will be highlighted. Pick up one of the objects and all of those that were highlighted will be picked up.
-9. Right clicking on any object will bring up the [Context Menu](context-menu).
+9. Right clicking on any object will bring up the [Context Menu](context-menu.md).
 
 <center>
     <video controls

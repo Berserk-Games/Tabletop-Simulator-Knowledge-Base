@@ -18,7 +18,7 @@ The Vector Paint tool allows for clean, smooth lines on any surface. Limit 10,00
 7. **Erase All**: Removes **all** vector lines from the table.
 
 ###Drawing on Objects
-"Locking" an object via its [context menu](/getting-started/video-tutorials#contextual-menu) or the keyboard shortcut {>>(Default: L)<<} allows you to draw on the object. When it is unlocked, the drawing will remain (even through save/reloading)!
+"Locking" an object via its [context menu](../getting-started/video-tutorials.md#contextual-menu) or the keyboard shortcut {>>(Default: L)<<} allows you to draw on the object. When it is unlocked, the drawing will remain (even through save/reloading)!
 
 Unlocked objects will be ignored by the vector paint tool.
 

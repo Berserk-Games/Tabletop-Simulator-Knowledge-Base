@@ -33,8 +33,8 @@ The Toggles sub-menu allows you to change how this object interacts with the res
 * **Sticky**: If objects placed on top of this object stay there when this object is picked up.
 * **Hands**: If this object can be held in a player's hand zone.
 * **Hide Face Down**: If this object's name/description are hidden if it is oriented "face down" (like a card).
-* **Reveal Fog of War**: If this object reveals [Fog of War](/game-tools/zone-tools#fog-of-war-zone).
-* **Ignore Fog of War**: If this object ignored being hidden by [Fog of War](/game-tools/zone-tools#fog-of-war-zone).
+* **Reveal Fog of War**: If this object reveals [Fog of War](../game-tools/zone-tools.md#fog-of-war-zone).
+* **Ignore Fog of War**: If this object ignored being hidden by [Fog of War](../game-tools/zone-tools.md#fog-of-war-zone).
 * **Tooltip**: If the object's name/description are displayed.
 * **Grid Projection**: If this object can have a grid projected on it if grid displays are enabled.
 * **Persistent**: If this object persists through changing tables/games.

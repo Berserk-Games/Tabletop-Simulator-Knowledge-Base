@@ -204,7 +204,7 @@ If the Layout Zone has a tag set on it then only objects with a matching tag wil
 ### Fog of War Zone
 ![Fog of War Zone Menu](/img/zone-tools/fog-of-war-zone-menu.png)
 
-Fog of War is an area that is concealed, similar to a [hidden zone](#hidden-zone). The difference is that concealed areas can be revealed by moving a piece set to [Reveal Fog of War](/player-guides/context-menu#toggles) into it.
+Fog of War is an area that is concealed, similar to a [hidden zone](#hidden-zone). The difference is that concealed areas can be revealed by moving a piece set to [Reveal Fog of War](../player-guides/context-menu.md#toggles) into it.
 
 #### Left-Click Action
 Left-click on a Fog of War zone opens a menu which allows you to set the following:
@@ -218,14 +218,14 @@ Left-click on a Fog of War zone opens a menu which allows you to set the followi
 * **Reset Fog**: Causes any revealed fog to obscure again, as if it had been newly drawn.
 
 #### Fog of War Tips
-* If you have enabled "Reveal Fog of War" in an item's [toggles menu](/player-guides/context-menu#toggles) you get access to additional settings in the [Context Menu](/player-guides/context-menu).
+* If you have enabled "Reveal Fog of War" in an item's [toggles menu](../player-guides/context-menu.md#toggles) you get access to additional settings in the [Context Menu](../player-guides/context-menu.md).
     * **Reveal Color**: Which color player the fog is revealed for. Default is Black, which is "all players".
     * **Reveal Range**: The radius which the object reveals.
 * "Line of sight" is used, which means props can block the revealed area.
 * The purpose of Fog of War is to allow game pieces to reveal map/props as they move around.
 * The player in the GM seat, the Black seat, is capable of seeing everything hiding within the Fog of War. Hidden objects have a grey border around them.
-* You can prevent an object from being hidden by Fog of War in its [toggles menu](/player-guides/context-menu#toggles).
-* If you join a player's [team](/player-guides/teams), you can see what they have revealed for them.
+* You can prevent an object from being hidden by Fog of War in its [toggles menu](../player-guides/context-menu.md#toggles).
+* If you join a player's [team](../player-guides/teams.md), you can see what they have revealed for them.
     * Example: If you wanted 2 of your 4 players to see what is revealed, you could put them on a team together and reveal for only 1 of the colors.
 
 ![Fog of War Zone Example](/img/zone-tools/fog-of-war-demo.png)

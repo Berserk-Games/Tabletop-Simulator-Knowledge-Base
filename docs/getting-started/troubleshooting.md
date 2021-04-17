@@ -15,7 +15,7 @@ If you want to enable port forwarding:
 >UDP (outbound) - 3478, 4379, 4380 (Steam P2P Ports)
 
 ###Enable Logging
-To enable logging, type /log in chat or add `-log` to your [launch options](launch-options).
+To enable logging, type /log in chat or add `-log` to your [launch options](launch-options.md).
 
 Log Locations:
 
@@ -24,7 +24,7 @@ Log Locations:
 * **Linux** - `~/.config/unity3d/Berserk Games/Tabletop Simulator/Player.log`
 
 ###Debugging
-If your game is crashing, using [launch options](launch-options) to disable various elements of the game can help track down the source.
+If your game is crashing, using [launch options](launch-options.md) to disable various elements of the game can help track down the source.
 
 For example, if -nosteam stops the crashing, try reinstalling Steam.
 

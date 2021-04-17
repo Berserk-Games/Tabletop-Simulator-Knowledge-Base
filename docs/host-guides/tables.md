@@ -3,7 +3,7 @@ There are 7 default tables and 2 custom table available to play on. Additionally
 <center>![Tables Menu](/img/tables/menu.png)</center>
 
 ##Player Counts
-Each table has a default player count. The player count can be adjusted by adding/removing [hand zones](/game-tools/zone-tools#hand-zone).
+Each table has a default player count. The player count can be adjusted by adding/removing [hand zones](../game-tools/zone-tools.md#hand-zone).
 
 Table | Player Count
 -- | --

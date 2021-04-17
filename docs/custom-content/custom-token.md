@@ -6,7 +6,7 @@ In-game, navigate to the top of your screen and select **Objects > Components > 
 <center>![Token Import Menu](/img/custom-token/import.png)</center>
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing.md).
 
 ###Import Options
 Setting Name | Description
@@ -26,7 +26,7 @@ Various images with transparent backgrounds.
 ##Tips
 * Images that have a transparency in the middle (like a donut) will not cut out the transparency in the middle of the image.
 * If you are having trouble with the transparency not getting cut out properly, try to add a small transparent border around the entire image. It helps.
-* [Custom Tiles](custom-tile) load faster than Custom Tokens. If you can use a custom tile instead, it is almost always preferable.
+* [Custom Tiles](custom-tile.md) load faster than Custom Tokens. If you can use a custom tile instead, it is almost always preferable.
 
 
 

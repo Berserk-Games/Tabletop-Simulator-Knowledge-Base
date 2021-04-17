@@ -6,7 +6,7 @@ In-game, navigate to the top of your screen and select **Objects > Components > 
 <center>![Model Import Menu](/img/custom-model/import.png)</center>
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing.md).
 
 ###Import Options
 There are two tabs, Model and Material, which contain all the options for importing a single model.
@@ -62,7 +62,7 @@ Chip | &#8226; Object can stack with others of its own type.
 Bag | &#8226; Can contain other objects dropped onto it.
 Infinite | &#8226; Like a bag, but it contains an infinite number of the first object placed into it.
 
-<sup>&#42; Values can be assigned to these objects, just like regular or custom dice have. See the [rotation vector tool](/game-tools/gizmo-tool#rotation-value) section for details.</sup>
+<sup>&#42; Values can be assigned to these objects, just like regular or custom dice have. See the [rotation vector tool](../game-tools/gizmo-tool.md#rotation-value) section for details.</sup>
 
 ##Custom Model Tips
 Making custom objects allows for a lot of freedom, so here are some guidelines you will need to follow when creating your models.
@@ -80,7 +80,7 @@ Making custom objects allows for a lot of freedom, so here are some guidelines y
 * Set the origin point of the model to the center of mass for best physics. Objects in TTS rotate around their origin point.
 * Don’t go crazy with poly counts, use a normal map to add fine detail.
 * Keep the vertices below 25k for best results, as any higher your objects may not import and/or crash your game.
-* If you want to access additional elements for importing a Model, you might be interested in [Custom AssetBundles](custom-assetbundle) instead.
+* If you want to access additional elements for importing a Model, you might be interested in [Custom AssetBundles](custom-assetbundle.md) instead.
 
 ###Collider Tips
 

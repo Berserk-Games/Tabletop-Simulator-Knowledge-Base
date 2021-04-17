@@ -1,4 +1,4 @@
-> View the [AssetBundles Tutorial Video](/getting-started/video-tutorials#custom-asset-bundles)
+> View the [AssetBundles Tutorial Video](../getting-started/video-tutorials.md#custom-asset-bundles)
 
 An AssetBundle is the most advanced, fully featured asset type for Tabletop Simulator. An asset is created in Unity, and then exported in a special format to be imported into your game.
 
@@ -132,10 +132,10 @@ The resulting file that is created will be found in the Project folder under *As
 <center>![AssetBundle location](/img/custom-assetbundle/bundle-location.png)</center>
 
 ###Import AssetBundle
-Open Tabletop Simulator and upload your AssetBundle to a webhost or the in-game [Steam Cloud](cloud-manager).
+Open Tabletop Simulator and upload your AssetBundle to a webhost or the in-game [Steam Cloud](cloud-manager.md).
 
 !!!warning "Importing Assets"
-    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing).
+    How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing.md).
 
 <center>
     <video controls

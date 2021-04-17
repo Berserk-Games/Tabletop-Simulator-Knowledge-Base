@@ -4,7 +4,7 @@ On screen notes are notes that everyone can see and use in “real time”. Mean
 On the bottom right of your screen, there will be a button icon with a red circle in it. Click it to activate it and begin typing in the new window that pops up.
 
 ##Rich Text
-BB code can be used to improve the look of text. See the [BB codes](bb-codes) page for valid tags.
+BB code can be used to improve the look of text. See the [BB codes](bb-codes.md) page for valid tags.
 
 <center>![Default Notebook](/img/notes/1.png) ![Default Notebook](/img/notes/2.png)</center>
 

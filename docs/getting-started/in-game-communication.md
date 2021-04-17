@@ -8,7 +8,7 @@ When you first log into Tabletop Simulator, on the bottom left of your screen yo
 <center>![Global Chat](/img/in-game-communication/global-chat.png)</center>
 
 !!!attention
-    Global chat is moderated and part of the Geekshed IRC network, so please read up on [**the rules here**](chat-rules). If you’d like to join the IRC channel outside of Tabletop Simulator, the server is irc.geekshed.net and the channel is #TabletopSimulator. Due to issues with spammers, the following web clients are banned: Mibbit, IRC Cloud and Light IRC.
+    Global chat is moderated and part of the Geekshed IRC network, so please read up on [**the rules here**](chat-rules.md). If you’d like to join the IRC channel outside of Tabletop Simulator, the server is irc.geekshed.net and the channel is #TabletopSimulator. Due to issues with spammers, the following web clients are banned: Mibbit, IRC Cloud and Light IRC.
 
 ###Game Chat
 Once you click on Single Player or join a Multiplayer game, you will see a second tab called **Game**. The Game tab is used for chatting with anyone currently in your server (if multiplayer). When a new message is posted on a tab you aren’t clicked on, it will highlight gold, letting you know there are new messages.

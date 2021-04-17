@@ -1,6 +1,6 @@
-There are a lot of controls in Tabletop Simulator and this article will mostly go over the lesser known controls that you may not be aware of. Remember to open up the [Help Menu](/getting-started/help-menu) to see the list of controls.
+There are a lot of controls in Tabletop Simulator and this article will mostly go over the lesser known controls that you may not be aware of. Remember to open up the [Help Menu](../getting-started/help-menu.md) to see the list of controls.
 
-You can read about the basic controls and movement [here](/player-guides/basic-controls).
+You can read about the basic controls and movement [here](basic-controls.md).
 
 !!!tip "Many of these controls can be changed in the Settings menu."
 
@@ -83,7 +83,7 @@ Change Camera View.
 
 > Toggles between 3rd Person / 1st Person / Top-down.
 
-!!!tip "Check out the [Controls & Movement](/player-guides/basic-controls) for details on using these camera views."
+!!!tip "Check out the [Controls & Movement](basic-controls.md) for details on using these camera views."
 
 ---
 

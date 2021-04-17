@@ -3,7 +3,7 @@ Custom backgrounds are a way to change the theme of the room or game setup you�
 !!!note "Custom Lighting"
     Custom backgrounds do not change the lighting of the scene, only the backdrop.
 
-    You can adjust the lighting using the [lighting menu](lighting).
+    You can adjust the lighting using the [lighting menu](lighting.md).
 
 ##Selecting an Image
 Backgrounds are placed on a sphere, so it’s important to get HDRI Panorama images for the best effect. You can do a search on your browser of choice for “HDRI 3D” and filter your results to only include hi-resolution images. Best size images are around 4k.

@@ -11,7 +11,7 @@ When you’re the host, all buttons on the top menu will be available. Click on 
 <center>![Options Menu Location](/img/player-roles/options.png)</center>
 
 !!!info "Options and Permissions"
-    A full list of options and permissions that the host can be found on the [permissions](/host-guides/permissions) page.
+    A full list of options and permissions that the host can be found on the [permissions](../host-guides/permissions.md) page.
 
 ###Promoting
 The host can promote trusted players to give them most of the power that the host has. To promote a player, just click on the player’s name on the top right and choose the “Promote” option. Once the player is promoted, they have a shield next to their name to show the promotion.
@@ -32,9 +32,9 @@ In the player options, you can select **Give Host** to make someone else the hos
 Promoted Players can do most of the things that the Host can do with a few exceptions:
 
 * They cannot control/change any [scripting](https://api.tabletopsimulator.com/).
-* They cannot import any [custom content](/custom-content/about-custom-objects), although they can import [saved](/spawning-objects/saved-objects-menu) custom objects and Workshop items.
-* They cannot modify [custom objects](/custom-content/about-custom-objects).
-* They do not have access to the [Snap Points tool](/game-tools/snap-point-tool).
+* They cannot import any [custom content](../custom-content/about-custom-objects.md), although they can import [saved](../host-guides/spawning-objects.md#saved-objects-menu) custom objects and Workshop items.
+* They cannot modify [custom objects](../custom-content/about-custom-objects.md).
+* They do not have access to the [Snap Points tool](../game-tools/snap-point-tool.md).
 
 
 

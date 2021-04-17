@@ -53,7 +53,7 @@ You can also choose which pointer you’d prefer to play with. The default is th
 ##Blocked
 When you ban someone from your game, or block a name in the server browser, they will show up in this list. You can then just click on their name in the Block list to remove them. When you ban or block someone, you will never see their name on the server browser and they can not join your games unless you unblock them. You can also manually add them in by inputting their name and Steam ID.
 
-You can read more about Block Lists and other ways to block people and servers in [this article](/player-guides/block-list).
+You can read more about Block Lists and other ways to block people and servers in [this article](../player-guides/block-list.md).
 
 <center>![Blocked Tab](/img/configuration-menu/blocked.png)</center>
 

@@ -25,7 +25,7 @@ Linux | ~/.local/share/Tabletop Simulator
 
 ##Save Game Cloud Sync
 
-Steam cloud allows for up to **100 GB** of storage for Tabletop Simulator. You can use this to store in-game assets like images and models. Check out the [Cloud Manager](/custom-content/cloud-manager) page for details on how to manage the contents of your Tabletop Simulator Steam cloud.
+Steam cloud allows for up to **100 GB** of storage for Tabletop Simulator. You can use this to store in-game assets like images and models. Check out the [Cloud Manager](../custom-content/cloud-manager.md) page for details on how to manage the contents of your Tabletop Simulator Steam cloud.
 
 ---
 

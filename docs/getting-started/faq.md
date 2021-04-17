@@ -18,15 +18,15 @@ It is unlikely that Tabletop Simulator will be playable on mobile devices. It ha
 There is support in the game to allow 10 Players at once. You can change an in-game setting to allow more people to join, but they **will only be able to spectate**.
 
 ##Where do I host my files?
-When you make custom creations, you can use them off your local system, off of the Cloud or from a 3'rd party hosting solution. Which you choose [depends on what your goals are](/custom-content/asset-importing).
+When you make custom creations, you can use them off your local system, off of the Cloud or from a 3'rd party hosting solution. Which you choose [depends on what your goals are](../custom-content/asset-importing.md).
 
 ##Where did a game on the Workshop go?
 Sometimes, people choose to remove their creations from the Workshop. Other times, it is possible they used copyrighted assets and the assets' owner filed a take-down notice with Steam. Others still may violate Steam's end-user agreement for using the community tools (which the Workshop is a part of). Once it is removed, do not place a copy back up. It could potentially impact your Steam account!
 
 ##Why won't assets load for me?
-Is your friend able to see models/images in-game and you are not? It is probably because of [mod caching](/getting-started/configuration-menu#game)!
+Is your friend able to see models/images in-game and you are not? It is probably because of [mod caching](../getting-started/configuration-menu.md#game)!
 
-Tabletop Simulator keeps a copy of the game assets you download on your computer so that the next time you need them, you don't have to download them again. It is possible your friend has a copy of them saved locally, then the source went down before you could get a copy. If possible, your friend might be able to [send you those files](/custom-content/asset-importing#cached-files).
+Tabletop Simulator keeps a copy of the game assets you download on your computer so that the next time you need them, you don't have to download them again. It is possible your friend has a copy of them saved locally, then the source went down before you could get a copy. If possible, your friend might be able to [send you those files](../custom-content/asset-importing.md#cached-files).
 
 ##When is the next sale?
 We don’t give sales info in advance, but as Tabletop Simulator is available at a few reputable [**distributors**](http://berserk-games.com/buy/), it goes on sale quite frequently. Be sure to follow us on [Twitter](https://twitter.com/berserkgames) and [Facebook](https://www.facebook.com/tabletopsimulator) to get the latest updates!
