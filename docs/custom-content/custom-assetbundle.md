@@ -48,7 +48,7 @@ Run the installer and you will be asked which components to include. Be sure **W
 ###Download Project
 Download the project file from **[GitHub](https://github.com/Berserk-Games/Tabletop-Simulator-Modding)**.
 
-<center>![Github Download](/img/custom-assetbundle/github-download.png)</center>
+<center>![github](https://user-images.githubusercontent.com/68232780/147890207-69f913b7-a318-4ebb-ab49-3913c80f277b.png)</center>
 
 If needed, unzip the files, and then place them into the directory of your choice.
 
