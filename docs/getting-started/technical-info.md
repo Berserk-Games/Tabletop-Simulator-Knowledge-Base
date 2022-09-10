@@ -7,6 +7,7 @@ System | Location
 Windows | %USERPROFILE%\Documents\My Games\Tabletop Simulator
 macOS (OS X) | ~/Library/Tabletop Simulator
 Linux | ~/.local/share/Tabletop Simulator
+SteamDeck | ~/home/deck/.local/share/Tabletop Simulator/
 
 ---
 
@@ -17,6 +18,7 @@ System | Location
 Windows | %USERPROFILE%\Documents\My Games\Tabletop Simulator
 macOS (OS X) | ~/Library/Tabletop Simulator
 Linux | ~/.local/share/Tabletop Simulator
+SteamDeck | ~/home/deck/.local/share/Tabletop Simulator/Saves/
 
 !!!info "Changing the Save Game Data Location"
     Using the in-game menu, you can choose to change the directory to the game's file location.
