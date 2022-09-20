@@ -46,3 +46,8 @@ mkdocs serve
 
 Then open your browser and navigate to `http://localhost:8000` in order to view your changes.
 
+
+### Deploying
+
+If you are Berserk you can deploy by entering the pipenv shell as described above, then running `mkdocs gh-deploy`.
+You will need your github username and a Personal Access Token (to use as password).
