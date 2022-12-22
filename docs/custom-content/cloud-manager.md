@@ -1,4 +1,4 @@
-The Cloud Manager is where all the files you have uploaded to the Cloud are located. You access this menu by navigating at the top of the screen to **Upload > Cloud Manager**.
+The Cloud Manager is where all the files you have uploaded to the Cloud are located. You access this menu by navigating at the top of the screen to **Modding > Cloud Manager**.
 
 <center>![Cloud Manager Menu](/img/cloud-manager/menu2.png)</center>
 
