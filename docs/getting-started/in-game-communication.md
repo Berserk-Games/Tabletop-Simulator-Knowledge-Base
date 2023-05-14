@@ -2,14 +2,6 @@ We offer both **text chat** and **voice chat** in Tabletop Simulator.
 
 ##Text Chat
 
-###Global Chat
-When you first log into Tabletop Simulator, on the bottom left of your screen you will see a **Global** tab. This is global chat where you can interact and talk with anyone who is logged in to Tabletop Simulator. It’s a great way to find people to play with, look for play-testers and much more.
-
-<center>![Global Chat](/img/in-game-communication/global-chat.png)</center>
-
-!!!attention
-    Global chat is moderated and part of the Geekshed IRC network, so please read up on [**the rules here**](chat-rules.md). If you’d like to join the IRC channel outside of Tabletop Simulator, the server is irc.geekshed.net and the channel is #TabletopSimulator. Due to issues with spammers, the following web clients are banned: Mibbit, IRC Cloud and Light IRC.
-
 ###Game Chat
 Once you click on Single Player or join a Multiplayer game, you will see a second tab called **Game**. The Game tab is used for chatting with anyone currently in your server (if multiplayer). When a new message is posted on a tab you aren’t clicked on, it will highlight gold, letting you know there are new messages.
 
