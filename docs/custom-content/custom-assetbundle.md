@@ -36,7 +36,7 @@ Follow the instructions for each step closely.
 ###Install Unity
 The first thing you need is Unity. But not just any version of Unity, it needs to be **[Unity 2019.4.40f1](https://unity3d.com/get-unity/download/archive)**.
 
-You want the **installer**.
+You want the **installer** and **[Unity Hub](https://unity.com/download)**.
 
 !!!warning "Wrong Unity Version"
     Using the wrong version of Unity will result in possible issues in your exported AssetBundles, if it works at all.
@@ -48,7 +48,7 @@ Run the installer and you will be asked which components to include. Be sure **W
 ###Download Project
 Download the project file from **[GitHub](https://github.com/Berserk-Games/Tabletop-Simulator-Modding)**.
 
-<center>![Github Download](/img/custom-assetbundle/github-download.png)</center>
+<center>![Github Download](https://user-images.githubusercontent.com/68232780/147929314-046a29ce-2022-4e76-91d2-067f8a626410.png)()</center>
 
 If needed, unzip the files, and then place them into the directory of your choice.
 
