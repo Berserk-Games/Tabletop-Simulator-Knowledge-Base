@@ -47,6 +47,7 @@ This will open it up a new Steam chat tab and add a bookmark to the group at the
 
 Please note that this chat is moderated and has a set of rules of conduct that we expect you to follow.
 When joining the Community Chat for the first time you will be prompted with an information window that outlines these rules.
+You can open up this information window again with the **Rules** button in the **Chat Settings**.
 
 > The Group Chat is for finding lobbies, connecting with players and talking about Tabletop Simulator & Boardgames. Be kind and respectful to other players, keep the chat on-topic and follow these rules of conduct:
 > 
