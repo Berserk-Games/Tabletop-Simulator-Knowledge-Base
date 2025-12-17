@@ -43,6 +43,8 @@ The **Tabletop Simulator Community Hub** has a dedicated **Group Chat** that you
 You can join this chat by clicking on the **Steam Community Chat** spotlight message or the chat bubble icon above the chatbox.
 This will open it up a new Steam chat tab and add a bookmark to the group at the bottom of your Steam Friendslist.
 
+<center>![Global Chat](/img/in-game-communication/community-chat.png)</center>
+
 Please note that this chat is moderated and has a set of rules of conduct that we expect you to follow.
 When joining the Community Chat for the first time you will be prompted with an information window that outlines these rules.
 
