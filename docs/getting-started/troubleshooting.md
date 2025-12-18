@@ -1,7 +1,7 @@
 Having technical difficulties with Tabletop Simulator? Follow this guide to help resolve them.
 
 !!!tip "Can't find your answer here?"
-    Your next stop should be the [Official Forums](http://www.berserk-games.com/forums/forumdisplay.php?12-Technical-Support). You can search for a solution there and, if none is available, post your problem there.
+    Your next stop should be the [Official Forums](https://steamcommunity.com/app/286160/discussions/8/). You can search for a solution there and, if none is available, post your problem there.
 
 ##First Steps
 These should always be the first things you try when running into issues with a Steam game.
