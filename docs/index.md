@@ -12,4 +12,4 @@ Years after its release, this game is still growing. We are still adding new fea
 
 ##This Knowledge Base
 
-There is a LOT you can do in Tabletop Simulator, both as a creator and a player. It is recommended you watch video tutorials and read through this Knowledge Base to explore all the possibilities. If you have questions or want to connect with others, visit the [forums](http://www.berserk-games.com/forums/) or join the [official Discord channel](https://discord.gg/6bv3rEn).
+There is a LOT you can do in Tabletop Simulator, both as a creator and a player. It is recommended you watch video tutorials and read through this Knowledge Base to explore all the possibilities. If you have questions or want to connect with others, visit the [forums](https://steamcommunity.com/app/286160/discussions/) or join the [official Discord channel](https://discord.gg/6bv3rEn).
