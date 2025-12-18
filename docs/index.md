@@ -1,4 +1,4 @@
-<center><img src="/img/index/logo.png" alt="Tabletop Simulator" class="borderdisable"></center>
+1<center><img src="/img/index/logo.png" alt="Tabletop Simulator" class="borderdisable"></center>
 
 ##About Tabletop Simulator
 
