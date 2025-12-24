@@ -120,7 +120,7 @@ If you make any mistakes when editing a save, the chat will spit out a debugging
 ##Serialized Classes
 Here are the classes that are serialized:
 
-```json
+```cs
 public class SaveState //Holds a state of the game
 { 
 	public string SaveName = "";

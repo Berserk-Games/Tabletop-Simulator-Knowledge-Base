@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "60f1b366a871daf2ca2a68afd9b44dd59275cf4dfe0c69fb49ef3590bb6912db"
+            "sha256": "e8330bd3c2b518321d9fc16a3511fcad33e27220255c0cce473479458b584585"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -218,12 +218,12 @@
         },
         "pymdown-extensions": {
             "hashes": [
-                "sha256:478b2c04513fbb2db61688d5f6e9030a92fb9be14f1f383535c43f7be9dff95b",
-                "sha256:632371fa3bf1b21a0e3f4063010da59b41db049f261f4c0b0872069a9b6d1735"
+                "sha256:4969c691009a389fb1f9712dd8e7bd70dcc418d15a0faf70acb5117d022f7de8",
+                "sha256:e8698a66055b1dc0dca2a7f2c9d0ea6f5faa7834a9c432e3535ab96c0c4e509b"
             ],
             "index": "Tabletop Simulator Knowledge Base",
-            "markers": "python_version >= '3.6'",
-            "version": "==8.1.1"
+            "markers": "python_version >= '3.9'",
+            "version": "==10.19.1"
         },
         "python-dateutil": {
             "hashes": [

@@ -6,7 +6,7 @@ name = "Tabletop Simulator Knowledge Base"
 [packages]
 mkdocs-material = "~= 7.0.4"
 mkdocs-material-extensions = "~= 1.0.1"
-pymdown-extensions = "~=8.1.1"
+pymdown-extensions = "~=10.19.1"
 mkdocs = "*"
 
 [requires]
