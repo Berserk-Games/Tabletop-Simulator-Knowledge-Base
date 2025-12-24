@@ -10,12 +10,12 @@ Hand zones are a critical part of Tabletop Simulator and have many uses.
 
 If needed, you can read about creating hand zones on the [Zone Tool](../game-tools/zone-tools.md#hand-zone) page.
 
-<center>![Hand Zone Hiding Example](/img/player-hands/demo-far.png)</center>
+![Hand Zone Hiding Example](/img/player-hands/demo-far.png){: style="display:block; margin:0 auto;"}
 
 ##Hands Menu
 In-game, go to **Options > Hands** to bring up the Hands menu. Here, you can modify the functionality for all hand zones.
 
-<center>![Hands Menu](/img/player-hands/menu.png)</center>
+![Hands Menu](/img/player-hands/menu.png){: style="display:block; margin:0 auto;"}
 
 Setting Name | What It Does
 -- | --

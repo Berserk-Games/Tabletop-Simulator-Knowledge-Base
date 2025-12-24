@@ -1,6 +1,6 @@
 The background selected determines the lighting used for a scene. Using the Lighting menu, you can modify or overwrite those lighting settings.
 
-<center>![Lighting Menu](/img/lighting/menu.png)</center>
+![Lighting Menu](/img/lighting/menu.png){: style="display:block; margin:0 auto;"}
 
 !!!tip "Use with AssetBundles"
     AssetBundles can also have built-in lighting effects for local light sources or movable spotlights. Together with scene lighting, very atmospheric setups are possible.
@@ -25,6 +25,6 @@ Setting Name | What It Does
 **LUT&nbsp;Contribution** | This slider changes the intensity of your LUT. By default, it is at max setting so you can see it at its strongest.
 **Custom&nbsp;LUT** | If you know how to make your own LUTs, you can upload a custom one to use. Just make sure the dimensions are 256×16.
 
-<center>![Example Lighting](/img/lighting/demo.png)</center>
+![Example Lighting](/img/lighting/demo.png){: style="display:block; margin:0 auto;"}
 
 ---

@@ -1,4 +1,4 @@
-<center><img src="/img/index/logo.png" alt="Tabletop Simulator" class="borderdisable"></center>
+![Tabletop Simulator](/img/index/logo.png){: class="borderdisable" style="display:block; margin:0 auto;"}
 
 ##About Tabletop Simulator
 

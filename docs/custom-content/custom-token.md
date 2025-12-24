@@ -3,7 +3,7 @@ Custom Tokens are similar to Custom Tiles, in that they can be used to make tile
 ##Importing Custom Token
 In-game, navigate to the top of your screen and select **Objects > Components > Custom > Custom Token**.
 
-<center>![Token Import Menu](/img/custom-token/import.png)</center>
+![Token Import Menu](/img/custom-token/import.png){: style="display:block; margin:0 auto;"}
 
 !!!warning "Importing Assets"
     How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing.md).
@@ -18,7 +18,7 @@ Stackable | If this token can form a stack with others of the same type.
 
 ##Examples
 Various images with transparent backgrounds.
-<center>![Tile Example](/img/custom-tile/example1.png)</center>
+![Tile Example](/img/custom-tile/example1.png){: style="display:block; margin:0 auto;"}
 
 !!!tip "Token Tinting"
     When you use the in-game object tinting feature on a custom token, it tints the whole token, including the image.

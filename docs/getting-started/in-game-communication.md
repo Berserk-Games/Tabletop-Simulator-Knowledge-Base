@@ -7,23 +7,23 @@ Once you click on Single Player or join a Multiplayer game, you will see a tab c
 
 Any scripting errors or messages **printed** by scripting are displayed in this chat.
 
-<center>![Global Chat](/img/in-game-communication/game-chat.png)</center>
+![Global Chat](/img/in-game-communication/game-chat.png){: style="display:block; margin:0 auto;"}
 
 ###Team Chat
 If you join a team, a third tab will pop up called **Team**. This tab is for private conversation only between you and your teammates.
 
-<center>![Global Chat](/img/in-game-communication/team-chat.png)</center>
+![Global Chat](/img/in-game-communication/team-chat.png){: style="display:block; margin:0 auto;"}
 
 ###Log
 A log is available by clicking the **~** tab. The log is visible to all connected players in multiplayer, can be used to display information from scripting and acts as a general game log.
 
-<center>![Global Chat](/img/in-game-communication/log.png)</center>
+![Global Chat](/img/in-game-communication/log.png){: style="display:block; margin:0 auto;"}
 
 ###Chat Settings
 You can modify how the chat window looks by clicking the gear icon in the upper-left of the chat window.
 You can modify the size of the chat window by clicking and dragging the upper-right corner of its window.
 
-<center>![Global Chat](/img/in-game-communication/chat-settings.png)</center>
+![Global Chat](/img/in-game-communication/chat-settings.png){: style="display:block; margin:0 auto;"}
 
 ###Chat commands
 The various chat windows all have chat commands. Just type `/help` to a list of available commands.
@@ -43,7 +43,7 @@ The **Tabletop Simulator Community Hub** has a dedicated **Group Chat** that you
 You can join this chat by clicking on the **Steam Community Chat** spotlight message or the chat bubble icon above the chatbox.
 This will open it up a new Steam chat tab and add a bookmark to the group at the bottom of your Steam Friendslist.
 
-<center>![Global Chat](/img/in-game-communication/community-chat.png)</center>
+![Global Chat](/img/in-game-communication/community-chat.png){: style="display:block; margin:0 auto;"}
 
 Please note that this chat is moderated and has a set of rules of conduct that we expect you to follow.
 When joining the Community Chat for the first time you will be prompted with an information window that outlines these rules.

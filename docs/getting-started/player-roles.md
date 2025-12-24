@@ -8,7 +8,7 @@ If you start a game, even if it single player, you are still considered to be th
 ###Options
 When you’re the host, all buttons on the top menu will be available. Click on **OPTIONS**. You will get a drop down showing **Options**, **Grid**, **Hands** and **Turns**. Options is the one where you set the different permissions for the rest of your users.
 
-<center>![Options Menu Location](/img/player-roles/options.png)</center>
+![Options Menu Location](/img/player-roles/options.png){: style="display:block; margin:0 auto;"}
 
 !!!info "Options and Permissions"
     A full list of options and permissions that the host can be found on the [permissions](../host-guides/permissions.md) page.
@@ -16,7 +16,7 @@ When you’re the host, all buttons on the top menu will be available. Click on 
 ###Promoting
 The host can promote trusted players to give them most of the power that the host has. To promote a player, just click on the player’s name on the top right and choose the “Promote” option. Once the player is promoted, they have a shield next to their name to show the promotion.
 
-<center>![Player Promotion Menu](/img/player-roles/player-options.png)</center>
+![Player Promotion Menu](/img/player-roles/player-options.png){: style="display:block; margin:0 auto;"}
 
 ###Give Host
 In the player options, you can select **Give Host** to make someone else the host of the game. This is known as "Host Migration" and causes that player to become the host.

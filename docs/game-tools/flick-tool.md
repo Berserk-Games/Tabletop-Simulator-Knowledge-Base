@@ -7,6 +7,6 @@ The Flick Tool is very simple to use, all you have to do is have the Flick Tool 
 
 If you made a mistake on what you’d like to flick or the position of where the flick is pointing, just move the line tool back to the zero position and try again.
 
-<center>![Flick Example 1](/img/flick-tool/flick1.png)</center>
+![Flick Example 1](/img/flick-tool/flick1.png){: style="display:block; margin:0 auto;"}
 
-<center>![Flick Example 2](/img/flick-tool/flick2.png)</center>
+![Flick Example 2](/img/flick-tool/flick2.png){: style="display:block; margin:0 auto;"}

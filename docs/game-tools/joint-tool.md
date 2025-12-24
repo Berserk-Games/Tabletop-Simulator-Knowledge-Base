@@ -20,7 +20,7 @@ Below you can find some examples
 
 ##Creating Joints
 
-<center>![Basic Jointing](/img/joint-tool/joint-basic.gif)</center>
+![Basic Jointing](/img/joint-tool/joint-basic.gif){: style="display:block; margin:0 auto;"}
 
 With the Joint Tool selected, mouse-over an item and hold left-click. Drag the cursor over the object you want to connect and then release left-click.
 
@@ -41,7 +41,7 @@ Removing joints is easy. Begin to create a new joint on the object your original
 
 ##Modifying Joints
 
-<center>![Modified Jointing](/img/joint-tool/joint-modified.gif)</center>
+![Modified Jointing](/img/joint-tool/joint-modified.gif){: style="display:block; margin:0 auto;"}
 
 More than solid joints are available, you just need to modify an existing joint to alter its properties.
 

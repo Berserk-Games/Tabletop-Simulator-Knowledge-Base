@@ -3,7 +3,7 @@ It is possible to import 3D Models into the game, complete with their own diffus
 ##Importing Custom Model
 In-game, navigate to the top of your screen and select **Objects > Components > Custom > Custom Model**.
 
-<center>![Model Import Menu](/img/custom-model/import.png)</center>
+![Model Import Menu](/img/custom-model/import.png){: style="display:block; margin:0 auto;"}
 
 !!!warning "Importing Assets"
     How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing.md).

@@ -11,7 +11,7 @@ With your mouse, left-click and hold. Drag your mouse so that the created zone w
 ### Removal
 With the same zone tool selected, right-clicking on a pre-existing zone will show a context menu for it.  Selecting `Delete` will remove the zone.
 
-<center>![Zone Context Menu](/img/zone-tools/context-menu.png)</center>
+![Zone Context Menu](/img/zone-tools/context-menu.png){: style="display:block; margin:0 auto;"}
 
 ### Menu Actions
 The other options in the zone context menu perform the same actions they would on game objects, allowing you to open the scripting editor, copy the GUID to the clipboard, edit the zone's tags, copy it, or set its Name /Description.
@@ -38,13 +38,13 @@ Hidden zones are visible to all players during gameplay, although their contents
 #### Left-Click Action
 Left-clicking on a hidden zone will bring up a color circle and a gear icon.
 
-<center>![Hidden Zone Left Click](/img/zone-tools/hidden-rc1.png)</center>
+![Hidden Zone Left Click](/img/zone-tools/hidden-rc1.png){: style="display:block; margin:0 auto;"}
 
 Clicking on a color will set the hidden zone will set the zone to match that color player. This determines who it is hiding for.
 
 Clicking on the gear will open the options for this specific hidden zone.
 
-<center>![Hidden Zone Left Click Sub-menu](/img/zone-tools/hidden-rc2.png)</center>
+![Hidden Zone Left Click Sub-menu](/img/zone-tools/hidden-rc2.png){: style="display:block; margin:0 auto;"}
 
 * **Hide Pointers**: If checked, the zone will hide pointers that are within the zone, preventing any clues to what is being done in it.
 * **Reverse Hiding**: If checked, it will reveal its contents to all other players. Unchecked, it hides the contents from everyone but the select color.
@@ -67,7 +67,7 @@ Randomize zones are invisible to all players unless you select the randomize zon
 #### Left-Click Action
 Left-clicking a randomization zone will bring up the confirmation window to randomize the zone's contents.
 
-<center>![Randomize Zone Left Click](/img/zone-tools/randomize-rc1.png)</center>
+![Randomize Zone Left Click](/img/zone-tools/randomize-rc1.png){: style="display:block; margin:0 auto;"}
 
 #### Tags
 If you set a tag on a Randomize Zone it will only randomize items inside it which have a matching tag.
@@ -87,7 +87,7 @@ Hand zones are invisible to all players unless you select the hand zone or gizmo
 #### Left-Click Action
 Left-clicking on a hand zone will bring up a color circle.
 
-<center>![Hand Zone Left Click](/img/zone-tools/hand-rc1.png)</center>
+![Hand Zone Left Click](/img/zone-tools/hand-rc1.png){: style="display:block; margin:0 auto;"}
 
 Clicking on a color will set the hand zone will set the zone to match that color player. This determines who the zone belongs to. If this is the first hand zone of this color on the table, it also determines where that player "sits".
 
@@ -106,7 +106,7 @@ The Layout Zone works on groups of objects.  When you drop a bunch of objects in
 
 
 #### Left-Click Action
-<center>![Layout Zone Left Click](/img/zone-tools/layout-left-click.png)</center>
+![Layout Zone Left Click](/img/zone-tools/layout-left-click.png){: style="display:block; margin:0 auto;"}
 
 When you left-click a Layout Zone you will see a big `Layout` button, and a small `Settings` cog.
 
@@ -115,7 +115,7 @@ When you left-click a Layout Zone you will see a big `Layout` button, and a smal
 
 
 ##### Layout Settings
-<center>![Layout Zone Layout Settings](/img/zone-tools/layout-zone-layout-settings.png)</center>
+![Layout Zone Layout Settings](/img/zone-tools/layout-zone-layout-settings.png){: style="display:block; margin:0 auto;"}
 
 These settings govern the overall functionality of the zone: what objects it affects and how groups are arranged with regard to each other.
 
@@ -149,17 +149,17 @@ The **Components** section specifies what objects the Layout Zone will affect:
 * **Manual Only** : When enabled the zone will no longer automatically lay out objects inside it: you must hit the Layout button (or the Layout object-menu) to cause it to perform a layout.
 
 ##### Group Settings
-<center>![Layout Zone Group Settings](/img/zone-tools/layout-zone-group-settings.png)</center>
+![Layout Zone Group Settings](/img/zone-tools/layout-zone-group-settings.png){: style="display:block; margin:0 auto;"}
 
 These settings govern how objects within a group are arranged.
 
 * **Direction** determines the direction objects within the group are layed out in.  This is distinct from the **Direction** on the Layout tab, which decides how *groups* are layed out.
 
 Here you can see that while the Layout Direction is set to `Left / Up` (causing the groups to start in the bottom right corner), the Group Direction is set to `Eastward`, meaning the cards within each group are layed out left-to-right:
-<center>![Layout Zone Example](/img/zone-tools/layout-zone-example.png)</center>
+![Layout Zone Example](/img/zone-tools/layout-zone-example.png){: style="display:block; margin:0 auto;"}
 
 This is the same setup, except with the Group Direction set to `Westward`:
-<center>![Layout Zone Example](/img/zone-tools/layout-zone-example2.png)</center>
+![Layout Zone Example](/img/zone-tools/layout-zone-example2.png){: style="display:block; margin:0 auto;"}
 
 * **Sort** sets how objects within a group are sorted:
     * **None** : no sorting is applied.
@@ -190,7 +190,7 @@ This is the same setup, except with the Group Direction set to `Westward`:
 
 Having to select the Layout Zone tool then click on the zone and hit the button in order to manually layout a zone is a little cumbersome, so there is a shortcut: if you right-click an object which is in a Layout Zone it can be layed-out by, it will have a Layout option.  Clicking it will cause that zone to perform its layout operation.
 
-<center>![Object Layout Context Menu](/img/zone-tools/layout-zone-object-context.png)</center>
+![Object Layout Context Menu](/img/zone-tools/layout-zone-object-context.png){: style="display:block; margin:0 auto;"}
 
 
 #### Tags
@@ -245,7 +245,7 @@ Scripting zones are invisible to all players unless you select the hand zone or 
 #### Left-Click Action
 Left-clicking on a scripting zone copies it GUID to the clipboard. You can then paste it into your scripts. This is generally how you identify scripting zones in your code.
 
-<center>![Script Zone Left Click](/img/zone-tools/script-rc1.png)</center>
+![Script Zone Left Click](/img/zone-tools/script-rc1.png){: style="display:block; margin:0 auto;"}
 
 You will see a pop-up message announcing that this has been done, as well as a message in the Game chat log.
 

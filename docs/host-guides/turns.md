@@ -1,6 +1,6 @@
 The turns system tracks player turn order. To enable turns, click **Options > Turns** at the top of the screen.
 
-<center>![Grid Example](/img/turns/menu.png)</center>
+![Grid Example](/img/turns/menu.png){: style="display:block; margin:0 auto;"}
 
 ##Turns Menu
 The turns menu allows for control over how turns work, and in what order.
@@ -19,11 +19,11 @@ Setting Name | What It Does
 ##Using Turns
 When turns are enabled, the first player hears a sound and gets a prompt on their screen. After taking their turn, players click `End Turn` at the top of the screen.
 
-<center>![End Turns Button](/img/turns/end-turn.png)</center>
+![End Turns Button](/img/turns/end-turn.png){: style="display:block; margin:0 auto;"}
 
 If enabled, you can also give the active turn to another player by clicking on the player's name in the upper right and selecting `Pass Turn`.
 
-<center>![Pass Turns Button](/img/turns/pass-turn.png)</center>
+![Pass Turns Button](/img/turns/pass-turn.png){: style="display:block; margin:0 auto;"}
 
 !!!tip "Who's Turn Is It?"
     The player with the star next to their name (in the upper right) is used to display who's turn it is.

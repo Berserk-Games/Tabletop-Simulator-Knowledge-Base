@@ -1,6 +1,6 @@
 Teams are a way to group Players in a game together so they can better work together. There are 5 teams, Hearts/Clubs/Spades/Diamonds/Jokers.
 
-<center>![Teams Selection Window](/img/teams/teams-menu.png)</center>
+![Teams Selection Window](/img/teams/teams-menu.png){: style="display:block; margin:0 auto;"}
 
 ##Teammate Features
 Being on the same team grants many advantages that allow players to work together in secret.
@@ -13,12 +13,12 @@ Being on the same team grants many advantages that allow players to work togethe
 * Private in-game chat channel
     * Only available when on a team
 
-<center>![Team Chat](/img/teams/team-chat.png)</center>
+![Team Chat](/img/teams/team-chat.png){: style="display:block; margin:0 auto;"}
 
 ##Joining a Team
 Click on your own name in the upper right and, from the dropdown, select `Change Team`. This opens the selection menu where a team is selected.
 
-<center>![Opening Teams Selection Window](/img/teams/open-menu.png)</center>
+![Opening Teams Selection Window](/img/teams/open-menu.png){: style="display:block; margin:0 auto;"}
 
 !!!note "Host Option"
     Hosts can not only set their own team, but the team of any player. Promoted players share this ability.

@@ -6,7 +6,7 @@ On the bottom right of your screen, there will be a button icon with a red circl
 ##Rich Text
 BB code can be used to improve the look of text. See the [BB codes](bb-codes.md) page for valid tags.
 
-<center>![Default Notebook](/img/notes/1.png) ![Default Notebook](/img/notes/2.png)</center>
+![Default Notebook](/img/notes/1.png) ![Default Notebook](/img/notes/2.png){: style="display:block; margin:0 auto;"}
 
 ##Disabling Notes
 There is no way to know who is doing the editing in Notes, so if you’re the host and you don’t want players to use it, then this can be disabled in the host options menu.

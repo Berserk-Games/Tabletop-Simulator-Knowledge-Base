@@ -8,7 +8,7 @@ This is ideal for creating books, scrolls, creature evolutions and much more.
 ###Line Up Objects
 Line up the desired Objects into a row.
 
-<center>![Object Line Up](/img/creating-states/line-up.png)</center>
+![Object Line Up](/img/creating-states/line-up.png){: style="display:block; margin:0 auto;"}
 
 !!!option "Optional Step"
     Give each Object a name/description now, it will be visible when selecting a state.
@@ -16,17 +16,17 @@ Line up the desired Objects into a row.
 ###Selecting Objects
 Drag a selection box over the Objects. Their stated order will be based off of the order in which they are highlighted.
 
-<center>![Object Selection](/img/creating-states/select.png)</center>
+![Object Selection](/img/creating-states/select.png){: style="display:block; margin:0 auto;"}
 
 ###Combine Objects
 Right click on the selected object you want for the primary state. Select `Create States` from the context menu.
 
-<center>![Context Menu](/img/creating-states/combine.png)</center>
+![Context Menu](/img/creating-states/combine.png){: style="display:block; margin:0 auto;"}
 
 ###Result
 Now you will have a single Object which "contains" the others. Hovering your pointer over it will show the "States" icon and a state count.
 
-<center>![Resulting Stated Object](/img/creating-states/stated.png)</center>
+![Resulting Stated Object](/img/creating-states/stated.png){: style="display:block; margin:0 auto;"}
 
 ---
 
@@ -47,10 +47,10 @@ Now you will have a single Object which "contains" the others. Hovering your poi
 ###Rulebook Example
 The rulebook used in our Scythe DLC starts off closed. When you hover over it, you can see it has the States symbol and how many “states” are included. In this case, there are 16 states.
 
-<center>![Rulebook Example, Closed](/img/creating-states/rulebook-example1.png)</center>
+![Rulebook Example, Closed](/img/creating-states/rulebook-example1.png){: style="display:block; margin:0 auto;"}
 
 After pressing one of the number keys, in this case the 2 key, the book “opens” up into pages 2-3 of the rulebook. Using States is a fantastic way to really theme up your mods and let your creative juices flow!
 
-<center>![Rulebook Example, Open](/img/creating-states/rulebook-example2.png)</center>
+![Rulebook Example, Open](/img/creating-states/rulebook-example2.png){: style="display:block; margin:0 auto;"}
 
 ---

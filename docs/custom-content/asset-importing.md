@@ -3,12 +3,12 @@ Tabletop Simulator allows you to use files, either online or offline, to play cu
 ##Browse Button
 All files are imported either by pasting a file path/url into the field in question, or by clicking the Browse button and selecting the file from your computer.
 
-<center>![Import Selections](/img/asset-importing/sp1.png)</center>
+![Import Selections](/img/asset-importing/sp1.png){: style="display:block; margin:0 auto;"}
 
 ##Local Files
 These are files that are hosted on your own computer. **Other players CANNOT see these assets!** These are for local games only (single player or hotseat). If you use the browse button to select your file, you will be given the option to use the file as "Local" hosted.
 
-<center>![Import Selections](/img/asset-importing/sp2.png)</center>
+![Import Selections](/img/asset-importing/sp2.png){: style="display:block; margin:0 auto;"}
 
 Example file path:
 
@@ -22,7 +22,7 @@ These are files that are hosted online. Other players are able to download and s
 ###Steam Cloud
 You get 100GB worth of storage tied to you Steam Account for Tabletop Simulator, and any files uploaded to your steam account through Tabletop Simulator will persist indefinitely. This makes it an ideal file host. See the [Cloud Manager](cloud-manager.md) page for details on using this hosting method. If you use the browse button to select your file, you will be given the option to use  the file as "Cloud" hosted.
 
-<center>![Import Selections](/img/asset-importing/mp.png)</center>
+![Import Selections](/img/asset-importing/mp.png){: style="display:block; margin:0 auto;"}
 
 Example file path:
 

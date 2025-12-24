@@ -22,7 +22,7 @@ Tags govern interaction between `features` (Zones, Snap-Points, etc.) and `objec
 ## Tagging
 To add a tag to an object or feature, right-click and select the `Tags` menu item.  This will open the Tags window:
 
-<center>![Tags Window](/img/tags/object-tag-ui.png)</center>
+![Tags Window](/img/tags/object-tag-ui.png){: style="display:block; margin:0 auto;"}
 
 Clicking on a tag will toggle it being enabled for that object.  The host may add further tags by typing the tag name into the input at the bottom.
 
@@ -35,7 +35,7 @@ Clicking on a tag will toggle it being enabled for that object.  The host may ad
 
 Editting tags on a lot of snap points would quickly get tedious; instead it is better to set the default snap-point tags:
 
-<center>![Snap-Point Creation Tags](/img/tags/snap-point-tags.png)</center>
+![Snap-Point Creation Tags](/img/tags/snap-point-tags.png){: style="display:block; margin:0 auto;"}
 
 Whatever tags you select for these will be applied to every snap point created from then on.
 
@@ -69,7 +69,7 @@ end
 
 The host has access to the `Edit Tags` window (via `Modding->Tags` in the top toolbar).
 
-<center>![Edit Tags](/img/tags/edit-tags.png)</center>
+![Edit Tags](/img/tags/edit-tags.png){: style="display:block; margin:0 auto;"}
 
 Hovering over a tag in this window will highlight all objects on the table which have that tag, *or*, if you already have objects selected, which of those selected objects have that tag.
 

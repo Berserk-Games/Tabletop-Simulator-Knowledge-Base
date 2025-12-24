@@ -5,7 +5,7 @@ The Text Tool can be used to create permanent, unmoving text. This text cannot b
 ##Usage
 When you have the Text Tool (`F8`) selected, your pointer will turn into either a T for the 3D pointer or a text caret for the 2D pointer, so you’ll know you are using that menu option. Left-click anywhere on the table and then you can add text to the text box.
 
-<center>![Text Tool](/img/text-tool/text.png)</center>
+![Text Tool](/img/text-tool/text.png){: style="display:block; margin:0 auto;"}
 
 * **Buttons 1+2**: Decrease/Increase the font size.
 * **Button 3**: Change the font color.

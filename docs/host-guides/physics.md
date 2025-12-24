@@ -1,6 +1,6 @@
 The Physics Menu is an advanced feature, which gives you control on the physics and materials of individual objects. To access it, right click on an object and choose the **Physics** option.
 
-<center>![Physics Menu](/img/physics/menu.png)</center>
+![Physics Menu](/img/physics/menu.png){: style="display:block; margin:0 auto;"}
 
 ##Rigidbody
 Determines how the Object behaves when moving through space.

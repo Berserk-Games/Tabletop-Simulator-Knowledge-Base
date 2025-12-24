@@ -1,18 +1,18 @@
 The Workshop is where all the mods you subscribed to from the Steam Workshop are located. To subscribe to mods on the Workshop, you can click the **Browse** button at the top of the Workshop games menu to open it up in the Steam overlay, or go directly to the [Workshop](https://steamcommunity.com/app/286160/workshop/).
 
-<center>![In-Game Workshop Menu](/img/games-workshop/menu-main.png)</center>
+![In-Game Workshop Menu](/img/games-workshop/menu-main.png){: style="display:block; margin:0 auto;"}
 
 ##Organize
 
 You can easily organize your Workshop mods by creating folders. To create a folder, click the folder icon Folder Icon (![In-Game Workshop Menu](/img/games-workshop/icon-folder.png)) at the top and choose a name for your folder. To create sub-folders, go into the folder you want the sub-folder to be and click on the folder icon and follow the same steps as before. Once you have all your base folders set, you can create sub-folders or add mods to any folder from the main Workshop menu.
 
-<center>![In-Game Workshop Menu](/img/games-workshop/menu-folder.png)</center>
+![In-Game Workshop Menu](/img/games-workshop/menu-folder.png){: style="display:block; margin:0 auto;"}
 
 ##Sort
 
 You can also sort the order of your mods by Date Updated, Date Created, Last Loaded, Name (alphabetical) and Random. Just click the sort icon Sort Icon (![Workshop Folder](/img/games-workshop/icon-arrows.png)) at the top to sort the mods as you see fit.
 
-<center>![In-Game Workshop Menu](/img/games-workshop/menu-details.png)</center>
+![In-Game Workshop Menu](/img/games-workshop/menu-details.png){: style="display:block; margin:0 auto;"}
 
 ##Options
 

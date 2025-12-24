@@ -1,6 +1,6 @@
 Camera states enable you to save different camera views into save files (individual mods/games) and share them with everyone else in the room.
 
-<center>![Camera States](/img/camera-states/camera-states.png)</center>
+![Camera States](/img/camera-states/camera-states.png){: style="display:block; margin:0 auto;"}
 
 ##Creating Camera States
 To save a camera state, move your camera where you want to save, then right click on a table or non-object and this will bring up the Global Contextual Menu. Click on Save Camera and choose the number you wish to save it into. Alternatively, you can use the hotkey `Ctrl + #`.

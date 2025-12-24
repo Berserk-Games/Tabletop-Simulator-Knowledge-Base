@@ -3,7 +3,7 @@ Looking for a simple way to import a standee/figurine/meeple into your game with
 ##Importing Custom Figurine
 In-game, navigate to the top of your screen and select **Objects > Components > Custom > Custom Figurine**.
 
-<center>![Figurine Creation](/img/custom-figurine/import.png)</center>
+![Figurine Creation](/img/custom-figurine/import.png){: style="display:block; margin:0 auto;"}
 
 !!!warning "Importing Assets"
     How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing.md).

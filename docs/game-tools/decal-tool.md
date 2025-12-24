@@ -3,7 +3,7 @@
 The Decal Tool is a way to place custom images (stamps) onto the game table or objects.
 
 ##Decals Menu
-<center>![Decal Menu](/img/decal-tool/decal-menu.png)</center>
+![Decal Menu](/img/decal-tool/decal-menu.png){: style="display:block; margin:0 auto;"}
 
 When the Decal Tool is selected, it will open up the Decals Menu. Empty by default, this is where you upload images to use as decals.
 
@@ -30,7 +30,7 @@ Click on a decal you have added into the Decals Menu and then click in the Game 
 
 Decals will adhere to whatever Object or surface they are placed onto. 
 
-<center>![Decal Usage Example](/img/decal-tool/decal-example.png)</center>
+![Decal Usage Example](/img/decal-tool/decal-example.png){: style="display:block; margin:0 auto;"}
 
 
 

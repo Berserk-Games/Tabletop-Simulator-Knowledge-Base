@@ -1,6 +1,6 @@
 There are 7 default tables and 2 custom table available to play on. Additionally, any model can be imported and used in place of a table by selecting the `None` option.
 
-<center>![Tables Menu](/img/tables/menu.png)</center>
+![Tables Menu](/img/tables/menu.png){: style="display:block; margin:0 auto;"}
 
 ##Player Counts
 Each table has a default player count. The player count can be adjusted by adding/removing [hand zones](../game-tools/zone-tools.md#hand-zone).
@@ -20,7 +20,7 @@ Table | Player Count
 ##Custom Table
 The `Custom Square` and the `Custom Rectangle` are tables that allow for a custom image to be used for the table's surface. The custom image is selected when the table is chosen.
 
-<center>![Tables Menu](/img/tables/custom.png)</center>
+![Tables Menu](/img/tables/custom.png){: style="display:block; margin:0 auto;"}
 
 ##Custom Models As Table
 Select `None` for your table, import the model you want as a table, lock it, and then add Hand Zones around it for players to be able to sit at it.

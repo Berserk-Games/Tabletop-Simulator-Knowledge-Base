@@ -1,6 +1,6 @@
 Your Block List is located in your [Configuration](../getting-started/configuration-menu.md) menu under the Blocked tab.
 
-<center>![Blindfold Example](/img/block-list/block-list.png)</center>
+![Blindfold Example](/img/block-list/block-list.png){: style="display:block; margin:0 auto;"}
 
 ##Blocking Players
 You can add people to your list using different methods.

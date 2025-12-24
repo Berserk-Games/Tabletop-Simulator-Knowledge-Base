@@ -1,6 +1,6 @@
 The Context Menu is the menu that appears when you `right-click` while in-game, generally on an Object. You can do pretty much anything in the Contextual Menu, with deck and dice options, tinting, saving to chest, scripting and much more.
 
-<center>![Basic Context Menu](/img/context-menu/basic.png)</center>
+![Basic Context Menu](/img/context-menu/basic.png){: style="display:block; margin:0 auto;"}
 
 ##Context Menu Layout
 There are many different options to choose from and depending on the object, there may be unique options.
@@ -24,7 +24,7 @@ Depending on the object you right click on, the Contextual Menu may show differe
 ##Toggles
 The Toggles sub-menu allows you to change how this object interacts with the rest of the game.
 
-<center>![Toggles Context Menu](/img/context-menu/toggle.png)</center>
+![Toggles Context Menu](/img/context-menu/toggle.png){: style="display:block; margin:0 auto;"}
 
 * **Lock**: If the object stays locked in place. Locked objects can also be stamped/decaled/snap pointed.
 * **Snap**: If the object moves towards snap points when dropped.
@@ -42,7 +42,7 @@ The Toggles sub-menu allows you to change how this object interacts with the res
 ##Global Context Menu
 The Global Contextual Menu has extra functions that can be used without clicking on a particular object.
 
-<center>![Camera States Context Menu](/img/context-menu/camera.png)</center>
+![Camera States Context Menu](/img/context-menu/camera.png){: style="display:block; margin:0 auto;"}
 
 * **Camera Mode**: Switch between 3'rd, 1'st and top-down viewing modes. {>>Shortcut: P<<}
 * **Load Camera**: Load pre-set camera viewing angles. {>>Shortcut: Shift + 1-9<<}

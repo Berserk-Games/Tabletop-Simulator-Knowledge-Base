@@ -1,13 +1,13 @@
 Tabletop Simulator offers official games from various developers and publishers as DLC. These are optional and a portion of your purchase goes directly to the creator of those games. Each DLC is custom created with high quality assets and special themes that match their games. And best of all, **only the host needs to own the DLC** for everyone at the table to play.
 
-<center>![DLC Games Menu](/img/games-dlc/dlc-menu.png)</center>
+![DLC Games Menu](/img/games-dlc/dlc-menu.png){: style="display:block; margin:0 auto;"}
 
 ##DLC Menu
 By default, if you do not already own a DLC, the thumbnail image will have a lock on the bottom right corner. When you click on the thumbnail of a DLC and you don’t own it, it will open up the store page of that game in the Steam overlay. If you already own the DLC and want to go to the store page, you can hover over the thumbnail, click the triple dot icon and click Store.
 
 As more DLCs are added, it may be harder to find the one you’re looking for. You can either type the name in the Search bar at the top, or click on the Sort icon and sort by Random, Released (order in which the game was released) or Name (alphabetical).
 
-<center>![DLC Games Menu](/img/games-dlc/dlc-row.png)</center>
+![DLC Games Menu](/img/games-dlc/dlc-row.png){: style="display:block; margin:0 auto;"}
 
 There are currently over 25 licensed games with many more on the way! If you like the games, tell your friends about them or send a friendly message to the developer of the physical game and let them know your thoughts.
 

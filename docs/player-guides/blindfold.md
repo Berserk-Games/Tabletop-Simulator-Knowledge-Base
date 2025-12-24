@@ -1,6 +1,6 @@
 Blindfolds can be used to prevent a player from viewing the board. This is great for games where people need to “close their eyes”. To easily use the blindfold, just press the **`B`** key or right click on a non-object to bring up the Global Contextual Menu and choose Blindfold.
 
-<center>![Blindfold Example](/img/blindfold/blindfold.png)</center>
+![Blindfold Example](/img/blindfold/blindfold.png){: style="display:block; margin:0 auto;"}
 
 ##Features
 * A player wearing a blindfold can’t see anything but a button to remove the blindfold, the chat and other UI elements.

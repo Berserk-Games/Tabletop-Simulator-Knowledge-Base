@@ -3,7 +3,7 @@ Custom Tiles are an easy way to use an image to create versatile tiles for table
 ##Importing Custom Tile
 In-game, navigate to the top of your screen and select **Objects > Components > Custom > Custom Tile**.
 
-<center>![Tile Import Menu](/img/custom-tile/import.png)</center>
+![Tile Import Menu](/img/custom-tile/import.png){: style="display:block; margin:0 auto;"}
 
 !!!warning "Importing Assets"
     How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Importing](asset-importing.md).
@@ -20,10 +20,10 @@ Stretch Aspect Ratio | If the source image is stretched to make for a symmetrica
 
 ##Examples
 The various image types.
-<center>![Tile Example](/img/custom-tile/example1.png)</center>
+![Tile Example](/img/custom-tile/example1.png){: style="display:block; margin:0 auto;"}
 
 Various tile thickness displayed. Going to Custom will let you modify the tile's settings after its initial creation.
-<center>![Tile Example](/img/custom-tile/example2.png)</center>
+![Tile Example](/img/custom-tile/example2.png){: style="display:block; margin:0 auto;"}
 
 !!!tip "Tile Tinting"
     When you use the in-game object tinting feature on a custom tile, it re-colors the SIDES of the tile. It does not tint the image used.

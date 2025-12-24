@@ -13,14 +13,14 @@ There are 2 types of Snap Points: Snap and Rotation Snap
 
 These Snap Points cause Objects to move towards them when dropped.
 
-<center>![Example of Snap](/img/snap-point-tool/demo-snap.png)</center>
+![Example of Snap](/img/snap-point-tool/demo-snap.png){: style="display:block; margin:0 auto;"}
 
 ###Rotation Snap
 ![Rotation Snap Menu](/img/snap-point-tool/snap-point-menu2.png)
 
 These Snap Points cause Objects to move towards them when dropped as well as rotating to face a pre-determined direction. The points have small arrows around them which, when clicked, change the angle of rotation.
 
-<center>![Example of Rotation Snap](/img/snap-point-tool/demo-rotation.png)</center>
+![Example of Rotation Snap](/img/snap-point-tool/demo-rotation.png){: style="display:block; margin:0 auto;"}
 
 ####Example of Placement
 

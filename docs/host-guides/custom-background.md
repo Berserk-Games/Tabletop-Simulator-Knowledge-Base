@@ -13,19 +13,19 @@ Backgrounds are placed on a sphere, so it’s important to get HDRI Panorama ima
 
 Be sure to only use images shared under "creative commons" or after seeking the artist's permission.
 
-<center>![HDRI Example](/img/custom-background/hdri-example.png)</center>
+![HDRI Example](/img/custom-background/hdri-example.png){: style="display:block; margin:0 auto;"}
 
 ##Applying Background
 At the top of the screen, select **Objects > Backgrounds > Custom** to access the Custom Background prompt.
 
-<center>![Custom Background Menu](/img/custom-background/menu.png)</center>
+![Custom Background Menu](/img/custom-background/menu.png){: style="display:block; margin:0 auto;"}
 
 You can paste in a URL or select a file from your computer. If you select a file from your computer and want others to be able to play your game, be sure you use the "Cloud" option to upload it automatically to your steam cloud.
 
 ##Result
 After submitting your change, you will be left with your custom background in use.
 
-<center>![In-Use Example](/img/custom-background/use-example.png)</center>
+![In-Use Example](/img/custom-background/use-example.png){: style="display:block; margin:0 auto;"}
 
 ##Tips
 

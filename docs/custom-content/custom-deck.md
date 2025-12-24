@@ -1,6 +1,6 @@
 A custom deck is a collections of cards created via "card sheets".
 
-<center>![Custom Board Example](/img/custom-deck/deck.png)</center>
+![Custom Board Example](/img/custom-deck/deck.png){: style="display:block; margin:0 auto;"}
 
 ##Deck Features
 * Decks can be square or rectangular, depending on dimensions of card sheet.
@@ -24,7 +24,7 @@ This is the simplest way to create a card sheet. Place your card images in the r
     * In the Properties Menu, click **Local Files** at the top
     * Click **Browse Local Files**
 
-<center>![Card Sheet Template Example](/img/custom-deck/template-sheet.png)</center>
+![Card Sheet Template Example](/img/custom-deck/template-sheet.png){: style="display:block; margin:0 auto;"}
 
 ###Deck Builder
 This tool is a little more complicated, but allows for control over the number of cards per sheet. The Deck Editor was created by **Froghut**. The Deck Builder utility is located in your game's Steam folder.
@@ -37,7 +37,7 @@ This tool is a little more complicated, but allows for control over the number o
     * In the Properties Menu, click **Local Files** at the top
     * Click **Browse Local Files**
 
-<center>![Deck Editor Example](/img/custom-deck/deck-editor.png)</center>
+![Deck Editor Example](/img/custom-deck/deck-editor.png){: style="display:block; margin:0 auto;"}
 
 * Click on **New Deck**
 * Select how many cards the sheet will feature horizontally and vertically and hit **OK**
@@ -65,7 +65,7 @@ Number | How many cards are on the card sheet.
 Sideways | Changes the ALT zoom for cards to match sideways cards.
 Back is Hidden | Instead of using the last card from the card sheet as the "hidden" card, this option can use the back of the card instead.
 
-<center>![Deck Menu](/img/custom-deck/menu.png)</center>
+![Deck Menu](/img/custom-deck/menu.png){: style="display:block; margin:0 auto;"}
 
 
 

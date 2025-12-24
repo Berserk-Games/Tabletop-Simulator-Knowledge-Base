@@ -29,7 +29,7 @@ Applies or removes a Blindfold.
 
 > Blindfolded players cannot see others putting on/removing blindfolds.
 
-<center>![Blindfold Example](/img/advanced-controls/blindfold.png)</center>
+![Blindfold Example](/img/advanced-controls/blindfold.png){: style="display:block; margin:0 auto;"}
 
 ---
 
@@ -149,6 +149,6 @@ Alternative scaling method.
 
 ---
 
-<center>![Card Stack](/img/advanced-controls/cardstack.png)</center>
+![Card Stack](/img/advanced-controls/cardstack.png){: style="display:block; margin:0 auto;"}
 
 ---

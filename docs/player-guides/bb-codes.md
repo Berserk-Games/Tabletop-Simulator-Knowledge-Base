@@ -1,6 +1,6 @@
 In Tabletop Simulator you can use basic BB Codes to spice up the Notebook, Rules, Notecards, onscreen Notes and even the Tooltips that you’re showing to other players. This is great when you want to properly format your notes and rules to make them look nice and neat.
 
-<center>![Notebook Example](/img/bb-codes/notebook.png)</center>
+![Notebook Example](/img/bb-codes/notebook.png){: style="display:block; margin:0 auto;"}
 
 ---
 

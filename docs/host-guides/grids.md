@@ -1,6 +1,6 @@
 You can add grid lines to the table, and objects, using **Options > Grid**.
 
-<center>![Grid Example](/img/grids/example.png)</center>
+![Grid Example](/img/grids/example.png){: style="display:block; margin:0 auto;"}
 
 
 ##Features
@@ -11,12 +11,12 @@ You can add grid lines to the table, and objects, using **Options > Grid**.
 
 !!!info "Select Where Grids Appear"
     Grids only project onto boards and the table by default. You can enable any other object by right clicking on it and selecting **Toggles > Grid Projection**.
-    <center>![Context Menu Grid Example](/img/grids/context.png)</center>
+    ![Context Menu Grid Example](/img/grids/context.png){: style="display:block; margin:0 auto;"}
 
 ##Menu Options
 The grid menu allows you to modify if the grids appears as well as how they look/function.
 
-<center>![Grid Menu](/img/grids/menu.png)</center>
+![Grid Menu](/img/grids/menu.png){: style="display:block; margin:0 auto;"}
 
 Setting Name | What It Does
 -- | --

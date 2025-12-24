@@ -4,15 +4,15 @@ All of these keybinds can be changed in game in the [Configuration menu](configu
 
 ####Help Menu
 
-<center>![Help Menu](/img/help-menu/help-menu.png)</center>
+![Help Menu](/img/help-menu/help-menu.png){: style="display:block; margin:0 auto;"}
 
 ####Controller Scheme
 
-<center>![Controller Scheme](/img/help-menu/controller-scheme.png)</center>
+![Controller Scheme](/img/help-menu/controller-scheme.png){: style="display:block; margin:0 auto;"}
 
 ####Steam Controller Scheme
 *Accessable by pressing back/select button*
 
-<center>![Steam Controller Scheme](/img/help-menu/contoller-scheme-steam.png)</center>
+![Steam Controller Scheme](/img/help-menu/contoller-scheme-steam.png){: style="display:block; margin:0 auto;"}
 
 ---

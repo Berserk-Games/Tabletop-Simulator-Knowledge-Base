@@ -6,7 +6,7 @@ The Gizmo Tool is an advanced feature where you can move, rotate and scale objec
 
 
 ##Transform Menu
-<center>![Transform Menu](/img/gizmo-tool/transform.png)</center>
+![Transform Menu](/img/gizmo-tool/transform.png){: style="display:block; margin:0 auto;"}
 
 With any of the Gizmo Tool options selected, left-clicking an object will open the Transform Menu. It shows numerical values for Position, Rotation and Scale.
 

@@ -11,7 +11,7 @@ The Dice Template, as well as other modding tools, can be found on your computer
     * In the Properties Menu, click **Local Files** at the top
     * Click **Browse Local Files**
 
-<center>![Dice Templates](/img/custom-dice/folder.png)</center>
+![Dice Templates](/img/custom-dice/folder.png){: style="display:block; margin:0 auto;"}
 
 These templates allow for the creation of any of the following dice types: D4, D6, D8, D10, D12, D20.
 
@@ -21,18 +21,18 @@ Take the template of your choice and open it in your preferred image editing pro
 !!!important
     Make sure you don't save over the original template!
 
-<center>![Editing Dice Templates](/img/custom-dice/ps1.png)</center>
+![Editing Dice Templates](/img/custom-dice/ps1.png){: style="display:block; margin:0 auto;"}
 
-<center>![Editing Dice Templates](/img/custom-dice/ps2.png)</center>
+![Editing Dice Templates](/img/custom-dice/ps2.png){: style="display:block; margin:0 auto;"}
 
 ###Importing Dice Template
 To import your custom die, while in-game go to the top of your screen, click **Objects > Components > Custom > Custom Dice** and import your custom template using the popup window.
 
-<center>![Importing Dice Templates](/img/custom-dice/import.png)</center>
+![Importing Dice Templates](/img/custom-dice/import.png){: style="display:block; margin:0 auto;"}
 
 !!!warning "Importing Assets"
     How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing.md).
 
-<center>![Example Die In-Game](/img/custom-dice/finished.png)</center>
+![Example Die In-Game](/img/custom-dice/finished.png){: style="display:block; margin:0 auto;"}
 
 ---

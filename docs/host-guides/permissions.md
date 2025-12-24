@@ -2,7 +2,7 @@ Hosts can control a multitude of options to prevent players from doing certain a
 
 Click on **Options > Permissions** at the top of the screen to bring up the window.
 
-<center>![Permissions Menu](/img/permissions/menu.png)</center>
+![Permissions Menu](/img/permissions/menu.png){: style="display:block; margin:0 auto;"}
 
 ##How Permission Works
 A host always has access to all systems within Tabletop Simulator, but they also have the ability to block access to many of them to individuals who join their game.

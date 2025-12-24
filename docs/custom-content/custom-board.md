@@ -10,13 +10,13 @@ A custom board is a game board created using any image.
 ##Creating a Board
 Select **Objects > Components > Custom** to open the Custom Object menu, then select **Board**.
 
-<center>![Custom Board Example](/img/custom-board/board1.png)</center>
+![Custom Board Example](/img/custom-board/board1.png){: style="display:block; margin:0 auto;"}
 
 Select an image then click Import.
 
 !!!warning "Importing Assets"
     How you choose to import files impacts if other players can see them when you're finished.<br>For help with importing, visit [Asset Hosting](asset-importing.md).
 
-<center>![Custom Board Example](/img/custom-board/board4.png)</center>
+![Custom Board Example](/img/custom-board/board4.png){: style="display:block; margin:0 auto;"}
 
 ---

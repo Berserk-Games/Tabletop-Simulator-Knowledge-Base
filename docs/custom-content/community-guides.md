@@ -6,6 +6,6 @@ Guide&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
 -- | --
 [Making Card Games](https://steamcommunity.com/sharedfiles/filedetails/?id=251086884) | QQuixotic
 
-<center>![Tabletop Simulator](/img/index/logo.png)</center>
+![Tabletop Simulator](/img/index/logo.png){: style="display:block; margin:0 auto;"}
 
 ---

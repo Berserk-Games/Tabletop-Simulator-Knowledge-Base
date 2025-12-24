@@ -2,7 +2,7 @@
 
 An AssetBundle is the most advanced, fully featured asset type for Tabletop Simulator. An asset is created in Unity, and then exported in a special format to be imported into your game.
 
-<center>![Example Asset Bundle in Unity](/img/custom-assetbundle/example.gif)</center>
+![Example Asset Bundle in Unity](/img/custom-assetbundle/example.gif){: style="display:block; margin:0 auto;"}
 
 
 ##AssetBundle Features
@@ -43,12 +43,12 @@ You want the **installer**.
 
 Run the installer and you will be asked which components to include. Be sure **Windows, Linux and Mac** are all checked.
 
-<center>![Unity Installer](/img/custom-assetbundle/unity-install.png)</center>
+![Unity Installer](/img/custom-assetbundle/unity-install.png){: style="display:block; margin:0 auto;"}
 
 ###Download Project
 Download the project file from **[GitHub](https://github.com/Berserk-Games/Tabletop-Simulator-Modding)**.
 
-<center>![Github Download](/img/custom-assetbundle/github-download.png)</center>
+![Github Download](/img/custom-assetbundle/github-download.png){: style="display:block; margin:0 auto;"}
 
 If needed, unzip the files, and then place them into the directory of your choice.
 
@@ -57,7 +57,7 @@ Run Unity. A window opens, asking if you want to create a new project or open on
 
 Select **Open** and choose the folder obtained from GitHub.
 
-<center>![Opening the Project](/img/custom-assetbundle/unity-run.png)</center>
+![Opening the Project](/img/custom-assetbundle/unity-run.png){: style="display:block; margin:0 auto;"}
 
 ###Create Asset
 Any number of methods can be used to create an Asset, so the steps you take here are based on the end-result of what you are trying to make.
@@ -65,16 +65,16 @@ Any number of methods can be used to create an Asset, so the steps you take here
 ####Asset Examples
 The project file contains some examples of assets as well as an example scene that matches the Museum background's lighting.
 
-<center>![Project Examples](/img/custom-assetbundle/unity-examples.png)</center>
+![Project Examples](/img/custom-assetbundle/unity-examples.png){: style="display:block; margin:0 auto;"}
 
 You are not required to use any of these when creating your asset.
 
 ####Example Asset Creation
 You can create any asset, but here is an example of basic asset creation.
 
-<center>![Creation: Step 1](/img/custom-assetbundle/create1.png)</center>
+![Creation: Step 1](/img/custom-assetbundle/create1.png){: style="display:block; margin:0 auto;"}
 
-<center>![Creation: Step 2](/img/custom-assetbundle/create2.png)</center>
+![Creation: Step 2](/img/custom-assetbundle/create2.png){: style="display:block; margin:0 auto;"}
 
 <center>
     <video controls
@@ -123,13 +123,13 @@ Then, while selecting the prefab you wish to export in Unity look at the Inspect
 
 Then Build the AssetBundle by right-clicking anywhere in the project view and selecting **Build AssetBundles**.
 
-<center>![Build AssetBundle](/img/custom-assetbundle/build.png)</center>
+![Build AssetBundle](/img/custom-assetbundle/build.png){: style="display:block; margin:0 auto;"}
 
 The resulting file that is created will be found in the Project folder under *AssetBundles*.
 
 > The file format for an AssetBundle is `.unity3d`
 
-<center>![AssetBundle location](/img/custom-assetbundle/bundle-location.png)</center>
+![AssetBundle location](/img/custom-assetbundle/bundle-location.png){: style="display:block; margin:0 auto;"}
 
 ###Import AssetBundle
 Open Tabletop Simulator and upload your AssetBundle to a webhost or the in-game [Steam Cloud](cloud-manager.md).
@@ -153,7 +153,7 @@ Open Tabletop Simulator and upload your AssetBundle to a webhost or the in-game 
 ##Secondary AssetBundles
 Secondary AssetBundles are an additional AssetBundle which are great for shared effects like sound or particle effects that you want to use on multiple objects without duplicating them in each individual asset bundle. Great for reducing memory and bandwidth usage.
 
-<center>![Secondary AssetBundle](/img/custom-assetbundle/secondary.png)</center>
+![Secondary AssetBundle](/img/custom-assetbundle/secondary.png){: style="display:block; margin:0 auto;"}
 
 In the example below, the main AssetBundle is the blue capsule and the secondary AssetBundle is the explosion and light effect. This allows you to reuse the explosion and light effect on any one of your AssestBundles for greater modularity and reduced memory and bandwidth usage.
 
