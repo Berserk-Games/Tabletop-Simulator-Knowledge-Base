@@ -10,4 +10,4 @@ mkdocs-material-extensions = "~= 1.0.1"
 pymdown-extensions = "~=8.1.1"
 
 [requires]
-python_version = "3.6"
+python_version = "3.11"
