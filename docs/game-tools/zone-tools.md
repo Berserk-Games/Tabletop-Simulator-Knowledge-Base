@@ -100,7 +100,7 @@ If you set a tag on the Hand Zone then it will ignore any objects which do not h
 ### Layout Zone
 ![Layout Zone Menu](/img/zone-tools/layout-zone-menu.png)
 
-Layout Zones allow you to automate some standard ways to arrange objects, typically cards.  It can be used to splay cards in melds (for games like Gin), or group them into bundles (for trick-taking games like Whist), or to generally lay out groups of objects in a regimented fashion.  They are geenrally most useful for arranging cards, but can be used with any object if you wish.
+Layout Zones allow you to automate some standard ways to arrange objects, typically cards.  It can be used to splay cards in melds (for games like Gin), or group them into bundles (for trick-taking games like Whist), or to generally lay out groups of objects in a regimented fashion.  They are generally most useful for arranging cards, but can be used with any object if you wish.
 
 The Layout Zone works on groups of objects.  When you drop a bunch of objects into the zone it will group those objects together, and lay them out in a pre-determined manner.
 
