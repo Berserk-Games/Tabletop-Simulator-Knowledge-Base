@@ -35,4 +35,6 @@ To import your custom die, while in-game go to the top of your screen, click **O
 
 ![Example Die In-Game](/img/custom-dice/finished.png){: style="display:block; margin:0 auto;"}
 
+!!!tip "Custom values"
+    If you need to edit the number values of your dice, you should read about the [Rotation Value Gizmo](../game-tools/gizmo-tool.md#rotation-value)
 ---
