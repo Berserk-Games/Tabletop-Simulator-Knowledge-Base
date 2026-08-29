@@ -24,7 +24,7 @@ When creating a game object, there are varying requirements depending on the end
 ###Image Only
 These types of objects only require an image to make the in-game object.
 
-* [Custom Board](custom-board)
+* [Custom Board](custom-board.md)
 * [Custom Deck](custom-deck.md)\*
 * [Custom Dice](custom-dice.md)\*
 * [Custom Figurine](custom-figurine.md)
